@@ -4,7 +4,7 @@ A place for my GT slideshows.
 
 ```
 Metacello new
-	baseline: 'GtCommentAnalysis';
+	baseline: 'GtTalks';
 	repository: 'github://onierstrasz/gt-talks:main/src';
-	load.
+	load
 ```
