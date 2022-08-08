@@ -9,7 +9,7 @@ Metacello new
 	load
 ```
 
-Load the associated lepiter databse:
+Load the associated lepiter database:
 ```
 BaselineOfGtTalks loadLepiter
 ```
