@@ -8,3 +8,8 @@ Metacello new
 	repository: 'github://onierstrasz/gt-talks:main/src';
 	load
 ```
+
+Load the associated lepiter databse:
+```
+BaselineOfGtTalks loadLepiter
+```
