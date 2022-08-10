@@ -13,8 +13,38 @@ Class {
 }
 
 { #category : #accessing }
+Vissoft2022Slideshow class >> show [
+	"Implement this here just so we can run it directly from the Coder."
+	super show
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> inspectingLudo: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #inspectingLudo:);
+		  pageNamed: 'Inspecting the Ludo game' from: self lepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> lepiterDB [
 	^ 'onierstrasz/gt-talks/lepiter'
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> ludoIntro: aSlide [
+	<gtSlide>
+	
+	^ (aSlide textAndElement)
+		elementWeight: 0.5;
+		priority: (self priorityFor: #ludoIntro:);
+		newTextWithFormat: (self asHeader: 'Explaining the Ludo game') bold,
+			(self asText: '
+
+The Ludo game was a (Java) programming exercise for 1st year students.
+
+We can play this version of the game, but we cannot talk to it.');
+		element: [ GtLudoGame new asElement asScalableElement ]
 ]
 
 { #category : #accessing }
@@ -23,16 +53,9 @@ Vissoft2022Slideshow >> pages [
 	<gtExample>
 	^ #( 
 		titleSlideFor:
-		testSlide:
+		ludoIntro:
+		inspectingLudo:
 		)
-]
-
-{ #category : #accessing }
-Vissoft2022Slideshow >> testSlide: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		  priority: (self priorityFor: #testSlide:);
-		  pageNamed: 'Test page' from: self lepiterDB
 ]
 
 { #category : #accessing }
