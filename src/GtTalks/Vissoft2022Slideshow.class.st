@@ -19,6 +19,14 @@ Vissoft2022Slideshow class >> show [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> exploringViews: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #exploringViews:);
+		  pageNamed: 'Exploring custom views' from: self lepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> inspectingLudo: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -55,7 +63,17 @@ Vissoft2022Slideshow >> pages [
 		titleSlideFor:
 		ludoIntro:
 		inspectingLudo:
+		scriptingASCenario:
+		exploringViews:
 		)
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> scriptingASCenario: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #scriptingASCenario:);
+		  pageNamed: 'Scripting a scenario' from: self lepiterDB
 ]
 
 { #category : #accessing }
