@@ -19,11 +19,49 @@ Vissoft2022Slideshow class >> show [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> coda: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #coda:);
+		subtitleWithFormat: (self asSubtitle: 'Coda');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+To do ...
+') italic
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> documentingRules: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #documentingRules:);
 		  pageNamed: 'Documenting the rules' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> exampleHeading: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #exampleHeading:);
+		subtitleWithFormat: (self asSubtitle: 'Examples');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Tests should return example objects that can be used to compose further tests as well as documentation.
+') italic
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> examples: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #examples:);
+		  pageNamed: 'Examples' from: self myLepiterDB
 ]
 
 { #category : #accessing }
@@ -43,6 +81,44 @@ Vissoft2022Slideshow >> inspectingLudo: aSlide [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> inspectorHeading: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #inspectorHeading:);
+		subtitleWithFormat: (self asSubtitle: 'The Inspector');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Use an object inspector rather than a text editor to put live objects rather than code at the center of the IDE.
+') italic
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> lepiter: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #lepiter:);
+		  pageNamed: 'Lepiter' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> lepiterHeading: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #lepiterHeading:);
+		subtitleWithFormat: (self asSubtitle: 'Lepiter');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Use a live notebook to create and explore narratives connecting live objects and code.
+') italic
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> ludoIntro: aSlide [
 	<gtSlide>
 	
@@ -59,6 +135,29 @@ We can play this version of the game, but we cannot talk to it.');
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> moldableHeading: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #moldableHeading:);
+		subtitleWithFormat: (self asSubtitle: 'Moldable Views');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Use custom views to answer domain-specific questions.
+') italic
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> moldableViews: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #moldableViews:);
+		  pageNamed: 'Moldable views' from: self myLepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> myLepiterDB [
 	^ 'onierstrasz/gt-talks/lepiter'
 ]
@@ -69,21 +168,70 @@ Vissoft2022Slideshow >> pages [
 	<gtExample>
 	^ #( 
 		titleSlideFor:
-		ludoIntro:
-		inspectingLudo:
-		scriptingASCenario:
-		exploringViews:
-		trackingState:
-		documentingRules:
+		part1:
+			ludoIntro:
+			inspectingLudo:
+			#scriptingAScenario:
+			exploringViews:
+			trackingState:
+			documentingRules:
+		part2:
+			inspectorHeading:
+				theInspector:
+			moldableHeading:
+				moldableViews:
+			lepiterHeading:
+				lepiter:
+			exampleHeading:
+				examples:
+		coda:
 		)
 ]
 
 { #category : #accessing }
-Vissoft2022Slideshow >> scriptingASCenario: aSlide [
+Vissoft2022Slideshow >> part1: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #part1:);
+		subtitleWithFormat: (self asSubtitle: 'Part I');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Explaining the Ludo game.
+')
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> part2: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #part2:);
+		subtitleWithFormat: (self asSubtitle: 'Part II');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Make systems explainable by shifting the focus in the IDE from editing source code to exploring live objects, source code, and narratives that link them.
+') italic
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		  priority: (self priorityFor: #scriptingASCenario:);
+		  priority: (self priorityFor: #scriptingAScenario:);
 		  pageNamed: 'Scripting a scenario' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> theInspector: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #theInspector:);
+		  pageNamed: 'The Inspector' from: self myLepiterDB
 ]
 
 { #category : #accessing }
