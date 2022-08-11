@@ -148,7 +148,7 @@
 					"uidString" : "9dhGzkOiDQCD6mqgCORYDw=="
 				},
 				"code" : "m := GtMondrian new.\r(GtExampleGroup withAll: GtLudoGameExamples gtExamplesContained) paintMapWith: m.\rm asElement",
-				"elementHeight" : 601,
+				"elementHeight" : 627,
 				"codeHeight" : 50,
 				"codeVisible" : false
 			},

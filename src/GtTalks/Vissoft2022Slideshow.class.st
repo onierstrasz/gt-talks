@@ -19,6 +19,14 @@ Vissoft2022Slideshow class >> show [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> documentingRules: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #documentingRules:);
+		  pageNamed: 'Documenting the rules' from: self myLepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> exploringViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -65,6 +73,8 @@ Vissoft2022Slideshow >> pages [
 		inspectingLudo:
 		scriptingASCenario:
 		exploringViews:
+		trackingState:
+		documentingRules:
 		)
 ]
 
@@ -85,4 +95,12 @@ Vissoft2022Slideshow >> titleSlideFor: aSlide [
 		titleBottomPadding: 30;
 		titleWithFormat: (self asTitle: 'Making systems explainable');
 		subtitleWithFormat: (self asBigText: '@onierstrasz')
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> trackingState: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #trackingState:);
+		  pageNamed: 'Tracking state' from: self myLepiterDB
 ]
