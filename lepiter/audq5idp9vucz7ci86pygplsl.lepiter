@@ -364,7 +364,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T10:07:26.832825+02:00"
+									"dateAndTimeString" : "2022-08-11T10:07:29.119957+02:00"
 								}
 							},
 							"uid" : {
@@ -374,7 +374,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Todo: need a slide summarizing l"
+							"string" : "Todo: need a slide summarizing lessons so far?"
 						},
 						{
 							"__type" : "textSnippet",
