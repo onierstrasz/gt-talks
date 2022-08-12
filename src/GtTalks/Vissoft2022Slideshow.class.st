@@ -177,7 +177,8 @@ Vissoft2022Slideshow >> pages [
 				lepiter:
 			exampleHeading:
 				examples:
-		coda:
+		part3:
+			coda:
 		)
 ]
 
