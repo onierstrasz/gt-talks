@@ -203,43 +203,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.377527+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.377527+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qVqTulWiDQCbg8foASwSYw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-08-11T11:43:03.586742+02:00"
 					}
 				},
@@ -314,7 +277,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:05.019185+02:00"
+						"dateAndTimeString" : "2022-08-11T11:44:33.790628+02:00"
 					}
 				},
 				"editEmail" : {
@@ -325,7 +288,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:05.019185+02:00"
+						"dateAndTimeString" : "2022-08-11T11:44:33.790628+02:00"
 					}
 				},
 				"uid" : {
@@ -335,7 +298,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "One rendering tree makes it easier to reuse views"
 			},
 			{
 				"__type" : "textSnippet",
@@ -351,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:05.282227+02:00"
+						"dateAndTimeString" : "2022-08-12T09:37:06.898436+02:00"
 					}
 				},
 				"editEmail" : {
@@ -362,7 +325,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:05.282227+02:00"
+						"dateAndTimeString" : "2022-08-12T09:43:27.710238+02:00"
 					}
 				},
 				"uid" : {
@@ -372,7 +335,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Which classes have the most views?"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:37:04.149305+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:43:32.271884+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Ug/aFWiiDQCnQOiYAqZIKg=="
+				},
+				"code" : "viewDict := Dictionary new.\r#gtView gtPragmas contents\r\tdo: [ :m | (viewDict at: m methodClass ifAbsentPut: Set new) add: m ].\rviewDict associations sort: [ :a :b | a value size > b value size ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -388,7 +385,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:28.411863+02:00"
+						"dateAndTimeString" : "2022-08-12T09:44:46.888618+02:00"
 					}
 				},
 				"editEmail" : {
@@ -399,7 +396,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:28.411863+02:00"
+						"dateAndTimeString" : "2022-08-12T09:44:56.726373+02:00"
 					}
 				},
 				"uid" : {
@@ -409,7 +406,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "NB: This doesn't show the inh"
 			},
 			{
 				"__type" : "textSnippet",

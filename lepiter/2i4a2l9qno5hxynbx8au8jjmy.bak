@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:25.661355+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:39.744623+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,12 +29,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:35.184941+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:47.927757+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "siCYllWiDQCbSyloASwSYw=="
+					"uidString" : "XFhA12eiDQCmMPRDAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:26.633904+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:42.331316+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,12 +66,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:26.633904+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:42.331316+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "1LBiuFWiDQCbZjRZASwSYw=="
+					"uidString" : "0C3B12eiDQCmM1mmAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:26.8893+02:00"
+						"dateAndTimeString" : "2022-08-12T09:20:29.630918+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,12 +103,86 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:26.8893+02:00"
+						"dateAndTimeString" : "2022-08-12T09:20:29.630918+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cJZmuFWiDQCbaPFuASwSYw=="
+					"uidString" : "E+aS2meiDQCmS0QsAqZIKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Coda — How to end?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:32.180547+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:37.332775+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KESW2meiDQCmTTPUAqZIKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Should be some lessons learned"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:27:25.147392+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:27:25.147392+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HDFX82eiDQCm/7dWAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -129,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:27.089178+02:00"
+						"dateAndTimeString" : "2022-08-12T09:27:25.760049+02:00"
 					}
 				},
 				"editEmail" : {
@@ -140,12 +214,272 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:27.089178+02:00"
+						"dateAndTimeString" : "2022-08-12T09:27:26.065016+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "PKNpuFWiDQCbaqIKASwSYw=="
+					"uidString" : "anxa82eiDQCnAR6FAqZIKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Che"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:30.106865+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:30.106865+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CC2a2meiDQCmTyWLAqZIKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:19.463031+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:19.463031+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "T0iL3WeiDQCmWPB2AqZIKg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Visualizations don't need to be fancy. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:25.553635+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:36.114335+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qeGw3WeiDQCmWpk0AqZIKg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Like metrics, they should be driven by the domain."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:04.225038+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:21.637137+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/nl83GeiDQCmVbUBAqZIKg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "They need to be live."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:36.734026+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-12T09:21:45.361605+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "5feM3meiDQCmXOWwAqZIKg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "They should be simple, and cheap to produce."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:56.135465+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:21:00.819362+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7aeC22eiDQCmUYz7AqZIKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Visualization"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:45.561023+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-12T09:20:45.561023+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1fyF22eiDQCmU5CAAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -166,7 +500,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:27.389612+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:43.031243+02:00"
 					}
 				},
 				"editEmail" : {
@@ -177,17 +511,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:27.389612+02:00"
+						"dateAndTimeString" : "2022-08-12T09:20:40.995141+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WFRruFWiDQCbbBhpASwSYw=="
+					"uidString" : "MiLF12eiDQCmNZsGAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Key points: a view offers a way to answer a domain specific question about an object; should be cheap to create"
+				"string" : "What story is left to tell?\nVisualization of GT Book pages and snippets?\nTreeMap?"
 			},
 			{
 				"__type" : "textSnippet",
@@ -203,7 +537,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.586742+02:00"
+						"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
 					}
 				},
 				"editEmail" : {
@@ -214,17 +548,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.586742+02:00"
+						"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0ouWulWiDQCbheobASwSYw=="
+					"uidString" : "7nVb2meiDQCmSe64AqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Moldable development is an architectural constraint that impacts your design (like testability)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -240,7 +574,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.851822+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:43.34326+02:00"
 					}
 				},
 				"editEmail" : {
@@ -251,194 +585,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:43:03.851822+02:00"
+						"dateAndTimeString" : "2022-08-12T09:19:43.34326+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "KGuYulWiDQCbhyDeASwSYw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Moldable views\nKey principle: use custom views to answer domain-specific questions.\nCheap to create. Simple.\nInteractive.\nDomain-driven.\nReplace custom queries. (Eg see all the moves of a game.)\nOne rendering tree — reusable views."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:44:33.790628+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:44:33.790628+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "T2esulWiDQCbiXvzASwSYw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "One rendering tree makes it easier to reuse views"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:37:06.898436+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:43:27.710238+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0WqwulWiDQCbizXaASwSYw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Which classes have the most views?"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:37:04.149305+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:43:32.271884+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Ug/aFWiiDQCnQOiYAqZIKg=="
-				},
-				"code" : "viewDict := Dictionary new.\r#gtView gtPragmas contents\r\tdo: [ :m | (viewDict at: m methodClass ifAbsentPut: Set new) add: m ].\rviewDict associations sort: [ :a :b | a value size > b value size ]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:44:46.888618+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:45:05.888572+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "89F9uFWiDQCbbgrCASwSYw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "NB: This doesn't count the inherited views."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:28.674947+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T11:42:28.674947+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "utWBuFWiDQCbcCf2ASwSYw=="
+					"uidString" : "uJ7Q12eiDQCmN01PAqZIKg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -455,7 +607,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-08-11T11:32:59.677812+02:00"
+			"dateAndTimeString" : "2022-08-12T09:19:33.851744+02:00"
 		}
 	},
 	"editEmail" : {
@@ -466,15 +618,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-08-11T11:32:59.677812+02:00"
+			"dateAndTimeString" : "2022-08-12T09:19:33.851744+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Moldable views"
+		"title" : "Coda"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "3ea09796-55a2-0d00-9b4a-db08012c1263"
+		"uuid" : "2aca3fd7-67a2-0d00-a62f-13b502a6482a"
 	}
 }

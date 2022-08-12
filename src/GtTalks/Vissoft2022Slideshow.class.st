@@ -21,16 +21,9 @@ Vissoft2022Slideshow class >> show [
 { #category : #accessing }
 Vissoft2022Slideshow >> coda: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #coda:);
-		subtitleWithFormat: (self asSubtitle: 'Coda');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
-To do ...
-') italic
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #coda:);
+		  pageNamed: 'Coda' from: self myLepiterDB
 ]
 
 { #category : #accessing }
@@ -215,6 +208,21 @@ Vissoft2022Slideshow >> part2: aSlide [
 						asBigText:
 							'
 Make systems explainable by shifting the focus in the IDE from editing source code to exploring live objects, source code, and narratives that link them.
+') italic
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> part3: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #part3:);
+		subtitleWithFormat: (self asSubtitle: 'Part III — Coda');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+To do ...
 ') italic
 ]
 

@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T14:26:31.059987+02:00"
+						"dateAndTimeString" : "2022-08-12T09:23:00.658103+02:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "See {{gtPage:Inspector|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+				"string" : "See {{gtPage:Inspector|db=2j9m7db2i4oz116bexd7wbdxo}}   from the GT book."
 			},
 			{
 				"__type" : "textSnippet",
@@ -621,14 +621,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T17:19:53.4678+02:00"
+									"dateAndTimeString" : "2022-08-11T17:19:55.36883+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "0P9ZYFqiDQCJpVaGAKRA9g=="
 							},
-							"code" : "l := IceRepository registry detect: [ :r | r name = 'lepiter' ].\r((l packages select: #isLoaded) \r\tcollect: [ :p | p name asPackage ])\r\tselect: [ : p | p definedlasses includes: LePage ]"
+							"code" : "l := IceRepository registry detect: [ :r | r name = 'lepiter' ].\r((l packages select: #isLoaded) \r\tcollect: [ :p | p name asPackage ])\r\tselect: [ : p | p definedClasses includes: LePage ]"
 						}
 					]
 				},
