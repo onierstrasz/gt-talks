@@ -13,3 +13,8 @@ Load the associated lepiter database:
 ```
 BaselineOfGtTalks loadLepiter
 ```
+
+To preview the draft of the VISSOFT 2022 talk:
+```
+Vissoft2022Slideshow show
+```
