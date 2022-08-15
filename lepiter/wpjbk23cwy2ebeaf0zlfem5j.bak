@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T13:55:50.735963+02:00"
+						"dateAndTimeString" : "2022-08-10T14:18:21.521999+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***Q How is the Ludo game built up?*** "
+				"string" : "**Q How is the Ludo game built up?** "
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T13:56:21.108643+02:00"
+						"dateAndTimeString" : "2022-08-15T11:58:09.635208+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Let's have a a closer look at an instance of the game."
+				"string" : "Let's have a closer look at an instance of the game."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -103,14 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T13:56:46.675328+02:00"
+						"dateAndTimeString" : "2022-08-15T11:57:54.390656+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7x+KeUOiDQCDnUbnCORYDw=="
 				},
-				"code" : "GtLudoGameExamples new bToPlayWithAonStartSquare"
+				"code" : "GtLudoGameExamples new bToPlayWithAonStartSquare+"
 			},
 			{
 				"__type" : "textSnippet",
@@ -311,6 +311,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:59:14.583537+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:59:32.365915+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jx3Fa6aiDQC952x7Crlmqw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Navigating the domain objects"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-08-10T14:01:33.022544+02:00"
 					}
 				},
@@ -359,7 +396,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T14:05:23.436298+02:00"
+						"dateAndTimeString" : "2022-08-10T14:18:28.129227+02:00"
 					}
 				},
 				"uid" : {
@@ -369,7 +406,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***Q Can we see the relationships between the domain objects?*** "
+				"string" : "**Q Can we see the relationships between the domain objects?** "
 			},
 			{
 				"__type" : "textSnippet",

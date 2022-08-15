@@ -140,17 +140,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T14:23:11.136896+02:00"
+						"dateAndTimeString" : "2022-08-15T11:52:09.112172+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "9dhGzkOiDQCD6mqgCORYDw=="
 				},
-				"code" : "m := GtMondrian new.\r(GtExampleGroup withAll: GtLudoGameExamples gtExamplesContained) paintMapWith: m.\rm asElement",
-				"elementHeight" : 601,
-				"codeHeight" : 50,
+				"code" : "m := GtMondrian new.\r(GtExampleGroup withAll: GtLudoGameExamples gtExamplesContained) paintMapWith: m.\rm",
+				"elementHeight" : 504,
+				"codeHeight" : 90,
 				"codeVisible" : false
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:56:46.024179+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:56:56.251312+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uoEFYqaiDQC95LQOCrlmqw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#A test that returns an example"
 			},
 			{
 				"__type" : "textSnippet",
@@ -299,6 +336,43 @@
 				"elementHeight" : 471,
 				"codeHeight" : 35,
 				"codeVisible" : false
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:57:11.954588+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T11:57:41.830308+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "TzwWZKaiDQC95TtKCrlmqw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Building a scenario from examples"
 			},
 			{
 				"__type" : "textSnippet",

@@ -37,7 +37,6 @@ Vissoft2022Slideshow >> documentingRules: aSlide [
 { #category : #accessing }
 Vissoft2022Slideshow >> exampleHeading: aSlide [
 	<gtSlide>
-	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #exampleHeading:);
 		subtitleWithFormat: (self asSubtitle: 'Examples');
@@ -164,7 +163,7 @@ Vissoft2022Slideshow >> pages [
 		part1:
 			ludoIntro:
 			inspectingLudo:
-			#scriptingAScenario:
+			scriptingAScenario:
 			exploringViews:
 			trackingState:
 			documentingRules:
