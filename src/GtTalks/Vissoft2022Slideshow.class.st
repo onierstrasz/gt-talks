@@ -106,7 +106,7 @@ Vissoft2022Slideshow >> lepiterHeading: aSlide [
 				(self
 						asBigText:
 							'
-Use a live notebook to create and explore narratives connecting live objects and code.
+Use a live notebook to author and explore narratives that connect live objects and code.
 ') italic
 ]
 
@@ -145,7 +145,7 @@ Vissoft2022Slideshow >> moldableHeading: aSlide [
 				(self
 						asBigText:
 							'
-Use custom views to answer domain-specific questions.
+Use custom views to answer domain-specific questions about objects.
 ') italic
 ]
 

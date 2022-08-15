@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T16:22:32.980933+02:00"
+						"dateAndTimeString" : "2022-08-15T16:22:40.531011+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "*A custom view offers a way to elevate an ad hoc queri into domain-specific UI extensions.* "
+				"string" : "*A custom view offers a way to elevate an ad hoc query into a domain-specific UI extension.* "
 			},
 			{
 				"__type" : "textSnippet",
