@@ -232,7 +232,8 @@ Vissoft2022Slideshow >> part3: aSlide [
 				(self
 						asBigText:
 							'
-To do ...
+
+So, what makes systems explainable? ...
 ') italic
 ]
 

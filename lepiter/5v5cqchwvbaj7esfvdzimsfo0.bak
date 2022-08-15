@@ -334,7 +334,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:31:38.768598+02:00"
+									"dateAndTimeString" : "2022-08-15T18:31:44.863481+02:00"
 								}
 							},
 							"uid" : {
@@ -344,7 +344,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Let's step throu: {{gtMethod:name=GtWorldByScripterExamples>>#executePlaygroundSnippet}}.  As before, we can expand and run the individual steps making up this example."
+							"string" : "Let's step through the example: {{gtMethod:name=GtWorldByScripterExamples>>#executePlaygroundSnippet}}.  As before, we can expand and run the individual steps making up this example."
 						},
 						{
 							"__type" : "textSnippet",
