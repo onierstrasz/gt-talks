@@ -127,6 +127,14 @@ We can play this version of the game, but we cannot talk to it.');
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> millerColumns: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #millerColumns:);
+		  pageNamed: 'Miller columns' from: self myLepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> moldableHeading: aSlide [
 	<gtSlide>
 	
@@ -169,7 +177,9 @@ Vissoft2022Slideshow >> pages [
 			documentingRules:
 		part2:
 			inspectorHeading:
-				theInspector:
+				millerColumns:
+				queryingObjects:
+				visualizingObjects:
 			moldableHeading:
 				moldableViews:
 			lepiterHeading:
@@ -227,19 +237,19 @@ To do ...
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> queryingObjects: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #queryingObjects:);
+		  pageNamed: 'Querying objects' from: self myLepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #scriptingAScenario:);
 		  pageNamed: 'Scripting a scenario' from: self myLepiterDB
-]
-
-{ #category : #accessing }
-Vissoft2022Slideshow >> theInspector: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		  priority: (self priorityFor: #theInspector:);
-		  pageNamed: 'The Inspector' from: self myLepiterDB
 ]
 
 { #category : #accessing }
@@ -259,4 +269,12 @@ Vissoft2022Slideshow >> trackingState: aSlide [
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #trackingState:);
 		  pageNamed: 'Tracking state' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> visualizingObjects: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #visualizingObjects:);
+		  pageNamed: 'Visualizing objects' from: self myLepiterDB
 ]
