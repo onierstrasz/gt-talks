@@ -187,7 +187,45 @@
 								"uidString" : "T+8PGquiDQC4QIflA7zElQ=="
 							},
 							"code" : "GtABCartoonAddressBookExample new cartoonAddressBook"
-						},
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T17:34:17.597482+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T17:34:17.597482+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UO4PGquiDQC4PbhYA7zElQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Other possible examples to use"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -213,7 +251,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:40:33.370894+02:00"
+									"dateAndTimeString" : "2022-08-15T17:40:41.943886+02:00"
 								}
 							},
 							"uid" : {
@@ -223,7 +261,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "This shows a treemap of the classes and packages from the current image\r\t\tnewFadedText: 'Blue denotes classes that contain at least one custom view; green shows those that have an example.'."
+							"string" : "This shows a treemap of the classes and packages from the current image. Blue denotes classes that contain at least one custom view; green shows those that have an example."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -303,7 +341,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T17:34:17.597482+02:00"
+						"dateAndTimeString" : "2022-08-15T18:29:18.83105+02:00"
 					}
 				},
 				"editEmail" : {
@@ -314,17 +352,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T17:34:17.597482+02:00"
+						"dateAndTimeString" : "2022-08-15T18:29:20.776628+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UO4PGquiDQC4PbhYA7zElQ=="
+					"uidString" : "qFWg3quiDQCD75i/AZqHfQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Other possible examples to use"
+				"string" : "##Treemap"
 			},
 			{
 				"__type" : "textSnippet",
@@ -362,6 +400,112 @@
 					"__type" : "textStyle"
 				},
 				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T17:35:55.170369+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T17:35:55.170369+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Q8bgH6uiDQC4auDIA7zElQ=="
+							},
+							"code" : "pDict := Dictionary new.\r#gtExample gtPragmas\r\tdo: [ :m | (pDict at: m methodClass package ifAbsentPut: Set new) add: m ].\r(pDict associations sort: [ :a :b | a value size > b value size ]) collect: #key "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T17:35:55.170374+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T17:35:55.170374+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "SMbgH6uiDQC4a3AOA7zElQ=="
+							},
+							"code" : "BlElement package gtExamples "
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T17:35:55.17036+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-15T17:38:10.363619+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "PsbgH6uiDQC4aWTJA7zElQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Which packages have lots of examples?"
 			},
 			{
 				"__type" : "textSnippet",
@@ -769,112 +913,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "##Nested circles — a bit boring as an example"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:35:55.170369+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:35:55.170369+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Q8bgH6uiDQC4auDIA7zElQ=="
-							},
-							"code" : "pDict := Dictionary new.\r#gtExample gtPragmas\r\tdo: [ :m | (pDict at: m methodClass package ifAbsentPut: Set new) add: m ].\r(pDict associations sort: [ :a :b | a value size > b value size ]) collect: #key "
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:35:55.170374+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:35:55.170374+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "SMbgH6uiDQC4a3AOA7zElQ=="
-							},
-							"code" : "BlElement package gtExamples "
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T17:35:55.17036+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T17:38:10.363619+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "PsbgH6uiDQC4aWTJA7zElQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##Which packages have lots of examples?"
 			},
 			{
 				"__type" : "textSnippet",
