@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T09:59:01.91679+02:00"
+						"dateAndTimeString" : "2022-08-11T09:59:58.87883+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T09:59:01.91679+02:00"
+						"dateAndTimeString" : "2022-08-11T10:00:03.808596+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "For example: {{gtPage:Live documentation of the game logic|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 			}
 		]
 	},

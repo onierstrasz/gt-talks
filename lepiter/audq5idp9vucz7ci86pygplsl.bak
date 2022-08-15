@@ -380,6 +380,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Documenting the rules]] "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "bewrlKaiDQC9+KQGCrlmqw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "***CONTINUE HERE*** "
 									}
 								]
 							},
@@ -444,7 +481,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-11T11:41:15.072109+02:00"
+												"dateAndTimeString" : "2022-08-15T12:10:29.028098+02:00"
 											}
 										},
 										"uid" : {
@@ -454,7 +491,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "***CONTINUE HERE*** "
+										"string" : ""
 									},
 									{
 										"__type" : "textSnippet",

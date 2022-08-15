@@ -321,43 +321,6 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "bewrlKaiDQC9+KQGCrlmqw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "***CONTINUE HERE*** "
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2022-08-10T14:12:12.590734+02:00"
 											}
 										},
@@ -470,7 +433,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-11T11:41:08.233083+02:00"
+												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
 											}
 										},
 										"editEmail" : {
@@ -481,17 +444,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T12:10:29.028098+02:00"
+												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "zZSps1WiDQCbWxJ7ASwSYw=="
+											"uidString" : "bewrlKaiDQC9+KQGCrlmqw=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : ""
+										"string" : "***CONTINUE HERE*** "
 									},
 									{
 										"__type" : "textSnippet",
@@ -662,7 +625,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T11:41:04.981299+02:00"
+									"dateAndTimeString" : "2022-08-15T13:51:06.107167+02:00"
 								}
 							},
 							"uid" : {
