@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:56:51.504996+02:00"
+						"dateAndTimeString" : "2022-08-16T13:43:49.819164+02:00"
 					}
 				},
 				"uid" : {
@@ -77,80 +77,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Make this a mix of notebook pages and slides, or slides with examples. (See ludoIntro: method)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:20:30.106865+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:20:30.106865+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CC2a2meiDQCmTyWLAqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:56:10.904725+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:56:29.311433+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "anxa82eiDQCnAR6FAqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Stuff recycled from {{gtPage:Moldable Development Explained|db=cqvjoxfnf6zd764ibqa67pln6}}   "
 			},
 			{
 				"__type" : "textSnippet",
@@ -319,43 +245,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223329+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223329+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "4+hHLKyiDQCVIEn4DGegiw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "A live IDE puts the objects in focus."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2022-08-15T18:44:12.428622+02:00"
 								}
 							},
@@ -367,7 +256,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:44:12.428622+02:00"
+									"dateAndTimeString" : "2022-08-16T13:56:16.187245+02:00"
 								}
 							},
 							"uid" : {
@@ -430,7 +319,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:44:19.628977+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.223329+02:00"
 								}
 							},
 							"editEmail" : {
@@ -441,17 +330,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:44:21.417178+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.223329+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "qMFhFKyiDQCUpEQhDGegiw=="
+								"uidString" : "4+hHLKyiDQCVIEn4DGegiw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Example?"
+							"string" : "A live IDE puts the objects in focus."
 						},
 						{
 							"__type" : "textSnippet",
@@ -478,7 +367,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:41:50.458481+02:00"
+									"dateAndTimeString" : "2022-08-16T13:56:44.670489+02:00"
 								}
 							},
 							"uid" : {
@@ -504,7 +393,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.22332+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.235559+02:00"
 								}
 							},
 							"editEmail" : {
@@ -515,17 +404,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:55:27.5077+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.235559+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "2+hHLKyiDQCVHvJEDGegiw=="
+								"uidString" : "qBhILKyiDQCVOdzoDGegiw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "The main tool for exploring code is not a text editor but a ***moldable inspector*** with interactive navigation of live objects and *custom views* that are cheap to create "
 						},
 						{
 							"__type" : "textSnippet",
@@ -546,7 +435,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235545+02:00"
+												"dateAndTimeString" : "2022-08-16T13:50:04.881535+02:00"
 											}
 										},
 										"editEmail" : {
@@ -557,44 +446,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235545+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "mxhILKyiDQCVNrlxDGegiw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "The GT IDE is not just a text editor focusing on source code, but a live notebook and object inspector that links code to running objects."
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235551+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235551+02:00"
+												"dateAndTimeString" : "2022-08-16T13:54:52.008911+02:00"
 											}
 										},
 										"uid" : {
@@ -604,10 +456,10 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Documentation is expressed in ***live notebooks*** that integrate text, code, and live objects"
+										"string" : "Could reuse the Gtour slides?"
 									},
 									{
-										"__type" : "textSnippet",
+										"__type" : "pharoSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -620,7 +472,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235556+02:00"
+												"dateAndTimeString" : "2022-08-16T13:54:44.263933+02:00"
 											}
 										},
 										"editEmail" : {
@@ -631,20 +483,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235556+02:00"
+												"dateAndTimeString" : "2022-08-16T13:54:44.972972+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "phhILKyiDQCVOJDtDGegiw=="
+											"uidString" : "FzC2JryiDQCcuAwaBHP8Hw=="
 										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "Code and objects are linked through ***example methods*** "
+										"code" : "GtRawViewsLiveSlide new asElement"
 									},
 									{
-										"__type" : "textSnippet",
+										"__type" : "pharoSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -657,7 +506,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235559+02:00"
+												"dateAndTimeString" : "2022-08-16T13:54:12.031327+02:00"
 											}
 										},
 										"editEmail" : {
@@ -668,17 +517,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.235559+02:00"
+												"dateAndTimeString" : "2022-08-16T13:54:12.729462+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "qBhILKyiDQCVOdzoDGegiw=="
+											"uidString" : "d1vKJLyiDQCctb8nBHP8Hw=="
 										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "The main tool for exploring code is not a text editor but a ***moldable inspector*** with interactive navigation of live objects and *custom views* that are cheap to create "
+										"code" : "GtAllViewsLiveSlide new asElement"
 									}
 								]
 							},
@@ -690,7 +536,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.235526+02:00"
+									"dateAndTimeString" : "2022-08-15T18:44:19.628977+02:00"
 								}
 							},
 							"editEmail" : {
@@ -701,17 +547,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:58:01.327423+02:00"
+									"dateAndTimeString" : "2022-08-16T13:50:10.401916+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "khhILKyiDQCVNQ73DGegiw=="
+								"uidString" : "qMFhFKyiDQCUpEQhDGegiw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "###Example?"
 						}
 					]
 				},
@@ -807,43 +653,6 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "BOlHLKyiDQCVKTumDGegiw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[TG]]: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2022-08-15T18:50:58.223365+02:00"
 											}
 										},
@@ -892,7 +701,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:50:58.223368+02:00"
+												"dateAndTimeString" : "2022-08-16T13:59:15.550726+02:00"
 											}
 										},
 										"uid" : {
@@ -902,7 +711,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "A dialogue between the developer and the system."
+										"string" : "There should be a dialogue between the developer and the system."
 									},
 									{
 										"__type" : "textSnippet",
@@ -951,7 +760,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223359+02:00"
+									"dateAndTimeString" : "2022-08-16T13:58:16.513463+02:00"
 								}
 							},
 							"editEmail" : {
@@ -962,7 +771,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223359+02:00"
+									"dateAndTimeString" : "2022-08-16T13:58:50.443014+02:00"
 								}
 							},
 							"uid" : {
@@ -972,51 +781,13 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "GQM for visualization — don't want fixed set of metrics or visualizations"
+							"string" : "As with GQM, we want visualizations (like metrics) to be motivated from the goals we want to achieve and the questions we ask. (QGV)"
 						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-12T09:21:25.553635+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T18:43:06.041776+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "qeGw3WeiDQCmWpk0AqZIKg=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "Like metrics, views should be driven by the domain."
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -1037,7 +808,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:42:47.537374+02:00"
+									"dateAndTimeString" : "2022-08-16T13:59:53.979951+02:00"
 								}
 							},
 							"uid" : {
@@ -1047,7 +818,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Views don't need to be fancy, but useful and live."
+							"string" : "Views don't need to be fancy, but should be useful and live."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BOlHLKyiDQCVKTumDGegiw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[TG]]: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1123,6 +931,81 @@
 								"__type" : "textStyle"
 							},
 							"string" : "Views should be simple, and cheap to produce."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T14:02:49.784234+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T14:02:55.131838+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jFhPQbyiDQCcuwlZBHP8Hw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Compiled Method syntax?"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T14:02:03.501829+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T14:02:10.248339+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9I1LH6yiDQCUzN+eDGegiw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "### Example?"
 						}
 					]
 				},
@@ -1145,7 +1028,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:50:58.223356+02:00"
+						"dateAndTimeString" : "2022-08-16T13:59:33.768077+02:00"
 					}
 				},
 				"uid" : {
@@ -1155,7 +1038,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Use visualizations to express domain-specific queries"
+				"string" : "#Use visualizations (views) to express domain-specific queries"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1171,7 +1054,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T16:04:24.74026+02:00"
+						"dateAndTimeString" : "2022-08-16T14:01:57.390063+02:00"
 					}
 				},
 				"editEmail" : {
@@ -1182,49 +1065,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T16:04:24.74026+02:00"
+						"dateAndTimeString" : "2022-08-16T14:01:57.390063+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wHWf2KmiDQCOM4tOA3z53A=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:47:20.358343+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:47:20.358343+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "9I1LH6yiDQCUzN+eDGegiw=="
+					"uidString" : "GiuHQLyiDQCcuvmxBHP8Hw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -1335,7 +1181,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.224964+02:00"
+									"dateAndTimeString" : "2022-08-16T14:01:28.382453+02:00"
 								}
 							},
 							"uid" : {
@@ -1361,7 +1207,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.224968+02:00"
+									"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1372,17 +1218,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.224968+02:00"
+									"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "Su9HLKyiDQCVM3waDGegiw=="
+								"uidString" : "7nVb2meiDQCmSe64AqZIKg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "IDE not as a glorified editor but as an inspector"
+							"string" : "Moldable development is an architectural constraint that impacts your design (like testability)"
 						}
 					]
 				},
@@ -1405,7 +1251,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:50:58.224947+02:00"
+						"dateAndTimeString" : "2022-08-16T14:01:07.892561+02:00"
 					}
 				},
 				"uid" : {
@@ -1415,7 +1261,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Takeaways"
+				"string" : "###Moldable development makes systems explainable by making them explorable and queryable"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1448,154 +1294,6 @@
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "EpZ4E6qiDQCOaOopA3z53A=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:19:43.031243+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:43:15.438084+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "MiLF12eiDQCmNZsGAqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:20:26.604906+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "7nVb2meiDQCmSe64AqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Moldable development is an architectural constraint that impacts your design (like testability)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:19:43.34326+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:19:43.34326+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uJ7Q12eiDQCmN01PAqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:51:46.143824+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-15T18:56:09.03894+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "iMlHLKyiDQCVF1eHDGegiw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -1825,6 +1523,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#Adapt the tools to the task"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-16T14:01:40.135137+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-16T14:01:40.135137+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "COF/P7yiDQCcubiEBHP8Hw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
