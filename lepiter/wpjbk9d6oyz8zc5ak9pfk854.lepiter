@@ -138,7 +138,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T09:48:46.839514+02:00"
+									"dateAndTimeString" : "2022-08-16T15:47:50.209138+02:00"
 								}
 							},
 							"editEmail" : {
@@ -149,20 +149,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T09:48:58.603937+02:00"
+									"dateAndTimeString" : "2022-08-16T15:48:26.999694+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "gGLXGVSiDQCRNskPDrtesw=="
+								"uidString" : "sJ0du72iDQCWv0U3BaYOMA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Now we can explore the moves of the game and step through them."
+							"string" : "[[todo]] [[TG]] suggests to use instead one of the scripted examples"
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -175,7 +175,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T09:46:38.795515+02:00"
+									"dateAndTimeString" : "2022-08-16T15:49:44.113016+02:00"
 								}
 							},
 							"editEmail" : {
@@ -186,14 +186,94 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-11T09:52:57.089413+02:00"
+									"dateAndTimeString" : "2022-08-16T15:49:44.113016+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "HBdDGlSiDQCROL+PDrtesw=="
+								"uidString" : "oof5wb2iDQCXQTNABaYOMA=="
 							},
-							"code" : "GtLudoRecordingGame new autoPlay: 100"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
+						},
+						{
+							"__type" : "exampleSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T15:49:47.585004+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T15:49:47.585004+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BYIuwr2iDQCXQrP6BaYOMA=="
+							},
+							"exampleSelector" : "gameShowingAllMoves6",
+							"previewHeight" : 500,
+							"previewShowSelector" : "gtPositionsFor:",
+							"exampleBehaviorName" : "GtLudoRecordingGameExamples",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : true
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-11T09:48:46.839514+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T15:52:03.397904+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "gGLXGVSiDQCRNskPDrtesw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",

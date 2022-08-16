@@ -45,7 +45,157 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:39:54.713436+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:39:55.471558+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "/Kdodb6iDQCcUeYUBaYOMA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:41:43.851087+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:42:08.755294+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "W/I0cb6iDQCcOx6KBaYOMA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Example of a custom analysis tool built out of little pieces"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:41:26.742412+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-16T16:41:26.742412+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "puXner6iDQCcYueJBaYOMA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : ""
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-15T17:26:58.64368+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-08-16T16:39:59.390278+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "sWLZ/6qiDQC4DuoZA7zElQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : " [[todo]] replace this by the Rewrite example"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -55,7 +205,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T11:02:18.279928+02:00"
+						"dateAndTimeString" : "2022-08-16T16:40:16.072083+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,7 +216,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T11:02:18.279928+02:00"
+						"dateAndTimeString" : "2022-08-16T16:40:21.381226+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +226,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "##Demos as narratives"
 			},
 			{
 				"__type" : "textSnippet",
@@ -108,7 +258,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:22:52.72006+02:00"
+									"dateAndTimeString" : "2022-08-16T16:39:21.773662+02:00"
 								}
 							},
 							"uid" : {
@@ -118,44 +268,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The {{gtPage:Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}} Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:26:58.64368+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:27:12.00419+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "sWLZ/6qiDQC4DuoZA7zElQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Memory Game|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+							"string" : "The {{gtPage:Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}} Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -182,7 +295,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:18:52.483836+02:00"
+									"dateAndTimeString" : "2022-08-16T16:31:31.974002+02:00"
 								}
 							},
 							"uid" : {
@@ -192,7 +305,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Working with Collections in Pharo|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+							"string" : "{{gtPage:Working with Collections in Pharo|db=2j9m7db2i4oz116bexd7wbdxo}}   "
 						}
 					]
 				},
@@ -331,7 +444,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T17:24:22.637499+02:00"
+									"dateAndTimeString" : "2022-08-16T16:39:01.923471+02:00"
 								}
 							},
 							"uid" : {
@@ -341,7 +454,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Explaining the Squarified Treemap Algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+							"string" : "{{gtPage:Explaining the Squarified Treemap Algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}   "
 						}
 					]
 				},
