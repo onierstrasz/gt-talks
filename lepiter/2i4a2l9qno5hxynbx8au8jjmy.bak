@@ -2013,7 +2013,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-16T15:01:04.78203+02:00"
+									"dateAndTimeString" : "2022-08-16T15:01:12.364817+02:00"
 								}
 							},
 							"editEmail" : {
@@ -2024,7 +2024,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-16T15:01:04.78203+02:00"
+									"dateAndTimeString" : "2022-08-16T15:01:27.698094+02:00"
 								}
 							},
 							"uid" : {
@@ -2034,7 +2034,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "REPETITION of lesson above on linking code and examples?"
 						},
 						{
 							"__type" : "textSnippet",
