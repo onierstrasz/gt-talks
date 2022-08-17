@@ -256,7 +256,7 @@ Vissoft2022Slideshow >> part3: aSlide [
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #part3:);
-		subtitleWithFormat: (self asSubtitle: 'Part III — Coda');
+		subtitleWithFormat: (self asSubtitle: 'Conclusion');
 		paragraphWithFormat:
 				(self
 						asBigText:

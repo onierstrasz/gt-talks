@@ -71,14 +71,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T11:57:54.390656+02:00"
+									"dateAndTimeString" : "2022-08-17T11:09:43.755624+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "7x+KeUOiDQCDnUbnCORYDw=="
 							},
-							"code" : "GtLudoGameExamples new bToPlayWithAonStartSquare+"
+							"code" : "GtLudoGameExamples new bToPlayWithAonStartSquare "
 						},
 						{
 							"__type" : "textSnippet",

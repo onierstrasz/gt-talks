@@ -79,7 +79,7 @@
 								"uidString" : "JCCf7aeiDQCkKkAOABoPlw=="
 							},
 							"exampleSelector" : "modelClassExplicitLabeledReferences",
-							"previewHeight" : 600,
+							"previewHeight" : 400,
 							"previewShowSelector" : "gtLiveFor:",
 							"exampleBehaviorName" : "GtLudoCodeDocumentationExamples",
 							"codeExpanded" : true,

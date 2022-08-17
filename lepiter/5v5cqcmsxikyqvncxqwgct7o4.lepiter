@@ -182,7 +182,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T10:01:17.990887+02:00"
+									"dateAndTimeString" : "2022-08-17T11:21:11.299636+02:00"
 								}
 							},
 							"uid" : {
@@ -192,7 +192,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The {{gtPage:Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}} Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples:"
+							"string" : "The {{gtPage:Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}} Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples: "
 						},
 						{
 							"__type" : "textSnippet",
@@ -219,7 +219,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T09:59:19.438397+02:00"
+									"dateAndTimeString" : "2022-08-17T11:21:16.53074+02:00"
 								}
 							},
 							"uid" : {
@@ -368,7 +368,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T10:02:07.076922+02:00"
+									"dateAndTimeString" : "2022-08-17T11:21:42.451266+02:00"
 								}
 							},
 							"uid" : {
@@ -378,7 +378,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}   "
+							"string" : "{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}    "
 						}
 					]
 				},
@@ -517,7 +517,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T09:59:22.466053+02:00"
+									"dateAndTimeString" : "2022-08-17T11:22:34.914981+02:00"
 								}
 							},
 							"uid" : {
@@ -527,7 +527,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Explaining the Squarified Treemap Algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}    "
+							"string" : "{{gtPage:Explaining the Squarified Treemap Algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}     "
 						}
 					]
 				},
