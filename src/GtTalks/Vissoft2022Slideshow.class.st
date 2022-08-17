@@ -21,6 +21,26 @@ Vissoft2022Slideshow class >> show [
 { #category : #accessing }
 Vissoft2022Slideshow >> coda: aSlide [
 	<gtSlide>
+	^ (aSlide textAndElement)
+		elementWeight: 0.5;
+		priority: (self priorityFor: #coda:);
+		newTextWithFormat: 
+			(self asHeader: 'Conclusion
+
+'),
+			(self asBigText: 'Custom views and examples are used not only to analyze foreign systems, but are heavily used within GT itself') ,
+			(self asText: '
+
+
+Blue classes and packages contain at least one custom view.
+Green ones have at least one example..');
+		element: [ GtTour new treemapWithViewsAndExamples  ]
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> codaPage: aSlide [
+	"<gtSlide>
+	NOT USED "
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #coda:);
 		  pageNamed: 'Coda' from: self myLepiterDB
@@ -242,7 +262,7 @@ Vissoft2022Slideshow >> part3: aSlide [
 						asBigText:
 							'
 
-So, what makes systems explainable? ...
+Systems become explainable by linking code and examples within live documentation.
 ') italic
 ]
 
