@@ -57,6 +57,14 @@ Vissoft2022Slideshow >> examples: aSlide [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> exploringRuby: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #exploringRuby:);
+		  pageNamed: 'Exploring Ruby code' from: self myLepiterDB
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> exploringViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -182,6 +190,7 @@ Vissoft2022Slideshow >> pages [
 				visualizingObjects:
 			moldableHeading:
 				moldableViews:
+				exploringRuby:
 			lepiterHeading:
 				lepiter:
 			exampleHeading:

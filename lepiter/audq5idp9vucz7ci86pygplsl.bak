@@ -171,7 +171,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:22:30.936204+02:00"
+						"dateAndTimeString" : "2022-08-17T08:55:35.198343+02:00"
 					}
 				},
 				"uid" : {
@@ -182,43 +182,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "See [[todo]] for open points."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-12T09:27:08.001385+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T09:31:17.164163+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "B61K8meiDQCm0tlyAqZIKg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Also see {{gtPage:Moldable Development Explained|db=cqvjoxfnf6zd764ibqa67pln6}}  for additional points to be covered.  "
 			},
 			{
 				"__type" : "textSnippet",
@@ -627,7 +590,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-11T11:32:57.267661+02:00"
+												"dateAndTimeString" : "2022-08-17T09:12:41.814197+02:00"
 											}
 										},
 										"uid" : {
@@ -638,6 +601,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Moldable views]] "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-17T09:12:44.1181+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-17T09:12:54.764443+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yE/4U8yiDQCwe7fhC3CmMw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Exploring Ruby code]] "
 									},
 									{
 										"__type" : "textSnippet",
@@ -765,43 +765,6 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-15T12:10:32.066132+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "bewrlKaiDQC9+KQGCrlmqw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "***CONTINUE HERE*** "
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2022-08-12T09:19:29.171414+02:00"
 											}
 										},
@@ -846,7 +809,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-12T09:19:26.411013+02:00"
+									"dateAndTimeString" : "2022-08-17T08:55:41.38299+02:00"
 								}
 							},
 							"uid" : {
