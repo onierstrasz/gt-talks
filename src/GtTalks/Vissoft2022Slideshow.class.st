@@ -57,17 +57,15 @@ Vissoft2022Slideshow >> documentingRules: aSlide [
 { #category : #accessing }
 Vissoft2022Slideshow >> download: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
+	^ aSlide title
 		priority: (self priorityFor: #download:);
-		subtitleWithFormat: (self asSubtitle: 'Try it yourself ...');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		titleWithFormat: (self asSubtitle: 'Try it yourself ...');
+		titleBottomPadding: 60;
+		subtitleWithFormat: (self
+				asBigText: '
 
-gtoolkit.com
-') italic
+https://gtoolkit.com
+')
 ]
 
 { #category : #accessing }
@@ -219,6 +217,7 @@ Vissoft2022Slideshow >> pages [
 			exploringViews:
 			trackingState:
 			documentingRules:
+			summary:
 		part2:
 			inspectorHeading:
 				millerColumns:
@@ -300,12 +299,31 @@ Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 ]
 
 { #category : #accessing }
-Vissoft2022Slideshow >> titleSlide: aSlide [
+Vissoft2022Slideshow >> summary: aSlide [
 	<gtSlide>
 	
-	^ (aSlide title)
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #summary:);
+		subtitleWithFormat: (self asSubtitle: 'The story so far ...');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+
+— The Object Inspector lets you explore live objects with custom views
+
+— Lepiter notebooks enable narratives linking live objects and code
+
+— Test methods return live examples
+') 
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> titleSlide: aSlide [
+	<gtSlide>
+	^ aSlide title
 		priority: (self priorityFor: #titleSlide:);
-		titleBottomPadding: 30;
+		titleBottomPadding: 60;
 		titleWithFormat: (self asTitle: 'Making systems explainable');
 		subtitleWithFormat: (self asBigText: '@onierstrasz — feenk.com')
 ]

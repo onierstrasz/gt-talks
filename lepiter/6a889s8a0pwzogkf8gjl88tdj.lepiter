@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T11:12:44.261439+02:00"
+									"dateAndTimeString" : "2022-08-25T18:32:01.589098+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "See, for example: {{gtPage:Live documentation of the game logic|db=2j9m7db2i4oz116bexd7wbdxo}}    "
+							"string" : "See, for example: {{gtPage:Live documentation of the game logic|db=2j9m7db2i4oz116bexd7wbdxo}}   "
 						}
 					]
 				},
