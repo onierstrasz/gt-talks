@@ -310,12 +310,11 @@ Vissoft2022Slideshow >> summary: aSlide [
 						asBigText:
 							'
 
-— The Object Inspector lets you explore live objects with custom views
+— The '), (self asBigText: 'Object Inspector') italic, (self asBigText: ' lets you explore live objects with custom views
 
-— Lepiter notebooks enable narratives linking live objects and code
+— '), (self asBigText: 'Lepiter notebooks') italic, (self asBigText: ' enable narratives linking live objects and code
 
-— Test methods return live examples
-') 
+— Test methods return '), (self asBigText: 'live examples') italic 
 ]
 
 { #category : #accessing }
