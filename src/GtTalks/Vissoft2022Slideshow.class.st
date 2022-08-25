@@ -55,6 +55,22 @@ Vissoft2022Slideshow >> documentingRules: aSlide [
 ]
 
 { #category : #accessing }
+Vissoft2022Slideshow >> download: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #download:);
+		subtitleWithFormat: (self asSubtitle: 'Try it yourself ...');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+
+gtoolkit.com
+') italic
+]
+
+{ #category : #accessing }
 Vissoft2022Slideshow >> exampleHeading: aSlide [
 	<gtSlide>
 	^ (aSlide paragraph)
@@ -195,7 +211,7 @@ Vissoft2022Slideshow >> pages [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
-		titleSlideFor:
+		#titleSlide:
 		part1:
 			ludoIntro:
 			inspectingLudo:
@@ -217,6 +233,7 @@ Vissoft2022Slideshow >> pages [
 				examples:
 		part3:
 			coda:
+			download:
 		)
 ]
 
@@ -283,14 +300,14 @@ Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 ]
 
 { #category : #accessing }
-Vissoft2022Slideshow >> titleSlideFor: aSlide [
+Vissoft2022Slideshow >> titleSlide: aSlide [
 	<gtSlide>
 	
 	^ (aSlide title)
-		priority: (self priorityFor: #titleSlideFor:);
+		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 30;
 		titleWithFormat: (self asTitle: 'Making systems explainable');
-		subtitleWithFormat: (self asBigText: '@onierstrasz')
+		subtitleWithFormat: (self asBigText: '@onierstrasz — feenk.com')
 ]
 
 { #category : #accessing }
