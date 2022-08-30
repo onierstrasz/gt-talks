@@ -18,3 +18,13 @@ To preview the draft of the VISSOFT 2022 talk:
 ```
 Vissoft2022Slideshow show
 ```
+
+This is also needed for the slides.
+```
+rootDirectory := 'whitehall' asFileReference ensureDeleteAll.
+repository := IceRepositoryCreator new
+  remote: (IceGitRemote url: 'git@github.com:alphagov/whitehall.git');
+  location: rootDirectory;
+  createRepository.
+rootDirectory
+```
