@@ -233,7 +233,7 @@
 							"string" : "Each stage of the refactoring produces a scripted example that can be used as the starting point of the next stage."
 						},
 						{
-							"__type" : "exampleSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -246,7 +246,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T10:11:53.031625+02:00"
+									"dateAndTimeString" : "2022-10-11T10:49:21.432205+02:00"
 								}
 							},
 							"editEmail" : {
@@ -257,20 +257,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-17T10:11:53.031625+02:00"
+									"dateAndTimeString" : "2022-10-11T10:50:27.985169+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "67+QJ82iDQCei35hB530bw=="
+								"uidString" : "KYPGFiCnDQCxGzmgDrDZCw=="
 							},
-							"exampleSelector" : "forUnaryExtraction_04_click_extract_method",
-							"previewHeight" : 200,
-							"previewShowSelector" : "gtViewsFor:",
-							"exampleBehaviorName" : "GtPharoSnippetCoderByScripterExamples",
-							"codeExpanded" : true,
-							"previewExpanded" : false,
-							"noCode" : false
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Here we see that last stage of an extract-method refactoring in {{gtMethod:name=GtPharoSnippetCoderByScripterExamples >> #forUnaryExtraction_04_click_extract_method | expanded=true}}  "
 						},
 						{
 							"__type" : "textSnippet",
