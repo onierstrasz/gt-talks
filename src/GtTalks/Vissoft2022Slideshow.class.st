@@ -205,38 +205,6 @@ Vissoft2022Slideshow >> myLepiterDB [
 ]
 
 { #category : #accessing }
-Vissoft2022Slideshow >> pages [
-	"Instead of manually setting priorities, just list the slides in order here."
-	<gtExample>
-	^ #( 
-		#titleSlide:
-		part1:
-			ludoIntro:
-			inspectingLudo:
-			scriptingAScenario:
-			exploringViews:
-			trackingState:
-			documentingRules:
-			summary:
-		part2:
-			inspectorHeading:
-				millerColumns:
-				queryingObjects:
-				visualizingObjects:
-			moldableHeading:
-				moldableViews:
-				exploringRuby:
-			lepiterHeading:
-				lepiter:
-			exampleHeading:
-				examples:
-		part3:
-			coda:
-			download:
-		)
-]
-
-{ #category : #accessing }
 Vissoft2022Slideshow >> part1: aSlide [
 	<gtSlide>
 	
@@ -296,6 +264,38 @@ Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #scriptingAScenario:);
 		  pageNamed: 'Scripting a scenario' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+Vissoft2022Slideshow >> slidePriorities [
+	"Instead of manually setting priorities, just list the slides in order here."
+	<gtExample>
+	^ #( 
+		#titleSlide:
+		part1:
+			ludoIntro:
+			inspectingLudo:
+			scriptingAScenario:
+			exploringViews:
+			trackingState:
+			documentingRules:
+			summary:
+		part2:
+			inspectorHeading:
+				millerColumns:
+				queryingObjects:
+				visualizingObjects:
+			moldableHeading:
+				moldableViews:
+				exploringRuby:
+			lepiterHeading:
+				lepiter:
+			exampleHeading:
+				examples:
+		part3:
+			coda:
+			download:
+		)
 ]
 
 { #category : #accessing }
