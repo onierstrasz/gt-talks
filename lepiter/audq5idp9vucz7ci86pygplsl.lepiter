@@ -1025,12 +1025,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-08-10T11:31:06.6371+02:00"
+			"dateAndTimeString" : "2023-05-02T08:46:28.603456+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Pages for the VISSOFT Talk"
+		"title" : "VISSOFT Talk"
 	},
 	"uid" : {
 		"__type" : "uuid",
