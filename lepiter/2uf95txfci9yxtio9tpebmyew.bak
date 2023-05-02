@@ -13,7 +13,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:46:45.85183+02:00"
+			"dateAndTimeString" : "2022-08-16T16:50:50.230528+02:00"
 		}
 	},
 	"editEmail" : {
@@ -24,15 +24,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T09:00:58.123768+02:00"
+			"dateAndTimeString" : "2022-08-16T16:50:50.230528+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** BATbern50 talk"
+		"title" : "TG"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "db1d360a-12b7-0d00-9a88-d718099c213a"
+		"uuid" : "b80a7e9c-bea2-0d00-9d28-1fad05a60e30"
 	}
 }
