@@ -24,12 +24,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T09:00:58.123768+02:00"
+			"dateAndTimeString" : "2023-05-02T08:46:45.85183+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** BATbern50 talk"
+		"title" : "BATbern50 talk"
 	},
 	"uid" : {
 		"__type" : "uuid",

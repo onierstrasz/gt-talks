@@ -19,7 +19,7 @@ To preview the draft of the VISSOFT 2022 talk:
 Vissoft2022Slideshow show
 ```
 
-This is also needed for the slides.
+This is also needed for the VISSOFT slides.
 ```
 rootDirectory := 'whitehall' asFileReference ensureDeleteAll.
 repository := IceRepositoryCreator new

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:43.003084+02:00"
+						"dateAndTimeString" : "2023-05-02T09:00:58.130533+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[BATbern50 talk]] "
+				"string" : "[[*** BATbern50 talk]]  "
 			},
 			{
 				"__type" : "textSnippet",
