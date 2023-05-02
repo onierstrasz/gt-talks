@@ -1,0 +1,263 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:22:44.912953+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:50:20.136129+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XeeDPxm3DQCt0hl2Bq0PDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See the [esug.github.io fork](https://github.com/feenkcom/esug.github.io) and the [Call for Presentations](https://esug.github.io/2023-Conference/call2023.html).  (Deadline June 1.)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:23:39.54698+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:24:08.572021+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A4zFQhm3DQC2P+CLBq0PDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Topic: “Teaching Moldable Development”"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-02T17:47:18.789331+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-02T17:49:20.421114+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "C4lAfBm3DQCEciUcBq0PDA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "! Teaching Moldable Development\n\nOscar Nierstrasz\n\n\"\"Abstract:\"\"\n\n\n\n\"\"Bio:\"\"\nOscar is Professor emeritus of Computer Science at the University of Bern, where he ran the Software Composition Group from 1994-2021. \nSince then he has been working at feenk.com, producing teaching material on Moldable Development, and onboarding developers to work with the Glamourous Toolkit.\nOscar is co-author of over 400 publications, including the open-source books Object-Oriented Reengineering Patterns and Pharo by Example."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:24:09.021568+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:39:42.253335+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MEuHRBm3DQC5Lt9gBq0PDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Abstract"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-02T20:13:15.505553+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-02T20:13:17.299123+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "RVpOoRu3DQCztzt5CPhyAw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "*** ESUG Teaching Moldable Development\n\nTitle: Teaching Moldable Development\n\n# Abstract \n\nMoldable Development is a way of developing software in which you build many, small custom tools to solve problems.\nAlthough it builds on Smalltalk and on well-understood object-oriented principles, it inverts the classical IDE by focusing on objects rather than classes or source code, and by putting a (moldable) Object Inspector at the center of the development environment.\n\nTeaching Moldable Development to newcomers, to experienced programmers, or even to seasoned Smalltalkers poses numerous challenges. In this experience talk, we draw some lessons from our experiences in onboarding developers and teaching moldable development in practice.\nIn particular, we ...\n\n\n\n\n\n# Experiences\n\nP2 lecture and Ludo Game\nVISSOFT talk\n7' YouTube videos\nOnboarding Pablo\nPetitParser SPL lecture\n\n# Past concerns\n\nDisconnect/gap between source code and running app.\nPartially addressed by Morphic and Seadie, but IDE is still focused on source code editing.\n\nMD pushes the live programming experience: navigating between app, live objects, narratives. The Inspector and the Playground are the main development tools, not the System Browser.\n\n# Present concerns\n\nHow to teach to:\nnewcomers\nexperienced Smalltalkers\nresearchers\n\n# Some lessons\n\nDiscord is a great platform.\nMake it easy for people to ask questions and get answers fast.\nBuild live documentation into the system. (Not just class comments.)\nMake the system explorable. \nShort, dense videos are appreciated (but a lot of work).\nExploration is a skill that can be learned.\n\n# What is MD in a nutshell?\n\nThere is a technical answer and a process-oriented answer.\n\nTechnically there are various enablers, like live, hyperlinked notebooks, examples, moldable tools, custom views, Miller columns, drilling, modeless interaction, querying, contextual spotter searchers etc etc\n\nFrom a process perspective, you always start from questions. You build an explorable domain model, and build custom views that answer questions. You document and describe the steps using notebooks.\n\n# Challenges\n\nPeople hate change.\nSo don't try to sell MD as a radically different way of development (though it is).\n\n"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T17:24:09.336569+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-02T20:13:14.641463+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gBiMRBm3DQC5b2dmBq0PDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Notes"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-02T17:22:44.649139+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-02T17:22:44.649139+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "*** ESUG 2023 experience talk"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "23e07f3f-19b7-0d00-ad9e-31fc06ad0f0c"
+	}
+}
