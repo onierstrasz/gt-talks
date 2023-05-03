@@ -23,8 +23,6 @@ BATbern50Slideshow show
 ```
 
 # VISSOFT 2022
-
-To preview the draft of the VISSOFT 2022 talk:
 ```
 Vissoft2022Slideshow show
 ```
