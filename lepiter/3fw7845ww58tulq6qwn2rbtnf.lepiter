@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:45.901225+02:00"
+						"dateAndTimeString" : "2023-05-03T09:05:54.114054+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T15:41:05.334823+02:00"
+						"dateAndTimeString" : "2023-05-03T09:06:11.372087+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,78 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "*** BAT talk outline\n\n# To do:\n\n- Summarize the gaps\n- Can we use Wardley maps to visualize gaps and what is enabled?\n\n\n# Mind the gap — 50 years of shortening feedback loops\n\nRetrospective of my own 50 years in CS.\nAlso pointing to Moldable Development.\n\nIdea: software life cycle is always too long. We have been searching for ways to shorten it. \nSpiral lifecycle, 4th Generation, RAD, 5th Generation, Test-first, Agile, DevOps, Low-code, No-code. \nMoldable Development is a natural step in this direction.\n\nNB: Also create a blog post.\n\n---\n# 1. Live vs batch programming\n\n1972 UW APL programming on Honeywell.\n(Mention Iceland open air museum)\nGetting fast feedback in a live environment.\nStep back to FORTRAN and optical read cards with 3-day turnaround.\nDiscovered UofT keypunches with faster feedback.\n\nFirst experience with Eliza, with game of Life, and APL 1-liners.\nAPL very concise, but not good for reading.\nMatrix manipulation not ideal for modeling.\n\nAccelerator: live programming. Shortening the time to running and getting results. Speeds up thinking.\nCan try out stuff faster.\nBut what does it enable?\n\nDownside is readability. APL too concise, FORTRAN too verbose. Hard to read cards. Gap with domain models.\n\nAt this time:\nBrooks Mythical Man Month.\nSpiral lifecycle, 4th Generation, RAD.\nSimula was invented, Smalltalk conceived.\n\n---\n# 2. The paperless office and Objects\n\nThe paperless office.\nElectronic office procedures.\nToday PDF is the standard.\n\nUofT MSc — where are the objects?\nHard to read C code.\n\nThe gap between domain model and the implementation slowed down extension to automatic procedures.\n\nSmalltalk-80 — August 1981 Byte special issue.\nObjects needed to develop advanced prototypes.\nBut Smalltalk not available on our machines.\nImplementing our own OOPL.\n\n1980s showed that OOP was better for modeling.\nFaster from domain modeling to design and implementation.\nBut this also enabled more rapid growth.\nEasier to see where features need to be added.\nBetter for writing and reading code. \nBetter cohesion — data and code closer together.\n\nDownside: performance, gap between code (classes) and runtime (objects).\n\nFirst experience with ST around 1988 — didn't know how to use it.\nTen years later used it for FAMOOS.\n\nViews of OO.\nJohnson: 3 views of OOP — Scandinavian, Mystical, SE.\nSimula: Programming is simulation.\nProgramming is modeling.\nNygaard: Programming is understanding.\nKay: It's objects all the way down.\n\n---\n# 3. The fifth generation\n\nFrom 1st to 5th generation languages.\nJust describe your problem and the AI will write the code. (Sound familiar?)\nBased on logic programming.\nAccelerator: declarative programming.\nUse to express knowledge base of facts and rules.\nEnabled expert systems.\nDownside: Debugging is hard. Declarative is not really declarative when you have to reason about what the Prolog engine is doing.\n\n\n5th generation programming.\nAutomatically generated programs.\nToday: quality depends on the training data\n\n---\n# 4. OO Trends\n\nWhat did they accelerate? What did they enable?\n\nDesign Patterns and Frameworks. Components.\nAccelerated design and programming of common problems. Produced a common vocabulary.\nEnabled ...\nDownside ...\n\n? Applications = Components + Scripts \n\nAutomated testing.\nAccelerated testing. Test-first.\nEnabled refactoring and eventually DevOps.\nDownside ...\n\nAgile.\nLow-code, no-code.\nDevOps.\n\n---\n# 5. Reverse and re-engineering\n\nSoftware analysis.\nFAMOOS Project.\nReengineering OO legacy systems towards component-based frameworks.\n\nNumerous lessons learned.\n\nNeed a repository for analysis.\nBuilt MOOSE using Smalltalk.\nAll views are inspectors!\nAn explorable software model is key to understanding.\n\nThere exist reverse and reengineering patterns.\nLightweight tools and patterns.\n\nAccelerators? Enablers? Downsides? ...\n\n---\n# 6. Moldable development\n\nTG: Building software today is not sustainable because as the software grows, the “recycling function” (reusing software for new purposes) stays a constant speed because it relies on reading. To fix this, understanding a system should not depend on its size, so it must not depend on reading.\n\nIn GT you search directly in the system. Systems should be explorable and explainable.\n\n\n---\n\nPoints to think about.\n\nHow to improve decision making?\n\n...\n\nCheck out https://wardleypedia.org\n\n\n\n"
+				"string" : "See also [[BATbern50 notes]] "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-03T09:32:36.988893+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-03T09:41:08.454661+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pXYIzCa3DQCr4tJKB4QFPw=="
+				},
+				"code" : "BATbern50Slideshow show"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-03T09:07:48.847929+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-03T09:07:48.847929+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "20JVcya3DQCe6ZPqB4QFPw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},

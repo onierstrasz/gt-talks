@@ -9,7 +9,7 @@ VissoftSlideshow show
 Class {
 	#name : #Vissoft2022Slideshow,
 	#superclass : #PrioritySlideshow,
-	#category : #GtTalks
+	#category : #'GtTalks-Slideshows'
 }
 
 { #category : #accessing }
@@ -35,6 +35,15 @@ Vissoft2022Slideshow >> coda: aSlide [
 Blue classes and packages contain at least one custom view.
 Green ones have at least one example..');
 		element: [ GtTour new treemapWithViewsAndExamples  ]
+]
+
+{ #category : #page }
+Vissoft2022Slideshow >> database [
+	"All the pages"
+
+	<gtExample>
+	<noTest>
+	^ self db
 ]
 
 { #category : #slides }
