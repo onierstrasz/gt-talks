@@ -25,10 +25,9 @@ BaselineOfGtTalks >> baseline: spec [
 				baseline: 'GToolkitMoldableDevelopmentDemo'
 					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ];
 				baseline: 'GToolkitDemoSlideshows'
-					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ];
-				baseline: 'GToolkit'
-					with: [ spec repository: 'github://feenkcom/gtoolkit:main/src' ].
+					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ].
 			spec
 				package: 'GtTalks'
-				with: [ spec requires: #('GToolkitLudoDemo' 'GToolkitMoldableDevelopmentDemo' 'GToolkitDemoSlideshows' 'GToolkit') ] ]
+				with: [ spec
+						requires: #('GToolkitLudoDemo' 'GToolkitMoldableDevelopmentDemo' 'GToolkitDemoSlideshows') ] ]
 ]
