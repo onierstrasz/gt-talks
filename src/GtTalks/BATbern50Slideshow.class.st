@@ -18,6 +18,22 @@ BATbern50Slideshow >> database [
 	^ self db
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> ibm2741: aSlide [
+	<gtSlide>
+	
+	^ (aSlide textAndElement)
+		elementWeight: 0.60;
+		priority: (self priorityFor: #ibm2741:);
+		newTextWithFormat:
+				(self
+						asText:
+							'The IBM 2741');
+		element:
+				[ GtFilePictureLiveSlide new
+						fileReference: (GtResourcesUtility resourceAtPath: self pictures / 'ibm2741.png') ]
+]
+
 { #category : #initialization }
 BATbern50Slideshow >> initializeDb [
 	"self db addPage: self inspectingLudoPage."
@@ -33,28 +49,9 @@ BATbern50Slideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
-		#titleSlide:
-		
+		titleSlide:
+		ibm2741:
 		)
-]
-
-{ #category : #page }
-BATbern50Slideshow >> smalltalk80: aSlide [
-	"In the late 60s, Alan Kay predicted that in the foreseeable future handheld multimedia computers would become affordable. He called this a “Dynabook”. (The photo shows a mockup, not a real computer.)
-He reasoned that such systems would need to be based on object from the ground up, so he set up a lab at the Xerox Palo Alto Research Center (PARC) to develop such a fully object-oriented system, including both software and hardware. They developed the first graphical workstations with windowing system and mouse."
-
-	<gtSlide>
-	
-	^ (aSlide textAndElement)
-		elementWeight: 0.60;
-		priority: (self priorityFor: #smalltalk80:);
-		newTextWithFormat:
-				(self
-						asText:
-							'Smalltalk was the first purely object-oriented language and environment, with the first interactive, graphical IDE.');
-		element:
-				[ GtFilePictureLiveSlide new
-						fileReference: (GtResourcesUtility resourceAtPath: self pictures / 'ibm2741.png') ]
 ]
 
 { #category : #slides }
