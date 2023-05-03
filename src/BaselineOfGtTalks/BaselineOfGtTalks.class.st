@@ -17,17 +17,5 @@ BaselineOfGtTalks class >> loadLepiter [
 { #category : #accessing }
 BaselineOfGtTalks >> baseline: spec [
 	<baseline>
-	spec
-		for: #common
-		do: [ "spec
-				baseline: 'GToolkitLudoDemo'
-					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ];
-				baseline: 'GToolkitMoldableDevelopmentDemo'
-					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ];
-				baseline: 'GToolkitDemoSlideshows'
-					with: [ spec repository: 'github://feenkcom/gtoolkit-demos:main/src' ]."
-			spec
-				package: 'GtTalks'
-				"with: [ spec
-						requires: #('GToolkitLudoDemo' 'GToolkitMoldableDevelopmentDemo' 'GToolkitDemoSlideshows') ]" ]
+	spec for: #common do: [ spec package: 'GtTalks' ]
 ]
