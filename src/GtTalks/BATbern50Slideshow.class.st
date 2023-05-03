@@ -42,5 +42,5 @@ BATbern50Slideshow >> titleSlide: aSlide [
 		subtitleBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Mind the gap');
 		subtitleWithFormat: (self asSubTitle: '50 years of shortening feedback loops');
-		footerWithFormat: (self asBigText: '@onierstrasz — feenk.com')
+		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
