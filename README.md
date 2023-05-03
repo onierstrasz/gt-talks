@@ -1,6 +1,8 @@
-# gt-talks
+# gt-talks README
 
 A place for my GT slideshows.
+
+To run these, please [download  Glamorous Toolkit](https://gtoolkit.com) and then load this repo into the image:
 
 ```
 Metacello new
@@ -9,10 +11,18 @@ Metacello new
 	load
 ```
 
-Load the associated lepiter database:
+Also load the associated lepiter database:
 ```
 BaselineOfGtTalks loadLepiter
 ```
+
+# BATbern50 (in progress)
+
+```
+BATbern50Slideshow show
+```
+
+# VISSOFT 2022
 
 To preview the draft of the VISSOFT 2022 talk:
 ```
