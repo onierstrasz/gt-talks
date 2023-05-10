@@ -21,17 +21,11 @@ BATbern50Slideshow >> database [
 { #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
 	<gtSlide>
-	
-	^ (aSlide textAndElement)
+	^ aSlide textAndElement
 		elementWeight: 0.60;
 		priority: (self priorityFor: #ibm2741:);
-		newTextWithFormat:
-				(self
-						asText:
-							'The IBM 2741');
-		element:
-				[ GtFilePictureLiveSlide new
-						fileReference: (GtResourcesUtility resourceAtPath: self pictures / 'ibm2741.png') ]
+		newTextWithFormat: (self asText: 'The IBM 2741');
+		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm2741.png' ]
 ]
 
 { #category : #initialization }
@@ -41,7 +35,10 @@ BATbern50Slideshow >> initializeDb [
 
 { #category : #accessing }
 BATbern50Slideshow >> pictures [
-	^ Path * 'onierstrasz' / 'gt-talks' / 'data' / 'images'
+	<gtExample>
+	<noTest>
+	^ GtResourcesUtility
+		resourceAtPath: Path * 'onierstrasz' / 'gt-talks' / 'data' / 'images'
 ]
 
 { #category : #accessing }
