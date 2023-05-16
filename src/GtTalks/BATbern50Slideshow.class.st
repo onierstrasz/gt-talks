@@ -14,9 +14,8 @@ BATbern50Slideshow class >> show [
 BATbern50Slideshow >> aplSieve: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #ibm2741:);
-		"newTextWithFormat: (self asText: 'A prime sieve in APL');"
-		newFadedText: 'The IBM 2741';
+		priority: (self priorityFor: #aplSieve:);
+		newFadedText: 'A prime sieve in APL';
 		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'apl-prime-sieve.png' ]
 ]
 
@@ -33,9 +32,17 @@ BATbern50Slideshow >> ibm2741: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibm2741:);
-		"newTextWithFormat: (self asText: 'The IBM 2741');"
 		newFadedText: 'The IBM 2741';
 		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm2741.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> ibmOpticalCard: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #ibmOpticalCard:);
+		newFadedText: 'IBM education FORTRAN opticalmark card';
+		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm-optical-mark-card.png' ]
 ]
 
 { #category : #initialization }
@@ -393,6 +400,8 @@ BATbern50Slideshow >> slidePriorities [
 			aplSieve:
 			ibm2741:
 			theTypist:
+			ibmOpticalCard:
+			
 			markCardsMap:
 		
 		modelingGap:
