@@ -540,7 +540,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-16T15:56:08.74369+02:00"
+												"dateAndTimeString" : "2023-05-16T16:58:39.693396+02:00"
 											}
 										},
 										"editEmail" : {
@@ -551,7 +551,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-16T15:56:17.984021+02:00"
+												"dateAndTimeString" : "2023-05-16T16:58:48.379372+02:00"
 											}
 										},
 										"uid" : {
@@ -561,7 +561,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "***Does OOP enable something "
+										"string" : "***What does OOP enable that is new?***"
 									},
 									{
 										"__type" : "textSnippet",

@@ -29,6 +29,16 @@ BATbern50Slideshow >> database [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> eniacManualTesting: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #eniacManualTesting:);
+		newFadedText: 'Manual testing';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'eniac.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
 		<gtSlide>
 	^ aSlide labelAndElement
@@ -378,7 +388,9 @@ BATbern50Slideshow >> modelingGap: aSlide [
 		paragraphWithFormat:
 				(self
 						asBigText:
-							'
+'
+
+
 Objects and the Paperless Office
 ')
 ]
@@ -796,7 +808,9 @@ BATbern50Slideshow >> realizationGap: aSlide [
 		paragraphWithFormat:
 				(self
 						asBigText:
-							'
+'
+
+
 From APL to FORTRAN
 ')
 ]
@@ -819,10 +833,29 @@ BATbern50Slideshow >> slidePriorities [
 			theElectronicOffice:
 			whereAreTheObjects:
 			oopEarlyHistory:
-			
 			oopMap:
 		
+		testingGap:
+			eniacManualTesting:
+		
 		)
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> testingGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #testingGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Testing Gap');
+		paragraphWithFormat:
+				(self
+						asBigText: 
+'
+
+
+From manual to automated testing
+')
 ]
 
 { #category : #slides }
