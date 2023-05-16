@@ -37,7 +37,14 @@ BATbern50Slideshow >> initializeDb [
 BATbern50Slideshow >> markCards2Terminals [
 	<gtExample>
 	<noTest>
-	^ (LeWardleyMapSnippet new wardleyMap: (GtWardleyMapFromDictionaryImporter new importWardleyMapFrom: (STONJSON fromString: '{
+	^ LeWardleyMapSnippet new
+		wardleyMap: (GtWardleyMapFromDictionaryImporter new
+				importWardleyMapFrom: (STONJSON fromString: self markCards2TerminalsJSON))
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> markCards2TerminalsJSON [
+	^ '{
 	"nodes" : [
 		{
 			"id" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02",
@@ -330,7 +337,17 @@ BATbern50Slideshow >> markCards2Terminals [
 			"arrow" : false
 		}
 	]
-}')))
+}'
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> markCardsMap: aSlide [
+	<gtSlide>
+	^ aSlide textAndElement
+		elementWeight: 0.5;
+		priority: (self priorityFor: #markCardsMap:);
+		newTextWithFormat: (self asHeader: 'Header') bold , self cr , (self asText: 'description');
+		element: [ GtWardleyMapSlide new json: self markCards2TerminalsJSON ]
 ]
 
 { #category : #accessing }
@@ -365,6 +382,7 @@ BATbern50Slideshow >> slidePriorities [
 		
 		realizationGap:
 			ibm2741:
+			markCardsMap:
 		
 		modelingGap:
 		

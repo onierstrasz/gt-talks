@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-16T12:09:22.030451+02:00"
+									"dateAndTimeString" : "2023-05-16T12:09:43.667329+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Wardley maps: marked cards to live terminals]] "
+							"string" : "[[Wardley maps: marked cards to interactive terminals]] "
 						}
 					]
 				},

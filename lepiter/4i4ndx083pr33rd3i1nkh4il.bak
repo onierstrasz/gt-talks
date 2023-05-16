@@ -379,7 +379,7 @@
 								"uuid" : "3d501148-2eb8-0d00-8d27-69e80af31c02"
 							},
 							"label" : {
-								"text" : "Live terminal",
+								"text" : "Live APL terminal",
 								"x" : 1.75,
 								"y" : 2.6666666666666665
 							},
@@ -489,6 +489,80 @@
 					]
 				},
 				"snippetHeight" : 439
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:23:10.205251+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:23:10.205251+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UN7qsS64DQCOm5a/CvMcAg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:23:11.634639+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:23:23.717634+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "D64Asi64DQCOoCd2CvMcAg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "NB: The script is for [](https://onlinewardleymaps.com). "
 			}
 		]
 	},
@@ -511,12 +585,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-16T12:09:22.02125+02:00"
+			"dateAndTimeString" : "2023-05-16T12:23:52.065835+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Wardley maps: marked cards to live terminals"
+		"title" : "Wardley map: marked cards to interactive terminals"
 	},
 	"uid" : {
 		"__type" : "uuid",
