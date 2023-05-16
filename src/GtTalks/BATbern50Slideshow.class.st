@@ -368,6 +368,416 @@ BATbern50Slideshow >> markCardsMap: aSlide [
 		element: [ GtWardleyMapSlide new json: self markCards2TerminalsJSON ]
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> modelingGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #modelingGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Modeling Gap');
+		paragraphWithFormat:
+				(self
+						asBigText:
+							'
+Objects and the Paperless Office
+')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> oopEarlyHistory: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #oopEarlyHistory:);
+		newFadedText: 'A brief early history of OOP';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'oopEarlyHistory.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> oopMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #oopMap:);
+		newFadedText: 'Closing the modeling gap';
+		element: [ GtWardleyMapSlide new json: self oopMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> oopMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "1192f782-31b8-0d00-bbf4-85220c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.28431411265564316,
+			"y" : 0.8447389476451392,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.083333333333333,
+				"y" : 1.0833333333333333,
+				"text" : "Low-level code"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "01d98384-31b8-0d00-bbf5-b2390c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.2980038226944468,
+			"y" : 0.5570573904275601,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.75,
+				"y" : 1.6666666666666667,
+				"text" : "Design"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.43699123374777976,
+			"y" : 0.16035158264385,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -6.166666666666667,
+				"y" : -0.3333333333333333,
+				"text" : "Application domain"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ecc6c485-31b8-0d00-bbf7-96930c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5220779094735264,
+			"y" : 0.6136669018022712,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 4.5,
+				"y" : 0.4166666666666667,
+				"text" : "OO code"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "a4fb4e86-31b8-0d00-bbf8-a0cb0c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5310504818333048,
+			"y" : 0.46550916850481655,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 4.75,
+				"y" : 0.3333333333333333,
+				"text" : "OO design"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "031fab86-31b8-0d00-bbf9-6f720c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5528725205841785,
+			"y" : 0.33066434984335197,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.416666666666667,
+				"y" : 0.5,
+				"text" : "OO requirements"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.31059520277704183,
+			"y" : 0.37506971087999175,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.416666666666667,
+				"y" : 2.0,
+				"text" : "Requirements"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "62cbe291-31b8-0d00-bbfe-d0560c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.48800553898574933,
+			"y" : 0.06826363029060784,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -5.5,
+				"y" : 0.3333333333333333,
+				"text" : "Customer needs"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "42dfe198-31b8-0d00-bc00-e3760c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.34645946564685726,
+			"y" : 0.22104645706940637,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -8.75,
+				"y" : 0.16666666666666666,
+				"text" : "Development and maintenance"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "4afee69a-31b8-0d00-bc01-925a0c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6320564423996726,
+			"y" : 0.19776571830404843,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 11.333333333333334,
+				"y" : 0.4166666666666667,
+				"text" : "Development and maintenance"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "01d98384-31b8-0d00-bbf5-b2390c124378",
+			"to" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "1192f782-31b8-0d00-bbf4-85220c124378",
+			"to" : "01d98384-31b8-0d00-bbf5-b2390c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "a4fb4e86-31b8-0d00-bbf8-a0cb0c124378",
+			"to" : "031fab86-31b8-0d00-bbf9-6f720c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "ecc6c485-31b8-0d00-bbf7-96930c124378",
+			"to" : "a4fb4e86-31b8-0d00-bbf8-a0cb0c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "031fab86-31b8-0d00-bbf9-6f720c124378",
+			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "62cbe291-31b8-0d00-bbfe-d0560c124378",
+			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"to" : "031fab86-31b8-0d00-bbf9-6f720c124378",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "01d98384-31b8-0d00-bbf5-b2390c124378",
+			"to" : "a4fb4e86-31b8-0d00-bbf8-a0cb0c124378",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "1192f782-31b8-0d00-bbf4-85220c124378",
+			"to" : "ecc6c485-31b8-0d00-bbf7-96930c124378",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
+			"to" : "4afee69a-31b8-0d00-bc01-925a0c124378",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "4afee69a-31b8-0d00-bc01-925a0c124378",
+			"to" : "031fab86-31b8-0d00-bbf9-6f720c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
+			"to" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		}
+	]
+}'
+]
+
 { #category : #accessing }
 BATbern50Slideshow >> pictures [
 	<gtExample>
@@ -408,6 +818,9 @@ BATbern50Slideshow >> slidePriorities [
 		modelingGap:
 			theElectronicOffice:
 			whereAreTheObjects:
+			oopEarlyHistory:
+			
+			oopMap:
 		
 		)
 ]
@@ -417,7 +830,7 @@ BATbern50Slideshow >> theElectronicOffice: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theElectronicOffice:);
-		newFadedText: 'The Electronic Office (1980)';
+		newFadedText: 'Building the Electronic Office (1980)';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'theElectronicOffice.jpg' ]
 ]
