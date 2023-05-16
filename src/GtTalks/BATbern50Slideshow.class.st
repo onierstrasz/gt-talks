@@ -406,8 +406,20 @@ BATbern50Slideshow >> slidePriorities [
 			markCardsMap:
 		
 		modelingGap:
+			theElectronicOffice:
+			whereAreTheObjects:
 		
 		)
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> theElectronicOffice: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #theElectronicOffice:);
+		newFadedText: 'The Electronic Office (1980)';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'theElectronicOffice.jpg' ]
 ]
 
 { #category : #slides }
@@ -430,4 +442,14 @@ BATbern50Slideshow >> titleSlide: aSlide [
 		titleWithFormat: (self asTitle: 'Mind the gap');
 		subtitleWithFormat: (self asSubTitle: '50 years of shortening feedback loops');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> whereAreTheObjects: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #whereAreTheObjects:);
+		newFadedText: 'Where are the Objects?';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'whereAreTheObjects.jpg' ]
 ]
