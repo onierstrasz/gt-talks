@@ -17,7 +17,7 @@ BATbern50Slideshow >> aplSieve: aSlide [
 		priority: (self priorityFor: #aplSieve:);
 		newFadedText: 'A prime sieve in APL';
 		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'apl-prime-sieve.jpg' ]
+				imageElementFromFileReference: self pictures / 'aplPrimeSieve.jpg' ]
 ]
 
 { #category : #pages }
@@ -44,7 +44,7 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 		priority: (self priorityFor: #ibmOpticalCard:);
 		newFadedText: 'IBM education FORTRAN optical mark card';
 		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'ibm-optical-mark-card.jpg' ]
+				imageElementFromFileReference: self pictures / 'ibmOpticalMarkCard.jpg' ]
 ]
 
 { #category : #initialization }
@@ -400,10 +400,9 @@ BATbern50Slideshow >> slidePriorities [
 		
 		realizationGap:
 			aplSieve:
-			ibm2741:
 			theTypist:
+			ibm2741:
 			ibmOpticalCard:
-			
 			markCardsMap:
 		
 		modelingGap:
@@ -418,7 +417,7 @@ BATbern50Slideshow >> theTypist: aSlide [
 		priority: (self priorityFor: #theTypist:);
 		newFadedText: 'The typist at the kitchen table?';
 		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'reykjavik-museum.jpg' ]
+				imageElementFromFileReference: self pictures / 'reykjavikMuseumTheTypist.jpg' ]
 ]
 
 { #category : #slides }
