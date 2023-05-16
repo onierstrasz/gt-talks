@@ -21,10 +21,10 @@ BATbern50Slideshow >> database [
 { #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
 	<gtSlide>
-	^ aSlide textAndElement
-		elementWeight: 0.60;
+	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibm2741:);
-		newTextWithFormat: (self asText: 'The IBM 2741');
+		"newTextWithFormat: (self asText: 'The IBM 2741');"
+		newFadedText: 'The IBM 2741';
 		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm2741.png' ]
 ]
 
@@ -343,10 +343,9 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 { #category : #slides }
 BATbern50Slideshow >> markCardsMap: aSlide [
 	<gtSlide>
-	^ aSlide textAndElement
-		elementWeight: 0.5;
+	^ aSlide labelAndElement
 		priority: (self priorityFor: #markCardsMap:);
-		newTextWithFormat: (self asHeader: 'Header') bold , self cr , (self asText: 'description');
+		newFadedText: 'Closing the realization gap';
 		element: [ GtWardleyMapSlide new json: self markCards2TerminalsJSON ]
 ]
 
@@ -382,11 +381,21 @@ BATbern50Slideshow >> slidePriorities [
 		
 		realizationGap:
 			ibm2741:
+			theTypist:
 			markCardsMap:
 		
 		modelingGap:
 		
 		)
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> theTypist: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #theTypist:);
+		newFadedText: 'The typist at the kitchen table?';
+		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'reykjavik-museum.png' ]
 ]
 
 { #category : #slides }
