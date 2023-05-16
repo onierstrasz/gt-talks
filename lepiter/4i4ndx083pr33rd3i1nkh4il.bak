@@ -1,0 +1,525 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:01:51.618892+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T12:02:59.715798+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rDC1ZS64DQCNnD3fCvMcAg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See also {{gtPage:Mapping Moldable Development|db=2j9m7db2i4oz116bexd7wbdxo}}  "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T11:42:44.697161+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T11:42:55.812454+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "X5BYIS64DQCL8itCCvMcAg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "APL vs FORTRAN"
+			},
+			{
+				"__type" : "wardleyMap",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T11:43:00.254802+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T11:43:00.254802+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2PJFIi64DQCMO86mCvMcAg=="
+				},
+				"wardleyMapDictionary" : {
+					"edges" : [
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.030303030303030304,
+								"green" : 0.030303030303030304,
+								"red" : 1.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "c1886227-2eb8-0d00-8c41-41130af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "88147c45-2eb8-0d00-8d26-58a30af31c02"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.030303030303030304,
+								"green" : 0.030303030303030304,
+								"red" : 1.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "88147c45-2eb8-0d00-8d26-58a30af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "3d501148-2eb8-0d00-8d27-69e80af31c02"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "c1886227-2eb8-0d00-8c41-41130af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "624bad6e-2eb8-0d00-8dfa-76970af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "88147c45-2eb8-0d00-8d26-58a30af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "3d501148-2eb8-0d00-8d27-69e80af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "dbd7e071-2eb8-0d00-8dfc-dc800af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "624bad6e-2eb8-0d00-8dfa-76970af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "dbd7e071-2eb8-0d00-8dfc-dc800af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.5004887585532747
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "dbd7e071-2eb8-0d00-8dfc-dc800af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "8a19f06b-2eb8-0d00-8df8-1b3b0af31c02"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.9198435972629521
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "8a19f06b-2eb8-0d00-8df8-1b3b0af31c02"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02"
+							},
+							"width" : 1.0
+						}
+					],
+					"nodes" : [
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02"
+							},
+							"label" : {
+								"text" : "Get it running",
+								"x" : -4.5,
+								"y" : 0.25
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.4170551300048828,
+							"y" : 0.07693088242835219
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "c1886227-2eb8-0d00-8c41-41130af31c02"
+							},
+							"label" : {
+								"text" : "Optical mark cards",
+								"x" : 2.9166666666666665,
+								"y" : 2.1666666666666665
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.2930984343923688,
+							"y" : 0.7252334825476212
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "88147c45-2eb8-0d00-8d26-58a30af31c02"
+							},
+							"label" : {
+								"text" : "Punched  cards",
+								"x" : 3.25,
+								"y" : 2.5
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.5829397682771899,
+							"y" : 0.6831589266488112
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "3d501148-2eb8-0d00-8d27-69e80af31c02"
+							},
+							"label" : {
+								"text" : "Live terminal",
+								"x" : 1.75,
+								"y" : 2.6666666666666665
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.8579581964945253,
+							"y" : 0.6338377933024274
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.9198435972629521
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "8a19f06b-2eb8-0d00-8df8-1b3b0af31c02"
+							},
+							"label" : {
+								"text" : "Experimentation",
+								"x" : 6.0,
+								"y" : 0.16666666666666666
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.6932200577833807,
+							"y" : 0.1570638947714977
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "624bad6e-2eb8-0d00-8dfa-76970af31c02"
+							},
+							"label" : {
+								"text" : "Send by courier",
+								"x" : -4.5,
+								"y" : 0.3333333333333333
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.30529647021361594,
+							"y" : 0.42227124190276194
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02"
+							},
+							"label" : {
+								"text" : "Give to operator",
+								"x" : -5.0,
+								"y" : 0.5
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.5614019299592676,
+							"y" : 0.374449015206791
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "dbd7e071-2eb8-0d00-8dfc-dc800af31c02"
+							},
+							"label" : {
+								"text" : "Just run it",
+								"x" : -3.0,
+								"y" : 1.25
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.7854364591791964,
+							"y" : 0.35634493121796695
+						}
+					]
+				},
+				"snippetHeight" : 439
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-16T11:42:44.664712+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-16T12:09:22.02125+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Wardley maps: marked cards to live terminals"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "1d115821-2eb8-0d00-8bf1-ba640af31c02"
+	}
+}
