@@ -33,7 +33,7 @@ BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #eniacManualTesting:);
-		newFadedText: 'Manual testing';
+		newFadedText: 'Manual vs automated testing';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'eniac.jpg' ]
 ]
@@ -837,7 +837,7 @@ BATbern50Slideshow >> slidePriorities [
 		
 		testingGap:
 			eniacManualTesting:
-		
+			testingMap:
 		)
 ]
 
@@ -856,6 +856,202 @@ BATbern50Slideshow >> testingGap: aSlide [
 
 From manual to automated testing
 ')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> testingMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #testingMap:);
+		newFadedText: 'From manual to automated testing';
+		element: [ GtWardleyMapSlide new json: self testingMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> testingMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.29221388375660057,
+			"y" : 0.7037096128817586,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Manual tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.579189719695904,
+			"y" : 0.6833967126290046,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Automated tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.8087029003590649,
+			"y" : 0.6716682563501506,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Generated tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4139610565270083,
+			"y" : 0.1459466287542153,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.083333333333333,
+				"y" : 0.8333333333333334,
+				"text" : "Testing"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.5880290389831488,
+			"y" : 0.21766893561915907,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 8.416666666666666,
+				"y" : 0.5,
+				"text" : "Refactoring and redesign"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"to" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : true
+		}
+	]
+}'
 ]
 
 { #category : #slides }

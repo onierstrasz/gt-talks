@@ -1,0 +1,344 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T17:07:37.630645+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T17:07:37.630645+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zR83qzK4DQCCj7gIDOQ/1A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "wardleyMap",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T17:07:41.119184+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-16T17:07:41.119184+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BVlsqzK4DQCCvbhYDOQ/1A=="
+				},
+				"wardleyMapDictionary" : {
+					"edges" : [
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "80d569af-32b8-0d00-90e3-6e050ce43fd4"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "80d569af-32b8-0d00-90e3-6e050ce43fd4"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "80d569af-32b8-0d00-90e3-6e050ce43fd4"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.030303030303030304,
+								"green" : 0.030303030303030304,
+								"red" : 1.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.030303030303030304,
+								"green" : 0.030303030303030304,
+								"red" : 1.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.5004887585532747
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "938408b3-32b8-0d00-93f2-8d700ce43fd4"
+							},
+							"width" : 2.0
+						}
+					],
+					"nodes" : [
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4"
+							},
+							"label" : {
+								"text" : "Manual tests",
+								"x" : 0.5,
+								"y" : 2.0
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.29221388375660057,
+							"y" : 0.7037096128817586
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4"
+							},
+							"label" : {
+								"text" : "Automated tests",
+								"x" : 0.5,
+								"y" : 2.0
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.579189719695904,
+							"y" : 0.6833967126290046
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4"
+							},
+							"label" : {
+								"text" : "Generated tests",
+								"x" : 0.5,
+								"y" : 2.0
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.8087029003590649,
+							"y" : 0.6716682563501506
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "80d569af-32b8-0d00-90e3-6e050ce43fd4"
+							},
+							"label" : {
+								"text" : "Testing",
+								"x" : -4.083333333333333,
+								"y" : 0.8333333333333334
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.4139610565270083,
+							"y" : 0.1459466287542153
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.5004887585532747
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "938408b3-32b8-0d00-93f2-8d700ce43fd4"
+							},
+							"label" : {
+								"text" : "Refactoring and redesign",
+								"x" : 8.416666666666666,
+								"y" : 0.5
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.5880290389831488,
+							"y" : 0.21766893561915907
+						}
+					]
+				},
+				"snippetHeight" : 664
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-16T17:07:37.492259+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-16T17:07:37.492259+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Wardley map: from manual to automated testing"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "020235ab-32b8-0d00-8263-cf240ce43fd4"
+	}
+}
