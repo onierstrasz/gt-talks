@@ -10,6 +10,16 @@ BATbern50Slideshow class >> show [
 	super show
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> aplSieve: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #ibm2741:);
+		"newTextWithFormat: (self asText: 'A prime sieve in APL');"
+		newFadedText: 'The IBM 2741';
+		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'apl-prime-sieve.png' ]
+]
+
 { #category : #pages }
 BATbern50Slideshow >> database [
 	"All the pages"
@@ -380,6 +390,7 @@ BATbern50Slideshow >> slidePriorities [
 		titleSlide:
 		
 		realizationGap:
+			aplSieve:
 			ibm2741:
 			theTypist:
 			markCardsMap:
