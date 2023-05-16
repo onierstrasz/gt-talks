@@ -16,7 +16,8 @@ BATbern50Slideshow >> aplSieve: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #aplSieve:);
 		newFadedText: 'A prime sieve in APL';
-		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'apl-prime-sieve.png' ]
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'apl-prime-sieve.jpg' ]
 ]
 
 { #category : #pages }
@@ -29,11 +30,11 @@ BATbern50Slideshow >> database [
 
 { #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
-	<gtSlide>
+		<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibm2741:);
 		newFadedText: 'The IBM 2741';
-		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm2741.png' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'ibm2741.jpg' ]
 ]
 
 { #category : #slides }
@@ -41,8 +42,9 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibmOpticalCard:);
-		newFadedText: 'IBM education FORTRAN opticalmark card';
-		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'ibm-optical-mark-card.png' ]
+		newFadedText: 'IBM education FORTRAN optical mark card';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'ibm-optical-mark-card.jpg' ]
 ]
 
 { #category : #initialization }
@@ -415,7 +417,8 @@ BATbern50Slideshow >> theTypist: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theTypist:);
 		newFadedText: 'The typist at the kitchen table?';
-		element: [ GtFilePictureLiveSlide new fileReference: self pictures / 'reykjavik-museum.png' ]
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'reykjavik-museum.jpg' ]
 ]
 
 { #category : #slides }
