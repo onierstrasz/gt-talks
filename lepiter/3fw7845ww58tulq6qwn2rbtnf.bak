@@ -923,7 +923,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-16T17:24:10.912235+02:00"
+												"dateAndTimeString" : "2023-05-16T17:24:18.450635+02:00"
 											}
 										},
 										"uid" : {
@@ -933,7 +933,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Early: Reuse, components, 5th generation; now Chat"
+										"string" : "Early: Reuse, components, 5th generation; now ChatGPT. Low code, no code."
 									},
 									{
 										"__type" : "textSnippet",

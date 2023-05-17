@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-16T15:01:51.453653+02:00"
+						"dateAndTimeString" : "2023-05-17T10:38:49.623779+02:00"
 					}
 				},
 				"uid" : {
@@ -108,6 +108,40 @@
 					"uidString" : "pXYIzCa3DQCr4tJKB4QFPw=="
 				},
 				"code" : "BATbern50Slideshow show."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T10:38:46.666821+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T10:38:56.577778+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "NTpsWkG4DQCg1YCdDPLDZA=="
+				},
+				"code" : "BATbern50Slideshow new."
 			},
 			{
 				"__type" : "pharoSnippet",

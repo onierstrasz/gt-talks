@@ -59,7 +59,8 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 
 { #category : #initialization }
 BATbern50Slideshow >> initializeDb [
-	"self db addPage: self inspectingLudoPage."
+	db := nil.
+	self db addPage: self wardleyMapsPage
 ]
 
 { #category : #wardley }
@@ -1084,6 +1085,30 @@ BATbern50Slideshow >> titleSlide: aSlide [
 		titleWithFormat: (self asTitle: 'Mind the gap');
 		subtitleWithFormat: (self asSubTitle: '50 years of shortening feedback loops');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> wardleyMapsPage [
+"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
+	<gtExample>
+	| page |
+	page := LePage named: 'Wardley map'.
+	{#markCards2TerminalsJSON -> '# Closing the realization gap'.
+	#oopMapJSON -> '# Closing the modeling gap'.
+	#testingMapJSON -> '# From manual to automated testing'
+	}
+		do: [ :assoc | 
+			page
+				addSnippet: (LeTextSnippet new
+						string: assoc value;
+						yourself).
+
+			page
+				addSnippet: (LeWardleyMapSnippet new
+						wardleyMap: (GtWardleyMapFromDictionaryImporter new
+								importWardleyMapFrom: (STONJSON fromString: (self perform: assoc key)))) ].
+
+	^ page
 ]
 
 { #category : #slides }
