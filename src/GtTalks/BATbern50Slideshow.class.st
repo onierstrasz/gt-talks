@@ -29,6 +29,23 @@ BATbern50Slideshow >> database [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> deploymentGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #deploymentGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Deployment Gap');
+		paragraphWithFormat:
+				(self
+						asBigText:
+'
+
+
+The gap from development to deployment
+')
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
@@ -839,6 +856,11 @@ BATbern50Slideshow >> slidePriorities [
 		testingGap:
 			eniacManualTesting:
 			testingMap:
+
+		deploymentGap:
+			devOpsMap:
+		
+		sustainabilityGap:
 		)
 ]
 
@@ -1089,20 +1111,21 @@ BATbern50Slideshow >> titleSlide: aSlide [
 
 { #category : #pages }
 BATbern50Slideshow >> wardleyMapsPage [
-"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
+	"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
+
 	<gtExample>
 	| page |
-	page := LePage named: 'Wardley map'.
-	{#markCards2TerminalsJSON -> '# Closing the realization gap'.
-	#oopMapJSON -> '# Closing the modeling gap'.
-	#testingMapJSON -> '# From manual to automated testing'
+	page := LePage named: 'Wardley maps'.
+	{
+		#markCards2TerminalsJSON -> '# Closing the realization gap'.
+		#oopMapJSON -> '# Closing the modeling gap'.
+		#testingMapJSON -> '# From manual to automated testing'
 	}
 		do: [ :assoc | 
 			page
 				addSnippet: (LeTextSnippet new
 						string: assoc value;
 						yourself).
-
 			page
 				addSnippet: (LeWardleyMapSnippet new
 						wardleyMap: (GtWardleyMapFromDictionaryImporter new
