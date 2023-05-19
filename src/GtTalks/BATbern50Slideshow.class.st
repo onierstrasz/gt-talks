@@ -20,6 +20,14 @@ BATbern50Slideshow >> aplSieve: aSlide [
 				imageElementFromFileReference: self pictures / 'aplPrimeSieve.jpg' ]
 ]
 
+{ #category : #example }
+BATbern50Slideshow >> batBern50Slideshow [
+	"Example for demo purposes"
+	<gtExample>
+	<noTest>
+	^ self class new
+]
+
 { #category : #pages }
 BATbern50Slideshow >> database [
 	"All the pages"
@@ -285,7 +293,8 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 { #category : #initialization }
 BATbern50Slideshow >> initializeDb [
 	db := nil.
-	self db addPage: self wardleyMapsPage
+	self db addPage: self wardleyMapsPage.
+	self db addPage: self slideshowInspectionPage
 ]
 
 { #category : #wardley }
@@ -1525,7 +1534,35 @@ BATbern50Slideshow >> slidePriorities [
 		sustainabilityGap:
 			moldableDevelopmentMap:
 
+			
+		"Not yet used ..."
+		slideshowInspection:
 		)
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> slideshowInspection: aSlide [
+	<gtSlide>
+		^ aSlide lepiterPage
+		priority: (self priorityFor: #slideshowInspection:);
+		startPage: (self db pageNamed: 'Inspecting the slideshow')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> slideshowInspectionPage [
+	<gtExample>
+	^ (LePage named: 'Inspecting the slideshow')
+		addSnippet: (LeTextSnippet new
+				string: 'We can embed an explorable instance of the slideshow within a notebook page.';
+				yourself);
+		addSnippet: (LeExampleSnippet new
+				exampleBehaviorName: #BATbern50Slideshow;
+				exampleSelector: #batBern50Slideshow;
+				noCode: true);
+		addSnippet: (LeTextSnippet new
+				string: '';
+				yourself);
+		yourself
 ]
 
 { #category : #slides }
