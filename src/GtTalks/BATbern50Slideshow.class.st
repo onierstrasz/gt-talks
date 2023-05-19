@@ -59,7 +59,7 @@ BATbern50Slideshow >> devOpsMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #devOpsMap:);
 		newFadedText: 'Closing the deployment gap';
-		element: [ GtWardleyMapSlide new json: self devOpsMapJSON ]
+		element: [ self scaledWardleyMapForJson: self devOpsMapJSON ]
 ]
 
 { #category : #wardley }
@@ -269,6 +269,18 @@ BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 				title: 'Wardley maps';
 				items: [ self wardleyMaps ];
 				actionUpdateButton ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> houseDeployment: aSlide [
+	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #houseDeployment:);
+		newFadedText: 'The gap from development to deployment';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'coastalasbestosremoval-vectorized.jpg' ]
 ]
 
 { #category : #slides }
@@ -610,7 +622,7 @@ BATbern50Slideshow >> markCardsMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #markCardsMap:);
 		newFadedText: 'Closing the realization gap';
-		element: [ GtWardleyMapSlide new json: self markCards2TerminalsJSON ]
+		element: [ self scaledWardleyMapForJson: self markCards2TerminalsJSON ]
 ]
 
 { #category : #slides }
@@ -636,7 +648,7 @@ BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #moldableDevelopmentMap:);
 		newFadedText: 'Mapping moldable development';
-		element: [ GtWardleyMapSlide new json: self moldableDevelopmentMapJSON ]
+		element: [ self scaledWardleyMapForJson: self moldableDevelopmentMapJSON ]
 ]
 
 { #category : #wardley }
@@ -1100,7 +1112,7 @@ BATbern50Slideshow >> oopMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #oopMap:);
 		newFadedText: 'Closing the modeling gap';
-		element: [ GtWardleyMapSlide new json: self oopMapJSON ]
+		element: [ self scaledWardleyMapForJson: self oopMapJSON ]
 ]
 
 { #category : #wardley }
@@ -1510,7 +1522,7 @@ BATbern50Slideshow >> productivityMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #productivityMap:);
 		newFadedText: 'Closing the productivity gap';
-		element: [ GtWardleyMapSlide new json: self productivityMapJSON ]
+		element: [ self scaledWardleyMapForJson: self productivityMapJSON ]
 ]
 
 { #category : #wardley }
@@ -1762,6 +1774,12 @@ From APL to FORTRAN
 ')
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
+	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
+		asScalableElement
+]
+
 { #category : #accessing }
 BATbern50Slideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
@@ -1787,6 +1805,7 @@ BATbern50Slideshow >> slidePriorities [
 			testingMap:
 
 		deploymentGap:
+			houseDeployment:
 			devOpsMap:
 		
 		productivityGap:
@@ -1867,7 +1886,7 @@ BATbern50Slideshow >> testingMap: aSlide [
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #testingMap:);
 		newFadedText: 'From manual to automated testing';
-		element: [ GtWardleyMapSlide new json: self testingMapJSON ]
+		element: [ self scaledWardleyMapForJson: self testingMapJSON ]
 ]
 
 { #category : #wardley }

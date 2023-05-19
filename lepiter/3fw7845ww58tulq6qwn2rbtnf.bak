@@ -607,40 +607,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "Just show the map."
-									},
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-17T14:02:40.373847+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-17T14:03:37.64583+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "4r+bM0S4DQC1wQpSClW/zA=="
-										},
-										"code" : "(BATbern50Slideshow new db pageNamed: 'Wardley maps') snippets"
 									}
 								]
 							},
@@ -716,43 +682,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "What is productivity?"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-19T15:17:57.513465+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-05-19T15:18:40.41863+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "X56IfG24DQCqQvY5CI/MGQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[productivity map]] "
 									},
 									{
 										"__type" : "textSnippet",
