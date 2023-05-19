@@ -1,0 +1,284 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T13:47:19.40654+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T13:47:19.40654+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7vO2/EO4DQC0WwCzClW/zA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "wardleyMap",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T13:47:25.11627+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-17T13:47:25.11627+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vQgO/UO4DQC0XrnMClW/zA=="
+				},
+				"wardleyMapDictionary" : {
+					"edges" : [
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "11293400-44b8-0d00-b465-323a0a55bfcc"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : true,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.030303030303030304,
+								"green" : 0.030303030303030304,
+								"red" : 1.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "11293400-44b8-0d00-b465-323a0a55bfcc"
+							},
+							"width" : 2.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.5004887585532747
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "11293400-44b8-0d00-b465-323a0a55bfcc"
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "336ffe04-44b8-0d00-b467-b3270a55bfcc"
+							},
+							"width" : 2.0
+						}
+					],
+					"nodes" : [
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc"
+							},
+							"label" : {
+								"text" : "Operational system",
+								"x" : -8.083333333333334,
+								"y" : 0.4166666666666667
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.3933947391154112,
+							"y" : 0.1398855063934514
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc"
+							},
+							"label" : {
+								"text" : "Manual deployment",
+								"x" : 6.5,
+								"y" : 2.0833333333333335
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.31108813493434695,
+							"y" : 0.5276513566341723
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "11293400-44b8-0d00-b465-323a0a55bfcc"
+							},
+							"label" : {
+								"text" : "DevOps",
+								"x" : 5.0,
+								"y" : 0.4166666666666667
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.5815588286109192,
+							"y" : 0.4430783843663677
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.5004887585532747
+							},
+							"height" : 12,
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "336ffe04-44b8-0d00-b467-b3270a55bfcc"
+							},
+							"label" : {
+								"text" : "Feature experimentation",
+								"x" : 8.0,
+								"y" : 0.16666666666666666
+							},
+							"pipeline" : {
+								"is_visible" : false
+							},
+							"width" : 12,
+							"x" : 0.5500631694885971,
+							"y" : 0.23690068493150684
+						}
+					]
+				},
+				"snippetHeight" : 730
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-17T13:47:19.348831+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2023-05-17T13:47:19.348831+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Wardley devops map"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "b810b6fc-43b8-0d00-b45a-3cbe0a55bfcc"
+	}
+}

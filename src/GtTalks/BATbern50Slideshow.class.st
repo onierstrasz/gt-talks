@@ -29,13 +29,238 @@ BATbern50Slideshow >> database [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> deploymentGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #deploymentGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Deployment Gap');
+		paragraphWithFormat:
+				(self
+						asBigText:
+'
+
+
+The gap from development to deployment
+')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> devOpsMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #devOpsMap:);
+		newFadedText: 'Closing the deployment gap';
+		element: [ GtWardleyMapSlide new json: self devOpsMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> devOpsMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.39478701200089666,
+			"y" : 0.25655217306011807,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -6.25,
+				"y" : 0.5833333333333334,
+				"text" : "Operational system"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.2874194958810925,
+			"y" : 0.6543180233008389,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -7.5,
+				"y" : 0.25,
+				"text" : "Manual deployment"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "11293400-44b8-0d00-b465-323a0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5676360997560637,
+			"y" : 0.5430783843663677,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.0,
+				"y" : 0.4166666666666667,
+				"text" : "DevOps"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "336ffe04-44b8-0d00-b467-b3270a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.5834777187402505,
+			"y" : 0.3435673515981736,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 8.0,
+				"y" : 0.16666666666666666,
+				"text" : "Feature experimentation"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.43389785647987017,
+			"y" : 0.10057603624131947,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -6.083333333333333,
+				"y" : -0.3333333333333333,
+				"text" : "Fit for purpose system"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
+			"to" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "11293400-44b8-0d00-b465-323a0a55bfcc",
+			"to" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
+			"to" : "11293400-44b8-0d00-b465-323a0a55bfcc",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "11293400-44b8-0d00-b465-323a0a55bfcc",
+			"to" : "336ffe04-44b8-0d00-b467-b3270a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
+			"to" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "336ffe04-44b8-0d00-b467-b3270a55bfcc",
+			"to" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		}
+	]
+}'
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #eniacManualTesting:);
-		newFadedText: 'Manual testing';
+		newFadedText: 'Manual vs automated testing';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'eniac.jpg' ]
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
+	<gtView>
+	^ self wardleyMaps isEmpty
+		ifTrue: [ aView empty ]
+		ifFalse: [ aView list
+				priority: 45;
+				title: 'Wardley maps';
+				items: [ self wardleyMaps ];
+				actionUpdateButton ]
 ]
 
 { #category : #slides }
@@ -59,7 +284,8 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 
 { #category : #initialization }
 BATbern50Slideshow >> initializeDb [
-	"self db addPage: self inspectingLudoPage."
+	db := nil.
+	self db addPage: self wardleyMapsPage
 ]
 
 { #category : #wardley }
@@ -165,7 +391,7 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"green" : 0.0,
 				"blue" : 0.0,
 				"alpha" : 1.0,
-				"red" : 0.9198435972629521
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.6932200577833807,
 			"y" : 0.1570638947714977,
@@ -393,6 +619,460 @@ BATbern50Slideshow >> modelingGap: aSlide [
 
 Objects and the Paperless Office
 ')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #moldableDevelopmentMap:);
+		newFadedText: 'Mapping moldable development';
+		element: [ GtWardleyMapSlide new json: self moldableDevelopmentMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> moldableDevelopmentMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "1db0e27a-6a80-0d00-af4d-82110877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.37580092176258995,
+			"y" : 0.0840559275136829,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -0.08333333333333333,
+				"y" : -1.0833333333333333,
+				"text" : "developers"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "56af4d7b-6a80-0d00-af4e-56010877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5083332367562812,
+			"y" : 0.07830118890529421,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : -0.9166666666666666,
+				"text" : "business"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.42297099820143885,
+			"y" : 0.20127285312573565,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 2.25,
+				"y" : 2.25,
+				"text" : "challenge"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "20293a7d-6a80-0d00-af50-6a320877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.3379945710837095,
+			"y" : 0.32530106822727006,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.75,
+				"y" : 1.5833333333333333,
+				"text" : "specific problem"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6728264147123146,
+			"y" : 0.1973697705797255,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.9166666666666666,
+				"y" : -1.0833333333333333,
+				"text" : "decision"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7837127275700204,
+			"y" : 0.46079254973964345,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 4.333333333333333,
+				"y" : 2.0833333333333335,
+				"text" : "generated views"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "b75d9681-6a80-0d00-af53-59810877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.716013517311151,
+			"y" : 0.8666742184741348,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "moldable tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.3034088354316547,
+			"y" : 0.4721604675991786,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.75,
+				"y" : 2.25,
+				"text" : "manual views"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "f68dcc84-6a80-0d00-af55-59850877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.17110920638489208,
+			"y" : 0.6305145941636838,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -0.3333333333333333,
+				"y" : 2.4166666666666727,
+				"text" : "manual inspection"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4101737191478624,
+			"y" : 0.638887145805496,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -1.3333333333333333,
+				"y" : 2.1666666666666665,
+				"text" : "specific coding"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "9a2e5387-6a80-0d00-af57-76000877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.5369899392985612,
+			"y" : 0.861929338530632,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "rigid tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "1db0e27a-6a80-0d00-af4d-82110877cc58",
+			"to" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
+			"to" : "56af4d7b-6a80-0d00-af4e-56010877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
+			"to" : "20293a7d-6a80-0d00-af50-6a320877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
+			"to" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "20293a7d-6a80-0d00-af50-6a320877cc58",
+			"to" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
+			"to" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"to" : "b75d9681-6a80-0d00-af53-59810877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
+			"to" : "20293a7d-6a80-0d00-af50-6a320877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "f68dcc84-6a80-0d00-af55-59850877cc58",
+			"to" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "20293a7d-6a80-0d00-af50-6a320877cc58",
+			"to" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
+			"to" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
+			"to" : "b75d9681-6a80-0d00-af53-59810877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 2.0,
+			"arrow" : false
+		},
+		{
+			"from" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
+			"to" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "f68dcc84-6a80-0d00-af55-59850877cc58",
+			"to" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "9a2e5387-6a80-0d00-af57-76000877cc58",
+			"to" : "b75d9681-6a80-0d00-af53-59810877cc58",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "f68dcc84-6a80-0d00-af55-59850877cc58",
+			"to" : "9a2e5387-6a80-0d00-af57-76000877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
+			"to" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false
+		}
+	]
+}'
 ]
 
 { #category : #slides }
@@ -837,8 +1517,32 @@ BATbern50Slideshow >> slidePriorities [
 		
 		testingGap:
 			eniacManualTesting:
+			testingMap:
+
+		deploymentGap:
+			devOpsMap:
 		
+		sustainabilityGap:
+			moldableDevelopmentMap:
+
 		)
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> sustainabilityGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #sustainabilityGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Sustainability Gap');
+		paragraphWithFormat:
+				(self
+						asBigText: 
+'
+
+
+As a system grows, reading code to recycle it becomes infeasible
+')
 ]
 
 { #category : #slides }
@@ -856,6 +1560,247 @@ BATbern50Slideshow >> testingGap: aSlide [
 
 From manual to automated testing
 ')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> testingMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #testingMap:);
+		newFadedText: 'From manual to automated testing';
+		element: [ GtWardleyMapSlide new json: self testingMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> testingMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.29221388375660057,
+			"y" : 0.7037096128817586,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Manual tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.579189719695904,
+			"y" : 0.6833967126290046,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Automated tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.8087029003590649,
+			"y" : 0.6716682563501506,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Generated tests"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.3889001445882683,
+			"y" : 0.3426683923552483,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -2.9166666666666665,
+				"y" : 0.4166666666666667,
+				"text" : "Testing"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.5894213118686346,
+			"y" : 0.2972209838293268,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 8.416666666666666,
+				"y" : 0.5,
+				"text" : "Refactoring and redesign"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "09052f1a-44b8-0d00-b525-22cf0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.41822119010326037,
+			"y" : 0.15572500755384813,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.833333333333333,
+				"y" : 0.25,
+				"text" : "Validated system"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
+			"to" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "ee9560ad-32b8-0d00-8fcd-a7e20ce43fd4",
+			"to" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
+			"to" : "09052f1a-44b8-0d00-b525-22cf0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
+			"to" : "09052f1a-44b8-0d00-b525-22cf0a55bfcc",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		}
+	]
+}'
 ]
 
 { #category : #slides }
@@ -888,6 +1833,39 @@ BATbern50Slideshow >> titleSlide: aSlide [
 		titleWithFormat: (self asTitle: 'Mind the gap');
 		subtitleWithFormat: (self asSubTitle: '50 years of shortening feedback loops');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> wardleyMaps [
+	^ self wardleyMapsPage children
+		select: [ :each | each isKindOf: LeWardleyMapSnippet ]
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> wardleyMapsPage [
+	"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
+
+	<gtExample>
+	| page |
+	page := LePage named: 'Wardley maps'.
+	{
+		#markCards2TerminalsJSON -> '# Closing the realization gap'.
+		#oopMapJSON -> '# Closing the modeling gap'.
+		#testingMapJSON -> '# From manual to automated testing'.
+		#devOpsMapJSON -> '# Closing the deployment gap'.
+		#moldableDevelopmentMapJSON -> '# Mapping moldable development'
+	}
+		do: [ :assoc | 
+			page
+				addSnippet: (LeTextSnippet new
+						string: assoc value;
+						yourself).
+			page
+				addSnippet: (LeWardleyMapSnippet new
+						wardleyMap: (GtWardleyMapFromDictionaryImporter new
+								importWardleyMapFrom: (STONJSON fromString: (self perform: assoc key)))) ].
+
+	^ page
 ]
 
 { #category : #slides }

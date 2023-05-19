@@ -336,8 +336,8 @@ Use an object inspector rather than a text editor to put live objects rather tha
 Vissoft2022Slideshow >> lepiter: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		  priority: (self priorityFor: #lepiter:);
-		  pageNamed: 'Lepiter' from: self myLepiterDB
+		priority: (self priorityFor: #lepiter:);
+		startPage: (self db pageNamed: 'Lepiter')
 ]
 
 { #category : #slides }
@@ -535,11 +535,6 @@ Vissoft2022Slideshow >> moldableViewsPage [
 				string: '';
 				yourself);
 		yourself
-]
-
-{ #category : #accessing }
-Vissoft2022Slideshow >> myLepiterDB [
-	^ 'onierstrasz/gt-talks/lepiter'
 ]
 
 { #category : #slides }
