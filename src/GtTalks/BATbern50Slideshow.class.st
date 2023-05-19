@@ -1813,11 +1813,14 @@ BATbern50Slideshow >> slidePriorities [
 
 
 		sustainabilityGap:
+		
+		
+			"Not yet used ..."
+			slideshowInspection:
+		
 			moldableDevelopmentMap:
 
 			
-		"Not yet used ..."
-		slideshowInspection:
 		)
 ]
 
@@ -1839,7 +1842,8 @@ BATbern50Slideshow >> slideshowInspectionPage [
 		addSnippet: (LeExampleSnippet new
 				exampleBehaviorName: #BATbern50Slideshow;
 				exampleSelector: #batBern50Slideshow;
-				noCode: true);
+				noCode: true;
+				previewHeight: 700);
 		addSnippet: (LeTextSnippet new
 				string: '';
 				yourself);
