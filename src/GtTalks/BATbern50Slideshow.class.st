@@ -1488,6 +1488,264 @@ BATbern50Slideshow >> pictures [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> productivityGap: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #productivityGap:);
+		subtitleWithFormat: (self asSubtitle: 'The Productivity Gap');
+		paragraphWithFormat:
+				(self
+						asBigText: 
+'
+
+
+“Productivity” isn''t just producing more code ...
+')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> productivityMap: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #productivityMap:);
+		newFadedText: 'Closing the productivity gap';
+		element: [ GtWardleyMapSlide new json: self productivityMapJSON ]
+]
+
+{ #category : #wardley }
+BATbern50Slideshow >> productivityMapJSON [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "8d4c4380-6db8-0d00-aaec-a6f8088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6168369401661076,
+			"y" : 0.6320042906184693,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.666666666666667,
+				"y" : -0.16666666666666666,
+				"text" : "Design pattern"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "6a935081-6db8-0d00-aaed-1abd088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.559045779312139,
+			"y" : 0.38069215493927566,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 4.75,
+				"y" : -0.16666666666666666,
+				"text" : "Framework"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.30728511311268264,
+			"y" : 0.42283654732209597,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.666666666666667,
+				"y" : 1.8333333333333333,
+				"text" : "Custom architecture"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "53c86882-6db8-0d00-aaef-a8d6088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.2938471751029986,
+			"y" : 0.7047076621240175,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.083333333333333,
+				"y" : 2.3333333333333335,
+				"text" : "Custom design"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4005271297225408,
+			"y" : 0.10551567646159649,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.833333333333333,
+				"y" : 0.08333333333333333,
+				"text" : "Application"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "894f518d-6db8-0d00-ab03-43d1088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.5414297155945605,
+			"y" : 0.17938130471103844,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.166666666666667,
+				"y" : -0.08333333333333333,
+				"text" : "Shared code base"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "53c86882-6db8-0d00-aaef-a8d6088fcc19",
+			"to" : "8d4c4380-6db8-0d00-aaec-a6f8088fcc19",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
+			"to" : "6a935081-6db8-0d00-aaed-1abd088fcc19",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
+			"to" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
+			"to" : "53c86882-6db8-0d00-aaef-a8d6088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "6a935081-6db8-0d00-aaed-1abd088fcc19",
+			"to" : "8d4c4380-6db8-0d00-aaec-a6f8088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
+			"to" : "6a935081-6db8-0d00-aaed-1abd088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "6a935081-6db8-0d00-aaed-1abd088fcc19",
+			"to" : "894f518d-6db8-0d00-ab03-43d1088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
+			"to" : "894f518d-6db8-0d00-ab03-43d1088fcc19",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		}
+	]
+}'
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> realizationGap: aSlide [
 	<gtSlide>
 	
@@ -1531,6 +1789,10 @@ BATbern50Slideshow >> slidePriorities [
 		deploymentGap:
 			devOpsMap:
 		
+		productivityGap:
+			productivityMap:
+
+
 		sustainabilityGap:
 			moldableDevelopmentMap:
 
