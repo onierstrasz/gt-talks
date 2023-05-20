@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T09:04:46.002402+02:00"
+						"dateAndTimeString" : "2023-05-20T15:23:57.376498+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T09:05:00.594179+02:00"
+						"dateAndTimeString" : "2023-05-20T15:24:11.37057+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AOmXShK3DQCeF8VPCZwhOg=="
+					"uidString" : "mt2Sr4G4DQCzKVlUDTwjyA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "These are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks)."
+				"string" : "What is the best way to encode the spoken text with the slides?"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:35.08382+02:00"
+						"dateAndTimeString" : "2023-05-20T15:24:11.774246+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T09:00:58.130533+02:00"
+						"dateAndTimeString" : "2023-05-20T15:24:16.487676+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "v82RCRK3DQCaF7pwCZwhOg=="
+					"uidString" : "ysOusIG4DQC0inFrDTwjyA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[*** BATbern50 talk]]  "
+				"string" : "Can we use pragmas for that?"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-20T15:24:25.88332+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-20T15:24:29.867187+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/wqGsYG4DQC1IP/dDTwjyA=="
+				},
+				"code" : "BATbern50Slideshow new"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T17:22:20.994183+02:00"
+						"dateAndTimeString" : "2023-05-20T15:24:41.0934+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,129 +137,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T17:22:40.238489+02:00"
+						"dateAndTimeString" : "2023-05-20T15:25:04.648251+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cewWPhm3DQCo6e8hBq0PDA=="
+					"uidString" : "5SJusoG4DQC1bnOjDTwjyA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[*** ESUG 2023 experience talk]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:15:56.658668+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:15:56.663048+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Q7jReRe3DQCJPA4IAPOe7w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Lessons]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:16:04.098579+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:16:05.264891+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "QLMaehe3DQCJYnGnAPOe7w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Other material and examples]] "
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:34.307323+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:34.313343+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "f3tGBBK3DQCZy8uvCZwhOg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[VISSOFT Talk]]"
+				"string" : "Suppose we add a pragma to {{gtMethod:name=BATbern50Slideshow>>#titleSlide:|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -241,7 +163,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:45:11.444686+02:00"
+						"dateAndTimeString" : "2023-05-20T15:25:02.701484+02:00"
 					}
 				},
 				"editEmail" : {
@@ -252,20 +174,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:45:11.444686+02:00"
+						"dateAndTimeString" : "2023-05-20T15:31:58.229562+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "BIiVBBK3DQCZ8vpnCZwhOg=="
+					"uidString" : "I9q3s4G4DQC2S1ZuDTwjyA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "We can extract the argument to a pragma as follows: "
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -278,7 +200,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:44:58.537941+02:00"
+						"dateAndTimeString" : "2023-05-20T15:25:22.175167+02:00"
 					}
 				},
 				"editEmail" : {
@@ -289,17 +211,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:44:58.537941+02:00"
+						"dateAndTimeString" : "2023-05-20T15:31:48.644829+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "96PQAxK3DQCZyoFYCZwhOg=="
+					"uidString" : "hf3gtIG4DQC2WkYeDTwjyA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "((BATbern50Slideshow >> #titleSlide:) pragmas\r\tdetect: [ :p | p selector = #text: ]) arguments first"
 			}
 		]
 	},
@@ -311,7 +230,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:45:06.254976+02:00"
+			"dateAndTimeString" : "2023-05-20T15:23:53.139549+02:00"
 		}
 	},
 	"editEmail" : {
@@ -322,15 +241,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:45:06.254976+02:00"
+			"dateAndTimeString" : "2023-05-20T15:23:53.139549+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Gt Talks TOC"
+		"title" : "Encoding the script in the slides"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "5850d003-12b7-0d00-99c9-c79a099c213a"
+		"uuid" : "dd6c92af-81b8-0d00-b328-7a930d3c23c8"
 	}
 }

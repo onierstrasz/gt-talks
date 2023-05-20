@@ -42,14 +42,14 @@ BATbern50Slideshow >> deploymentGap: aSlide [
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #deploymentGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Deployment Gap');
+		subtitleWithFormat: (self asTitle: 'The Deployment Gap');
 		paragraphWithFormat:
 				(self
 						asBigText:
 '
 
 
-The gap from development to deployment
+From development to deployment
 ')
 ]
 
@@ -257,6 +257,27 @@ BATbern50Slideshow >> eniacManualTesting: aSlide [
 		newFadedText: 'Manual vs automated testing';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'eniac.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> executionGap: aSlide [
+	"
+	What to call this?
+		The Execution gap?
+		The Output gap?
+		The Run time gap?
+	"
+
+	<gtSlide>
+	^ aSlide paragraph
+		priority: (self priorityFor: #executionGap:);
+		subtitleWithFormat: (self asTitle: 'The Execution Gap');
+		paragraphWithFormat: (self
+				asBigText: '
+
+
+From punch cards to live programming
+')
 ]
 
 { #category : #accessing }
@@ -621,7 +642,7 @@ BATbern50Slideshow >> markCardsMap: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #markCardsMap:);
-		newFadedText: 'Closing the realization gap';
+		newFadedText: 'Closing the execution gap';
 		element: [ self scaledWardleyMapForJson: self markCards2TerminalsJSON ]
 ]
 
@@ -631,14 +652,13 @@ BATbern50Slideshow >> modelingGap: aSlide [
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #modelingGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Modeling Gap');
+		subtitleWithFormat: (self asTitle: 'The Modeling Gap');
 		paragraphWithFormat:
 				(self
 						asBigText:
 '
 
-
-Objects and the Paperless Office
+From data structures to objects
 ')
 ]
 
@@ -1505,14 +1525,13 @@ BATbern50Slideshow >> productivityGap: aSlide [
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #productivityGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Productivity Gap');
+		subtitleWithFormat: (self asTitle: 'The Productivity Gap');
 		paragraphWithFormat:
 				(self
 						asBigText: 
 '
 
-
-“Productivity” isn''t just producing more code ...
+From conception to realization
 ')
 ]
 
@@ -1758,23 +1777,6 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> realizationGap: aSlide [
-	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #realizationGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Realization Gap');
-		paragraphWithFormat:
-				(self
-						asBigText:
-'
-
-
-From APL to FORTRAN
-')
-]
-
-{ #category : #slides }
 BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
@@ -1787,7 +1789,7 @@ BATbern50Slideshow >> slidePriorities [
 	^ #( 
 		titleSlide:
 		
-		realizationGap:
+		#executionGap:
 			aplSieve:
 			theTypist:
 			ibm2741:
@@ -1809,6 +1811,16 @@ BATbern50Slideshow >> slidePriorities [
 			devOpsMap:
 		
 		productivityGap:
+			softwareProductivity:
+			designPatterns:
+			frameworksSPLs:
+			"
+			What is productivity?
+			What is the gap?
+			Example: design patterns
+			Example: Frameworks & SPLs
+			Open issues.
+			"
 			productivityMap:
 
 
@@ -1851,12 +1863,23 @@ BATbern50Slideshow >> slideshowInspectionPage [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> softwareProductivity: aSlide [
+	<gtSlide>
+	<text: 'Software productivity isn''t just producing more code in the same time.
+	'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #softwareProductivity:);
+		newFadedText: 'What is Software Productivity?';
+		element: [  " "BlElement new ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> sustainabilityGap: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #sustainabilityGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Sustainability Gap');
+		subtitleWithFormat: (self asTitle: 'The Sustainability Gap');
 		paragraphWithFormat:
 				(self
 						asBigText: 
@@ -1873,7 +1896,7 @@ BATbern50Slideshow >> testingGap: aSlide [
 	
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #testingGap:);
-		subtitleWithFormat: (self asSubtitle: 'The Testing Gap');
+		subtitleWithFormat: (self asTitle: 'The Testing Gap');
 		paragraphWithFormat:
 				(self
 						asBigText: 
@@ -2148,12 +2171,13 @@ BATbern50Slideshow >> theTypist: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> titleSlide: aSlide [
 	<gtSlide>
+	<text: 'TODO: add some draft text to each slide.'>
 	^ aSlide titleWithFooter
 		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Mind the gap');
-		subtitleWithFormat: (self asSubTitle: '50 years of shortening feedback loops');
+		subtitleWithFormat: (self asTitle: '50 years of shortening feedback loops');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
@@ -2175,6 +2199,7 @@ BATbern50Slideshow >> wardleyMapsPage [
 		#oopMapJSON -> '# Closing the modeling gap'.
 		#testingMapJSON -> '# From manual to automated testing'.
 		#devOpsMapJSON -> '# Closing the deployment gap'.
+		#productivityMapJSON -> '# Closing the productivity gap'.
 		#moldableDevelopmentMapJSON -> '# Mapping moldable development'
 	}
 		do: [ :assoc | 
