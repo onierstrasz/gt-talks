@@ -58,9 +58,9 @@ BATbern50Slideshow >> designPatternsFrameworks: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #designPatternsFrameworks::);
-		newFadedText: 'What is Software Productivity?';
+		newFadedText: 'Design Patterns, Components, Frameworks';
 		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'gangOf4.jpg' ]
+				imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
 ]
 
 { #category : #slides }
