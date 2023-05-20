@@ -90,10 +90,10 @@ BATbern50Slideshow >> devOpsMapJSON [
 		{
 			"id" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.2874194958810925,
 			"y" : 0.6543180233008389,
@@ -159,7 +159,7 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"red" : 0.0
 			},
 			"x" : 0.43389785647987017,
-			"y" : 0.10057603624131947,
+			"y" : 0.10057603624131949,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -177,10 +177,10 @@ BATbern50Slideshow >> devOpsMapJSON [
 			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
 			"to" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -367,18 +367,18 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 		{
 			"id" : "c1886227-2eb8-0d00-8c41-41130af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.2930984343923688,
 			"y" : 0.7252334825476212,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 2.9166666666666665,
-				"y" : 2.1666666666666665,
+				"x" : 5.333333333333333,
+				"y" : 2.0833333333333335,
 				"text" : "Optical mark cards"
 			},
 			"pipeline" : {
@@ -388,10 +388,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 		{
 			"id" : "88147c45-2eb8-0d00-8d26-58a30af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.5829397682771899,
 			"y" : 0.6831589266488112,
@@ -451,10 +451,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 		{
 			"id" : "624bad6e-2eb8-0d00-8dfa-76970af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.30529647021361594,
 			"y" : 0.42227124190276194,
@@ -472,10 +472,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 		{
 			"id" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.5614019299592676,
 			"y" : 0.374449015206791,
@@ -541,10 +541,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 			"from" : "c1886227-2eb8-0d00-8c41-41130af31c02",
 			"to" : "624bad6e-2eb8-0d00-8dfa-76970af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -553,10 +553,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 			"from" : "88147c45-2eb8-0d00-8d26-58a30af31c02",
 			"to" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -577,10 +577,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 			"from" : "624bad6e-2eb8-0d00-8dfa-76970af31c02",
 			"to" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -589,10 +589,10 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 			"from" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02",
 			"to" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -1593,13 +1593,13 @@ BATbern50Slideshow >> productivityMapJSON [
 		{
 			"id" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.30728511311268264,
-			"y" : 0.42283654732209597,
+			"y" : 0.422836547322096,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1614,10 +1614,10 @@ BATbern50Slideshow >> productivityMapJSON [
 		{
 			"id" : "53c86882-6db8-0d00-aaef-a8d6088fcc19",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.2938471751029986,
 			"y" : 0.7047076621240175,
@@ -1704,10 +1704,10 @@ BATbern50Slideshow >> productivityMapJSON [
 			"from" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
 			"to" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -1716,10 +1716,10 @@ BATbern50Slideshow >> productivityMapJSON [
 			"from" : "dd8fb281-6db8-0d00-aaee-abf9088fcc19",
 			"to" : "53c86882-6db8-0d00-aaef-a8d6088fcc19",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -1864,13 +1864,16 @@ BATbern50Slideshow >> slideshowInspectionPage [
 
 { #category : #slides }
 BATbern50Slideshow >> softwareProductivity: aSlide [
+	"Margaret Hamilton, NASA's lead software engineer for the Apollo Program, stands next to the code she wrote by hand that took Humanity to the moon in 1969.
+	https://en.wikipedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg"
+
 	<gtSlide>
-	<text: 'Software productivity isn''t just producing more code in the same time.
-	'>
+	<text: 'Software productivity isn''t just producing more code in the same amount of time.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #softwareProductivity:);
 		newFadedText: 'What is Software Productivity?';
-		element: [  " "BlElement new ]
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'margaretHamiltonApolloCode.jpg' ]
 ]
 
 { #category : #slides }
@@ -1923,10 +1926,10 @@ BATbern50Slideshow >> testingMapJSON [
 		{
 			"id" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"x" : 0.29221388375660057,
 			"y" : 0.7037096128817586,
@@ -2033,7 +2036,7 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.41822119010326037,
+			"x" : 0.4182211901032604,
 			"y" : 0.15572500755384813,
 			"width" : 12,
 			"height" : 12,
@@ -2052,10 +2055,10 @@ BATbern50Slideshow >> testingMapJSON [
 			"from" : "664dfcac-32b8-0d00-8f9e-ab290ce43fd4",
 			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
