@@ -1811,16 +1811,7 @@ BATbern50Slideshow >> slidePriorities [
 			whereAreTheObjects:
 			oopEarlyHistory:
 			oopMap:
-		
-		testingGap:
-			eniacManualTesting:
-			testingMap:
-
-		deploymentGap:
-			houseDeployment:
-			devOpsMap:
-		
-		productivityGap:
+				productivityGap:
 			softwareProductivity:
 			designPatternsFrameworks:
 			"
@@ -1832,11 +1823,24 @@ BATbern50Slideshow >> slidePriorities [
 			"
 			productivityMap:
 
+		testingGap:
+			eniacManualTesting:
+			testingMap:
+
+		deploymentGap:
+			houseDeployment:
+			devOpsMap:
+		
 
 		sustainabilityGap:
-		
-		
-			"Not yet used ..."
+			"
+			Reading code does not scale
+			Code is disconnected from the running app
+			Q&A tools are unreliable
+			Mainstream IDEs are glorified text editors
+			Plugins are  hard to find, hard to build, and hard to compose
+			"
+			
 			slideshowInspection:
 		
 			moldableDevelopmentMap:
@@ -1897,8 +1901,7 @@ BATbern50Slideshow >> sustainabilityGap: aSlide [
 						asBigText: 
 '
 
-
-As a system grows, reading code to recycle it becomes infeasible
+From static code to explainable systems 
 ')
 ]
 
