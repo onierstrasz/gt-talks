@@ -1809,6 +1809,15 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> qaToolsUnreliable: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #qaToolsUnreliable:);
+		newFadedText: 'Q&A tools lack context, so give unreliable results';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'so-chatGpt.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
@@ -1869,6 +1878,7 @@ BATbern50Slideshow >> slidePriorities [
 			ideGlorifiedTextEditor:
 			readingDoesNotScale:
 			codeDisconnected:
+			qaToolsUnreliable:
 			"
 			Q&A tools are unreliable
 			Mainstream IDEs are glorified text editors
