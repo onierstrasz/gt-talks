@@ -30,12 +30,13 @@ BATbern50Slideshow >> batBern50Slideshow [
 
 { #category : #slides }
 BATbern50Slideshow >> codeDisconnected: aSlide [
+	"https://www.pngwing.com/en/free-png-xxpby"
+
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #codeDisconnected:);
 		newFadedText: 'Code is disconnected from the running application';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'library.jpg' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'splitBrain.jpg' ]
 ]
 
 { #category : #pages }
@@ -1798,12 +1799,13 @@ BATbern50Slideshow >> productivityMapJSON [
 
 { #category : #slides }
 BATbern50Slideshow >> readingDoesNotScale: aSlide [
+	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
+
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #readingDoesNotScale:);
 		newFadedText: 'Reading code does not scale';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'library.jpg' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
 ]
 
 { #category : #slides }
@@ -1857,6 +1859,7 @@ BATbern50Slideshow >> slidePriorities [
 			Start with: 
 			Mainstream IDEs are glorified text editors
 			"
+			ideGlorifiedTextEditor:
 			readingDoesNotScale:
 			codeDisconnected:
 			"
