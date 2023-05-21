@@ -54,6 +54,16 @@ From development to deployment
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> designPatternsFrameworks: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #designPatternsFrameworks:);
+		newFadedText: 'Design Patterns, Components, Frameworks';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> devOpsMap: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
@@ -1812,8 +1822,7 @@ BATbern50Slideshow >> slidePriorities [
 		
 		productivityGap:
 			softwareProductivity:
-			designPatterns:
-			frameworksSPLs:
+			designPatternsFrameworks:
 			"
 			What is productivity?
 			What is the gap?
