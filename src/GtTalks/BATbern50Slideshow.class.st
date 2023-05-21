@@ -28,6 +28,16 @@ BATbern50Slideshow >> batBern50Slideshow [
 	^ self class new
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> codeDisconnected: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #codeDisconnected:);
+		newFadedText: 'Code is disconnected from the running application';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'library.jpg' ]
+]
+
 { #category : #pages }
 BATbern50Slideshow >> database [
 	"All the pages"
@@ -1787,6 +1797,16 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> readingDoesNotScale: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #readingDoesNotScale:);
+		newFadedText: 'Reading code does not scale';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'library.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
@@ -1834,8 +1854,13 @@ BATbern50Slideshow >> slidePriorities [
 
 		sustainabilityGap:
 			"
-			Reading code does not scale
-			Code is disconnected from the running app
+			Start with: 
+			Mainstream IDEs are glorified text editors
+			"
+			readingDoesNotScale:
+			codeDisconnected:
+			"
+			
 			Q&A tools are unreliable
 			Mainstream IDEs are glorified text editors
 			Plugins are  hard to find, hard to build, and hard to compose
