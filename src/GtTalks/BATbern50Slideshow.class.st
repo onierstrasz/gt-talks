@@ -344,6 +344,17 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 				imageElementFromFileReference: self pictures / 'ibmOpticalMarkCard.jpg' ]
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> ideGlorifiedTextEditor: aSlide [
+	<gtSlide>
+	<text: 'All mainstream IDEs are pretty much the same: they focus on editing source code. Why is this a problem?'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #ideGlorifiedTextEditor:);
+		newFadedText: 'Mainstream IDEs are glorified text editors';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'intelliJ.jpg' ]
+]
+
 { #category : #initialization }
 BATbern50Slideshow >> initializeDb [
 	db := nil.
@@ -1855,15 +1866,10 @@ BATbern50Slideshow >> slidePriorities [
 		
 
 		sustainabilityGap:
-			"
-			Start with: 
-			Mainstream IDEs are glorified text editors
-			"
 			ideGlorifiedTextEditor:
 			readingDoesNotScale:
 			codeDisconnected:
 			"
-			
 			Q&A tools are unreliable
 			Mainstream IDEs are glorified text editors
 			Plugins are  hard to find, hard to build, and hard to compose
