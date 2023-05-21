@@ -57,7 +57,7 @@ From development to deployment
 BATbern50Slideshow >> designPatternsFrameworks: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #designPatternsFrameworks::);
+		priority: (self priorityFor: #designPatternsFrameworks:);
 		newFadedText: 'Design Patterns, Components, Frameworks';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
