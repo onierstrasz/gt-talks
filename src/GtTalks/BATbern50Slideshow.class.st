@@ -1880,8 +1880,6 @@ BATbern50Slideshow >> slidePriorities [
 			codeDisconnected:
 			qaToolsUnreliable:
 			"
-			Q&A tools are unreliable
-			Mainstream IDEs are glorified text editors
 			Plugins are  hard to find, hard to build, and hard to compose
 			"
 			
