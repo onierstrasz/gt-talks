@@ -695,6 +695,22 @@ From data structures to objects
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> moldableDevelopment: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #moldableDevelopment:);
+		subtitleWithFormat: (self asTitle: 'Moldable development');
+		paragraphWithFormat:
+				(self
+						asBigText: 
+'
+
+From static code to explainable systems
+')
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
@@ -1552,6 +1568,16 @@ BATbern50Slideshow >> pictures [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> plugins: aSlide [
+	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #plugins:);
+		newFadedText: 'Plugins are  hard to find, hard to build, and hard to compose';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'adapters.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> productivityGap: aSlide [
 	<gtSlide>
 	
@@ -1828,10 +1854,33 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
 ]
 
+{ #category : #accessing }
+BATbern50Slideshow >> scalableSlide: aSlide [
+	| scalableSlide |
+	scalableSlide := GtProtoLiveSlide new element
+			element: [ (aSlide asElement size: 1200 @ 900) asScalableElement ].
+	^ scalableSlide
+]
+
 { #category : #slides }
 BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> slideDictionary [
+	"TODO: Wrap each slide as a scalable"
+
+	| dict scalableDict |
+	dict := super slideDictionary.
+	scalableDict := OrderedDictionary new.
+	dict
+		keysAndValuesDo: [ :aSlide :aMethod | 
+			| scalableSlide |
+			scalableSlide := self scalableSlide: aSlide.
+			scalableDict at: scalableSlide put: aMethod ].
+	^ scalableDict
 ]
 
 { #category : #accessing }
@@ -1879,9 +1928,15 @@ BATbern50Slideshow >> slidePriorities [
 			readingDoesNotScale:
 			codeDisconnected:
 			qaToolsUnreliable:
+			plugins:
+		
+		
+		moldableDevelopment:
 			"
-			Plugins are  hard to find, hard to build, and hard to compose
+			
+			
 			"
+
 			
 			slideshowInspection:
 		
@@ -1943,7 +1998,7 @@ BATbern50Slideshow >> sustainabilityGap: aSlide [
 						asBigText: 
 '
 
-From static code to explainable systems 
+As software systems grow, they become harder to understand and maintain
 ')
 ]
 
