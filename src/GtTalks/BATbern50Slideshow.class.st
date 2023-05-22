@@ -13,7 +13,7 @@ BATbern50Slideshow class >> show [
 { #category : #slides }
 BATbern50Slideshow >> aplSieve: aSlide [
 	<gtSlide>
-	<text: '# APL — my first programming experience
+	<text: '## APL — my first programming experience
 
 You might be surprised to learn that my first programming experience was with APL, a live programming language for manipulating matrices and arrays. We programmed interactively on a timesharing system, getting immediate feedback.
 
@@ -457,7 +457,7 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
 	<gtSlide>
-	<text: '# The IBM 2741 terminal
+	<text: '## The IBM 2741 terminal
 
 The so-called typewriter was actually an IBM 2741 used to program in APL.
 It is exactly the terminal I first used in 1972, including the APL typeball with Greek characters. I somehow doubt it was used to type letters in a kitchen in Iceland.'>
@@ -470,7 +470,7 @@ It is exactly the terminal I first used in 1972, including the APL typeball with
 { #category : #slides }
 BATbern50Slideshow >> ibmOpticalCard: aSlide [
 	<gtSlide>
-	<text: '# Programming FORTRAN on optical mark cards
+	<text: '## Programming FORTRAN on optical mark cards
 
 In the Autumn of 1972, the Toronto Board of Education introduced the first high school computer programming courses. We coded our programs with pencil on optical cards, like the one you see. We handed our decks to the teacher, and got our printed output three days later. Debugging was nota pleasant experience. After my first experience with interactive APL, I felt I had moved back decades.
 
@@ -822,7 +822,7 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 { #category : #slides }
 BATbern50Slideshow >> markCardsMap: aSlide [
 	<gtSlide>
-	<text: '# Closing the execution gap
+	<text: '## Closing the execution gap
 
 In this slide we see a “Wardley map”, a diagram for business strategy that maps components with respect to user need. At the top we see the need for getting our programs running.
 
@@ -840,14 +840,14 @@ What''s interesting is that when the tchnology is sufficiently evolved, new oppo
 { #category : #slides }
 BATbern50Slideshow >> modelingGap: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
+	<text: '# The Modeling gap
+
+After high school, I studied Mathematics at Waterloo, and then switched to Computer Science at UofT. There I experienced the enormous gap between conceptual models and implementation.'>
+	^ aSlide paragraph
 		priority: (self priorityFor: #modelingGap:);
 		subtitleWithFormat: (self asTitle: 'The Modeling Gap');
-		paragraphWithFormat:
-				(self
-						asBigText:
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 From data structures to objects
 ')
@@ -1359,6 +1359,15 @@ BATbern50Slideshow >> moldingIDEPage [
 { #category : #slides }
 BATbern50Slideshow >> oopEarlyHistory: aSlide [
 	<gtSlide>
+	<text: '## A brief early history of OOP
+
+I had an epiphany in August 1981 when I saw the issue of Byte magazine dedicated to Smalltalk, a brand-new object-oriented language and system. Object-oriented programming was born in Norway, where Ole-Johan Dahl and Kristen Nygaard struggled to implement simulation software using ALGOL, a procedural language. They invented objects, classes and inheritance to model real-world simulations as a thin layer on top of ALGOL. Roughly 20 years later Bjarne Stroustrup, an experienced Simula programmer, started adding a similar thin layer to C.
+
+Also during the 1960s, an American computer scientist, Alan Kay, noticed that computer hardware was getting smaller and faster at an astonishing rate. He predicted that, somewhere down the line, you would be able to hold a computer in your hand, providing access to an encyclopedia of multimedia data. He figured that it would only be possible to build the software for such a so-called “Dynabook” using a fully object-oriented language and system.
+
+He convinced Xerox PARC to fund the development of not just the language, but the entire system down to the metal. The Smalltalk team indeed built not only the Smalltalk language and VM technology, but also the first graphical workstations and windowing systems.
+
+I read about this and told my supervisor that to build our advanced electronic office systems we needed an object-oriented language. Since Smalltalk wasn''t available for our hardware, we started research into building our own language and system.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #oopEarlyHistory:);
 		newFadedText: 'A brief early history of OOP';
@@ -1369,6 +1378,12 @@ BATbern50Slideshow >> oopEarlyHistory: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> oopMap: aSlide [
 	<gtSlide>
+<text: 
+'## Closing the modeling gap
+
+Object-oriented programming made it possible to trace concepts from requirements through design down to implementation. This certainly made it easier to develop software systems, but what is interesting is that this enabled long-term growth. Not only development, but maintenance and evolution of such systems was facilitated by making it easier to navigate from requirements to code.
+
+For early adopters of OO technology in the 1980s, this resulted in large, legacy OO systems by the mid 1990s.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #oopMap:);
 		newFadedText: 'Closing the modeling gap';
@@ -1392,8 +1407,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.083333333333333,
-				"y" : 1.0833333333333333,
+				"x" : -5.833333333333333,
+				"y" : 0.5,
 				"text" : "Low-level code"
 			},
 			"pipeline" : {
@@ -1408,13 +1423,13 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.2980038226944468,
-			"y" : 0.5570573904275601,
+			"x" : 0.3058995984544152,
+			"y" : 0.598904432274602,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 3.75,
-				"y" : 1.6666666666666667,
+				"x" : -4.583333333333333,
+				"y" : 0.4166666666666667,
 				"text" : "Design"
 			},
 			"pipeline" : {
@@ -1471,8 +1486,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5310504818333048,
-			"y" : 0.46550916850481655,
+			"x" : 0.5357879472892858,
+			"y" : 0.4842681872638353,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1493,7 +1508,7 @@ BATbern50Slideshow >> oopMapJSON [
 				"red" : 0.0
 			},
 			"x" : 0.5528725205841785,
-			"y" : 0.33066434984335197,
+			"y" : 0.35663837581737795,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1513,13 +1528,13 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.31059520277704183,
-			"y" : 0.37506971087999175,
+			"x" : 0.32638675429697867,
+			"y" : 0.42990376571404654,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.416666666666667,
-				"y" : 2.0,
+				"x" : -4.75,
+				"y" : 0.08333333333333333,
 				"text" : "Requirements"
 			},
 			"pipeline" : {
@@ -1534,7 +1549,7 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.48800553898574933,
+			"x" : 0.4880055389857494,
 			"y" : 0.06826363029060784,
 			"width" : 12,
 			"height" : 12,
@@ -1555,8 +1570,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.34645946564685726,
-			"y" : 0.22104645706940637,
+			"x" : 0.35593439655881937,
+			"y" : 0.2773235133464627,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1576,14 +1591,35 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6320564423996726,
-			"y" : 0.19776571830404843,
+			"x" : 0.5957358739038179,
+			"y" : 0.2266257471640773,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 11.333333333333334,
 				"y" : 0.4166666666666667,
 				"text" : "Development and maintenance"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.573032455956376,
+			"y" : 0.13118560948119637,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.666666666666667,
+				"y" : 0.3333333333333333,
+				"text" : "Long-term growth"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1635,18 +1671,6 @@ BATbern50Slideshow >> oopMapJSON [
 				"blue" : 0.0,
 				"alpha" : 1.0,
 				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
-			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
-			"color" : {
-				"green" : 0.5004887585532747,
-				"blue" : 0.5004887585532747,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -1743,6 +1767,54 @@ BATbern50Slideshow >> oopMapJSON [
 				"blue" : 0.0,
 				"alpha" : 1.0,
 				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "4afee69a-31b8-0d00-bc01-925a0c124378",
+			"to" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
+			"to" : "62cbe291-31b8-0d00-bbfe-d0560c124378",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
+			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
+			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -2465,6 +2537,9 @@ BATbern50Slideshow >> testingMapJSON [
 { #category : #slides }
 BATbern50Slideshow >> theElectronicOffice: aSlide [
 	<gtSlide>
+	<text: '## Building the Electronic Office (1980)
+
+The task for my MSc project was, together with another Masters student, to build a workflow system on top of another prototype of an electronic Office Forms System. OFS was itself built as a layer on top of MRS, the Micro-Relational System, one of the first implementations of a relation database management system for Unix.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theElectronicOffice:);
 		newFadedText: 'Building the Electronic Office (1980)';
@@ -2540,7 +2615,12 @@ BATbern50Slideshow >> wardleyMapsPage [
 
 { #category : #slides }
 BATbern50Slideshow >> whereAreTheObjects: aSlide [
+	"https://www.jackson-pollock.org/convergence.jsp"
+
 	<gtSlide>
+	<text: '## Where are the Objects?
+
+I was very excited about the project, and had a clear idea of what to do, before even looking at the code. When I opened the box, however, I had trouble mapping the concepts to the C code.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #whereAreTheObjects:);
 		newFadedText: 'Where are the Objects?';
