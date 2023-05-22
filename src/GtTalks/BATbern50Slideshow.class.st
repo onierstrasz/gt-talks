@@ -38,6 +38,15 @@ BATbern50Slideshow >> codeDisconnected: aSlide [
 	"https://www.pngwing.com/en/free-png-xxpby"
 
 	<gtSlide>
+	<text: '## Code is disconnected from the running application
+
+There is a huge gap between software source code and a running application.
+
+In a classical development environment you stare at source code, modify it, then run the code to see the effect in the running application. When that fails, you go back to staring at the code.
+
+Perhaps you will have a test case or a breakpoint that will land you in a debugger to explore the live object, but from there you can only go back to playing with the source code.
+
+Worse, if you start from the running application, you may struggle to answer questions such as, “Where is this feature implemented?”'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #codeDisconnected:);
 		newFadedText: 'Code is disconnected from the running application';
@@ -47,22 +56,24 @@ BATbern50Slideshow >> codeDisconnected: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> conclusion: aSlide [
 	<gtSlide>
-	<text: 
-'For systems to be explainable, they must be explorable.
+	<text: '# Closing the gap
+
+For systems to be explainable, they must be explorable.
 Start exploring (and developing) from objects, not code.
 Effective decision making requires tools that are custom-built, cheap and composable.
 A moldable development environment supports decision-making not only for developers but also for business stakeholders.
 '>
 	^ aSlide paragraph
 		priority: (self priorityFor: #conclusion:);
-		subtitleWithFormat: (self asTitle: 'Conclusions');
+		subtitleWithFormat: (self asTitle: 'Closing the gap');
 		paragraphWithFormat: (self
 				asBigText: '
 
 Explainable systems must be explorable.
+
 Decision-making tools must be custom-built, cheap and composable.
-Explainable systems are not just for developers.
-')
+
+Explainable systems are not just for developers.')
 ]
 
 { #category : #pages }
@@ -340,8 +351,12 @@ From punch cards to live programming
 { #category : #slides }
 BATbern50Slideshow >> exploringGitRepo: aSlide [
 	<gtSlide>
-	<text: '## Exploring a git repository
-'>
+<text: 
+'## Exploring a git repository
+
+We can similarly explore any kind of system to understand it. Here we explore the git repository of this slideshow. We can explore the changes, the commits, the packages, and from each entity navigate further to deepen our understanding.
+
+It doesn''t matter whether the domain is that of slideshows, git repositories, computer games, social media data or life insurance policies. In any case, we can navigate through the network of domain objects to answer our questions, or to navigate to the code, not the other way around.'>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #exploringGitRepo:);
 		startPage: (self db pageNamed: 'Exploring a git repository')
@@ -366,10 +381,10 @@ BATbern50Slideshow >> exploringGitRepoPage [
 BATbern50Slideshow >> exploringSlideshow: aSlide [
 	<gtSlide>
 	<text: '## Exploring the slideshow
-For a software system to be explainable, we must be able to explore it.
-To understand the slideshow software, we don''t start from the source code but from a live instance.
-We can navigate from the slideshow to its slides, to the Wardley maps, or to the source code, if we need to.
-'>
+
+For a software system to be explainable, we must be able to explore it. 
+
+To understand the slideshow software, we don''t start from the source code but from a live instance. We can navigate from the slideshow to its slides, to the Wardley maps, or to the source code, if we need to.'>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #exploringSlideshow:);
 		startPage: (self db pageNamed: 'Exploring the slideshow')
@@ -397,10 +412,13 @@ BATbern50Slideshow >> exploringSlideshowPage [
 BATbern50Slideshow >> gtExtensions: aSlide [
 	<gtSlide>
 	<text: '## GT tool extensions
-All the views we have seen are examples of custom tools added to a moldable IDE.
+
+All the views we have seen are examples of custom tools added to a moldable IDE. 
+
+
 In addition to custom views, there are several other ways the IDE can be molded such as by adding custom actions, search capabilities, and quality advices.
-The Metrics view shows that these extensions are generally small and cheap to implement.
-'>
+
+The Metrics view of each extension shows that they are generally small and cheap to implement.'>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #gtExtensions:);
 		startPage: (self db pageNamed: 'GT tool extensions')
@@ -499,12 +517,15 @@ Later in the semster one of my classmates discovered that anyone at all could wa
 { #category : #slides }
 BATbern50Slideshow >> ideGlorifiedTextEditor: aSlide [
 	<gtSlide>
-	<text: 'All mainstream IDEs are pretty much the same: they focus on editing source code. Why is this a problem?'>
+	<text: '## Mainstream IDEs are glorified text editors
+
+All mainstream IDEs are pretty much the same: they focus on editing source code. Why is this a problem?
+
+First of all, putting a text editor at the center presupposes that you are generally either reading or writing code. But we only spend a small part of our time writing code.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ideGlorifiedTextEditor:);
 		newFadedText: 'Mainstream IDEs are glorified text editors';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'intelliJ.jpg' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'intelliJ.jpg' ]
 ]
 
 { #category : #initialization }
@@ -520,6 +541,20 @@ BATbern50Slideshow >> initializeDb [
 { #category : #slides }
 BATbern50Slideshow >> lifewareTesting: aSlide [
 	<gtSlide>
+<text:
+'***TODO Need input from TG***
+
+## Lifeware test running and exploration
+
+Lifeware has a *very* large number of test cases for their life insurance SPL.
+For any given customer there are many specific policies and contracts that must be verified.
+The test cases can take 24 hours (?) to run on a single CPU.
+feenk has ported this to AWS, so all tests can be run in 7 (?) minutes.
+But what about failures?
+
+In many cases failures are due to, eg, a change in signature in a contract.
+Manually checking these is infeasible.
+By introducing custom views we can organize, group and explore the remote (AWS) test results on a local machine, and then approve groups in bulk.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #lifewareTesting:);
 		newFadedText: 'Lifeware test running and exploration';
@@ -871,12 +906,12 @@ From data structures to objects
 BATbern50Slideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text: '# Moldable development
+
 For a software systems to be explainable, it must first of all be *explorable*.
-The IDE is more than a text editor.
-Instead of starting to explore a system from source code, we can start from a live object and navigate from there.
-Second, we must be able to answer questions relevant to our *context*.
-Instead of using off-the-shelf tools or plugins, we use cheap and composable tools specific to our domain.
-'>
+
+The IDE is more than a text editor. First, instead of starting to explore a system from source code, we can start from a live object and navigate from there.
+
+Second, we must be able to answer questions relevant to our *context*. Instead of using off-the-shelf tools or plugins, we should be able to use cheap and composable tools specific to our domain.'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #moldableDevelopment:);
 		subtitleWithFormat: (self asTitle: 'Moldable development');
@@ -890,6 +925,15 @@ From static code to explainable systems
 { #category : #slides }
 BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
 	<gtSlide>
+	<text: '# Mapping moldable development
+
+At the bottom here we see a transition from fixed and rigid IDE tools to moldable tools that can be easily and cheaply extended with new behavior. I have only shown you some custom insoector views, but the idea applies just as well for search tools, quality advices, and even customizable debuggers.
+
+At the next level we see how moldable tools are leveraged by moving from manual inspection to custom queries that we plug into the tools. We saw this when we browsed the slides of a slideshow or the recent changes of a git repo.
+
+Now, instead of manual cobbling together a view, we can easily obtain a view using the molded tools.
+
+In the end we can more quickly support decision-making not only for developers, but also business stakeholders.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #moldableDevelopmentMap:);
 		newFadedText: 'Mapping moldable development';
@@ -1345,8 +1389,12 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 BATbern50Slideshow >> moldingIDE: aSlide [
 	<gtSlide>
 	<text: '## Molding the IDE
+
 To make systems explainable, you need to be able to add cheap, composable tools (view).
-'>
+
+Understanding doesn''t arise simply from navigating, but from being able to navigate efficiently and effectively to the answers you need. This implies that you need to be able to easily and cheaply define your own plugins to mold the IDE To your needs.
+
+For each of the custom navigational views we have seen, a few lines of code are all that are needed to define them. We can ALT-click on the tabs to see the code. For example, the Slides view or the Slide deck view are extremely short, and leverage the fact that all the parts are composable.'>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #moldingIDE:);
 		startPage: (self db pageNamed: 'Molding the IDE')
@@ -1854,7 +1902,15 @@ BATbern50Slideshow >> placeholder [
 { #category : #slides }
 BATbern50Slideshow >> plugins: aSlide [
 	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
+
 	<gtSlide>
+	<text: '## Plugins are  hard to find, hard to build, and hard to compose
+
+Instead of leaving the IDE to find answers to questions we have about our software base, it would be so much nicer if we could extend the IDE with the tools we need. Luckily there exist *plugins*.
+
+Unluckily plugins are (in my experience) not pleasant to implement, it is hard to find any that are truly helpful, and they pretty much never play nicely with other plugins.
+
+Finally, plugins don''t know anything about your context, so like SO and ChatGPT, the likelihood that they will help you for *your* problem is slim.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #plugins:);
 		newFadedText: 'Plugins are  hard to find, hard to build, and hard to compose';
@@ -2131,6 +2187,15 @@ BATbern50Slideshow >> productivityMapJSON [
 { #category : #slides }
 BATbern50Slideshow >> qaToolsUnreliable: aSlide [
 	<gtSlide>
+	<text: '## Q&A tools lack context, so give unreliable results
+
+When we are at a loss, and no colleague is nearby to lend a hand, we often turn to Google and friends, which sends us to other well-known Q&A sites.
+
+The problem with the answers we find on these sites os that they lack our specific *context*, so we generally waste considerable time on non-trivial questions to assess their relevance to our problem.
+
+Although Stack Overflow clearly suffers from this problem, AI-based answers such as those provided by ChatGPT are no better, and in some ways worse, because of the high level of confidence (or hubris?) displayed by the answers.
+
+The screenshots show answers I obtained from SO and ChatGPT to actual questions I had about GitHub pages. In both cases I struggled to get the information relevant for my context.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #qaToolsUnreliable:);
 		newFadedText: 'Q&A tools lack context, so give unreliable results';
@@ -2142,6 +2207,9 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
 	<gtSlide>
+	<text: '## Reading code does not scale
+
+On the other hand, *reading code for very large systems does not scale.* You simply cannot read hundreds of thousands of lines of code, let alone many millions of LOC.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #readingDoesNotScale:);
 		newFadedText: 'Reading code does not scale';
@@ -2291,14 +2359,16 @@ But software productivity clearly isn''t just producing more code in the same am
 { #category : #slides }
 BATbern50Slideshow >> sustainabilityGap: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
+	<text: '# The Sustainability Gap
+
+Let us move to the present day.
+
+We know that unfettered growth of software systems leads to legacy issues. Very large software systems don''t scale well for decision making because we don''t, and *can''t*, understand them. Let''s take a look for some of the reasons.'>
+	^ aSlide paragraph
 		priority: (self priorityFor: #sustainabilityGap:);
 		subtitleWithFormat: (self asTitle: 'The Sustainability Gap');
-		paragraphWithFormat:
-				(self
-						asBigText: 
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 As software systems grow, they become harder to understand and maintain
 ')
@@ -2609,7 +2679,7 @@ Hi. My name is Oscar Nierstrasz.
 
 I was a professor of Software Engineering at the University of Bern from 1994 until I retired at the end of 2021, and since then have been working for feenk, a small consulting company in Wabern that was founded by a former student of mine.
 
-Today, on the occasion of the 50th Berner Architekten Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes suprising opportunities.'>
+Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes suprising opportunities.'>
 	^ aSlide titleWithFooter
 		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 20;
