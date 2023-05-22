@@ -28,6 +28,17 @@ BATbern50Slideshow >> batBern50Slideshow [
 	^ self class new
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> codeDisconnected: aSlide [
+	"https://www.pngwing.com/en/free-png-xxpby"
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #codeDisconnected:);
+		newFadedText: 'Code is disconnected from the running application';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'splitBrain.jpg' ]
+]
+
 { #category : #pages }
 BATbern50Slideshow >> database [
 	"All the pages"
@@ -291,6 +302,17 @@ From punch cards to live programming
 ]
 
 { #category : #accessing }
+BATbern50Slideshow >> gtRubySyntaxExplanationFor: aView [
+	<gtView>
+	^ aView forward
+		title: 'Slide deck';
+		priority: 60;
+		object: [ self slideDeckPage asContentUIModel ];
+		view: #gtLiveFor:;
+		actionUpdateButton
+]
+
+{ #category : #accessing }
 BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 	<gtView>
 	^ self wardleyMaps isEmpty
@@ -331,6 +353,17 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 		newFadedText: 'IBM education FORTRAN optical mark card';
 		element: [ GtFileUtility
 				imageElementFromFileReference: self pictures / 'ibmOpticalMarkCard.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> ideGlorifiedTextEditor: aSlide [
+	<gtSlide>
+	<text: 'All mainstream IDEs are pretty much the same: they focus on editing source code. Why is this a problem?'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #ideGlorifiedTextEditor:);
+		newFadedText: 'Mainstream IDEs are glorified text editors';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'intelliJ.jpg' ]
 ]
 
 { #category : #initialization }
@@ -669,6 +702,22 @@ BATbern50Slideshow >> modelingGap: aSlide [
 '
 
 From data structures to objects
+')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> moldableDevelopment: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #moldableDevelopment:);
+		subtitleWithFormat: (self asTitle: 'Moldable development');
+		paragraphWithFormat:
+				(self
+						asBigText: 
+'
+
+From static code to explainable systems
 ')
 ]
 
@@ -1530,6 +1579,16 @@ BATbern50Slideshow >> pictures [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> plugins: aSlide [
+	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #plugins:);
+		newFadedText: 'Plugins are  hard to find, hard to build, and hard to compose';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'adapters.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> productivityGap: aSlide [
 	<gtSlide>
 	
@@ -1787,9 +1846,89 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> qaToolsUnreliable: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #qaToolsUnreliable:);
+		newFadedText: 'Q&A tools lack context, so give unreliable results';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'so-chatGpt.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> readingDoesNotScale: aSlide [
+	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #readingDoesNotScale:);
+		newFadedText: 'Reading code does not scale';
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
+]
+
+{ #category : #utility }
+BATbern50Slideshow >> refreshSlideDeckPage [
+	"Remove the page if it exists, and recreate it from scratch."
+	| page |
+	page := self db ensurePageNamed: self class name.
+	self db removePage: page.
+	page := self db ensurePageNamed: self class name.
+	self slideDictionary
+		do: [ :assoc | 
+			| text |
+			text := assoc value pragmas
+					detect: [ :p | p selector = #text: ]
+					ifFound: [ :pragma | pragma arguments first ]
+					ifNone: [ '' ].
+			page
+				addSnippet: (LeTextSnippet new
+						string: text;
+						yourself);
+				addSnippet: (LeElementSnippet new
+						code: 'BATbern50Slideshow new slideFor: ' , assoc value selector printString;
+						elementHeight: 400;
+						codeVisible: false;
+						yourself) ].
+	^ page
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> scalableSlide: aSlide [
+	| scalableSlide |
+	scalableSlide := GtProtoLiveSlide new element
+			element: [ (aSlide asElement size: 1200 @ 900) asScalableElement ].
+	^ scalableSlide
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
+]
+
+{ #category : #utility }
+BATbern50Slideshow >> slideDeckPage [
+	^ self db pageNamed: self class name ifAbsent: [ self refreshSlideDeckPage ]
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> slideDictionary [
+	"TODO: Wrap each slide as a scalable"
+
+	| dict scalableDict |
+	dict := super slideDictionary.
+	scalableDict := OrderedDictionary new.
+	dict
+		keysAndValuesDo: [ :aSlide :aMethod | 
+			| scalableSlide |
+			scalableSlide := self scalableSlide: aSlide.
+			scalableDict at: scalableSlide put: aMethod ].
+	^ scalableDict
+]
+
+{ #category : #accessing }
+BATbern50Slideshow >> slideFor: selector [
+	^ self
+		scalableSlide: (self perform: selector withArguments: {GtProtoLiveSlide new})
 ]
 
 { #category : #accessing }
@@ -1811,16 +1950,7 @@ BATbern50Slideshow >> slidePriorities [
 			whereAreTheObjects:
 			oopEarlyHistory:
 			oopMap:
-		
-		testingGap:
-			eniacManualTesting:
-			testingMap:
-
-		deploymentGap:
-			houseDeployment:
-			devOpsMap:
-		
-		productivityGap:
+				productivityGap:
 			softwareProductivity:
 			designPatternsFrameworks:
 			"
@@ -1832,11 +1962,30 @@ BATbern50Slideshow >> slidePriorities [
 			"
 			productivityMap:
 
+		testingGap:
+			eniacManualTesting:
+			testingMap:
+
+		deploymentGap:
+			houseDeployment:
+			devOpsMap:
+		
 
 		sustainabilityGap:
+			ideGlorifiedTextEditor:
+			readingDoesNotScale:
+			codeDisconnected:
+			qaToolsUnreliable:
+			plugins:
 		
 		
-			"Not yet used ..."
+		moldableDevelopment:
+			"
+			
+			
+			"
+
+			
 			slideshowInspection:
 		
 			moldableDevelopmentMap:
@@ -1897,8 +2046,7 @@ BATbern50Slideshow >> sustainabilityGap: aSlide [
 						asBigText: 
 '
 
-
-As a system grows, reading code to recycle it becomes infeasible
+As software systems grow, they become harder to understand and maintain
 ')
 ]
 
