@@ -39,6 +39,27 @@ BATbern50Slideshow >> codeDisconnected: aSlide [
 		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'splitBrain.jpg' ]
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> conclusion: aSlide [
+	<gtSlide>
+	<text: 
+'For systems to be explainable, they must be explorable.
+Start exploring (and developing) from objects, not code.
+Effective decision making requires tools that are custom-built, cheap and composable.
+A moldable development environment supports decision-making not only for developers but also for business stakeholders.
+'>
+	^ aSlide paragraph
+		priority: (self priorityFor: #conclusion:);
+		subtitleWithFormat: (self asTitle: 'Conclusions');
+		paragraphWithFormat: (self
+				asBigText: '
+
+Explainable systems must be explorable.
+Decision-making tools must be custom-built, cheap and composable.
+Explainable systems are not just for developers.
+')
+]
+
 { #category : #pages }
 BATbern50Slideshow >> database [
 	"All the pages"
@@ -302,13 +323,94 @@ From punch cards to live programming
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> explainableSystems: aSlide [
+BATbern50Slideshow >> exploringGitRepo: aSlide [
 	<gtSlide>
-	^ aSlide labelAndElement
-		priority: (self priorityFor: #explainableSystems:);
-		newFadedText: 'How to make systems explainable';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'placeholder.png' ]
+	<text: '## Exploring a git repository
+'>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #exploringGitRepo:);
+		startPage: (self db pageNamed: 'Exploring a git repository')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> exploringGitRepoPage [
+	<gtExample>
+	^ (LePage named: 'Exploring a git repository')
+		addSnippet: (LeTextSnippet new
+				string: 'We can similarly explore the git repository of this project.';
+				yourself);
+		addSnippet: (LeElementSnippet new
+				code: 'GtInspector newOn: BATbern50Slideshow package repository';
+				codeVisible: false;
+				elementHeight: 600;
+				yourself);
+		yourself
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> exploringSlideshow: aSlide [
+	<gtSlide>
+	<text: '## Exploring the slideshow
+For a software system to be explainable, we must be able to explore it.
+To understand the slideshow software, we don''t start from the source code but from a live instance.
+We can navigate from the slideshow to its slides, to the Wardley maps, or to the source code, if we need to.
+'>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #exploringSlideshow:);
+		startPage: (self db pageNamed: 'Exploring the slideshow')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> exploringSlideshowPage [
+	<gtExample>
+	^ (LePage named: 'Exploring the slideshow')
+		addSnippet: (LeTextSnippet new
+				string: 'To understand this slideshow, we start by exploring an instance.';
+				yourself);
+		addSnippet: (LeExampleSnippet new
+				exampleBehaviorName: #BATbern50Slideshow;
+				exampleSelector: #batBern50Slideshow;
+				noCode: true;
+				previewHeight: 700);
+		addSnippet: (LeTextSnippet new
+				string: '';
+				yourself);
+		yourself
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> gtExtensions: aSlide [
+	<gtSlide>
+	<text: '## GT tool extensions
+All the views we have seen are examples of custom tools added to a moldable IDE.
+In addition to custom views, there are several other ways the IDE can be molded such as by adding custom actions, search capabilities, and quality advices.
+The Metrics view shows that these extensions are generally small and cheap to implement.
+'>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #gtExtensions:);
+		startPage: (self db pageNamed: 'GT tool extensions')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> gtExtensionsPage [
+	<gtExample>
+	^ (LePage named: 'GT tool extensions')
+		addSnippet: (LeTextSnippet new
+				string: 'These are the extension (tools) in the current platform.';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: 'The *Metrics* view shows how cheap they are.';
+				yourself);
+		addSnippet: (LeExampleSnippet new
+				exampleBehaviorName: #'GtImage class';
+				exampleSelector: #instance;
+				noCode: true;
+				previewShowSelector: #gtExensionsFor:;
+				previewHeight: 300);
+		addSnippet: (LeTextSnippet new
+				string: '';
+				yourself);
+		yourself
 ]
 
 { #category : #accessing }
@@ -382,7 +484,19 @@ BATbern50Slideshow >> ideGlorifiedTextEditor: aSlide [
 BATbern50Slideshow >> initializeDb [
 	db := nil.
 	self db addPage: self wardleyMapsPage.
-	self db addPage: self slideshowInspectionPage
+	self db addPage: self exploringSlideshowPage.
+	self db addPage: self exploringGitRepoPage.
+	self db addPage: self moldingIDEPage.
+	self db addPage: self gtExtensionsPage
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting:);
+		newFadedText: 'Lifeware test running and exploration';
+		element: [ self placeholder ]
 ]
 
 { #category : #wardley }
@@ -720,14 +834,18 @@ From data structures to objects
 { #category : #slides }
 BATbern50Slideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
+	<text: '# Moldable development
+For a software systems to be explainable, it must first of all be *explorable*.
+The IDE is more than a text editor.
+Instead of starting to explore a system from source code, we can start from a live object and navigate from there.
+Second, we must be able to answer questions relevant to our *context*.
+Instead of using off-the-shelf tools or plugins, we use cheap and composable tools specific to our domain.
+'>
+	^ aSlide paragraph
 		priority: (self priorityFor: #moldableDevelopment:);
 		subtitleWithFormat: (self asTitle: 'Moldable development');
-		paragraphWithFormat:
-				(self
-						asBigText: 
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 From static code to explainable systems
 ')
@@ -1188,6 +1306,35 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> moldingIDE: aSlide [
+	<gtSlide>
+	<text: '## Molding the IDE
+To make systems explainable, you need to be able to add cheap, composable tools (view).
+'>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #moldingIDE:);
+		startPage: (self db pageNamed: 'Molding the IDE')
+]
+
+{ #category : #pages }
+BATbern50Slideshow >> moldingIDEPage [
+	<gtExample>
+	^ (LePage named: 'Molding the IDE')
+		addSnippet: (LeTextSnippet new
+				string: 'Each view is a cheap, composable tool. (ALT-click to explore the code.)';
+				yourself);
+		addSnippet: (LeExampleSnippet new
+				exampleBehaviorName: #BATbern50Slideshow;
+				exampleSelector: #batBern50Slideshow;
+				noCode: true;
+				previewHeight: 700);
+		addSnippet: (LeTextSnippet new
+				string: '';
+				yourself);
+		yourself
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> oopEarlyHistory: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
@@ -1591,6 +1738,12 @@ BATbern50Slideshow >> pictures [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> placeholder [
+	^ GtFileUtility
+		imageElementFromFileReference: self pictures / 'placeholder.png'
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> plugins: aSlide [
 	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
 	<gtSlide>
@@ -1945,7 +2098,6 @@ BATbern50Slideshow >> slideFor: selector [
 
 { #category : #accessing }
 BATbern50Slideshow >> slidePriorities [
-	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
 		titleSlide:
@@ -1984,55 +2136,16 @@ BATbern50Slideshow >> slidePriorities [
 			plugins:
 
 		moldableDevelopment:
-			explainableSystems:
-			slideshowInspection:
-			"
-			examples
-			
-			"
-
-			
-		
-			lifewareTesting:
-		
+			exploringSlideshow:
+			exploringGitRepo:
+			moldingIDE:
+			gtExtensions:
+									lifewareTesting: "*** TO DO"
 			moldableDevelopmentMap:
 
-		
 		conclusion:
-			"
-			For systems to be explainable, they must be explorable.
-			Start exploring (and developing) from objects, not code.
-			Effective decision making requires tools that are custom-built, cheap and composable.
-			A moldable development environment supports decision-making not only for developers but also for business stakeholders.
-			"
 			
 		)
-]
-
-{ #category : #slides }
-BATbern50Slideshow >> slideshowInspection: aSlide [
-	<gtSlide>
-		^ aSlide lepiterPage
-		priority: (self priorityFor: #slideshowInspection:);
-		startPage: (self db pageNamed: 'Inspecting the slideshow')
-]
-
-{ #category : #pages }
-BATbern50Slideshow >> slideshowInspectionPage [
-	<gtExample>
-	^ (LePage named: 'Inspecting the slideshow')
-		addSnippet: (LeTextSnippet new
-				string: 'We can embed an explorable instance of the slideshow within a notebook page.';
-				yourself);
-		addSnippet: (LeExampleSnippet new
-				exampleBehaviorName: #BATbern50Slideshow;
-				exampleSelector: #batBern50Slideshow;
-				noCode: true;
-				previewHeight: 700);
-		addSnippet: (LeTextSnippet new
-				string: '';
-				yourself);
-		yourself
 ]
 
 { #category : #slides }
@@ -2353,7 +2466,7 @@ TODO: add some draft text to each slide.'>
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Mind the gap');
-		subtitleWithFormat: (self asTitle: '50 years of shortening feedback loops');
+		subtitleWithFormat: (self asSubtitle: '50 years of shortening feedback loops');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
