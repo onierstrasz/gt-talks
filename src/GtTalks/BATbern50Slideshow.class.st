@@ -2288,6 +2288,8 @@ BATbern50Slideshow >> slideFor: selector [
 
 { #category : #accessing }
 BATbern50Slideshow >> slidePriorities [
+	"This method defines the slide priorities implicitly by their order instead of by fixed numbers.
+	See also: PrioritySlideshow>>#priorityFor:"
 	<gtExample>
 	^ #( 
 		titleSlide:
