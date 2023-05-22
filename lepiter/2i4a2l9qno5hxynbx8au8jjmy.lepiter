@@ -426,7 +426,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.306208+02:00"
 								}
 							},
 							"editEmail" : {
@@ -437,12 +437,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.306208+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "0R1ILKyiDQCVO16IDGegiw=="
+								"uidString" : "QTJklqu4DQC2EzOyB2nJmQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -463,7 +463,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236884+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
 								}
 							},
 							"editEmail" : {
@@ -474,17 +474,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236884+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.307648+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "1h1ILKyiDQCVPEtHDGegiw=="
+								"uidString" : "0R1ILKyiDQCVO16IDGegiw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: Two ways of creating narratives: (1) cascading ones of views, and (2) within lepiter."
+							"string" : "TG: Two ways of creating narratives: (1) cascading ones of views, and (2) within lepiter."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1029,7 +1029,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:28.652183+02:00"
 								}
 							},
 							"uid" : {
@@ -1039,7 +1039,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
+							"string" : "TG: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
 						},
 						{
 							"__type" : "textSnippet",
@@ -2401,7 +2401,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.224957+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:43.552467+02:00"
 								}
 							},
 							"uid" : {
@@ -2411,7 +2411,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: So the message is that moldable development offers a critical discipline and methodology to drive developement by making the insides of systems explainable, not just for technical people!"
+							"string" : "TG: So the message is that moldable development offers a critical discipline and methodology to drive developement by making the insides of systems explainable, not just for technical people!"
 						},
 						{
 							"__type" : "textSnippet",
@@ -2587,7 +2587,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223347+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:52.359986+02:00"
 								}
 							},
 							"uid" : {
@@ -2597,7 +2597,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: Not just every domain but every problem is different. Every specialized language or tool is optimized for certain questions, but offers nothing for others. You need visualizations that cross-cut dimensions. So instead of domain-specific views, we want views at the finest level of granularity, that is, the object."
+							"string" : "TG: Not just every domain but every problem is different. Every specialized language or tool is optimized for certain questions, but offers nothing for others. You need visualizations that cross-cut dimensions. So instead of domain-specific views, we want views at the finest level of granularity, that is, the object."
 						},
 						{
 							"__type" : "textSnippet",

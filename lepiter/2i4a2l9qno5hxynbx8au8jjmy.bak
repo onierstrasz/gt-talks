@@ -8,43 +8,6 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T14:20:20.684103+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T14:20:20.684103+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ZRlKgryiDQC9F7wsB6dlRQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -463,7 +426,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.306208+02:00"
 								}
 							},
 							"editEmail" : {
@@ -474,12 +437,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.306208+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "0R1ILKyiDQCVO16IDGegiw=="
+								"uidString" : "QTJklqu4DQC2EzOyB2nJmQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -500,7 +463,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236884+02:00"
+									"dateAndTimeString" : "2022-08-15T18:50:58.236879+02:00"
 								}
 							},
 							"editEmail" : {
@@ -511,17 +474,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.236884+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:19.307648+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "1h1ILKyiDQCVPEtHDGegiw=="
+								"uidString" : "0R1ILKyiDQCVO16IDGegiw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: Two ways of creating narratives: (1) cascading ones of views, and (2) within lepiter."
+							"string" : "TG: Two ways of creating narratives: (1) cascading ones of views, and (2) within lepiter."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1066,7 +1029,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-15T18:50:58.223362+02:00"
+									"dateAndTimeString" : "2023-05-22T17:23:28.652183+02:00"
 								}
 							},
 							"uid" : {
@@ -1076,7 +1039,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[TG]]: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
+							"string" : "TG: Every view is a predicate in a sentence — concatenation of panes creates a narrative."
 						},
 						{
 							"__type" : "textSnippet",
