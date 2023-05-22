@@ -76,14 +76,14 @@ BATbern50Slideshow >> database [
 { #category : #slides }
 BATbern50Slideshow >> deploymentGap: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
+	<text: '# The Deployment Gap
+
+Although there were many other exciting advances in the 1990s, let us skip ahead.'>
+	^ aSlide paragraph
 		priority: (self priorityFor: #deploymentGap:);
 		subtitleWithFormat: (self asTitle: 'The Deployment Gap');
-		paragraphWithFormat:
-				(self
-						asBigText:
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 
 From development to deployment
@@ -107,6 +107,9 @@ This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, t
 { #category : #slides }
 BATbern50Slideshow >> devOpsMap: aSlide [
 	<gtSlide>
+	<text: '## Closing the deployment gap
+
+Although DevOps clearly served to automate and close the gap between development and deployment, what is interesting is the new opportunities it created. In particular, with DevOps it is possible to experimentally introduce new features for selected groups of users to monitor and assess their impact on business. Without DevOps, the very idea is laughable.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #devOpsMap:);
 		newFadedText: 'Closing the deployment gap';
@@ -455,6 +458,9 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
 	<gtSlide>
+	<text: '## The gap from development to deployment
+
+Earlier we saw the “Execution gap” between design and execution of a running program. The deployment gap concerns the gap between having a running and validated system and deploying it with end users. Until the introduction of DevOps, this could be a slow and painful manual process.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #houseDeployment:);
 		newFadedText: 'The gap from development to deployment';
