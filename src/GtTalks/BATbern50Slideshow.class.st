@@ -303,11 +303,15 @@ BATbern50Slideshow >> devOpsMapJSON [
 { #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
+	<text: '## Manual vs automated testing
+
+This great photo shows the ENIAC, one of the very first digital computers, completed in 1945. As you can imagine, testing was a slow, laborious process of rewiring.
+
+Automated testing only started to become popular with the introduction of Kent Beck''s SUnit framework, and the subsequent port of SUnit by Kent and Erich Gamma to Java.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #eniacManualTesting:);
 		newFadedText: 'Manual vs automated testing';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'eniac.jpg' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'eniac.jpg' ]
 ]
 
 { #category : #slides }
@@ -2297,7 +2301,10 @@ As software systems grow, they become harder to understand and maintain
 { #category : #slides }
 BATbern50Slideshow >> testingGap: aSlide [
 	<gtSlide>
-	
+<text: 
+'# The Testing Gap
+
+Once upon a time (and also today), testing was a manual process.'>
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #testingGap:);
 		subtitleWithFormat: (self asTitle: 'The Testing Gap');
@@ -2314,6 +2321,15 @@ From manual to automated testing
 { #category : #slides }
 BATbern50Slideshow >> testingMap: aSlide [
 	<gtSlide>
+	<text: '## From manual to automated testing
+
+The transition from manual to automated testing not only shortened the feedback loop from coding to validating that predefined test cases would pass, but it enabled something new.
+
+With high test coverage, it was now possible to introduce radical changes to the design of a software system, and to subsequently ensure that everything that worked before was still working.
+
+The obvious downside was the need to manually write the test cases. In any case, you only had to write an automated test once, whereas a manual test had to be evaluated each time by hand.
+
+The open question is where we can go with automated tests. So far all these can do is identify cases where the system fails. They cannot test business logic.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #testingMap:);
 		newFadedText: 'From manual to automated testing';
@@ -2369,10 +2385,10 @@ BATbern50Slideshow >> testingMapJSON [
 		{
 			"id" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 1.0
 			},
 			"x" : 0.8087029003590649,
 			"y" : 0.6716682563501506,
@@ -2480,10 +2496,10 @@ BATbern50Slideshow >> testingMapJSON [
 			"from" : "8aeea9ae-32b8-0d00-9086-beb60ce43fd4",
 			"to" : "80d569af-32b8-0d00-90e3-6e050ce43fd4",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 1.0
 			},
 			"width" : 1.0,
 			"arrow" : false
