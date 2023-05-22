@@ -93,11 +93,15 @@ From development to deployment
 { #category : #slides }
 BATbern50Slideshow >> designPatternsFrameworks: aSlide [
 	<gtSlide>
+	<text: '## Design Patterns, Components, Frameworks
+
+In the 1990s, the mantra was “Objects are not enough”. But if so, what else was needed?
+
+This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, the “Gang of Four” who produced the first “Design Patterns” book. But all four were also experienced in developing object-oriented frameworks based on resuable architectures and software components. They noticed that the same design ideas appeared in all the systems they had developed independently, and  figured something interesting was going on.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #designPatternsFrameworks:);
 		newFadedText: 'Design Patterns, Components, Frameworks';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
+		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
 ]
 
 { #category : #slides }
@@ -1850,7 +1854,12 @@ BATbern50Slideshow >> plugins: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> productivityGap: aSlide [
 	<gtSlide>
-	
+<text: 
+'# The Productivity Gap
+
+Whereas in the 1980s most of the resistence to OO technology came from concerns about performance (after all, every message to an object entails at least one additional indirection), by the 1990s machines were fast enough that developer productivity was seen as being more important.
+
+But what is “productivity”?'>
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #productivityGap:);
 		subtitleWithFormat: (self asTitle: 'The Productivity Gap');
@@ -1866,6 +1875,11 @@ From conception to realization
 { #category : #slides }
 BATbern50Slideshow >> productivityMap: aSlide [
 	<gtSlide>
+	<text: '## Closing the productivity gap
+
+Design patterns are valuable not only as a way to teach software developers about best practices, but they also offer a way to raise conversations about design to higher levels. If I say to you “do we need a Singleton here”, you should immediately udnerstand what''s at stake.
+
+Frameworks and components also raise the level of conversation. Instead of dealing with many unconnected applications, we deal with a Software Product Line of applications sharing a common code base.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #productivityMap:);
 		newFadedText: 'Closing the productivity gap';
@@ -2252,7 +2266,11 @@ BATbern50Slideshow >> softwareProductivity: aSlide [
 	https://en.wikipedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg"
 
 	<gtSlide>
-	<text: 'Software productivity isn''t just producing more code in the same amount of time.'>
+	<text: '## What is Software Productivity?
+
+This great photo shows Margaret Hamilton, NASA''s lead software engineer for the Apollo Program, standing next to printouts of all the code produced by her team for the 1969 moon landing.
+
+But software productivity clearly isn''t just producing more code in the same amount of time, otherwise refactoring would be seen as negative productivity! The trick is to produce more value for the customer, whetherthis is more code or less.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #softwareProductivity:);
 		newFadedText: 'What is Software Productivity?';
