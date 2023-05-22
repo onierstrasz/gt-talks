@@ -13,6 +13,11 @@ BATbern50Slideshow class >> show [
 { #category : #slides }
 BATbern50Slideshow >> aplSieve: aSlide [
 	<gtSlide>
+	<text: '# APL — my first programming experience
+
+You might be surprised to learn that my first programming experience was with APL, a live programming language for manipulating matrices and arrays. We programmed interactively on a timesharing system, getting immediate feedback.
+
+APL is facetiously known as a “write-only” language, due to its highly compact notation using Greek letters as array manipulation operators. In the slide we a see a one-line APL program to generate prime numbers.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #aplSieve:);
 		newFadedText: 'A prime sieve in APL';
@@ -303,14 +308,13 @@ BATbern50Slideshow >> eniacManualTesting: aSlide [
 
 { #category : #slides }
 BATbern50Slideshow >> executionGap: aSlide [
-	"
-	What to call this?
-		The Execution gap?
-		The Output gap?
-		The Run time gap?
-	"
-
 	<gtSlide>
+	<text: '# The Execution gap
+
+My first experience with the gaps in Software Engineering between expectations and reality was in 1972 when I  started to learn to program.
+In this case the gap was simply the time between designing a program and actually seeing it run.
+
+I was a tenth-grade high-school student in Toronto when I was invited to the University of Waterloo for a week of Mathematics and a bit of programming.'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #executionGap:);
 		subtitleWithFormat: (self asTitle: 'The Execution Gap');
@@ -452,7 +456,11 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 
 { #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
-		<gtSlide>
+	<gtSlide>
+	<text: '# The IBM 2741 terminal
+
+The so-called typewriter was actually an IBM 2741 used to program in APL.
+It is exactly the terminal I first used in 1972, including the APL typeball with Greek characters. I somehow doubt it was used to type letters in a kitchen in Iceland.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibm2741:);
 		newFadedText: 'The IBM 2741';
@@ -462,6 +470,11 @@ BATbern50Slideshow >> ibm2741: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> ibmOpticalCard: aSlide [
 	<gtSlide>
+	<text: '# Programming FORTRAN on optical mark cards
+
+In the Autumn of 1972, the Toronto Board of Education introduced the first high school computer programming courses. We coded our programs with pencil on optical cards, like the one you see. We handed our decks to the teacher, and got our printed output three days later. Debugging was nota pleasant experience. After my first experience with interactive APL, I felt I had moved back decades.
+
+Later in the semster one of my classmates discovered that anyone at all could walk in off the street and use the keypunches and the high-speed job stream at the University of Toronto. After that we did all our homework at UofT.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibmOpticalCard:);
 		newFadedText: 'IBM education FORTRAN optical mark card';
@@ -809,6 +822,15 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 { #category : #slides }
 BATbern50Slideshow >> markCardsMap: aSlide [
 	<gtSlide>
+	<text: '# Closing the execution gap
+
+In this slide we see a “Wardley map”, a diagram for business strategy that maps components with respect to user need. At the top we see the need for getting our programs running.
+
+The other nodes are components that contribute to that need. From bottom to top components provide more value to the user, and from left to right they evolve prototypes all the way to commodities.
+
+In this case we see that opticalmark cards evolve to punch cards to interactive terminals, shortening the feedback loop. Similarly gettin the program to run evolves from sending it by courier to just hitting the execute key.
+
+What''s interesting is that when the tchnology is sufficiently evolved, new opportunities arise that could not be imagined before. In this case, since the feedback loop is so short with live programming, we can experiment in ways that were not possible before.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #markCardsMap:);
 		newFadedText: 'Closing the execution gap';
@@ -2033,6 +2055,7 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 { #category : #utility }
 BATbern50Slideshow >> refreshSlideDeckPage [
 	"Remove the page if it exists, and recreate it from scratch."
+
 	| page |
 	page := self db ensurePageNamed: self class name.
 	self db removePage: page.
@@ -2044,10 +2067,13 @@ BATbern50Slideshow >> refreshSlideDeckPage [
 					detect: [ :p | p selector = #text: ]
 					ifFound: [ :pragma | pragma arguments first ]
 					ifNone: [ '' ].
+			((String cr repeat: 2) split: text)
+				do: [ :each | 
+					page
+						addSnippet: (LeTextSnippet new
+								string: each;
+								yourself) ].
 			page
-				addSnippet: (LeTextSnippet new
-						string: text;
-						yourself);
 				addSnippet: (LeElementSnippet new
 						code: 'BATbern50Slideshow new slideFor: ' , assoc value selector printString;
 						elementHeight: 400;
@@ -2449,6 +2475,9 @@ BATbern50Slideshow >> theElectronicOffice: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> theTypist: aSlide [
 	<gtSlide>
+	<text: '## The typist at the kitchen table
+
+As an amusing parenthesis, I saw this displayed in the Open Air museum in Reykjavik in 2015. It looks fine, except the “typewriter” was not a typewriter at all.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theTypist:);
 		newFadedText: 'The typist at the kitchen table?';
@@ -2460,7 +2489,12 @@ BATbern50Slideshow >> theTypist: aSlide [
 BATbern50Slideshow >> titleSlide: aSlide [
 	<gtSlide>
 	<text: '# Mind the gap — 50 years of shortening feedback loops
-TODO: add some draft text to each slide.'>
+
+Hi. My name is Oscar Nierstrasz.
+
+I was a professor of Software Engineering at the University of Bern from 1994 until I retired at the end of 2021, and since then have been working for feenk, a small consulting company in Wabern that was founded by a former student of mine.
+
+Today, on the occasion of the 50th Berner Architekten Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes suprising opportunities.'>
 	^ aSlide titleWithFooter
 		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 20;

@@ -189,6 +189,43 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-22T18:49:27.190542+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-22T18:49:33.580197+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0dVryqy4DQCmAkBnC+SvnQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "CONTINUE with the Modeling gap."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
 								"items" : [
 									{
 										"__type" : "textSnippet",
