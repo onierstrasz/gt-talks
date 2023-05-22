@@ -302,7 +302,8 @@ From punch cards to live programming
 ]
 
 { #category : #accessing }
-BATbern50Slideshow >> gtRubySyntaxExplanationFor: aView [
+BATbern50Slideshow >> gtSlideDeckFor: aView [
+	"Eventually push this method up."
 	<gtView>
 	^ aView forward
 		title: 'Slide deck';
@@ -314,11 +315,12 @@ BATbern50Slideshow >> gtRubySyntaxExplanationFor: aView [
 
 { #category : #accessing }
 BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
+	"Eventually push this method up."
 	<gtView>
 	^ self wardleyMaps isEmpty
 		ifTrue: [ aView empty ]
 		ifFalse: [ aView list
-				priority: 45;
+				priority: 90;
 				title: 'Wardley maps';
 				items: [ self wardleyMaps ];
 				actionUpdateButton ]
@@ -1950,16 +1952,10 @@ BATbern50Slideshow >> slidePriorities [
 			whereAreTheObjects:
 			oopEarlyHistory:
 			oopMap:
-				productivityGap:
+			
+		productivityGap:
 			softwareProductivity:
 			designPatternsFrameworks:
-			"
-			What is productivity?
-			What is the gap?
-			Example: design patterns
-			Example: Frameworks & SPLs
-			Open issues.
-			"
 			productivityMap:
 
 		testingGap:
@@ -1969,7 +1965,6 @@ BATbern50Slideshow >> slidePriorities [
 		deploymentGap:
 			houseDeployment:
 			devOpsMap:
-		
 
 		sustainabilityGap:
 			ideGlorifiedTextEditor:
@@ -1977,19 +1972,29 @@ BATbern50Slideshow >> slidePriorities [
 			codeDisconnected:
 			qaToolsUnreliable:
 			plugins:
-		
-		
+
 		moldableDevelopment:
+			explainableSystems:
+			slideshowInspection:
 			"
-			
+			examples
 			
 			"
 
 			
-			slideshowInspection:
+		
+			lifewareTesting:
 		
 			moldableDevelopmentMap:
 
+		
+		conclusion:
+			"
+			For systems to be explainable, they must be explorable.
+			Start exploring (and developing) from objects, not code.
+			Effective decision making requires tools that are custom-built, cheap and composable.
+			A moldable development environment supports decision-making not only for developers but also for business stakeholders.
+			"
 			
 		)
 ]
@@ -2331,7 +2336,8 @@ BATbern50Slideshow >> theTypist: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> titleSlide: aSlide [
 	<gtSlide>
-	<text: 'TODO: add some draft text to each slide.'>
+	<text: '# Mind the gap — 50 years of shortening feedback loops
+TODO: add some draft text to each slide.'>
 	^ aSlide titleWithFooter
 		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 20;
