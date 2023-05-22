@@ -301,6 +301,16 @@ From punch cards to live programming
 ')
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> explainableSystems: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #explainableSystems:);
+		newFadedText: 'How to make systems explainable';
+		element: [ GtFileUtility
+				imageElementFromFileReference: self pictures / 'placeholder.png' ]
+]
+
 { #category : #accessing }
 BATbern50Slideshow >> gtSlideDeckFor: aView [
 	"Eventually push this method up."
