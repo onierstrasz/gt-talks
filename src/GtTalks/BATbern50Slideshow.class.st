@@ -181,8 +181,8 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5676360997560637,
-			"y" : 0.5430783843663677,
+			"x" : 0.5649923456251978,
+			"y" : 0.656411717699701,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -202,8 +202,8 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5834777187402505,
-			"y" : 0.3435673515981736,
+			"x" : 0.5372120214500984,
+			"y" : 0.2769006849315069,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -284,7 +284,7 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"red" : 0.5004887585532747
 			},
 			"width" : 2.0,
-			"arrow" : false
+			"arrow" : true
 		},
 		{
 			"from" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
@@ -603,8 +603,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.2930984343923688,
-			"y" : 0.7252334825476212,
+			"x" : 0.290454680261503,
+			"y" : 0.714767240286297,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -624,8 +624,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5829397682771899,
-			"y" : 0.6831589266488112,
+			"x" : 0.565755366426562,
+			"y" : 0.7146238703064021,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -645,8 +645,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.8579581964945253,
-			"y" : 0.6338377933024274,
+			"x" : 0.846061302905629,
+			"y" : 0.7093156821113086,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -687,8 +687,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.30529647021361594,
-			"y" : 0.42227124190276194,
+			"x" : 0.3013308390173172,
+			"y" : 0.3740639553680552,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -729,8 +729,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7854364591791964,
-			"y" : 0.35634493121796695,
+			"x" : 0.8079083692915559,
+			"y" : 0.3752268067072053,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1464,8 +1464,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.28431411265564316,
-			"y" : 0.8447389476451392,
+			"x" : 0.28960162091737485,
+			"y" : 0.81150569456448,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1527,8 +1527,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5220779094735264,
-			"y" : 0.6136669018022712,
+			"x" : 0.5445498195858859,
+			"y" : 0.8068351853336035,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1548,8 +1548,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5357879472892858,
-			"y" : 0.4842681872638353,
+			"x" : 0.5529723491399137,
+			"y" : 0.5964304164110605,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1569,8 +1569,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5528725205841785,
-			"y" : 0.35663837581737795,
+			"x" : 0.5713787995002393,
+			"y" : 0.427259038613779,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1653,8 +1653,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5957358739038179,
-			"y" : 0.2266257471640773,
+			"x" : 0.594413996838385,
+			"y" : 0.27647562678506626,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1964,13 +1964,13 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6168369401661076,
-			"y" : 0.6320042906184693,
+			"x" : 0.6115494319043759,
+			"y" : 0.698670957285136,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.666666666666667,
-				"y" : -0.16666666666666666,
+				"x" : 4.416666666666667,
+				"y" : 1.9166666666666667,
 				"text" : "Design pattern"
 			},
 			"pipeline" : {
@@ -1985,13 +1985,13 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.559045779312139,
-			"y" : 0.38069215493927566,
+			"x" : 0.5537582710504073,
+			"y" : 0.41735882160594234,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.75,
-				"y" : -0.16666666666666666,
+				"x" : 4.833333333333333,
+				"y" : 1.1666666666666667,
 				"text" : "Framework"
 			},
 			"pipeline" : {
@@ -2011,8 +2011,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.666666666666667,
-				"y" : 1.8333333333333333,
+				"x" : 5.833333333333333,
+				"y" : 1.75,
 				"text" : "Custom architecture"
 			},
 			"pipeline" : {
@@ -2032,8 +2032,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.083333333333333,
-				"y" : 2.3333333333333335,
+				"x" : 4.5,
+				"y" : 2.0,
 				"text" : "Custom design"
 			},
 			"pipeline" : {
@@ -2053,8 +2053,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.833333333333333,
-				"y" : 0.08333333333333333,
+				"x" : -3.75,
+				"y" : -0.08333333333333331,
 				"text" : "Application"
 			},
 			"pipeline" : {
@@ -2074,8 +2074,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.166666666666667,
-				"y" : -0.08333333333333333,
+				"x" : 6.0,
+				"y" : -0.16666666666666666,
 				"text" : "Shared code base"
 			},
 			"pipeline" : {
@@ -2447,8 +2447,8 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.579189719695904,
-			"y" : 0.6833967126290046,
+			"x" : 0.5765459655650382,
+			"y" : 0.7000633792956712,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2468,8 +2468,8 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 1.0
 			},
-			"x" : 0.8087029003590649,
-			"y" : 0.6716682563501506,
+			"x" : 0.8153122856862295,
+			"y" : 0.7016682563501506,
 			"width" : 12,
 			"height" : 12,
 			"label" : {

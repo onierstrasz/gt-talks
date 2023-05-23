@@ -171,7 +171,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-22T23:19:36.936754+02:00"
+						"dateAndTimeString" : "2023-05-22T23:19:50.072576+02:00"
 					}
 				},
 				"uid" : {
@@ -181,7 +181,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Just inspect this guy and explore the *Slide deck* vie"
+				"string" : "Just inspect this guy and (for example) explore the *Slide deck* view."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -231,7 +231,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-03T09:05:54.114054+02:00"
+						"dateAndTimeString" : "2023-05-23T09:47:14.891553+02:00"
 					}
 				},
 				"editEmail" : {
@@ -242,17 +242,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-03T09:06:11.372087+02:00"
+						"dateAndTimeString" : "2023-05-23T09:47:16.176191+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wN82ChK3DQCaiaSLCZwhOg=="
+					"uidString" : "trwvVbm4DQCmFGLbD49Fgg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "See also [[BATbern50 notes]] "
+				"string" : "Or "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T09:47:01.962939+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T09:47:09.977339+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dXdqVLm4DQCl7MfCD49Fgg=="
+				},
+				"code" : "BATbern50Slideshow show."
 			}
 		]
 	},
