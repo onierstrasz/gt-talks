@@ -61,8 +61,7 @@ BATbern50Slideshow >> conclusion: aSlide [
 For systems to be explainable, they must be explorable.
 Start exploring (and developing) from objects, not code.
 Effective decision making requires tools that are custom-built, cheap and composable.
-A moldable development environment supports decision-making not only for developers but also for business stakeholders.
-'>
+A moldable development environment supports decision-making not only for developers but also for business stakeholders.'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #conclusion:);
 		subtitleWithFormat: (self asTitle: 'Closing the gap');
@@ -414,7 +413,6 @@ BATbern50Slideshow >> gtExtensions: aSlide [
 	<text: '## GT tool extensions
 
 All the views we have seen are examples of custom tools added to a moldable IDE. 
-
 
 In addition to custom views, there are several other ways the IDE can be molded such as by adding custom actions, search capabilities, and quality advices.
 
