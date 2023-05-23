@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T09:04:46.002402+02:00"
+						"dateAndTimeString" : "2023-05-23T10:05:25.86969+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T09:05:00.594179+02:00"
+						"dateAndTimeString" : "2023-05-23T10:07:00.296163+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AOmXShK3DQCeF8VPCZwhOg=="
+					"uidString" : "kcA2lrm4DQC50XHcCCBLzQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "These are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks)."
+				"string" : "The {{gtClass:name=BATbern50Slideshow}} has a Slide deck view: {{gtMethod:name=BATbern50Slideshow>>#gtSlideDeckFor:}}. "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T10:05:52.662262+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T10:05:56.658421+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Io/Pl7m4DQC6oRJ4CCBLzQ=="
+				},
+				"code" : "BATbern50Slideshow new"
 			},
 			{
 				"__type" : "textSnippet",
@@ -60,7 +94,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:05:01.205275+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:09.730065+02:00"
 								}
 							},
 							"editEmail" : {
@@ -71,17 +105,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:05:23.988634+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:13.012772+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "2GS+lLm4DQC4uOoeCCBLzQ=="
+								"uidString" : "qYRnnLm4DQC8/iF8CCBLzQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[***TODO generalize the slide deck page generation]]"
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideDeckPage}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -97,7 +131,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T17:22:56.247237+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:15.219718+02:00"
 								}
 							},
 							"editEmail" : {
@@ -108,17 +142,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T17:22:58.43117+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:31.600866+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "ESnXlKu4DQC1o3/eB2nJmQ=="
+								"uidString" : "Sku7nLm4DQC9K4htCCBLzQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[BATbern50 notes]] "
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#refreshSlideDeckPage}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -134,7 +168,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-20T15:23:21.568192+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:33.185841+02:00"
 								}
 							},
 							"editEmail" : {
@@ -145,17 +179,91 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-20T15:23:51.046195+02:00"
+									"dateAndTimeString" : "2023-05-23T10:07:44.285815+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "RK2wrYG4DQCx7MmuDTwjyA=="
+								"uidString" : "lm/Nnbm4DQC9YN5YCCBLzQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Encoding the script in the slides]]"
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideDictionary}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:07:45.301854+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:07:59.141063+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9U+Gnrm4DQC9jWRoCCBLzQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#scalableSlide:}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:08:00.127609+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:08:19.006651+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "1Ihon7m4DQC9uhIRCCBLzQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideFor:}}"
 						}
 					]
 				},
@@ -167,7 +275,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:35.08382+02:00"
+						"dateAndTimeString" : "2023-05-23T10:05:58.715376+02:00"
 					}
 				},
 				"editEmail" : {
@@ -178,17 +286,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-22T23:18:32.166582+02:00"
+						"dateAndTimeString" : "2023-05-23T10:07:08.957683+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "v82RCRK3DQCaF7pwCZwhOg=="
+					"uidString" : "Vu0rmLm4DQC6yTbICCBLzQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[BATbern50 talk]]  "
+				"string" : "It  would be nice to have in other slideshows, but it depends on several other methods, namely:"
 			},
 			{
 				"__type" : "textSnippet",
@@ -204,7 +312,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T17:22:20.994183+02:00"
+						"dateAndTimeString" : "2023-05-23T10:08:20.703645+02:00"
 					}
 				},
 				"editEmail" : {
@@ -215,129 +323,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T17:22:40.238489+02:00"
+						"dateAndTimeString" : "2023-05-23T10:09:28.100417+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cewWPhm3DQCo6e8hBq0PDA=="
+					"uidString" : "OICioLm4DQC955LdCCBLzQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[*** ESUG 2023 experience talk]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:15:56.658668+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:15:56.663048+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Q7jReRe3DQCJPA4IAPOe7w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Lessons]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:16:04.098579+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-02T15:16:05.264891+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "QLMaehe3DQCJYnGnAPOe7w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Other material and examples]] "
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:34.307323+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:46:34.313343+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "f3tGBBK3DQCZy8uvCZwhOg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[VISSOFT Talk]]"
+				"string" : "The key issue is that slides must be scalable, but not all slides are so by default. Wrapping them works, but it would be better if the `<gtSlide>` facility is fixed so all slides are scalable by default."
 			},
 			{
 				"__type" : "textSnippet",
@@ -353,7 +349,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:45:11.444686+02:00"
+						"dateAndTimeString" : "2023-05-23T10:09:28.96551+02:00"
 					}
 				},
 				"editEmail" : {
@@ -364,54 +360,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:45:11.444686+02:00"
+						"dateAndTimeString" : "2023-05-23T10:09:51.892319+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "BIiVBBK3DQCZ8vpnCZwhOg=="
+					"uidString" : "+he0pLm4DQCCMt4yCCBLzQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:44:58.537941+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T08:44:58.537941+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "96PQAxK3DQCZyoFYCZwhOg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"string" : "Should we push these methods up anyway, and then fix them when slides bec"
 			}
 		]
 	},
@@ -423,7 +382,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:45:06.254976+02:00"
+			"dateAndTimeString" : "2023-05-23T10:05:25.837621+02:00"
 		}
 	},
 	"editEmail" : {
@@ -434,15 +393,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:45:06.254976+02:00"
+			"dateAndTimeString" : "2023-05-23T10:05:25.837621+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Gt Talks TOC"
+		"title" : "***TODO generalize the slide deck page generation"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "5850d003-12b7-0d00-99c9-c79a099c213a"
+		"uuid" : "61423696-b9b8-0d00-b9d0-a90808204bcd"
 	}
 }

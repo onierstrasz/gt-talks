@@ -446,7 +446,7 @@ BATbern50Slideshow >> gtExtensionsPage [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #views }
 BATbern50Slideshow >> gtSlideDeckFor: aView [
 	"Eventually push this method up."
 	<gtView>
@@ -458,7 +458,7 @@ BATbern50Slideshow >> gtSlideDeckFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #accessing }
+{ #category : #views }
 BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 	"Eventually push this method up."
 	<gtView>
@@ -2239,7 +2239,7 @@ BATbern50Slideshow >> refreshSlideDeckPage [
 								yourself) ].
 			page
 				addSnippet: (LeElementSnippet new
-						code: 'BATbern50Slideshow new slideFor: ' , assoc value selector printString;
+						code: self class name, ' new slideFor: ' , assoc value selector printString;
 						elementHeight: 400;
 						codeVisible: false;
 						yourself) ].
@@ -2267,8 +2267,6 @@ BATbern50Slideshow >> slideDeckPage [
 
 { #category : #accessing }
 BATbern50Slideshow >> slideDictionary [
-	"TODO: Wrap each slide as a scalable"
-
 	| dict scalableDict |
 	dict := super slideDictionary.
 	scalableDict := OrderedDictionary new.
