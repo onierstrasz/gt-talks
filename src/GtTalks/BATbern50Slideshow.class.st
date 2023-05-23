@@ -69,7 +69,7 @@ A moldable development environment supports decision-making not only for develop
 		paragraphWithFormat: (self
 				asBigText: '
 
-Explainable systems must be explorable.
+Systems must be explainable.
 
 Decision-making tools must be custom-built, cheap and composable.
 
