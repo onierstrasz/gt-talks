@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:05:17.147635+02:00"
+									"dateAndTimeString" : "2023-05-23T10:05:23.988634+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[***TODO generalize the slide deck page]]"
+							"string" : "[[***TODO generalize the slide deck page generation]]"
 						},
 						{
 							"__type" : "textSnippet",

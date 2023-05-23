@@ -205,43 +205,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:07:45.301854+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:07:59.141063+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "9U+Gnrm4DQC9jWRoCCBLzQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtMethod:name=BATbern50Slideshow>>#scalableSlide:}}"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2023-05-23T10:08:00.127609+02:00"
 								}
 							},
@@ -264,6 +227,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideFor:}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:07:45.301854+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-23T10:07:59.141063+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9U+Gnrm4DQC9jWRoCCBLzQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtMethod:name=BATbern50Slideshow>>#scalableSlide:}}"
 						}
 					]
 				},
@@ -349,7 +349,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T10:09:28.96551+02:00"
+						"dateAndTimeString" : "2023-05-23T11:16:52.008133+02:00"
 					}
 				},
 				"editEmail" : {
@@ -360,7 +360,44 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T10:09:54.97354+02:00"
+						"dateAndTimeString" : "2023-05-23T11:16:52.008133+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zAawlbq4DQCcmm01CCBLzQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For now we push up these methods to {{gtClass:name=PrioritySlideshow}}. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T11:16:18.834117+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-05-23T11:17:33.892671+02:00"
 					}
 				},
 				"uid" : {
@@ -370,7 +407,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Should we push these methods up anyway, and then fix them when slides become scalable?"
+				"string" : "At some point if the scaling issue is resolved, we should remove the usage of {{gtMethod:name=PrioritySlideshow>>#scalableSlide:}}. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -430,12 +467,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-23T10:05:25.837621+02:00"
+			"dateAndTimeString" : "2023-05-23T11:16:17.298862+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "***TODO generalize the slide deck page generation"
+		"title" : "Generalized the slide deck page generation"
 	},
 	"uid" : {
 		"__type" : "uuid",

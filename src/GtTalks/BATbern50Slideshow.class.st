@@ -447,18 +447,6 @@ BATbern50Slideshow >> gtExtensionsPage [
 ]
 
 { #category : #views }
-BATbern50Slideshow >> gtSlideDeckFor: aView [
-	"Eventually push this method up."
-	<gtView>
-	^ aView forward
-		title: 'Slide deck';
-		priority: 60;
-		object: [ self slideDeckPage asContentUIModel ];
-		view: #gtLiveFor:;
-		actionUpdateButton
-]
-
-{ #category : #views }
 BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 	"Eventually push this method up."
 	<gtView>
@@ -2216,72 +2204,10 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
 ]
 
-{ #category : #utility }
-BATbern50Slideshow >> refreshSlideDeckPage [
-	"Remove the page if it exists, and recreate it from scratch."
-
-	| page |
-	page := self db ensurePageNamed: self class name.
-	self db removePage: page.
-	page := self db ensurePageNamed: self class name.
-	self slideDictionary
-		do: [ :assoc | 
-			| text |
-			text := assoc value pragmas
-					detect: [ :p | p selector = #text: ]
-					ifFound: [ :pragma | pragma arguments first ]
-					ifNone: [ '' ].
-			((String cr repeat: 2) split: text)
-				do: [ :each | 
-					page
-						addSnippet: (LeTextSnippet new
-								string: each;
-								yourself) ].
-			page
-				addSnippet: (LeElementSnippet new
-						code: self class name, ' new slideFor: ' , assoc value selector printString;
-						elementHeight: 400;
-						codeVisible: false;
-						yourself) ].
-	^ page
-]
-
-{ #category : #accessing }
-BATbern50Slideshow >> scalableSlide: aSlide [
-	| scalableSlide |
-	scalableSlide := GtProtoLiveSlide new element
-			element: [ (aSlide asElement size: 1200 @ 900) asScalableElement ].
-	^ scalableSlide
-]
-
 { #category : #slides }
 BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
-]
-
-{ #category : #utility }
-BATbern50Slideshow >> slideDeckPage [
-	^ self db pageNamed: self class name ifAbsent: [ self refreshSlideDeckPage ]
-]
-
-{ #category : #accessing }
-BATbern50Slideshow >> slideDictionary [
-	| dict scalableDict |
-	dict := super slideDictionary.
-	scalableDict := OrderedDictionary new.
-	dict
-		keysAndValuesDo: [ :aSlide :aMethod | 
-			| scalableSlide |
-			scalableSlide := self scalableSlide: aSlide.
-			scalableDict at: scalableSlide put: aMethod ].
-	^ scalableDict
-]
-
-{ #category : #accessing }
-BATbern50Slideshow >> slideFor: selector [
-	^ self
-		scalableSlide: (self perform: selector withArguments: {GtProtoLiveSlide new})
 ]
 
 { #category : #accessing }
