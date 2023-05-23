@@ -131,27 +131,6 @@ BATbern50Slideshow >> devOpsMapJSON [
 	^ '{
 	"nodes" : [
 		{
-			"id" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.39478701200089666,
-			"y" : 0.25655217306011807,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : -6.25,
-				"y" : 0.5833333333333334,
-				"text" : "Operational system"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
 			"id" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
 			"color" : {
 				"green" : 0.5004887585532747,
@@ -159,13 +138,13 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.2874194958810925,
-			"y" : 0.6543180233008389,
+			"x" : 0.37298609094016877,
+			"y" : 0.5403691038509371,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -7.5,
-				"y" : 0.25,
+				"x" : -6.0,
+				"y" : 1.8333333333333333,
 				"text" : "Manual deployment"
 			},
 			"pipeline" : {
@@ -180,14 +159,14 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5649923456251978,
-			"y" : 0.656411717699701,
+			"x" : 0.8028682854748218,
+			"y" : 0.5404971602038574,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.0,
-				"y" : 0.4166666666666667,
-				"text" : "DevOps"
+				"x" : -6.0,
+				"y" : 2.25,
+				"text" : "Automatic deployment"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -201,13 +180,13 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5372120214500984,
-			"y" : 0.2769006849315069,
+			"x" : 0.1227383372395721,
+			"y" : 0.12333337700502109,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 8.0,
-				"y" : 0.16666666666666666,
+				"x" : 1.1666666666666667,
+				"y" : -1.3333333333333333,
 				"text" : "Feature experimentation"
 			},
 			"pipeline" : {
@@ -222,14 +201,56 @@ BATbern50Slideshow >> devOpsMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.43389785647987017,
-			"y" : 0.10057603624131949,
+			"x" : 0.4273189091114491,
+			"y" : 0.09861039819537773,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -6.083333333333333,
-				"y" : -0.3333333333333333,
+				"x" : 8.0,
+				"y" : 0.08333333333333336,
 				"text" : "Fit for purpose system"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "8f95c4f3-bcb8-0d00-a717-d455058e5098",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.5445220193340495,
+			"y" : 0.7799607072691552,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -1.5833333333333333,
+				"y" : 2.5,
+				"text" : "Clicking tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "b937f5f3-bcb8-0d00-a718-3ac1058e5098",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6642595178458668,
+			"y" : 0.779457657844458,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.1666666666666665,
+				"y" : 2.3333333333333335,
+				"text" : "Infrastructure as code"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -237,30 +258,6 @@ BATbern50Slideshow >> devOpsMapJSON [
 		}
 	],
 	"edges" : [
-		{
-			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
-			"to" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
-			"color" : {
-				"green" : 0.5004887585532747,
-				"blue" : 0.5004887585532747,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "11293400-44b8-0d00-b465-323a0a55bfcc",
-			"to" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
 		{
 			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
 			"to" : "11293400-44b8-0d00-b465-323a0a55bfcc",
@@ -286,8 +283,32 @@ BATbern50Slideshow >> devOpsMapJSON [
 			"arrow" : true
 		},
 		{
-			"from" : "0371b1fd-43b8-0d00-b463-044e0a55bfcc",
-			"to" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
+			"from" : "8f95c4f3-bcb8-0d00-a717-d455058e5098",
+			"to" : "b937f5f3-bcb8-0d00-a718-3ac1058e5098",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "8f95c4f3-bcb8-0d00-a717-d455058e5098",
+			"to" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "b937f5f3-bcb8-0d00-a718-3ac1058e5098",
+			"to" : "11293400-44b8-0d00-b465-323a0a55bfcc",
 			"color" : {
 				"green" : 0.0,
 				"blue" : 0.0,
@@ -298,13 +319,25 @@ BATbern50Slideshow >> devOpsMapJSON [
 			"arrow" : false
 		},
 		{
-			"from" : "336ffe04-44b8-0d00-b467-b3270a55bfcc",
+			"from" : "feda24ff-43b8-0d00-b464-a4c30a55bfcc",
+			"to" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false
+		},
+		{
+			"from" : "11293400-44b8-0d00-b465-323a0a55bfcc",
 			"to" : "ca20c722-44b8-0d00-b53c-15370a55bfcc",
 			"color" : {
 				"green" : 0.0,
 				"blue" : 0.0,
 				"alpha" : 1.0,
-				"red" : 0.5004887585532747
+				"red" : 0.0
 			},
 			"width" : 1.0,
 			"arrow" : false
@@ -652,13 +685,13 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.6932200577833807,
-			"y" : 0.1570638947714977,
+			"x" : 0.20769374199390697,
+			"y" : 0.1921188640293756,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.0,
-				"y" : 0.16666666666666666,
+				"x" : -5.333333333333333,
+				"y" : 0.08333333333333333,
 				"text" : "Experimentation"
 			},
 			"pipeline" : {
@@ -673,13 +706,13 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.3013308390173172,
-			"y" : 0.3740639553680552,
+			"x" : 0.30264662849100143,
+			"y" : 0.37073062203472185,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.5,
-				"y" : 0.3333333333333333,
+				"x" : -4.166666666666667,
+				"y" : 2.0833333333333335,
 				"text" : "Send by courier"
 			},
 			"pipeline" : {
@@ -694,13 +727,13 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5614019299592676,
-			"y" : 0.374449015206791,
+			"x" : 0.5640335089066362,
+			"y" : 0.3777823485401243,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -5.0,
-				"y" : 0.5,
+				"x" : -4.666666666666667,
+				"y" : 2.0833333333333335,
 				"text" : "Give to operator"
 			},
 			"pipeline" : {
@@ -715,13 +748,13 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.8079083692915559,
-			"y" : 0.3752268067072053,
+			"x" : 0.8118557377126085,
+			"y" : 0.3885601400405387,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -3.0,
-				"y" : 1.25,
+				"x" : -2.8333333333333335,
+				"y" : 2.0,
 				"text" : "Just run it"
 			},
 			"pipeline" : {
@@ -839,16 +872,28 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 			"arrow" : true
 		},
 		{
-			"from" : "8a19f06b-2eb8-0d00-8df8-1b3b0af31c02",
-			"to" : "fb6a3c23-2eb8-0d00-8c40-f6060af31c02",
+			"from" : "624bad6e-2eb8-0d00-8dfa-76970af31c02",
+			"to" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
 				"alpha" : 1.0,
-				"red" : 0.9198435972629521
+				"red" : 1.0
 			},
-			"width" : 1.0,
-			"arrow" : false
+			"width" : 2.0,
+			"arrow" : true
+		},
+		{
+			"from" : "07dcb970-2eb8-0d00-8dfb-efab0af31c02",
+			"to" : "dbd7e071-2eb8-0d00-8dfc-dc800af31c02",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 2.0,
+			"arrow" : true
 		}
 	]
 }'
@@ -931,90 +976,6 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 	^ '{
 	"nodes" : [
 		{
-			"id" : "1db0e27a-6a80-0d00-af4d-82110877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.37580092176258995,
-			"y" : 0.0840559275136829,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : -0.08333333333333333,
-				"y" : -1.0833333333333333,
-				"text" : "developers"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "56af4d7b-6a80-0d00-af4e-56010877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.5083332367562812,
-			"y" : 0.07830118890529421,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 0.5,
-				"y" : -0.9166666666666666,
-				"text" : "business"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.42297099820143885,
-			"y" : 0.20127285312573565,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 2.25,
-				"y" : 2.25,
-				"text" : "challenge"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "20293a7d-6a80-0d00-af50-6a320877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.3379945710837095,
-			"y" : 0.32530106822727006,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 5.75,
-				"y" : 1.5833333333333333,
-				"text" : "specific problem"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
 			"id" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
 			"color" : {
 				"green" : 0.0,
@@ -1022,14 +983,14 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6728264147123146,
-			"y" : 0.1973697705797255,
+			"x" : 0.48466851997547267,
+			"y" : 0.09265772869490874,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 0.9166666666666666,
 				"y" : -1.0833333333333333,
-				"text" : "decision"
+				"text" : "Decision-making"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1043,14 +1004,14 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7837127275700204,
-			"y" : 0.46079254973964345,
+			"x" : 0.7837127275700203,
+			"y" : 0.4747541553242857,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.333333333333333,
-				"y" : 2.0833333333333335,
-				"text" : "generated views"
+				"x" : 5.25,
+				"y" : -1.4166666666666667,
+				"text" : "Generated views"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1071,7 +1032,7 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 			"label" : {
 				"x" : 0.5,
 				"y" : 2.0,
-				"text" : "moldable tools"
+				"text" : "Moldable tools"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1090,9 +1051,9 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.75,
-				"y" : 2.25,
-				"text" : "manual views"
+				"x" : -4.416666666666667,
+				"y" : -0.16666666666666666,
+				"text" : "Manual views"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1113,7 +1074,7 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 			"label" : {
 				"x" : -0.3333333333333333,
 				"y" : 2.4166666666666727,
-				"text" : "manual inspection"
+				"text" : "Manual inspection"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1127,14 +1088,14 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.4101737191478624,
-			"y" : 0.638887145805496,
+			"x" : 0.4114895086215466,
+			"y" : 0.6301611423150946,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : -1.3333333333333333,
 				"y" : 2.1666666666666665,
-				"text" : "specific coding"
+				"text" : "Specific coding"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1148,14 +1109,35 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.5369899392985612,
-			"y" : 0.861929338530632,
+			"x" : 0.5383057287722454,
+			"y" : 0.8671649406248728,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.5,
-				"y" : 2.0,
-				"text" : "rigid tools"
+				"x" : -2.9166666666666665,
+				"y" : 1.6666666666666667,
+				"text" : "Rigid tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "d6f38bda-bcb8-0d00-a6db-4cf5058e5098",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.17271262721011513,
+			"y" : 0.18787067970001903,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5833333333333334,
+				"y" : -1.9166666666666667,
+				"text" : "Inside-out conversations"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1163,66 +1145,6 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 		}
 	],
 	"edges" : [
-		{
-			"from" : "1db0e27a-6a80-0d00-af4d-82110877cc58",
-			"to" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
-			"arrow" : false
-		},
-		{
-			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
-			"to" : "56af4d7b-6a80-0d00-af4e-56010877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
-			"arrow" : false
-		},
-		{
-			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
-			"to" : "20293a7d-6a80-0d00-af50-6a320877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
-			"arrow" : false
-		},
-		{
-			"from" : "afe4927b-6a80-0d00-af4f-68b10877cc58",
-			"to" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
-			"arrow" : false
-		},
-		{
-			"from" : "20293a7d-6a80-0d00-af50-6a320877cc58",
-			"to" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
-			"arrow" : false
-		},
 		{
 			"from" : "5b6ca17d-6a80-0d00-af51-10000877cc58",
 			"to" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
@@ -1248,18 +1170,6 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 			"arrow" : false
 		},
 		{
-			"from" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
-			"to" : "20293a7d-6a80-0d00-af50-6a320877cc58",
-			"color" : {
-				"green" : 0.624633431085044,
-				"blue" : 0.624633431085044,
-				"alpha" : 1.0,
-				"red" : 0.624633431085044
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
 			"from" : "f68dcc84-6a80-0d00-af55-59850877cc58",
 			"to" : "b3a29b83-6a80-0d00-af54-522e0877cc58",
 			"color" : {
@@ -1269,18 +1179,6 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 				"red" : 0.624633431085044
 			},
 			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "20293a7d-6a80-0d00-af50-6a320877cc58",
-			"to" : "ff86ec85-6a80-0d00-af56-535e0877cc58",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 2.0,
 			"arrow" : false
 		},
 		{
@@ -1366,6 +1264,18 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 			},
 			"width" : 1.0,
 			"arrow" : false
+		},
+		{
+			"from" : "f5f4e880-6a80-0d00-af52-aa280877cc58",
+			"to" : "d6f38bda-bcb8-0d00-a6db-4cf5058e5098",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 2.0,
+			"arrow" : true
 		}
 	]
 }'
@@ -1476,7 +1386,7 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.583333333333333,
+				"x" : -3.6666666666666665,
 				"y" : 0.4166666666666667,
 				"text" : "Design"
 			},
@@ -1492,8 +1402,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.43699123374777976,
-			"y" : 0.16035158264385,
+			"x" : 0.43435965480041133,
+			"y" : 0.19422601908092957,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1513,8 +1423,8 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5445498195858859,
-			"y" : 0.8068351853336035,
+			"x" : 0.5513157894736842,
+			"y" : 0.804948143092554,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1534,7 +1444,7 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5529723491399137,
+			"x" : 0.5634986649293874,
 			"y" : 0.5964304164110605,
 			"width" : 12,
 			"height" : 12,
@@ -1611,48 +1521,6 @@ BATbern50Slideshow >> oopMapJSON [
 			}
 		},
 		{
-			"id" : "42dfe198-31b8-0d00-bc00-e3760c124378",
-			"color" : {
-				"green" : 0.5004887585532747,
-				"blue" : 0.5004887585532747,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
-			},
-			"x" : 0.35593439655881937,
-			"y" : 0.2773235133464627,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : -8.75,
-				"y" : 0.16666666666666666,
-				"text" : "Development and maintenance"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "4afee69a-31b8-0d00-bc01-925a0c124378",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.594413996838385,
-			"y" : 0.27647562678506626,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 11.333333333333334,
-				"y" : 0.4166666666666667,
-				"text" : "Development and maintenance"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			}
-		},
-		{
 			"id" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
 			"color" : {
 				"green" : 0.0,
@@ -1660,14 +1528,14 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.573032455956376,
-			"y" : 0.13118560948119637,
+			"x" : 0.06645350858795496,
+			"y" : 0.34250373111068616,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 6.666666666666667,
 				"y" : 0.3333333333333333,
-				"text" : "Long-term growth"
+				"text" : "Long-term evolution"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1784,66 +1652,6 @@ BATbern50Slideshow >> oopMapJSON [
 			"arrow" : true
 		},
 		{
-			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
-			"to" : "4afee69a-31b8-0d00-bc01-925a0c124378",
-			"color" : {
-				"green" : 0.030303030303030304,
-				"blue" : 0.030303030303030304,
-				"alpha" : 1.0,
-				"red" : 1.0
-			},
-			"width" : 2.0,
-			"arrow" : true
-		},
-		{
-			"from" : "4afee69a-31b8-0d00-bc01-925a0c124378",
-			"to" : "031fab86-31b8-0d00-bbf9-6f720c124378",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
-			"to" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "4afee69a-31b8-0d00-bc01-925a0c124378",
-			"to" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
-			},
-			"width" : 2.0,
-			"arrow" : true
-		},
-		{
-			"from" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
-			"to" : "62cbe291-31b8-0d00-bbfe-d0560c124378",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
 			"from" : "5780a287-31b8-0d00-bbfa-c2fe0c124378",
 			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
 			"color" : {
@@ -1856,16 +1664,16 @@ BATbern50Slideshow >> oopMapJSON [
 			"arrow" : false
 		},
 		{
-			"from" : "42dfe198-31b8-0d00-bc00-e3760c124378",
-			"to" : "3a79df84-31b8-0d00-bbf6-f9080c124378",
+			"from" : "ecc6c485-31b8-0d00-bbf7-96930c124378",
+			"to" : "e9aaaf5d-aeb8-0d00-a4cb-ac560fd96f93",
 			"color" : {
-				"green" : 0.5004887585532747,
-				"blue" : 0.5004887585532747,
+				"green" : 0.0,
+				"blue" : 0.0,
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"width" : 1.0,
-			"arrow" : false
+			"width" : 2.0,
+			"arrow" : true
 		}
 	]
 }'
@@ -1950,13 +1758,13 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6115494319043759,
-			"y" : 0.698670957285136,
+			"x" : 0.6049704845359548,
+			"y" : 0.7041639945988315,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.416666666666667,
-				"y" : 1.9166666666666667,
+				"x" : 4.25,
+				"y" : 2.3333333333333335,
 				"text" : "Design pattern"
 			},
 			"pipeline" : {
@@ -1971,8 +1779,8 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5537582710504073,
-			"y" : 0.41735882160594234,
+			"x" : 0.5550740605240915,
+			"y" : 0.4228518589196379,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2055,14 +1863,35 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5414297155945605,
-			"y" : 0.17938130471103844,
+			"x" : 0.14800866296298157,
+			"y" : 0.2105085161553132,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.0,
-				"y" : -0.16666666666666666,
+				"x" : -1.25,
+				"y" : -1.3333333333333333,
 				"text" : "Shared code base"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "13be9fd3-bcb8-0d00-a6bd-2f07058e5098",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"x" : 0.11302040501644707,
+			"y" : 0.430566307426586,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.3333333333333333,
+				"y" : -1.25,
+				"text" : "Higher-level communication"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -2155,16 +1984,16 @@ BATbern50Slideshow >> productivityMapJSON [
 			"arrow" : true
 		},
 		{
-			"from" : "d824a085-6db8-0d00-aaf1-c171088fcc19",
-			"to" : "894f518d-6db8-0d00-ab03-43d1088fcc19",
+			"from" : "8d4c4380-6db8-0d00-aaec-a6f8088fcc19",
+			"to" : "13be9fd3-bcb8-0d00-a6bd-2f07058e5098",
 			"color" : {
 				"green" : 0.0,
 				"blue" : 0.0,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 0.5004887585532747
 			},
-			"width" : 1.0,
-			"arrow" : false
+			"width" : 2.0,
+			"arrow" : true
 		}
 	]
 }'
@@ -2432,13 +2261,13 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5894213118686346,
-			"y" : 0.2972209838293268,
+			"x" : 0.1381055223949503,
+			"y" : 0.3105543171626601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 8.416666666666666,
-				"y" : 0.5,
+				"x" : 0.8333333333333334,
+				"y" : -1.4166666666666667,
 				"text" : "Refactoring and redesign"
 			},
 			"pipeline" : {
@@ -2548,18 +2377,6 @@ BATbern50Slideshow >> testingMapJSON [
 				"blue" : 0.0,
 				"alpha" : 1.0,
 				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "938408b3-32b8-0d00-93f2-8d700ce43fd4",
-			"to" : "09052f1a-44b8-0d00-b525-22cf0a55bfcc",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.5004887585532747
 			},
 			"width" : 1.0,
 			"arrow" : false
