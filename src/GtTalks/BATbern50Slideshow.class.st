@@ -598,6 +598,21 @@ By introducing custom views we can organize, group and explore the remote (AWS) 
 		element: [ self placeholder ]
 ]
 
+{ #category : #slides }
+BATbern50Slideshow >> lightweightTools: aSlide [
+	<gtSlide>
+	<text: 
+'***TODO***
+
+## Leightweight tools ...
+
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lightweightTools:);
+		newFadedText: 'Lightweight tools ...';
+		element: [ self elementForPicture: 'lightweightTools.jpg' ]
+]
+
 { #category : #wardley }
 BATbern50Slideshow >> markCards2Terminals [
 	<gtExample>
@@ -2147,8 +2162,8 @@ BATbern50Slideshow >> slidePriorities [
 			softwareProductivity:
 			designPatternsFrameworks:
 			reengineeringOOlegacy:
-			reengineeringLifecycle:
-			reengineeringPatterns:
+				reengineeringLifecycle:
+				reengineeringPatterns:
 			productivityMap:
 
 		testingGap:
@@ -2162,6 +2177,7 @@ BATbern50Slideshow >> slidePriorities [
 		sustainabilityGap:
 			ideGlorifiedTextEditor:
 			readingDoesNotScale:
+				lightweightTools:
 			codeDisconnected:
 			qaToolsUnreliable:
 			plugins:
