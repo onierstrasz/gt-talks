@@ -520,7 +520,7 @@ BATbern50Slideshow >> iWantSmalltalk: aSlide [
 I read about this and told my supervisor that to build our advanced electronic office systems we needed an object-oriented language. Since Smalltalk wasn''t available for our hardware, we started research into building our own language and system.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #iWantSmalltalk:);
-		newFadedText: 'A brief early history of OOP';
+		newFadedText: 'Wanting Smalltalk, but not getting it';
 		element: [ self elementForPicture: 'wantingSmalltalk.jpg' ]
 ]
 
