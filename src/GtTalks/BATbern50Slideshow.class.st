@@ -55,7 +55,10 @@ Worse, if you start from the running application, you may struggle to answer que
 { #category : #slides }
 BATbern50Slideshow >> conclusion: aSlide [
 	<gtSlide>
-	<text: '# Closing the gap
+	<text: 
+'***TODO*** need a broader message, not just on MD ...
+
+# Closing the gap
 
 For systems to be explainable, they must be explorable.
 Start exploring (and developing) from objects, not code.
