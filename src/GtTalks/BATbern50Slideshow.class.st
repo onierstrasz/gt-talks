@@ -21,8 +21,7 @@ APL is facetiously known as a “write-only” language, due to its highly compa
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #aplSieve:);
 		newFadedText: 'A prime sieve in APL';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'aplPrimeSieve.jpg' ]
+		element: [ self elementForPicture: 'aplPrimeSieve.jpg' ]
 ]
 
 { #category : #example }
@@ -50,7 +49,7 @@ Worse, if you start from the running application, you may struggle to answer que
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #codeDisconnected:);
 		newFadedText: 'Code is disconnected from the running application';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'splitBrain.jpg' ]
+		element: [ self elementForPicture: 'splitBrain.jpg' ]
 ]
 
 { #category : #slides }
@@ -111,7 +110,7 @@ This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, t
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #designPatternsFrameworks:);
 		newFadedText: 'Design Patterns, Components, Frameworks';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'gangOfFour.jpg' ]
+		element: [ self elementForPicture: 'gangOfFour.jpg' ]
 ]
 
 { #category : #slides }
@@ -347,10 +346,14 @@ BATbern50Slideshow >> devOpsMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> elementForPicture: aFilename [
+	^ GtFileUtility imageElementFromFileReference: self picturesFolder / aFilename
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
-	<text: 
-'***TODO*** Add FAMOOS testing anecdote
+	<text: '***TODO*** Add FAMOOS testing anecdote
 
 ## Manual vs automated testing
 
@@ -360,7 +363,7 @@ Automated testing only started to become popular with the introduction of Kent B
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #eniacManualTesting:);
 		newFadedText: 'Manual vs automated testing';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'eniac.jpg' ]
+		element: [ self elementForPicture: 'eniac.jpg' ]
 ]
 
 { #category : #slides }
@@ -498,8 +501,7 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
 	<gtSlide>
-	<text: 
-'***TODO*** add a war story
+	<text: '***TODO*** add a war story
 
 ## The gap from development to deployment
 
@@ -507,8 +509,7 @@ Earlier we saw the “Execution gap” between design and execution of a running
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #houseDeployment:);
 		newFadedText: 'The gap from development to deployment';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'coastalasbestosremoval-vectorized.jpg' ]
+		element: [ self elementForPicture: 'coastalasbestosremoval-vectorized.jpg' ]
 ]
 
 { #category : #slides }
@@ -521,7 +522,7 @@ It is exactly the terminal I first used in 1972, including the APL typeball with
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibm2741:);
 		newFadedText: 'The IBM 2741';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'ibm2741.jpg' ]
+		element: [ self elementForPicture: 'ibm2741.jpg' ]
 ]
 
 { #category : #slides }
@@ -535,8 +536,7 @@ Later in the semster one of my classmates discovered that anyone at all could wa
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibmOpticalCard:);
 		newFadedText: 'IBM education FORTRAN optical mark card';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'ibmOpticalMarkCard.jpg' ]
+		element: [ self elementForPicture: 'ibmOpticalMarkCard.jpg' ]
 ]
 
 { #category : #slides }
@@ -550,7 +550,7 @@ First of all, putting a text editor at the center presupposes that you are gener
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ideGlorifiedTextEditor:);
 		newFadedText: 'Mainstream IDEs are glorified text editors';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'intelliJ.jpg' ]
+		element: [ self elementForPicture: 'intelliJ.jpg' ]
 ]
 
 { #category : #initialization }
@@ -1335,8 +1335,7 @@ I read about this and told my supervisor that to build our advanced electronic o
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #oopEarlyHistory:);
 		newFadedText: 'A brief early history of OOP';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'oopEarlyHistory.jpg' ]
+		element: [ self elementForPicture: 'oopEarlyHistory.jpg' ]
 ]
 
 { #category : #slides }
@@ -1686,7 +1685,7 @@ BATbern50Slideshow >> oopMapJSON [
 ]
 
 { #category : #accessing }
-BATbern50Slideshow >> pictures [
+BATbern50Slideshow >> picturesFolder [
 	<gtExample>
 	<noTest>
 	^ GtResourcesUtility
@@ -1695,8 +1694,7 @@ BATbern50Slideshow >> pictures [
 
 { #category : #slides }
 BATbern50Slideshow >> placeholder [
-	^ GtFileUtility
-		imageElementFromFileReference: self pictures / 'placeholder.png'
+	^ self elementForPicture: 'placeholder.png'
 ]
 
 { #category : #slides }
@@ -1714,7 +1712,7 @@ Finally, plugins don''t know anything about your context, so like SO and ChatGPT
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #plugins:);
 		newFadedText: 'Plugins are  hard to find, hard to build, and hard to compose';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'adapters.jpg' ]
+		element: [ self elementForPicture: 'adapters.jpg' ]
 ]
 
 { #category : #slides }
@@ -2020,7 +2018,7 @@ The screenshots show answers I obtained from SO and ChatGPT to actual questions 
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #qaToolsUnreliable:);
 		newFadedText: 'Q&A tools lack context, so give unreliable results';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'so-chatGpt.jpg' ]
+		element: [ self elementForPicture: 'so-chatGpt.jpg' ]
 ]
 
 { #category : #slides }
@@ -2028,8 +2026,7 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
 	<gtSlide>
-	<text: 
-'***TODO*** add a MOOSE story
+	<text: '***TODO*** add a MOOSE story
 
 ## Reading code does not scale
 
@@ -2037,7 +2034,7 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #readingDoesNotScale:);
 		newFadedText: 'Reading code does not scale';
-		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
+		element: [ self elementForPicture: 'library.jpg' ]
 ]
 
 { #category : #slides }
@@ -2132,8 +2129,7 @@ But software productivity clearly isn''t just producing more code in the same am
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #softwareProductivity:);
 		newFadedText: 'What is Software Productivity?';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'margaretHamiltonApolloCode.jpg' ]
+		element: [ self elementForPicture: 'margaretHamiltonApolloCode.jpg' ]
 ]
 
 { #category : #slides }
@@ -2421,8 +2417,7 @@ The task for my MSc project was, together with another Masters student, to build
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theElectronicOffice:);
 		newFadedText: 'Building the Electronic Office (1980)';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'theElectronicOffice.jpg' ]
+		element: [ self elementForPicture: 'theElectronicOffice.jpg' ]
 ]
 
 { #category : #slides }
@@ -2434,8 +2429,7 @@ As an amusing parenthesis, I saw this displayed in the Open Air museum in Reykja
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #theTypist:);
 		newFadedText: 'The typist at the kitchen table?';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'reykjavikMuseumTheTypist.jpg' ]
+		element: [ self elementForPicture: 'reykjavikMuseumTheTypist.jpg' ]
 ]
 
 { #category : #slides }
@@ -2502,6 +2496,5 @@ I was very excited about the project, and had a clear idea of what to do, before
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #whereAreTheObjects:);
 		newFadedText: 'Where are the Objects?';
-		element: [ GtFileUtility
-				imageElementFromFileReference: self pictures / 'whereAreTheObjects.jpg' ]
+		element: [ self elementForPicture: 'whereAreTheObjects.jpg' ]
 ]
