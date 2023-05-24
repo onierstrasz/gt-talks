@@ -2050,20 +2050,69 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> reengineeringLifecycle: aSlide [
+	<gtSlide>
+	<text: '***TODO**
+
+## The Reengineering lifecycle
+
+
+
+
+
+
+
+
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #reengineeringLifecycle:);
+		newFadedText: 'The Reengineering lifecycle';
+		element: [ self elementForPicture: 'reengineeringLifecycle.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> reengineeringOOlegacy: aSlide [
 	<gtSlide>
-	<text: 
-'***TODO**
+	<text: '***TODO**
+
 ## Reengineering OO legacy systems
+
+
+
+
+Migrating OO legacy
+Reverse engineering and program comprehension
+Lightweight tools and visualizations
+Reengineering Patterns
+
 
 
 '>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #reengineeringOOlegacy:);
 		newFadedText: 'How to reengineer OO legacy systems towards component-based frameworks?';
-		element: [ "GtFileUtility imageElementFromFileReference: self pictures / 'gangOfFour.jpg'"
-		self placeholder
-		 ]
+		element: [ self elementForPicture: 'reengineeringOOlegacy.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> reengineeringPatterns: aSlide [
+	<gtSlide>
+	<text: '***TODO**
+
+## Reengineering patterns
+
+
+
+
+
+
+
+
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #reengineeringPatterns:);
+		newFadedText: 'Reengineering patterns';
+		element: [ self elementForPicture: 'reengineeringPatterns.jpg' ]
 ]
 
 { #category : #slides }
@@ -2098,6 +2147,8 @@ BATbern50Slideshow >> slidePriorities [
 			softwareProductivity:
 			designPatternsFrameworks:
 			reengineeringOOlegacy:
+			reengineeringLifecycle:
+			reengineeringPatterns:
 			productivityMap:
 
 		testingGap:
