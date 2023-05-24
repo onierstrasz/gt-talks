@@ -513,6 +513,18 @@ Earlier we saw the “Execution gap” between design and execution of a running
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> iWantSmalltalk: aSlide [
+	<gtSlide>
+	<text: '## Wanting Smalltalk, but not getting it
+
+I read about this and told my supervisor that to build our advanced electronic office systems we needed an object-oriented language. Since Smalltalk wasn''t available for our hardware, we started research into building our own language and system.'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #iWantSmalltalk:);
+		newFadedText: 'A brief early history of OOP';
+		element: [ self elementForPicture: 'wantingSmalltalk.jpg' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> ibm2741: aSlide [
 	<gtSlide>
 	<text: '## The IBM 2741 terminal
@@ -2079,6 +2091,7 @@ BATbern50Slideshow >> slidePriorities [
 			theElectronicOffice:
 			whereAreTheObjects:
 			oopEarlyHistory:
+			iWantSmalltalk:
 			oopMap:
 			
 		productivityGap:
