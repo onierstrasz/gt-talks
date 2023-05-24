@@ -2050,7 +2050,7 @@ BATbern50Slideshow >> reengineeringOOlegacy: aSlide [
 
 '>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #reengineeringOOlegacy::);
+		priority: (self priorityFor: #reengineeringOOlegacy:);
 		newFadedText: 'How to reengineer OO legacy systems towards component-based frameworks?';
 		element: [ "GtFileUtility imageElementFromFileReference: self pictures / 'gangOfFour.jpg'"
 		self placeholder
