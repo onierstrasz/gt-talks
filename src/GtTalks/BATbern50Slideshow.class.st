@@ -349,7 +349,10 @@ BATbern50Slideshow >> devOpsMapJSON [
 { #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
-	<text: '## Manual vs automated testing
+	<text: 
+'***TODO*** Add FAMOOS testing anecdote
+
+## Manual vs automated testing
 
 This great photo shows the ENIAC, one of the very first digital computers, completed in 1945. As you can imagine, testing was a slow, laborious process of rewiring.
 
@@ -495,7 +498,10 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
 	<gtSlide>
-	<text: '## The gap from development to deployment
+	<text: 
+'***TODO*** add a war story
+
+## The gap from development to deployment
 
 Earlier we saw the “Execution gap” between design and execution of a running program. The deployment gap concerns the gap between having a running and validated system and deploying it with end users. Until the introduction of DevOps, this could be a slow and painful manual process.'>
 	^ aSlide labelAndElement
@@ -561,7 +567,7 @@ BATbern50Slideshow >> initializeDb [
 BATbern50Slideshow >> lifewareTesting: aSlide [
 	<gtSlide>
 <text:
-'***TODO Need input from TG***
+'***TODO*** Need input from TG
 
 ## Lifeware test running and exploration
 
@@ -2022,13 +2028,33 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
 	<gtSlide>
-	<text: '## Reading code does not scale
+	<text: 
+'***TODO*** add a MOOSE story
+
+## Reading code does not scale
 
 On the other hand, *reading code for very large systems does not scale.* You simply cannot read hundreds of thousands of lines of code, let alone many millions of LOC.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #readingDoesNotScale:);
 		newFadedText: 'Reading code does not scale';
 		element: [ GtFileUtility imageElementFromFileReference: self pictures / 'library.jpg' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> reengineeringOOlegacy: aSlide [
+	<gtSlide>
+	<text: 
+'***TODO**
+## Reengineering OO legacy systems
+
+
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #reengineeringOOlegacy:);
+		newFadedText: 'How to reengineer OO legacy systems towards component-based frameworks?';
+		element: [ "GtFileUtility imageElementFromFileReference: self pictures / 'gangOfFour.jpg'"
+		self placeholder
+		 ]
 ]
 
 { #category : #slides }
@@ -2061,6 +2087,7 @@ BATbern50Slideshow >> slidePriorities [
 		productivityGap:
 			softwareProductivity:
 			designPatternsFrameworks:
+			reengineeringOOlegacy:
 			productivityMap:
 
 		testingGap:
