@@ -499,6 +499,28 @@ BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 				actionUpdateButton ]
 ]
 
+{ #category : #spotter }
+BATbern50Slideshow >> gtSpotterSlideTextsFor: aSearch [
+	<gtSearch>
+	^ aSearch list
+		priority: 50;
+		title: 'All slide texts';
+		items: [ self slideDictionary associations ];
+		itemName: [ :each | self textForSlide: each value selector ];
+		filterBySubstring
+]
+
+{ #category : #spotter }
+BATbern50Slideshow >> gtSpotterSlidesFor: aSearch [
+	<gtSearch>
+	^ aSearch list
+		priority: 40;
+		title: 'All slides';
+		items: [ self slideDictionary associations ];
+		itemName: [ :each | each value selector ];
+		filterBySubstring
+]
+
 { #category : #slides }
 BATbern50Slideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
