@@ -604,7 +604,7 @@ BATbern50Slideshow >> initializeDb [
 BATbern50Slideshow >> lifewareTesting: aSlide [
 	<gtSlide>
 <text:
-'***TODO*** Need input from TG
+'***TODO*** Add Lifeware pics and story
 
 ## Lifeware test running and exploration
 

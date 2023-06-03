@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T17:24:42.651717+02:00"
+									"dateAndTimeString" : "2023-05-22T17:24:48.703152+02:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Generalize this and push it up to {{gtClass:name=PrioritySlideshow}}"
+							"string" : "Generalize this and push it up to {{gtClass:name=PrioritySlideshow}} ..."
 						}
 					]
 				},
