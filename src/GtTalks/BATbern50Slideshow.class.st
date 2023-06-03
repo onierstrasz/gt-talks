@@ -524,9 +524,7 @@ BATbern50Slideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
 	<gtSlide>
-	<text: '***TODO*** add a war story
-
-## The gap from development to deployment
+	<text: '## The gap from development to deployment
 
 Earlier we saw the “Execution gap” between design and execution of a running program. The deployment gap concerns the gap between having a running and validated system and deploying it with end users. Until the introduction of DevOps, this could be a slow and painful manual process.'>
 	^ aSlide labelAndElement
@@ -625,11 +623,11 @@ By introducing custom views we can organize, group and explore the remote (AWS) 
 BATbern50Slideshow >> lightweightTools: aSlide [
 	<gtSlide>
 	<text: 
-'***TODO***
+'## Leightweight tools ...
 
-## Leightweight tools ...
+One of the key reengineering patterns is *Study the Exceptional Entities*, which helps you to learn quickly about potentional problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
 
-'>
+Very lightweight tools and metrics can be enough to gain insight into a complex system. In this system complexity view, we map the numbers of attributes, methods and lines of codes to the width, height and color of classes in a hierarchy. This immediately highlights classes with abnormally high lines of code, or lots of data with little behavior.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #lightweightTools:);
 		newFadedText: 'Lightweight tools ...';
@@ -2076,9 +2074,7 @@ BATbern50Slideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
 	<gtSlide>
-	<text: '***TODO*** add a MOOSE story
-
-## Reading code does not scale
+	<text: '## Reading code does not scale
 
 On the other hand, *reading code for very large systems does not scale.* You simply cannot read hundreds of thousands of lines of code, let alone many millions of LOC.'>
 	^ aSlide labelAndElement
@@ -2118,7 +2114,7 @@ BATbern50Slideshow >> reengineeringPatterns: aSlide [
 
 In the process of analyzing dozens of diverse OO software systems at Daimler and Nokia, we discovered numerous reverse and reengineering patterns that could be applied in multiple contexts.
 
-For example, the pattern *Study the Exceptional Entities* helps you to learn quickly about potentional problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
+For example, the pattern *Interview during demo* focuses attention on concrete features and usage scenarios when you are trying to gain an initial understanding of a software system. This is far more effective than watching a slideshow.
 
 One of the outcomes of this work was the open-source book, *Object-Oriented Reengineering Patterns.'>
 	^ aSlide labelAndElement
@@ -2231,15 +2227,13 @@ As software systems grow, they become harder to understand and maintain
 { #category : #slides }
 BATbern50Slideshow >> testingBook: aSlide [
 	<gtSlide>
-	<text: '***TODO*** Add FAMOOS testing anecdote
-
-## The testing book
+	<text: '## The testing book
 
 During the FAMOOS project we were concerned with a particular project that we could find no test cases. When we asked, we were told, “Oh, but we have very extensive test cases!” “Great!” we said, “Can we see them?” They then brought us a big book of test cases that some poor person had to manually step through every time the tests were run.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #testingBook:);
 		newFadedText: 'The testing book';
-		element: [ self elementForPicture: 'eniac.jpg' ]
+		element: [ self elementForPicture: 'book.jpg' ]
 ]
 
 { #category : #slides }
@@ -2264,6 +2258,8 @@ From manual to automated testing
 
 { #category : #slides }
 BATbern50Slideshow >> testingMap: aSlide [
+	"TG points out that property-based testing produced generated tests that capture business logic."
+
 	<gtSlide>
 	<text: '## From manual to automated testing
 
@@ -2273,7 +2269,7 @@ With high test coverage, it was now possible to introduce radical changes to the
 
 The obvious downside was the need to manually write the test cases. In any case, you only had to write an automated test once, whereas a manual test had to be evaluated each time by hand.
 
-The open question is where we can go with automated tests. So far all these can do is identify cases where the system fails. They cannot test business logic.'>
+The open question is where we can go with generated tests. So far these mostly just identify cases where the system fails. Property-based testing can test business logic.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #testingMap:);
 		newFadedText: 'From manual to automated testing';

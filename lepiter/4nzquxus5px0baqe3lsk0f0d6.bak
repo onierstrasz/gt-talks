@@ -1440,7 +1440,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-25T09:34:14.957823+02:00"
+									"dateAndTimeString" : "2023-05-25T09:34:47.926306+02:00"
 								}
 							},
 							"uid" : {
@@ -1450,7 +1450,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Here we see a more detailed view "
+							"string" : "Here we see a more detailed view showing the individual tasks. The read one is longer than the previous one."
 						},
 						{
 							"__type" : "pictureSnippet",
@@ -1509,7 +1509,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-25T09:33:41.286747+02:00"
+						"dateAndTimeString" : "2023-05-25T09:34:19.836332+02:00"
 					}
 				},
 				"uid" : {
@@ -1519,7 +1519,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#SKIP this one"
+				"string" : "#SKIP this one?"
 			},
 			{
 				"__type" : "textSnippet",
