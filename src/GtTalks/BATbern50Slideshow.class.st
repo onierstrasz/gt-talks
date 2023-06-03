@@ -356,9 +356,7 @@ BATbern50Slideshow >> elementForPicture: aFilename [
 { #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
-	<text: '***TODO*** Add FAMOOS testing anecdote
-
-## Manual vs automated testing
+	<text: '## Manual vs automated testing
 
 This great photo shows the ENIAC, one of the very first digital computers, completed in 1945. As you can imagine, testing was a slow, laborious process of rewiring.
 
@@ -1819,8 +1817,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.25,
-				"y" : 2.3333333333333335,
+				"x" : 3.3333333333333335,
+				"y" : 1.8333333333333333,
 				"text" : "Design pattern"
 			},
 			"pipeline" : {
@@ -1840,8 +1838,8 @@ BATbern50Slideshow >> productivityMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.833333333333333,
-				"y" : 1.1666666666666667,
+				"x" : 4.333333333333333,
+				"y" : 1.6666666666666667,
 				"text" : "Framework"
 			},
 			"pipeline" : {
@@ -1940,13 +1938,13 @@ BATbern50Slideshow >> productivityMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.11302040501644707,
+			"x" : 0.11302040501644708,
 			"y" : 0.430566307426586,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.3333333333333333,
-				"y" : -1.25,
+				"x" : 2.8333333333333335,
+				"y" : -1.3333333333333333,
 				"text" : "Higher-level communication"
 			},
 			"pipeline" : {
@@ -2092,18 +2090,9 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 { #category : #slides }
 BATbern50Slideshow >> reengineeringLifecycle: aSlide [
 	<gtSlide>
-	<text: '***TODO**
+	<text: '## The Reengineering lifecycle
 
-## The Reengineering lifecycle
-
-
-
-
-
-
-
-
-'>
+Our strategy was to recover lost design knowledge by reverse engineering and analyzing the legacy software, and then migrating it step-by-step towards a newer and cleaner architecture.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #reengineeringLifecycle:);
 		newFadedText: 'The Reengineering lifecycle';
@@ -2113,21 +2102,9 @@ BATbern50Slideshow >> reengineeringLifecycle: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> reengineeringOOlegacy: aSlide [
 	<gtSlide>
-	<text: '***TODO**
+	<text: '## Reengineering OO legacy systems
 
-## Reengineering OO legacy systems
-
-
-
-
-Migrating OO legacy
-Reverse engineering and program comprehension
-Lightweight tools and visualizations
-Reengineering Patterns
-
-
-
-'>
+Object-oriented programming was so successful that by the mid-1990s there were already large, legacy OO systems. We started a European project called FAMOOS in 1996 with industrial partners Nokia and Daimler-Benz to reengineer legacy OO software towards cleaner, more scalable component-based frameworks.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #reengineeringOOlegacy:);
 		newFadedText: 'How to reengineer OO legacy systems towards component-based frameworks?';
@@ -2137,18 +2114,13 @@ Reengineering Patterns
 { #category : #slides }
 BATbern50Slideshow >> reengineeringPatterns: aSlide [
 	<gtSlide>
-	<text: '***TODO**
+	<text: '## Reengineering patterns
 
-## Reengineering patterns
+In the process of analyzing dozens of diverse OO software systems at Daimler and Nokia, we discovered numerous reverse and reengineering patterns that could be applied in multiple contexts.
 
+For example, the pattern *Study the Exceptional Entities* helps you to learn quickly about potentional problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
 
-
-
-
-
-
-
-'>
+One of the outcomes of this work was the open-source book, *Object-Oriented Reengineering Patterns.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #reengineeringPatterns:);
 		newFadedText: 'Reengineering patterns';
@@ -2193,6 +2165,7 @@ BATbern50Slideshow >> slidePriorities [
 
 		testingGap:
 			eniacManualTesting:
+			testingBook:
 			testingMap:
 
 		deploymentGap:
@@ -2253,6 +2226,20 @@ We know that unfettered growth of software systems leads to legacy issues. Very 
 
 As software systems grow, they become harder to understand and maintain
 ')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> testingBook: aSlide [
+	<gtSlide>
+	<text: '***TODO*** Add FAMOOS testing anecdote
+
+## The testing book
+
+During the FAMOOS project we were concerned with a particular project that we could find no test cases. When we asked, we were told, “Oh, but we have very extensive test cases!” “Great!” we said, “Can we see them?” They then brought us a big book of test cases that some poor person had to manually step through every time the tests were run.'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #testingBook:);
+		newFadedText: 'The testing book';
+		element: [ self elementForPicture: 'eniac.jpg' ]
 ]
 
 { #category : #slides }
