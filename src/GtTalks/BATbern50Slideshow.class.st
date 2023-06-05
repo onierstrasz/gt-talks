@@ -597,26 +597,96 @@ BATbern50Slideshow >> initializeDb [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> lifewareTesting2: aSlide [
+	<gtSlide>
+	<text: '## Highlighting slower tasks
+
+Here we highlight in red tasks that took longer for the same worker than an earlier task. This tells us that there are scheduling issues, and not just with the slowest workers..'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting2:);
+		newFadedText: 'Highlighting slower tasks';
+		element: [ self elementForPicture: 'lifeware/2-clusters-slow-tasks-highlighted.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting3: aSlide [
+	<gtSlide>
+	<text: '## Grouping workers by machine
+
+Since the machines in our cluster are not all the same, we ask if the scheduling issues are related to particular machines. Here we inspect the execution timelines of all the workers on a given machine.
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting3:);
+		newFadedText: 'Grouping workers by machine';
+		element: [ self elementForPicture: 'lifeware/3-clusters-by-machine.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting4: aSlide [
+	<gtSlide>
+	<text: '## Diving into a machine
+
+We dive into a particular machine to see what''s going one. We can see clearly that only one worker is having scheduling problems.'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting4:);
+		newFadedText: 'Diving into a machine';
+		element: [ self elementForPicture: 'lifeware/4-machine-view.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting5: aSlide [
+	<gtSlide>
+	<text:
+'## VM consumption per worker
+
+We inspect the total VM memory consumption and free memory per worker.'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting5:);
+		newFadedText: 'VM consumption per worker';
+		element: [ self elementForPicture: 'lifeware/5-worker-view.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting6: aSlide [
+	"<gtSlide>"
+	<text: '***REMOVE***
+
+## 6 Lifeware test running and exploration
+
+'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting6:);
+		newFadedText: '6 Lifeware test running and exploration';
+		element: [ self elementForPicture: 'lifeware/6-physical-view.png' ]
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> lifewareTesting7: aSlide [
+	<gtSlide>
+	<text: 
+'## Inspecting individual tasks
+
+Finally we can dive into the individual tasks. Here we can verify that indeed the problem is just with the scheduling. By updating the historical data of the time taken to run each test, we can better schedule the test runs and reduce the delays.
+
+We were able to perform this analysis because we could turn every question into a cheap and lightweight tool that would let us turn the execution data into an explorable model of the test runs.'>
+	^ aSlide labelAndElement
+		priority: (self priorityFor: #lifewareTesting7:);
+		newFadedText: 'Inspecting individual tasks';
+		element: [ self elementForPicture: 'lifeware/7-task-view.png' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> lifewareTesting: aSlide [
 	<gtSlide>
-<text:
-'***TODO*** Add Lifeware pics and story
+	<text: '## Lifeware test running and exploration
 
-## Lifeware test running and exploration
+Lifeware has a *very* large number of test cases for their life insurance SPL. These are run on a cluster of 960 AWS machines each with 16-64 processors or “workers”. Each worker runs a number of test tasks. The goal is to run all the tests within 8 minutes.
 
-Lifeware has a *very* large number of test cases for their life insurance SPL.
-For any given customer there are many specific policies and contracts that must be verified.
-The test cases can take 24 hours (?) to run on a single CPU.
-feenk has ported this to AWS, so all tests can be run in 7 (?) minutes.
-But what about failures?
-
-In many cases failures are due to, eg, a change in signature in a contract.
-Manually checking these is infeasible.
-By introducing custom views we can organize, group and explore the remote (AWS) test results on a local machine, and then approve groups in bulk.'>
+In this lightweight visualization we see that a few of these are taking twice as long, but why?'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #lifewareTesting:);
 		newFadedText: 'Lifeware test running and exploration';
-		element: [ self placeholder ]
+		element: [  "self placeholder "self elementForPicture: 'lifeware/1-cluster-view.png' ]
 ]
 
 { #category : #slides }
@@ -2181,7 +2251,13 @@ BATbern50Slideshow >> slidePriorities [
 			exploringGitRepo:
 			moldingIDE:
 			gtExtensions:
-									lifewareTesting: "*** TO DO"
+				lifewareTesting: "*** TO DO"
+				lifewareTesting2:
+				lifewareTesting3:
+				lifewareTesting4:
+				lifewareTesting5:
+				"lifewareTesting6:"
+				lifewareTesting7:
 			moldableDevelopmentMap:
 
 		conclusion:
