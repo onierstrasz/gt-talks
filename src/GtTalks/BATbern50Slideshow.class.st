@@ -109,7 +109,7 @@ BATbern50Slideshow >> designPatternsFrameworks: aSlide [
 
 In the 1990s, the mantra was “Objects are not enough”. But if so, what else was needed?
 
-This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, the “Gang of Four” who produced the first “Design Patterns” book. But all four were also experienced in developing object-oriented frameworks based on resuable architectures and software components. They noticed that the same design ideas appeared in all the systems they had developed independently, and  figured something interesting was going on.'>
+This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, the “Gang of Four” who produced the first “Design Patterns” book. But all four were also experienced in developing object-oriented frameworks based on reusable architectures and software components. They noticed that the same design ideas appeared in all the systems they had developed independently, and  figured something interesting was going on.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #designPatternsFrameworks:);
 		newFadedText: 'Design Patterns, Components, Frameworks';
@@ -565,7 +565,7 @@ BATbern50Slideshow >> ibmOpticalCard: aSlide [
 
 In the Autumn of 1972, the Toronto Board of Education introduced the first high school computer programming courses. We coded our programs with pencil on optical cards, like the one you see. We handed our decks to the teacher, and got our printed output three days later. Debugging was nota pleasant experience. After my first experience with interactive APL, I felt I had moved back decades.
 
-Later in the semster one of my classmates discovered that anyone at all could walk in off the street and use the keypunches and the high-speed job stream at the University of Toronto. After that we did all our homework at UofT.'>
+Later in the semester one of my classmates discovered that anyone at all could walk in off the street and use the keypunches and the high-speed job stream at the University of Toronto. After that we did all our homework at UofT.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #ibmOpticalCard:);
 		newFadedText: 'IBM education FORTRAN optical mark card';
@@ -693,9 +693,9 @@ In this lightweight visualization we see that a few of these are taking twice as
 BATbern50Slideshow >> lightweightTools: aSlide [
 	<gtSlide>
 	<text: 
-'## Leightweight tools ...
+'## Lightweight tools ...
 
-One of the key reengineering patterns is *Study the Exceptional Entities*, which helps you to learn quickly about potentional problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
+One of the key reengineering patterns is *Study the Exceptional Entities*, which helps you to learn quickly about potential problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
 
 Very lightweight tools and metrics can be enough to gain insight into a complex system. In this system complexity view, we map the numbers of attributes, methods and lines of codes to the width, height and color of classes in a hierarchy. This immediately highlights classes with abnormally high lines of code, or lots of data with little behavior.'>
 	^ aSlide labelAndElement
@@ -1032,9 +1032,9 @@ In this slide we see a “Wardley map”, a diagram for business strategy that m
 
 The other nodes are components that contribute to that need. From bottom to top components provide more value to the user, and from left to right they evolve prototypes all the way to commodities.
 
-In this case we see that opticalmark cards evolve to punch cards to interactive terminals, shortening the feedback loop. Similarly gettin the program to run evolves from sending it by courier to just hitting the execute key.
+In this case we see that optical mark cards evolve to punch cards to interactive terminals, shortening the feedback loop. Similarly getting the program to run evolves from sending it by courier to just hitting the execute key.
 
-What''s interesting is that when the tchnology is sufficiently evolved, new opportunities arise that could not be imagined before. In this case, since the feedback loop is so short with live programming, we can experiment in ways that were not possible before.'>
+What''s interesting is that when the technology is sufficiently evolved, new opportunities arise that could not be imagined before. In this case, since the feedback loop is so short with live programming, we can experiment in ways that were not possible before.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #markCardsMap:);
 		newFadedText: 'Closing the execution gap';
@@ -1082,7 +1082,7 @@ BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
 	<gtSlide>
 	<text: '# Mapping moldable development
 
-At the bottom here we see a transition from fixed and rigid IDE tools to moldable tools that can be easily and cheaply extended with new behavior. I have only shown you some custom insoector views, but the idea applies just as well for search tools, quality advices, and even customizable debuggers.
+At the bottom here we see a transition from fixed and rigid IDE tools to moldable tools that can be easily and cheaply extended with new behavior. I have only shown you some custom inspector views, but the idea applies just as well for search tools, quality advices, and even customizable debuggers.
 
 At the next level we see how moldable tools are leveraged by moving from manual inspection to custom queries that we plug into the tools. We saw this when we browsed the slides of a slideshow or the recent changes of a git repo.
 
@@ -1839,7 +1839,7 @@ BATbern50Slideshow >> productivityGap: aSlide [
 <text: 
 '# The Productivity Gap
 
-Whereas in the 1980s most of the resistence to OO technology came from concerns about performance (after all, every message to an object entails at least one additional indirection), by the 1990s machines were fast enough that developer productivity was seen as being more important.
+Whereas in the 1980s most of the resistance to OO technology came from concerns about performance (after all, every message to an object entails at least one additional indirection), by the 1990s machines were fast enough that developer productivity was seen as being more important.
 
 But what is “productivity”?'>
 	^ (aSlide paragraph)
@@ -1859,7 +1859,7 @@ BATbern50Slideshow >> productivityMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the productivity gap
 
-Design patterns are valuable not only as a way to teach software developers about best practices, but they also offer a way to raise conversations about design to higher levels. If I say to you “do we need a Singleton here”, you should immediately udnerstand what''s at stake.
+Design patterns are valuable not only as a way to teach software developers about best practices, but they also offer a way to raise conversations about design to higher levels. If I say to you “do we need a Singleton here”, you should immediately understand what''s at stake.
 
 Frameworks and components also raise the level of conversation. Instead of dealing with many unconnected applications, we deal with a Software Product Line of applications sharing a common code base.'>
 	^ aSlide labelAndElement
@@ -2275,7 +2275,7 @@ BATbern50Slideshow >> softwareProductivity: aSlide [
 
 This great photo shows Margaret Hamilton, NASA''s lead software engineer for the Apollo Program, standing next to printouts of all the code produced by her team for the 1969 moon landing.
 
-But software productivity clearly isn''t just producing more code in the same amount of time, otherwise refactoring would be seen as negative productivity! The trick is to produce more value for the customer, whetherthis is more code or less.'>
+But software productivity clearly isn''t just producing more code in the same amount of time, otherwise refactoring would be seen as negative productivity! The trick is to produce more value for the customer, whether this is more code or less.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #softwareProductivity:);
 		newFadedText: 'What is Software Productivity?';
@@ -2605,7 +2605,7 @@ Hi. My name is Oscar Nierstrasz.
 
 I was a professor of Software Engineering at the University of Bern from 1994 until I retired at the end of 2021, and since then have been working for feenk, a small consulting company in Wabern that was founded by a former student of mine.
 
-Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes suprising opportunities.'>
+Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes surprising opportunities.'>
 	^ aSlide titleWithFooter
 		priority: (self priorityFor: #titleSlide:);
 		titleBottomPadding: 20;
