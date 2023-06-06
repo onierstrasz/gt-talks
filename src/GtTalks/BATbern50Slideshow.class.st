@@ -55,26 +55,13 @@ Worse, if you start from the running application, you may struggle to answer que
 { #category : #slides }
 BATbern50Slideshow >> conclusion: aSlide [
 	<gtSlide>
-	<text: 
-'***TODO*** need a broader message, not just on MD ...
+	<text: '***TODO*** 
 
-# Closing the gap
-
-For systems to be explainable, they must be explorable.
-Start exploring (and developing) from objects, not code.
-Effective decision making requires tools that are custom-built, cheap and composable.
-A moldable development environment supports decision-making not only for developers but also for business stakeholders.'>
+# Conclusion
+'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #conclusion:);
-		subtitleWithFormat: (self asTitle: 'Closing the gap');
-		paragraphWithFormat: (self
-				asBigText: '
-
-Systems must be explainable.
-
-Decision-making tools must be custom-built, cheap and composable.
-
-Explainable systems are not just for developers.')
+		subtitleWithFormat: (self asTitle: 'Conclusion')
 ]
 
 { #category : #pages }
@@ -2122,6 +2109,33 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> programmingIsModeling: aSlide [
+	<gtSlide>
+	<text: 
+'***TODO*** 
+## Programming is Modeling
+'>
+	^ aSlide paragraph
+		priority: (self priorityFor: #programmingIsModeling:);
+		subtitleWithFormat: (self asTitle: 'Programming is Modeling')
+]
+
+{ #category : #slides }
+BATbern50Slideshow >> programmingIsUnderstanding: aSlide [
+	<gtSlide>
+	<text: 
+'***TODO*** 
+
+## Programming is Understanding'>
+	^ aSlide paragraph
+		priority: (self priorityFor: #programmingIsUnderstanding:);
+		subtitleWithFormat: (self asTitle: 'Programming is Understanding')
+		";
+		paragraphWithFormat: (self
+				asBigText: '')"
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> qaToolsUnreliable: aSlide [
 	<gtSlide>
 	<text: '## Q&A tools lack context, so give unreliable results
@@ -2261,6 +2275,8 @@ BATbern50Slideshow >> slidePriorities [
 			moldableDevelopmentMap:
 
 		conclusion:
+			programmingIsModeling:
+			programmingIsUnderstanding:
 			
 		)
 ]
