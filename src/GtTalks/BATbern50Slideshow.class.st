@@ -55,10 +55,9 @@ Worse, if you start from the running application, you may struggle to answer que
 { #category : #slides }
 BATbern50Slideshow >> conclusion: aSlide [
 	<gtSlide>
-	<text: '***TODO*** 
+	<text: '# Conclusion
 
-# Conclusion
-'>
+What lessons can we draw from all this?'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #conclusion:);
 		subtitleWithFormat: (self asTitle: 'Conclusion')
@@ -2112,9 +2111,15 @@ BATbern50Slideshow >> productivityMapJSON [
 BATbern50Slideshow >> programmingIsModeling: aSlide [
 	<gtSlide>
 	<text: 
-'***TODO*** 
-## Programming is Modeling
-'>
+'## Programming is Modeling
+
+First, I would say, that “programming is modeling”. This is not a new observation, but it can be interpreted in several different ways.
+
+I found the live programming approach of APL far more exhilarating than the plodding punchcard model of programming supported by FORTRAN, but both languages suffered from a very limited view of what a program is. It was just as hard to build a clean conceptual model in APL as it was in FORTRAN.
+
+Object-oriented programming changed that by allowing not only the design but the domain model to be reflected in the code. I am reminded of Bertrand Meyer''s observation that he could never understand the interest in diagrammatic representations of object-oriented models when everything is there in the code. Then one day it hit him: “Bubbles and arrows don''t crash!”
+
+One lesson we can learn from model-driven approaches is that instead of generating code from models, instead we should generate views from the code.'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #programmingIsModeling:);
 		subtitleWithFormat: (self asTitle: 'Programming is Modeling')
@@ -2123,16 +2128,14 @@ BATbern50Slideshow >> programmingIsModeling: aSlide [
 { #category : #slides }
 BATbern50Slideshow >> programmingIsUnderstanding: aSlide [
 	<gtSlide>
-	<text: 
-'***TODO*** 
+	<text: '## Programming is Understanding
 
-## Programming is Understanding'>
+We can go further, however. Kristen Nygaard, one of the inventors of Simula, the first OO language, was apparently fond of saying *“To program is to understand”*.
+
+I would interpret that today as meaning that software is more than just text. It can and should be seen as a living system that expresses knowledge about itself. Instead of seeing the IDE as a glorified text editor, it should be seen as an environment for exploring, querying and analyzing software systems. Instead of having to head to Google, StackOverflow or ChatGPT to answer questions about our software, we should be able to answer the questions in the systems themselves.'>
 	^ aSlide paragraph
 		priority: (self priorityFor: #programmingIsUnderstanding:);
 		subtitleWithFormat: (self asTitle: 'Programming is Understanding')
-		";
-		paragraphWithFormat: (self
-				asBigText: '')"
 ]
 
 { #category : #slides }
