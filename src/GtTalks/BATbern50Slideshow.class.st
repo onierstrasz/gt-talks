@@ -679,14 +679,14 @@ In this lightweight visualization we see that a few of these are taking twice as
 BATbern50Slideshow >> lightweightTools: aSlide [
 	<gtSlide>
 	<text: 
-'## Lightweight tools ...
+'## Lightweight tools are more effective than reading code
 
 One of the key reengineering patterns is *Study the Exceptional Entities*, which helps you to learn quickly about potential problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
 
 Very lightweight tools and metrics can be enough to gain insight into a complex system. In this system complexity view, we map the numbers of attributes, methods and lines of codes to the width, height and color of classes in a hierarchy. This immediately highlights classes with abnormally high lines of code, or lots of data with little behavior.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #lightweightTools:);
-		newFadedText: 'Lightweight tools ...';
+		newFadedText: 'Lightweight tools are more effective than reading code';
 		element: [ self elementForPicture: 'lightweightTools.jpg' ]
 ]
 
@@ -1433,9 +1433,7 @@ I had an epiphany in August 1981 when I saw the issue of Byte magazine dedicated
 
 Also during the 1960s, an American computer scientist, Alan Kay, noticed that computer hardware was getting smaller and faster at an astonishing rate. He predicted that, somewhere down the line, you would be able to hold a computer in your hand, providing access to an encyclopedia of multimedia data. He figured that it would only be possible to build the software for such a so-called “Dynabook” using a fully object-oriented language and system.
 
-He convinced Xerox PARC to fund the development of not just the language, but the entire system down to the metal. The Smalltalk team indeed built not only the Smalltalk language and VM technology, but also the first graphical workstations and windowing systems.
-
-I read about this and told my supervisor that to build our advanced electronic office systems we needed an object-oriented language. Since Smalltalk wasn''t available for our hardware, we started research into building our own language and system.'>
+He convinced Xerox PARC to fund the development of not just the language, but the entire system down to the metal. The Smalltalk team indeed built not only the Smalltalk language and VM technology, but also the first graphical workstations and windowing systems.'>
 	^ aSlide labelAndElement
 		priority: (self priorityFor: #oopEarlyHistory:);
 		newFadedText: 'A brief early history of OOP';
