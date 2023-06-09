@@ -434,6 +434,15 @@ BATbern50Slideshow >> exploringSlideshowPage [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> feenk: aSlide [
+	<gtSlide>
+	<text: '***TDOO**'>
+	^ aSlide element
+		priority: (self priorityFor: #feenk:);
+		element: [ self elementForPicture: 'feenkDotCom.png' ]
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> gtExtensions: aSlide [
 	<gtSlide>
 	<text: '## GT tool extensions
@@ -2278,6 +2287,7 @@ BATbern50Slideshow >> slidePriorities [
 		conclusion:
 			programmingIsModeling:
 			programmingIsUnderstanding:
+			feenk:
 			
 		)
 ]
