@@ -340,6 +340,14 @@ BATbern50Slideshow >> elementForPicture: aFilename [
 ]
 
 { #category : #slides }
+BATbern50Slideshow >> email: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: (self priorityFor: #email:);
+		titleWithFormat: (self asSubtitle: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #slides }
 BATbern50Slideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	<text: '## Manual vs automated testing
@@ -431,19 +439,6 @@ BATbern50Slideshow >> exploringSlideshowPage [
 				string: '';
 				yourself);
 		yourself
-]
-
-{ #category : #slides }
-BATbern50Slideshow >> feenk: aSlide [
-	<gtSlide>
-	<text: ''>
-	^ aSlide title
-		priority: (self priorityFor: #feenk:);
-		titleWithFormat: (self asTitle: 'feenk.com')
-		"
-	^ aSlide element
-		priority: (self priorityFor: #feenk:);
-		element: [ self elementForPicture: 'feenkDotCom.png' ]"
 ]
 
 { #category : #slides }
@@ -2291,7 +2286,7 @@ BATbern50Slideshow >> slidePriorities [
 		conclusion:
 			programmingIsModeling:
 			programmingIsUnderstanding:
-			feenk:
+			email:
 			
 		)
 ]
