@@ -437,12 +437,13 @@ BATbern50Slideshow >> exploringSlideshowPage [
 BATbern50Slideshow >> feenk: aSlide [
 	<gtSlide>
 	<text: ''>
-	"^ aSlide title
+	^ aSlide title
 		priority: (self priorityFor: #feenk:);
-		titleWithFormat: (self asTitle: 'feenk.com')"
+		titleWithFormat: (self asTitle: 'feenk.com')
+		"
 	^ aSlide element
 		priority: (self priorityFor: #feenk:);
-		element: [ self elementForPicture: '_feenkDotCom.png' ]
+		element: [ self elementForPicture: 'feenkDotCom.png' ]"
 ]
 
 { #category : #slides }
