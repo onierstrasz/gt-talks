@@ -16,10 +16,14 @@ Also load the associated lepiter database:
 BaselineOfGtTalks loadLepiter
 ```
 
-# BATbern50 (in progress)
-
+# BATbern50
+To view the slideshow, evaluate:
 ```
 BATbern50Slideshow show
+```
+To inspect the live slideshow, inspect:
+```
+BATbern50Slideshow new
 ```
 
 # VISSOFT 2022
