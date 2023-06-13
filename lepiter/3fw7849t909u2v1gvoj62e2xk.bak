@@ -60,7 +60,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-06-03T10:28:07.016851+02:00"
+									"dateAndTimeString" : "2023-06-12T09:08:57.671158+02:00"
 								}
 							},
 							"editEmail" : {
@@ -71,17 +71,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-06-03T10:28:07.029008+02:00"
+									"dateAndTimeString" : "2023-06-12T09:08:59.156785+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "7Uh0L5e5DQC6kpGYD+3NwA=="
+								"uidString" : "ad/bIEu6DQCuU6LCDC5KlQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Loading BATbern50]]"
+							"string" : "[[*** BATbern50 blog]] "
 						},
 						{
 							"__type" : "textSnippet",
@@ -119,6 +119,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Notes on the Lifeware pics]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-06-03T10:28:07.016851+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-06-03T10:28:07.029008+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7Uh0L5e5DQC6kpGYD+3NwA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Loading BATbern50]]"
 						},
 						{
 							"__type" : "textSnippet",

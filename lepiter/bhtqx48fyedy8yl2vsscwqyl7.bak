@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T15:48:13.626977+02:00"
+						"dateAndTimeString" : "2023-06-12T11:22:40.984232+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T15:48:24.131368+02:00"
+						"dateAndTimeString" : "2023-06-12T11:22:40.984232+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "R1vcqM24DQCxEI24CcQXgQ=="
+					"uidString" : "4CcQE0y6DQCPlddjA9Yqwg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Inspect the live slideshow"
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-12T11:05:05.647864+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-06-12T11:05:27.789182+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IlJpwEy6DQCTnLONA9Yqwg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To get higher resolutrion, TG says: add it in a scalable element and increase the size of the scalable element before exporting it."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -55,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-16T15:01:34.454254+02:00"
+						"dateAndTimeString" : "2023-06-12T10:16:53.129135+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,88 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-03T10:30:02.001594+02:00"
+						"dateAndTimeString" : "2023-06-12T11:10:26.879434+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ojRq6DC4DQChxbcfDBJDeA=="
+					"uidString" : "R/4AFEy6DQCQlAd5A9Yqwg=="
 				},
-				"code" : "BATbern50Slideshow new."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T11:22:36.163975+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T11:22:36.163975+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qOwG/0y6DQCZl0eOA9Yqwg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T15:48:11.01391+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T15:48:11.01391+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0otgEky6DQCO4QfaA9Yqwg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "BATbern50Slideshow new wardleyMaps\r\tcollect: [ :each | \r\t\t(GtWardleyMapElement new\r\t\t\twardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: each wardleyMap);\r\t\t\tbackground: Color white;\r\t\t\tsize: 600 @ 450) asScalableElement\r\t\t\tsize: 1200 @ 900;\r\t\t\texportAsPNG ]"
 			}
 		]
 	},
@@ -159,7 +122,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T08:46:45.85183+02:00"
+			"dateAndTimeString" : "2023-06-12T11:22:13.870073+02:00"
 		}
 	},
 	"editEmail" : {
@@ -170,15 +133,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-22T23:18:31.98605+02:00"
+			"dateAndTimeString" : "2023-06-12T11:22:17.399733+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "BATbern50 talk"
+		"title" : "How to export Wardley maps as images"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "db1d360a-12b7-0d00-9a88-d718099c213a"
+		"uuid" : "9bc1b2fd-4cba-0d00-9938-68f203d62ac2"
 	}
 }

@@ -782,8 +782,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.846061302905629,
-			"y" : 0.7093156821113086,
+			"x" : 0.8388280298495712,
+			"y" : 0.7139388591346304,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -824,8 +824,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.30264662849100143,
-			"y" : 0.37073062203472185,
+			"x" : 0.29902999196297253,
+			"y" : 0.3799769760813656,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -845,8 +845,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.5004887585532747
 			},
-			"x" : 0.5640335089066362,
-			"y" : 0.3777823485401243,
+			"x" : 0.5580057813599213,
+			"y" : 0.3824055255634462,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -866,8 +866,8 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.8118557377126085,
-			"y" : 0.3885601400405387,
+			"x" : 0.8130612832219516,
+			"y" : 0.38547802202499076,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1480,8 +1480,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -5.833333333333333,
-				"y" : 0.5,
+				"x" : -4.833333333333333,
+				"y" : 0.25,
 				"text" : "Low-level code"
 			},
 			"pipeline" : {
@@ -1501,8 +1501,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -3.6666666666666665,
-				"y" : 0.4166666666666667,
+				"x" : -3.0,
+				"y" : 0.5833333333333334,
 				"text" : "Design"
 			},
 			"pipeline" : {
@@ -1517,7 +1517,7 @@ BATbern50Slideshow >> oopMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.43435965480041133,
+			"x" : 0.4343596548004114,
 			"y" : 0.19422601908092957,
 			"width" : 12,
 			"height" : 12,
@@ -1585,8 +1585,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.416666666666667,
-				"y" : 0.5,
+				"x" : 6.166666666666667,
+				"y" : 0.08333333333333333,
 				"text" : "OO requirements"
 			},
 			"pipeline" : {
@@ -1606,8 +1606,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.75,
-				"y" : 0.08333333333333333,
+				"x" : -4.333333333333333,
+				"y" : -0.3333333333333333,
 				"text" : "Requirements"
 			},
 			"pipeline" : {
@@ -1648,8 +1648,8 @@ BATbern50Slideshow >> oopMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.666666666666667,
-				"y" : 0.3333333333333333,
+				"x" : 7.166666666666667,
+				"y" : -0.08333333333333333,
 				"text" : "Long-term evolution"
 			},
 			"pipeline" : {
@@ -2411,8 +2411,8 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5765459655650382,
-			"y" : 0.7000633792956712,
+			"x" : 0.5753404200556952,
+			"y" : 0.706368933101537,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2432,8 +2432,8 @@ BATbern50Slideshow >> testingMapJSON [
 				"alpha" : 1.0,
 				"red" : 1.0
 			},
-			"x" : 0.8153122856862295,
-			"y" : 0.7016682563501506,
+			"x" : 0.8116956491582005,
+			"y" : 0.7037701076187726,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2479,8 +2479,8 @@ BATbern50Slideshow >> testingMapJSON [
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.8333333333333334,
-				"y" : -1.4166666666666667,
+				"x" : 2.9166666666666665,
+				"y" : -1.8333333333333333,
 				"text" : "Refactoring and redesign"
 			},
 			"pipeline" : {
