@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-25T10:03:22.138395+02:00"
+						"dateAndTimeString" : "2023-06-13T07:46:15.090063+02:00"
 					}
 				},
 				"uid" : {
@@ -39,50 +39,13 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "hThese are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks)."
+				"string" : "These are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks)."
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-06-12T09:08:57.671158+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-06-12T09:08:59.156785+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ad/bIEu6DQCuU6LCDC5KlQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[*** BATbern50 blog]] "
-						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
