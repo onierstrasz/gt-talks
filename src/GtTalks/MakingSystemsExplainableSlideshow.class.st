@@ -7,19 +7,19 @@ VissoftSlideshow show
 
 "
 Class {
-	#name : #Vissoft2022Slideshow,
+	#name : #MakingSystemsExplainableSlideshow,
 	#superclass : #PrioritySlideshow,
 	#category : #'GtTalks-Slideshows'
 }
 
 { #category : #accessing }
-Vissoft2022Slideshow class >> show [
+MakingSystemsExplainableSlideshow class >> show [
 	"Implement this here just so we can run it directly from the Coder."
 	super show
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> coda: aSlide [
+MakingSystemsExplainableSlideshow >> coda: aSlide [
 	<gtSlide>
 	^ (aSlide textAndElement)
 		elementWeight: 0.5;
@@ -38,7 +38,7 @@ Green ones have at least one example..');
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> database [
+MakingSystemsExplainableSlideshow >> database [
 	"All the pages"
 
 	<gtExample>
@@ -47,7 +47,7 @@ Vissoft2022Slideshow >> database [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> documentingRules: aSlide [
+MakingSystemsExplainableSlideshow >> documentingRules: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #documentingRules:);
@@ -55,7 +55,7 @@ Vissoft2022Slideshow >> documentingRules: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> documentingRulesPage [
+MakingSystemsExplainableSlideshow >> documentingRulesPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Documenting the rules')
@@ -72,7 +72,7 @@ Vissoft2022Slideshow >> documentingRulesPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> download: aSlide [
+MakingSystemsExplainableSlideshow >> download: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: (self priorityFor: #download:);
@@ -86,7 +86,7 @@ https://gtoolkit.com
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> exampleHeading: aSlide [
+MakingSystemsExplainableSlideshow >> exampleHeading: aSlide [
 	<gtSlide>
 	^ (aSlide paragraph)
 		priority: (self priorityFor: #exampleHeading:);
@@ -100,7 +100,7 @@ Tests should return example objects that can be used to compose further tests as
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> examples: aSlide [
+MakingSystemsExplainableSlideshow >> examples: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #examples:);
@@ -108,7 +108,7 @@ Vissoft2022Slideshow >> examples: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> examplesPage [
+MakingSystemsExplainableSlideshow >> examplesPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Examples')
@@ -143,7 +143,7 @@ Vissoft2022Slideshow >> examplesPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> exploringRuby: aSlide [
+MakingSystemsExplainableSlideshow >> exploringRuby: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #exploringRuby:);
@@ -151,7 +151,7 @@ Vissoft2022Slideshow >> exploringRuby: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> exploringRubyPage [
+MakingSystemsExplainableSlideshow >> exploringRubyPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Exploring Ruby code')
@@ -177,7 +177,7 @@ Vissoft2022Slideshow >> exploringRubyPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> exploringViews: aSlide [
+MakingSystemsExplainableSlideshow >> exploringViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #exploringViews:);
@@ -185,7 +185,7 @@ Vissoft2022Slideshow >> exploringViews: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> exploringViewsPage [
+MakingSystemsExplainableSlideshow >> exploringViewsPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Exploring custom views')
@@ -244,7 +244,7 @@ Vissoft2022Slideshow >> exploringViewsPage [
 ]
 
 { #category : #initialization }
-Vissoft2022Slideshow >> initializeDb [
+MakingSystemsExplainableSlideshow >> initializeDb [
 	self db addPage: self inspectingLudoPage.
 	self db addPage: self scriptingAScenarioPage.
 	self db addPage: self exploringViewsPage.
@@ -260,7 +260,7 @@ Vissoft2022Slideshow >> initializeDb [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> inspectingLudo: aSlide [
+MakingSystemsExplainableSlideshow >> inspectingLudo: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #inspectingLudo:);
@@ -268,7 +268,7 @@ Vissoft2022Slideshow >> inspectingLudo: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> inspectingLudoPage [
+MakingSystemsExplainableSlideshow >> inspectingLudoPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Inspecting the Ludo game')
@@ -318,7 +318,7 @@ Vissoft2022Slideshow >> inspectingLudoPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> inspectorHeading: aSlide [
+MakingSystemsExplainableSlideshow >> inspectorHeading: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -333,7 +333,7 @@ Use an object inspector rather than a text editor to put live objects rather tha
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> lepiter: aSlide [
+MakingSystemsExplainableSlideshow >> lepiter: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #lepiter:);
@@ -341,7 +341,7 @@ Vissoft2022Slideshow >> lepiter: aSlide [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> lepiterHeading: aSlide [
+MakingSystemsExplainableSlideshow >> lepiterHeading: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -356,7 +356,7 @@ Use a live notebook to author and explore narratives that connect live objects a
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> lepiterPage [
+MakingSystemsExplainableSlideshow >> lepiterPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Lepiter')
@@ -412,7 +412,7 @@ Vissoft2022Slideshow >> lepiterPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> ludoIntro: aSlide [
+MakingSystemsExplainableSlideshow >> ludoIntro: aSlide [
 	<gtSlide>
 	
 	^ (aSlide textAndElement)
@@ -428,7 +428,7 @@ We can play this version of the game, but we cannot talk to it.');
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> millerColumns: aSlide [
+MakingSystemsExplainableSlideshow >> millerColumns: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #millerColumns:);
@@ -436,7 +436,7 @@ Vissoft2022Slideshow >> millerColumns: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> millerColumnsPage [
+MakingSystemsExplainableSlideshow >> millerColumnsPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Miller columns')
@@ -465,7 +465,7 @@ Vissoft2022Slideshow >> millerColumnsPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> moldableHeading: aSlide [
+MakingSystemsExplainableSlideshow >> moldableHeading: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -480,7 +480,7 @@ Use custom views to answer domain-specific questions about objects.
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> moldableViews: aSlide [
+MakingSystemsExplainableSlideshow >> moldableViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #moldableViews:);
@@ -488,7 +488,7 @@ Vissoft2022Slideshow >> moldableViews: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> moldableViewsPage [
+MakingSystemsExplainableSlideshow >> moldableViewsPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Moldable views')
@@ -538,7 +538,7 @@ Vissoft2022Slideshow >> moldableViewsPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> part1: aSlide [
+MakingSystemsExplainableSlideshow >> part1: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -553,7 +553,7 @@ Explaining the Ludo game.
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> part2: aSlide [
+MakingSystemsExplainableSlideshow >> part2: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -568,7 +568,7 @@ Make systems explainable by shifting the focus in the IDE from editing source co
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> part3: aSlide [
+MakingSystemsExplainableSlideshow >> part3: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -584,7 +584,7 @@ Systems become explainable by linking code and examples within live documentatio
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> queryingObjects: aSlide [
+MakingSystemsExplainableSlideshow >> queryingObjects: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #queryingObjects:);
@@ -592,7 +592,7 @@ Vissoft2022Slideshow >> queryingObjects: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> queryingObjectsPage [
+MakingSystemsExplainableSlideshow >> queryingObjectsPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Querying objects')
@@ -665,7 +665,7 @@ Vissoft2022Slideshow >> queryingObjectsPage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> scriptingAScenario: aSlide [
+MakingSystemsExplainableSlideshow >> scriptingAScenario: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #scriptingAScenario:);
@@ -673,7 +673,7 @@ Vissoft2022Slideshow >> scriptingAScenario: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> scriptingAScenarioPage [
+MakingSystemsExplainableSlideshow >> scriptingAScenarioPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Scripting a scenario')
@@ -740,7 +740,7 @@ m';
 ]
 
 { #category : #accessing }
-Vissoft2022Slideshow >> slidePriorities [
+MakingSystemsExplainableSlideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
@@ -772,7 +772,7 @@ Vissoft2022Slideshow >> slidePriorities [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> summary: aSlide [
+MakingSystemsExplainableSlideshow >> summary: aSlide [
 	<gtSlide>
 	
 	^ (aSlide paragraph)
@@ -791,7 +791,7 @@ Vissoft2022Slideshow >> summary: aSlide [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> titleSlide: aSlide [
+MakingSystemsExplainableSlideshow >> titleSlide: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: (self priorityFor: #titleSlide:);
@@ -801,7 +801,7 @@ Vissoft2022Slideshow >> titleSlide: aSlide [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> trackingState: aSlide [
+MakingSystemsExplainableSlideshow >> trackingState: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #trackingState:);
@@ -809,7 +809,7 @@ Vissoft2022Slideshow >> trackingState: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> trackingStatePage [
+MakingSystemsExplainableSlideshow >> trackingStatePage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Tracking state')
@@ -849,7 +849,7 @@ Vissoft2022Slideshow >> trackingStatePage [
 ]
 
 { #category : #slides }
-Vissoft2022Slideshow >> visualizingObjects: aSlide [
+MakingSystemsExplainableSlideshow >> visualizingObjects: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #visualizingObjects:);
@@ -857,7 +857,7 @@ Vissoft2022Slideshow >> visualizingObjects: aSlide [
 ]
 
 { #category : #page }
-Vissoft2022Slideshow >> visualizingObjectsPage [
+MakingSystemsExplainableSlideshow >> visualizingObjectsPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Visualizing objects')

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T11:05:27.789182+02:00"
+						"dateAndTimeString" : "2023-10-05T15:30:07.626413+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To get higher resolutrion, TG says: add it in a scalable element and increase the size of the scalable element before exporting it."
+				"string" : "To get higher resolution, TG says: add it in a scalable element and increase the size of the scalable element before exporting it."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T11:10:26.879434+02:00"
+						"dateAndTimeString" : "2023-10-05T15:29:46.864628+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "R/4AFEy6DQCQlAd5A9Yqwg=="
 				},
-				"code" : "BATbern50Slideshow new wardleyMaps\r\tcollect: [ :each | \r\t\t(GtWardleyMapElement new\r\t\t\twardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: each wardleyMap);\r\t\t\tbackground: Color white;\r\t\t\tsize: 600 @ 450) asScalableElement\r\t\t\tsize: 1200 @ 900;\r\t\t\texportAsPNG ]"
+				"code" : "MindTheGapSlideshow new wardleyMaps\r\tcollect: [ :each | \r\t\t(GtWardleyMapElement new\r\t\t\twardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: each wardleyMap);\r\t\t\tbackground: Color white;\r\t\t\tsize: 600 @ 450) asScalableElement\r\t\t\tsize: 1200 @ 900;\r\t\t\texportAsPNG ]"
 			}
 		]
 	},

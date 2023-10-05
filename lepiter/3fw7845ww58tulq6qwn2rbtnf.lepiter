@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-03T10:30:02.001594+02:00"
+						"dateAndTimeString" : "2023-10-05T15:27:36.621599+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ojRq6DC4DQChxbcfDBJDeA=="
 				},
-				"code" : "BATbern50Slideshow new."
+				"code" : "MindTheGapSlideshow new."
 			},
 			{
 				"__type" : "textSnippet",

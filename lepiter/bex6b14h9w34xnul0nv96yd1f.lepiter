@@ -208,14 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-03T10:27:28.105723+02:00"
+						"dateAndTimeString" : "2023-10-05T15:29:41.373561+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "9M9ALZe5DQC6HauJD+3NwA=="
 				},
-				"code" : "BATbern50Slideshow show."
+				"code" : "MindTheGapSlideshow show."
 			},
 			{
 				"__type" : "textSnippet",
@@ -279,14 +279,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-03T10:27:40.027205+02:00"
+						"dateAndTimeString" : "2023-10-05T15:29:43.243326+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "DjPBLZe5DQC6cug1D+3NwA=="
 				},
-				"code" : "BATbern50Slideshow new."
+				"code" : "MindTheGapSlideshow new."
 			}
 		]
 	},

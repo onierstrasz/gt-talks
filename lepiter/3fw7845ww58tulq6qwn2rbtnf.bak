@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-12T15:48:24.131368+02:00"
+						"dateAndTimeString" : "2023-06-12T15:48:28.230413+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Inspect the live slideshow"
+				"string" : "Inspect the live slideshow instance:"
 			},
 			{
 				"__type" : "pharoSnippet",

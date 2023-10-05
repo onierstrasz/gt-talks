@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T10:07:00.296163+02:00"
+						"dateAndTimeString" : "2023-10-05T15:27:46.468283+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The {{gtClass:name=BATbern50Slideshow}} has a Slide deck view: {{gtMethod:name=BATbern50Slideshow>>#gtSlideDeckFor:}}. "
+				"string" : "The {{gtClass:name=MindTheGapSlideshow}} has a Slide deck view: {{gtMethod:name=MindTheGapSlideshow>>#gtSlideDeckFor:}}. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T10:05:56.658421+02:00"
+						"dateAndTimeString" : "2023-10-05T15:27:56.035102+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Io/Pl7m4DQC6oRJ4CCBLzQ=="
 				},
-				"code" : "BATbern50Slideshow new"
+				"code" : "MindTheGapSlideshow new"
 			},
 			{
 				"__type" : "textSnippet",
@@ -105,7 +105,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:07:13.012772+02:00"
+									"dateAndTimeString" : "2023-10-05T15:27:49.210485+02:00"
 								}
 							},
 							"uid" : {
@@ -115,7 +115,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideDeckPage}}"
+							"string" : "{{gtMethod:name=MindTheGapSlideshow>>#slideDeckPage}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -142,7 +142,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:07:31.600866+02:00"
+									"dateAndTimeString" : "2023-10-05T15:28:17.311109+02:00"
 								}
 							},
 							"uid" : {
@@ -152,7 +152,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=BATbern50Slideshow>>#refreshSlideDeckPage}}"
+							"string" : "{{gtMethod:name=MindTheGapSlideshow>>#refreshSlideDeckPage}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -179,7 +179,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:07:44.285815+02:00"
+									"dateAndTimeString" : "2023-10-05T15:28:20.59915+02:00"
 								}
 							},
 							"uid" : {
@@ -189,7 +189,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideDictionary}}"
+							"string" : "{{gtMethod:name=MindTheGapSlideshow>>#slideDictionary}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -216,7 +216,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-23T10:08:19.006651+02:00"
+									"dateAndTimeString" : "2023-10-05T15:28:30.653497+02:00"
 								}
 							},
 							"uid" : {
@@ -226,7 +226,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=BATbern50Slideshow>>#slideFor:}}"
+							"string" : "{{gtMethod:name=MindTheGapSlideshow>>#slideFor:}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -397,7 +397,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-23T11:16:52.010252+02:00"
+						"dateAndTimeString" : "2023-05-23T11:17:33.892671+02:00"
 					}
 				},
 				"uid" : {
@@ -407,7 +407,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "At some point "
+				"string" : "At some point if the scaling issue is resolved, we should remove the usage of {{gtMethod:name=PrioritySlideshow>>#scalableSlide:}}. "
 			},
 			{
 				"__type" : "textSnippet",

@@ -1,17 +1,20 @@
+"
+Slides for BAT Bern 50.
+"
 Class {
-	#name : #BATbern50Slideshow,
+	#name : #MindTheGapSlideshow,
 	#superclass : #PrioritySlideshow,
 	#category : #'GtTalks-Slideshows'
 }
 
 { #category : #accessing }
-BATbern50Slideshow class >> show [
+MindTheGapSlideshow class >> show [
 	"Implement this here just so we can run it directly from the Coder."
 	super show
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> aplSieve: aSlide [
+MindTheGapSlideshow >> aplSieve: aSlide [
 	<gtSlide>
 	<text: '## APL — my first programming experience
 
@@ -25,7 +28,7 @@ APL is facetiously known as a “write-only” language, due to its highly compa
 ]
 
 { #category : #example }
-BATbern50Slideshow >> batBern50Slideshow [
+MindTheGapSlideshow >> batBern50Slideshow [
 	"Example for demo purposes"
 	<gtExample>
 	<noTest>
@@ -33,7 +36,7 @@ BATbern50Slideshow >> batBern50Slideshow [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> codeDisconnected: aSlide [
+MindTheGapSlideshow >> codeDisconnected: aSlide [
 	"https://www.pngwing.com/en/free-png-xxpby"
 
 	<gtSlide>
@@ -53,7 +56,7 @@ Worse, if you start from the running application, you may struggle to answer que
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> conclusion: aSlide [
+MindTheGapSlideshow >> conclusion: aSlide [
 	<gtSlide>
 	<text: '# Conclusion
 
@@ -64,7 +67,7 @@ What lessons can we draw from all this?'>
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> database [
+MindTheGapSlideshow >> database [
 	"All the pages"
 	<gtExample>
 	<noTest>
@@ -72,7 +75,7 @@ BATbern50Slideshow >> database [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> deploymentGap: aSlide [
+MindTheGapSlideshow >> deploymentGap: aSlide [
 	<gtSlide>
 	<text: '# The Deployment Gap
 
@@ -89,7 +92,7 @@ From development to deployment
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> designPatternsFrameworks: aSlide [
+MindTheGapSlideshow >> designPatternsFrameworks: aSlide [
 	<gtSlide>
 	<text: '## Design Patterns, Components, Frameworks
 
@@ -103,7 +106,7 @@ This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, t
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> devOpsMap: aSlide [
+MindTheGapSlideshow >> devOpsMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the deployment gap
 
@@ -115,7 +118,7 @@ Although DevOps clearly served to automate and close the gap between development
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> devOpsMapJSON [
+MindTheGapSlideshow >> devOpsMapJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -335,12 +338,12 @@ BATbern50Slideshow >> devOpsMapJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> elementForPicture: aFilename [
+MindTheGapSlideshow >> elementForPicture: aFilename [
 	^ GtFileUtility imageElementFromFileReference: self picturesFolder / aFilename
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> email: aSlide [
+MindTheGapSlideshow >> email: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: (self priorityFor: #email:);
@@ -348,7 +351,7 @@ BATbern50Slideshow >> email: aSlide [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> eniacManualTesting: aSlide [
+MindTheGapSlideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	<text: '## Manual vs automated testing
 
@@ -362,7 +365,7 @@ Automated testing only started to become popular with the introduction of Kent B
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> executionGap: aSlide [
+MindTheGapSlideshow >> executionGap: aSlide [
 	<gtSlide>
 	<text: '# The Execution gap
 
@@ -382,7 +385,7 @@ From punch cards to live programming
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> exploringGitRepo: aSlide [
+MindTheGapSlideshow >> exploringGitRepo: aSlide [
 	<gtSlide>
 <text: 
 '## Exploring a git repository
@@ -396,7 +399,7 @@ It doesn''t matter whether the domain is that of slideshows, git repositories, c
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> exploringGitRepoPage [
+MindTheGapSlideshow >> exploringGitRepoPage [
 	<gtExample>
 	^ (LePage named: 'Exploring a git repository')
 		addSnippet: (LeTextSnippet new
@@ -411,7 +414,7 @@ BATbern50Slideshow >> exploringGitRepoPage [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> exploringSlideshow: aSlide [
+MindTheGapSlideshow >> exploringSlideshow: aSlide [
 	<gtSlide>
 	<text: '## Exploring the slideshow
 
@@ -424,14 +427,14 @@ To understand the slideshow software, we don''t start from the source code but f
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> exploringSlideshowPage [
+MindTheGapSlideshow >> exploringSlideshowPage [
 	<gtExample>
 	^ (LePage named: 'Exploring the slideshow')
 		addSnippet: (LeTextSnippet new
 				string: 'To understand this slideshow, we start by exploring an instance.';
 				yourself);
 		addSnippet: (LeExampleSnippet new
-				exampleBehaviorName: #BATbern50Slideshow;
+				exampleBehaviorName: #MindTheGapSlideshow;
 				exampleSelector: #batBern50Slideshow;
 				noCode: true;
 				previewHeight: 700);
@@ -442,7 +445,7 @@ BATbern50Slideshow >> exploringSlideshowPage [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> gtExtensions: aSlide [
+MindTheGapSlideshow >> gtExtensions: aSlide [
 	<gtSlide>
 	<text: '## GT tool extensions
 
@@ -457,7 +460,7 @@ The Metrics view of each extension shows that they are generally small and cheap
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> gtExtensionsPage [
+MindTheGapSlideshow >> gtExtensionsPage [
 	<gtExample>
 	^ (LePage named: 'GT tool extensions')
 		addSnippet: (LeTextSnippet new
@@ -479,7 +482,7 @@ BATbern50Slideshow >> gtExtensionsPage [
 ]
 
 { #category : #views }
-BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
+MindTheGapSlideshow >> gtSlideWardleyMapsFor: aView [
 	"Eventually push this method up."
 	<gtView>
 	^ self wardleyMaps isEmpty
@@ -492,7 +495,7 @@ BATbern50Slideshow >> gtSlideWardleyMapsFor: aView [
 ]
 
 { #category : #spotter }
-BATbern50Slideshow >> gtSpotterSlideTextsFor: aSearch [
+MindTheGapSlideshow >> gtSpotterSlideTextsFor: aSearch [
 	<gtSearch>
 	^ aSearch list
 		priority: 50;
@@ -503,7 +506,7 @@ BATbern50Slideshow >> gtSpotterSlideTextsFor: aSearch [
 ]
 
 { #category : #spotter }
-BATbern50Slideshow >> gtSpotterSlidesFor: aSearch [
+MindTheGapSlideshow >> gtSpotterSlidesFor: aSearch [
 	<gtSearch>
 	^ aSearch list
 		priority: 40;
@@ -514,7 +517,7 @@ BATbern50Slideshow >> gtSpotterSlidesFor: aSearch [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> houseDeployment: aSlide [
+MindTheGapSlideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
 	<gtSlide>
@@ -528,7 +531,7 @@ Earlier we saw the “Execution gap” between design and execution of a running
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> iWantSmalltalk: aSlide [
+MindTheGapSlideshow >> iWantSmalltalk: aSlide [
 	<gtSlide>
 	<text: '## Wanting Smalltalk, but not getting it
 
@@ -540,7 +543,7 @@ I read about this and told my supervisor that to build our advanced electronic o
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> ibm2741: aSlide [
+MindTheGapSlideshow >> ibm2741: aSlide [
 	<gtSlide>
 	<text: '## The IBM 2741 terminal
 
@@ -553,7 +556,7 @@ It is exactly the terminal I first used in 1972, including the APL typeball with
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> ibmOpticalCard: aSlide [
+MindTheGapSlideshow >> ibmOpticalCard: aSlide [
 	<gtSlide>
 	<text: '## Programming FORTRAN on optical mark cards
 
@@ -567,7 +570,7 @@ Later in the semester one of my classmates discovered that anyone at all could w
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> ideGlorifiedTextEditor: aSlide [
+MindTheGapSlideshow >> ideGlorifiedTextEditor: aSlide [
 	<gtSlide>
 	<text: '## Mainstream IDEs are glorified text editors
 
@@ -581,7 +584,7 @@ First of all, putting a text editor at the center presupposes that you are gener
 ]
 
 { #category : #initialization }
-BATbern50Slideshow >> initializeDb [
+MindTheGapSlideshow >> initializeDb [
 	db := nil.
 	self db addPage: self wardleyMapsPage.
 	self db addPage: self exploringSlideshowPage.
@@ -591,7 +594,7 @@ BATbern50Slideshow >> initializeDb [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting2: aSlide [
+MindTheGapSlideshow >> lifewareTesting2: aSlide [
 	<gtSlide>
 	<text: '## Highlighting slower tasks
 
@@ -603,7 +606,7 @@ Here we highlight in red tasks that took longer for the same worker than an earl
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting3: aSlide [
+MindTheGapSlideshow >> lifewareTesting3: aSlide [
 	<gtSlide>
 	<text: '## Grouping workers by machine
 
@@ -616,7 +619,7 @@ Since the machines in our cluster are not all the same, we ask if the scheduling
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting4: aSlide [
+MindTheGapSlideshow >> lifewareTesting4: aSlide [
 	<gtSlide>
 	<text: '## Diving into a machine
 
@@ -628,7 +631,7 @@ We dive into a particular machine to see what''s going one. We can see clearly t
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting5: aSlide [
+MindTheGapSlideshow >> lifewareTesting5: aSlide [
 	<gtSlide>
 	<text:
 '## VM consumption per worker
@@ -641,7 +644,7 @@ We inspect the total VM memory consumption and free memory per worker.'>
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting6: aSlide [
+MindTheGapSlideshow >> lifewareTesting6: aSlide [
 	"<gtSlide>"
 	<text: '***REMOVE***
 
@@ -655,7 +658,7 @@ BATbern50Slideshow >> lifewareTesting6: aSlide [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting7: aSlide [
+MindTheGapSlideshow >> lifewareTesting7: aSlide [
 	<gtSlide>
 	<text: 
 '## Inspecting individual tasks
@@ -670,7 +673,7 @@ We were able to perform this analysis because we could turn every question into 
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lifewareTesting: aSlide [
+MindTheGapSlideshow >> lifewareTesting: aSlide [
 	<gtSlide>
 	<text: '## Lifeware test running and exploration
 
@@ -684,7 +687,7 @@ In this lightweight visualization we see that a few of these are taking twice as
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> lightweightTools: aSlide [
+MindTheGapSlideshow >> lightweightTools: aSlide [
 	<gtSlide>
 	<text: 
 '## Lightweight tools are more effective than reading code
@@ -699,7 +702,7 @@ Very lightweight tools and metrics can be enough to gain insight into a complex 
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> markCards2Terminals [
+MindTheGapSlideshow >> markCards2Terminals [
 	<gtExample>
 	<noTest>
 	^ LeWardleyMapSnippet new
@@ -708,7 +711,7 @@ BATbern50Slideshow >> markCards2Terminals [
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> markCards2TerminalsJSON [
+MindTheGapSlideshow >> markCards2TerminalsJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -1018,7 +1021,7 @@ BATbern50Slideshow >> markCards2TerminalsJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> markCardsMap: aSlide [
+MindTheGapSlideshow >> markCardsMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the execution gap
 
@@ -1036,7 +1039,7 @@ What''s interesting is that when the technology is sufficiently evolved, new opp
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> modelingGap: aSlide [
+MindTheGapSlideshow >> modelingGap: aSlide [
 	<gtSlide>
 	<text: '# The Modeling gap
 
@@ -1052,7 +1055,7 @@ From data structures to objects
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> moldableDevelopment: aSlide [
+MindTheGapSlideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text: '# Moldable development
 
@@ -1072,7 +1075,7 @@ From static code to explainable systems
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> moldableDevelopmentMap: aSlide [
+MindTheGapSlideshow >> moldableDevelopmentMap: aSlide [
 	<gtSlide>
 	<text: '# Mapping moldable development
 
@@ -1090,7 +1093,7 @@ In the end we can more quickly support decision-making not only for developers, 
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> moldableDevelopmentMapJSON [
+MindTheGapSlideshow >> moldableDevelopmentMapJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -1400,7 +1403,7 @@ BATbern50Slideshow >> moldableDevelopmentMapJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> moldingIDE: aSlide [
+MindTheGapSlideshow >> moldingIDE: aSlide [
 	<gtSlide>
 	<text: '## Molding the IDE
 
@@ -1415,14 +1418,14 @@ For each of the custom navigational views we have seen, a few lines of code are 
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> moldingIDEPage [
+MindTheGapSlideshow >> moldingIDEPage [
 	<gtExample>
 	^ (LePage named: 'Molding the IDE')
 		addSnippet: (LeTextSnippet new
 				string: 'Each view is a cheap, composable tool. (ALT-click to explore the code.)';
 				yourself);
 		addSnippet: (LeExampleSnippet new
-				exampleBehaviorName: #BATbern50Slideshow;
+				exampleBehaviorName: #MindTheGapSlideshow;
 				exampleSelector: #batBern50Slideshow;
 				noCode: true;
 				previewHeight: 700);
@@ -1433,7 +1436,7 @@ BATbern50Slideshow >> moldingIDEPage [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> oopEarlyHistory: aSlide [
+MindTheGapSlideshow >> oopEarlyHistory: aSlide [
 	<gtSlide>
 	<text: '## A brief early history of OOP
 
@@ -1449,7 +1452,7 @@ He convinced Xerox PARC to fund the development of not just the language, but th
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> oopMap: aSlide [
+MindTheGapSlideshow >> oopMap: aSlide [
 	<gtSlide>
 <text: 
 '## Closing the modeling gap
@@ -1464,7 +1467,7 @@ For early adopters of OO technology in the 1980s, this resulted in large, legacy
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> oopMapJSON [
+MindTheGapSlideshow >> oopMapJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -1795,7 +1798,7 @@ BATbern50Slideshow >> oopMapJSON [
 ]
 
 { #category : #accessing }
-BATbern50Slideshow >> picturesFolder [
+MindTheGapSlideshow >> picturesFolder [
 	<gtExample>
 	<noTest>
 	^ GtResourcesUtility
@@ -1803,12 +1806,12 @@ BATbern50Slideshow >> picturesFolder [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> placeholder [
+MindTheGapSlideshow >> placeholder [
 	^ self elementForPicture: 'placeholder.png'
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> plugins: aSlide [
+MindTheGapSlideshow >> plugins: aSlide [
 	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
 
 	<gtSlide>
@@ -1826,7 +1829,7 @@ Finally, plugins don''t know anything about your context, so like SO and ChatGPT
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> productivityGap: aSlide [
+MindTheGapSlideshow >> productivityGap: aSlide [
 	<gtSlide>
 <text: 
 '# The Productivity Gap
@@ -1847,7 +1850,7 @@ From conception to realization
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> productivityMap: aSlide [
+MindTheGapSlideshow >> productivityMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the productivity gap
 
@@ -1861,7 +1864,7 @@ Frameworks and components also raise the level of conversation. Instead of deali
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> productivityMapJSON [
+MindTheGapSlideshow >> productivityMapJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -2114,7 +2117,7 @@ BATbern50Slideshow >> productivityMapJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> programmingIsModeling: aSlide [
+MindTheGapSlideshow >> programmingIsModeling: aSlide [
 	<gtSlide>
 	<text: 
 '## Programming is Modeling
@@ -2132,7 +2135,7 @@ One lesson we can learn from model-driven approaches is that instead of generati
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> programmingIsUnderstanding: aSlide [
+MindTheGapSlideshow >> programmingIsUnderstanding: aSlide [
 	<gtSlide>
 	<text: '## Programming is Understanding
 
@@ -2145,7 +2148,7 @@ I would interpret that today as meaning that software is more than just text. It
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> qaToolsUnreliable: aSlide [
+MindTheGapSlideshow >> qaToolsUnreliable: aSlide [
 	<gtSlide>
 	<text: '## Q&A tools lack context, so give unreliable results
 
@@ -2163,7 +2166,7 @@ The screenshots show answers I obtained from SO and ChatGPT to actual questions 
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> readingDoesNotScale: aSlide [
+MindTheGapSlideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
 	<gtSlide>
@@ -2177,7 +2180,7 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> reengineeringLifecycle: aSlide [
+MindTheGapSlideshow >> reengineeringLifecycle: aSlide [
 	<gtSlide>
 	<text: '## The Reengineering lifecycle
 
@@ -2189,7 +2192,7 @@ Our strategy was to recover lost design knowledge by reverse engineering and ana
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> reengineeringOOlegacy: aSlide [
+MindTheGapSlideshow >> reengineeringOOlegacy: aSlide [
 	<gtSlide>
 	<text: '## Reengineering OO legacy systems
 
@@ -2201,7 +2204,7 @@ Object-oriented programming was so successful that by the mid-1990s there were a
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> reengineeringPatterns: aSlide [
+MindTheGapSlideshow >> reengineeringPatterns: aSlide [
 	<gtSlide>
 	<text: '## Reengineering patterns
 
@@ -2217,13 +2220,13 @@ One of the outcomes of this work was the open-source book, *Object-Oriented Reen
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> scaledWardleyMapForJson: aJSON [
+MindTheGapSlideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
 ]
 
 { #category : #accessing }
-BATbern50Slideshow >> slidePriorities [
+MindTheGapSlideshow >> slidePriorities [
 	"This method defines the slide priorities implicitly by their order instead of by fixed numbers.
 	See also: PrioritySlideshow>>#priorityFor:"
 	<gtExample>
@@ -2292,7 +2295,7 @@ BATbern50Slideshow >> slidePriorities [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> softwareProductivity: aSlide [
+MindTheGapSlideshow >> softwareProductivity: aSlide [
 	"Margaret Hamilton, NASA's lead software engineer for the Apollo Program, stands next to the code she wrote by hand that took Humanity to the moon in 1969.
 	https://en.wikipedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg"
 
@@ -2309,7 +2312,7 @@ But software productivity clearly isn''t just producing more code in the same am
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> sustainabilityGap: aSlide [
+MindTheGapSlideshow >> sustainabilityGap: aSlide [
 	<gtSlide>
 	<text: '# The Sustainability Gap
 
@@ -2327,7 +2330,7 @@ As software systems grow, they become harder to understand and maintain
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> testingBook: aSlide [
+MindTheGapSlideshow >> testingBook: aSlide [
 	<gtSlide>
 	<text: '## The testing book
 
@@ -2339,7 +2342,7 @@ During the FAMOOS project we were concerned with a particular project that we co
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> testingGap: aSlide [
+MindTheGapSlideshow >> testingGap: aSlide [
 	<gtSlide>
 <text: 
 '# The Testing Gap
@@ -2359,7 +2362,7 @@ From manual to automated testing
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> testingMap: aSlide [
+MindTheGapSlideshow >> testingMap: aSlide [
 	"TG points out that property-based testing produced generated tests that capture business logic."
 
 	<gtSlide>
@@ -2379,7 +2382,7 @@ The open question is where we can go with generated tests. So far these mostly j
 ]
 
 { #category : #wardley }
-BATbern50Slideshow >> testingMapJSON [
+MindTheGapSlideshow >> testingMapJSON [
 	^ '{
 	"nodes" : [
 		{
@@ -2599,7 +2602,7 @@ BATbern50Slideshow >> testingMapJSON [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> theElectronicOffice: aSlide [
+MindTheGapSlideshow >> theElectronicOffice: aSlide [
 	<gtSlide>
 	<text: '## Building the Electronic Office (1980)
 
@@ -2611,7 +2614,7 @@ The task for my MSc project was, together with another Masters student, to build
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> theTypist: aSlide [
+MindTheGapSlideshow >> theTypist: aSlide [
 	<gtSlide>
 	<text: '## The typist at the kitchen table
 
@@ -2623,7 +2626,7 @@ As an amusing parenthesis, I saw this displayed in the Open Air museum in Reykja
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> titleSlide: aSlide [
+MindTheGapSlideshow >> titleSlide: aSlide [
 	<gtSlide>
 	<text: '# Mind the gap — 50 years of shortening feedback loops
 
@@ -2642,13 +2645,13 @@ Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell 
 ]
 
 { #category : #accessing }
-BATbern50Slideshow >> wardleyMaps [
+MindTheGapSlideshow >> wardleyMaps [
 	^ self wardleyMapsPage children
 		select: [ :each | each isKindOf: LeWardleyMapSnippet ]
 ]
 
 { #category : #pages }
-BATbern50Slideshow >> wardleyMapsPage [
+MindTheGapSlideshow >> wardleyMapsPage [
 	"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
 
 	<gtExample>
@@ -2676,7 +2679,7 @@ BATbern50Slideshow >> wardleyMapsPage [
 ]
 
 { #category : #slides }
-BATbern50Slideshow >> whereAreTheObjects: aSlide [
+MindTheGapSlideshow >> whereAreTheObjects: aSlide [
 	"https://www.jackson-pollock.org/convergence.jsp"
 
 	<gtSlide>

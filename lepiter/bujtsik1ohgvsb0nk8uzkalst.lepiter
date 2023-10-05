@@ -183,14 +183,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-20T15:24:29.867187+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:05.196107+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "/wqGsYG4DQC1IP/dDTwjyA=="
 							},
-							"code" : "BATbern50Slideshow new"
+							"code" : "MindTheGapSlideshow new"
 						},
 						{
 							"__type" : "textSnippet",
@@ -217,7 +217,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-20T15:25:04.648251+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:07.62115+02:00"
 								}
 							},
 							"uid" : {
@@ -227,7 +227,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Suppose we add a pragma to {{gtMethod:name=BATbern50Slideshow>>#titleSlide:|expanded}}"
+							"string" : "Suppose we add a pragma to {{gtMethod:name=MindTheGapSlideshow>>#titleSlide:|expanded}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -291,14 +291,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T10:18:48.11381+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:13.702699+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "GAzrp6W4DQCEc6M5BmIF2Q=="
 							},
-							"code" : "(BATbern50Slideshow >> #titleSlide:) pragmas\r\tdetect: [ :p | p selector = #text: ]\r\tifFound: [ :pragma | pragma arguments first ]\r\tifNone: [ '' ]"
+							"code" : "(MindTheGapSlideshow >> #titleSlide:) pragmas\r\tdetect: [ :p | p selector = #text: ]\r\tifFound: [ :pragma | pragma arguments first ]\r\tifNone: [ '' ]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -362,14 +362,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T10:19:20.916247+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:16.562685+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "n/sunqW4DQCDSUYXBmIF2Q=="
 							},
-							"code" : "BATbern50Slideshow new slideMethods\r\tcollect: [ :each | \r\t\teach pragmas\r\t\t\tdetect: [ :p | p selector = #text: ]\r\t\t\tifFound: [ :pragma | pragma arguments first ]\r\t\t\tifNone: [ '' ] ]"
+							"code" : "MindTheGapSlideshow new slideMethods\r\tcollect: [ :each | \r\t\teach pragmas\r\t\t\tdetect: [ :p | p selector = #text: ]\r\t\t\tifFound: [ :pragma | pragma arguments first ]\r\t\t\tifNone: [ '' ] ]"
 						}
 					]
 				},
@@ -508,14 +508,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T10:50:29.644475+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:20.956141+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "w8ZSD6a4DQCZVvnfBmIF2Q=="
 							},
-							"code" : "slideshow := BATbern50Slideshow new.\rselector := #titleSlide:.\r\rslideshow\r\tscalableSlide: (slideshow perform: selector withArguments: {GtProtoLiveSlide new})."
+							"code" : "slideshow := MindTheGapSlideshow new.\rselector := #titleSlide:.\r\rslideshow\r\tscalableSlide: (slideshow perform: selector withArguments: {GtProtoLiveSlide new})."
 						},
 						{
 							"__type" : "textSnippet",
@@ -579,14 +579,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T10:51:03.872834+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:23.07553+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "LJPxGaa4DQCc8lpUBmIF2Q=="
 							},
-							"code" : "slideshow := BATbern50Slideshow new.\rselector := #titleSlide:.\rslideshow slideFor: selector"
+							"code" : "slideshow := MindTheGapSlideshow new.\rselector := #titleSlide:.\rslideshow slideFor: selector"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -613,14 +613,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T10:53:37.432756+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:25.785255+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "/e7ZI6a4DQCe9hr8BmIF2Q=="
 							},
-							"code" : "BATbern50Slideshow new slideFor: #titleSlide:"
+							"code" : "MindTheGapSlideshow new slideFor: #titleSlide:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -832,14 +832,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T11:06:50.308136+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:29.450663+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "kVYnlaW4DQCB31+uBmIF2Q=="
 							},
-							"code" : "page := LePage named: 'Script'.\raSlideshow := BATbern50Slideshow new.\r\raSlideshow slideDictionary associations\r\tdo: [ :assoc | \r\t\t| text |\r\t\ttext := assoc value pragmas\r\t\t\t\tdetect: [ :p | p selector = #text: ]\r\t\t\t\tifFound: [ :pragma | pragma arguments first ]\r\t\t\t\tifNone: [ '' ].\r\t\tpage\r\t\t\taddSnippet: (LeTextSnippet new\r\t\t\t\t\tstring: text;\r\t\t\t\t\tyourself);\r\t\t\taddSnippet: (LeElementSnippet new\r\t\t\t\t\tcode: 'BATbern50Slideshow new slideFor: ' , assoc value selector printString;\r\t\t\t\t\telementHeight: 300;\r\t\t\t\t\tcodeVisible: true;\r\t\t\t\t\tyourself) ].\rpage"
+							"code" : "page := LePage named: 'Script'.\raSlideshow := MindTheGapSlideshow new.\r\raSlideshow slideDictionary associations\r\tdo: [ :assoc | \r\t\t| text |\r\t\ttext := assoc value pragmas\r\t\t\t\tdetect: [ :p | p selector = #text: ]\r\t\t\t\tifFound: [ :pragma | pragma arguments first ]\r\t\t\t\tifNone: [ '' ].\r\t\tpage\r\t\t\taddSnippet: (LeTextSnippet new\r\t\t\t\t\tstring: text;\r\t\t\t\t\tyourself);\r\t\t\taddSnippet: (LeElementSnippet new\r\t\t\t\t\tcode: 'BATbern50Slideshow new slideFor: ' , assoc value selector printString;\r\t\t\t\t\telementHeight: 300;\r\t\t\t\t\tcodeVisible: true;\r\t\t\t\t\tyourself) ].\rpage"
 						},
 						{
 							"__type" : "textSnippet",
@@ -866,7 +866,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-05-22T11:13:08.687687+02:00"
+									"dateAndTimeString" : "2023-10-05T15:29:32.359202+02:00"
 								}
 							},
 							"uid" : {
@@ -876,7 +876,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Now we extract this as a method {{gtMethod:name=BATbern50Slideshow>>#slideDeckPage}}. "
+							"string" : "Now we extract this as a method {{gtMethod:name=MindTheGapSlideshow>>#slideDeckPage}}. "
 						},
 						{
 							"__type" : "textSnippet",

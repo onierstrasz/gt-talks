@@ -1006,12 +1006,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-20T15:23:53.139549+02:00"
+			"dateAndTimeString" : "2023-06-03T10:29:42.980997+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Encoding the script in the slides"
+		"title" : "* Encoding the script in the slides"
 	},
 	"uid" : {
 		"__type" : "uuid",
