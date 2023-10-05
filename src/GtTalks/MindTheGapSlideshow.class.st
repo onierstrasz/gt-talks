@@ -22,7 +22,7 @@ You might be surprised to learn that my first programming experience was with AP
 
 APL is facetiously known as a “write-only” language, due to its highly compact notation using Greek letters as array manipulation operators. In the slide we a see a one-line APL program to generate prime numbers.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #aplSieve:);
+		setPriority;
 		newFadedText: 'A prime sieve in APL';
 		element: [ self elementForPicture: 'aplPrimeSieve.jpg' ]
 ]
@@ -50,7 +50,7 @@ Perhaps you will have a test case or a breakpoint that will land you in a debugg
 
 Worse, if you start from the running application, you may struggle to answer questions such as, “Where is this feature implemented?”'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #codeDisconnected:);
+		setPriority;
 		newFadedText: 'Code is disconnected from the running application';
 		element: [ self elementForPicture: 'splitBrain.jpg' ]
 ]
@@ -62,7 +62,7 @@ MindTheGapSlideshow >> conclusion: aSlide [
 
 What lessons can we draw from all this?'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #conclusion:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'Conclusion')
 ]
 
@@ -81,7 +81,7 @@ MindTheGapSlideshow >> deploymentGap: aSlide [
 
 Although there were many other exciting advances in the 1990s, let us skip ahead.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #deploymentGap:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Deployment Gap');
 		paragraphWithFormat: (self
 				asBigText: '
@@ -100,7 +100,7 @@ In the 1990s, the mantra was “Objects are not enough”. But if so, what else 
 
 This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, the “Gang of Four” who produced the first “Design Patterns” book. But all four were also experienced in developing object-oriented frameworks based on reusable architectures and software components. They noticed that the same design ideas appeared in all the systems they had developed independently, and  figured something interesting was going on.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #designPatternsFrameworks:);
+		setPriority;
 		newFadedText: 'Design Patterns, Components, Frameworks';
 		element: [ self elementForPicture: 'gangOfFour.jpg' ]
 ]
@@ -112,7 +112,7 @@ MindTheGapSlideshow >> devOpsMap: aSlide [
 
 Although DevOps clearly served to automate and close the gap between development and deployment, what is interesting is the new opportunities it created. In particular, with DevOps it is possible to experimentally introduce new features for selected groups of users to monitor and assess their impact on business. Without DevOps, the very idea is laughable.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #devOpsMap:);
+		setPriority;
 		newFadedText: 'Closing the deployment gap';
 		element: [ self scaledWardleyMapForJson: self devOpsMapJSON ]
 ]
@@ -346,7 +346,7 @@ MindTheGapSlideshow >> elementForPicture: aFilename [
 MindTheGapSlideshow >> email: aSlide [
 	<gtSlide>
 	^ aSlide title
-		priority: (self priorityFor: #email:);
+		setPriority;
 		titleWithFormat: (self asSubtitle: 'oscar.nierstrasz@feenk.com')
 ]
 
@@ -359,7 +359,7 @@ This great photo shows the ENIAC, one of the very first digital computers, compl
 
 Automated testing only started to become popular with the introduction of Kent Beck''s SUnit framework, and the subsequent port of SUnit by Kent and Erich Gamma to Java.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #eniacManualTesting:);
+		setPriority;
 		newFadedText: 'Manual vs automated testing';
 		element: [ self elementForPicture: 'eniac.jpg' ]
 ]
@@ -374,7 +374,7 @@ In this case the gap was simply the time between designing a program and actuall
 
 I was a tenth-grade high-school student in Toronto when I was invited to the University of Waterloo for a week of Mathematics and a bit of programming.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #executionGap:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Execution Gap');
 		paragraphWithFormat: (self
 				asBigText: '
@@ -387,14 +387,13 @@ From punch cards to live programming
 { #category : #slides }
 MindTheGapSlideshow >> exploringGitRepo: aSlide [
 	<gtSlide>
-<text: 
-'## Exploring a git repository
+	<text: '## Exploring a git repository
 
 We can similarly explore any kind of system to understand it. Here we explore the git repository of this slideshow. We can explore the changes, the commits, the packages, and from each entity navigate further to deepen our understanding.
 
 It doesn''t matter whether the domain is that of slideshows, git repositories, computer games, social media data or life insurance policies. In any case, we can navigate through the network of domain objects to answer our questions, or to navigate to the code, not the other way around.'>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #exploringGitRepo:);
+		setPriority;
 		startPage: (self db pageNamed: 'Exploring a git repository')
 ]
 
@@ -422,7 +421,7 @@ For a software system to be explainable, we must be able to explore it.
 
 To understand the slideshow software, we don''t start from the source code but from a live instance. We can navigate from the slideshow to its slides, to the Wardley maps, or to the source code, if we need to.'>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #exploringSlideshow:);
+		setPriority;
 		startPage: (self db pageNamed: 'Exploring the slideshow')
 ]
 
@@ -455,7 +454,7 @@ In addition to custom views, there are several other ways the IDE can be molded 
 
 The Metrics view of each extension shows that they are generally small and cheap to implement.'>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #gtExtensions:);
+		setPriority;
 		startPage: (self db pageNamed: 'GT tool extensions')
 ]
 
@@ -525,7 +524,7 @@ MindTheGapSlideshow >> houseDeployment: aSlide [
 
 Earlier we saw the “Execution gap” between design and execution of a running program. The deployment gap concerns the gap between having a running and validated system and deploying it with end users. Until the introduction of DevOps, this could be a slow and painful manual process.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #houseDeployment:);
+		setPriority;
 		newFadedText: 'The gap from development to deployment';
 		element: [ self elementForPicture: 'coastalasbestosremoval-vectorized.jpg' ]
 ]
@@ -537,7 +536,7 @@ MindTheGapSlideshow >> iWantSmalltalk: aSlide [
 
 I read about this and told my supervisor that to build our advanced electronic office systems we needed an object-oriented language. Since Smalltalk wasn''t available for our hardware, we started research into building our own language and system.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #iWantSmalltalk:);
+		setPriority;
 		newFadedText: 'Wanting Smalltalk, but not getting it';
 		element: [ self elementForPicture: 'wantingSmalltalk.jpg' ]
 ]
@@ -550,7 +549,7 @@ MindTheGapSlideshow >> ibm2741: aSlide [
 The so-called typewriter was actually an IBM 2741 used to program in APL.
 It is exactly the terminal I first used in 1972, including the APL typeball with Greek characters. I somehow doubt it was used to type letters in a kitchen in Iceland.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #ibm2741:);
+		setPriority;
 		newFadedText: 'The IBM 2741';
 		element: [ self elementForPicture: 'ibm2741.jpg' ]
 ]
@@ -564,7 +563,7 @@ In the Autumn of 1972, the Toronto Board of Education introduced the first high 
 
 Later in the semester one of my classmates discovered that anyone at all could walk in off the street and use the keypunches and the high-speed job stream at the University of Toronto. After that we did all our homework at UofT.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #ibmOpticalCard:);
+		setPriority;
 		newFadedText: 'IBM education FORTRAN optical mark card';
 		element: [ self elementForPicture: 'ibmOpticalMarkCard.jpg' ]
 ]
@@ -578,7 +577,7 @@ All mainstream IDEs are pretty much the same: they focus on editing source code.
 
 First of all, putting a text editor at the center presupposes that you are generally either reading or writing code. But we only spend a small part of our time writing code.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #ideGlorifiedTextEditor:);
+		setPriority;
 		newFadedText: 'Mainstream IDEs are glorified text editors';
 		element: [ self elementForPicture: 'intelliJ.jpg' ]
 ]
@@ -600,7 +599,7 @@ MindTheGapSlideshow >> lifewareTesting2: aSlide [
 
 Here we highlight in red tasks that took longer for the same worker than an earlier task. This tells us that there are scheduling issues, and not just with the slowest workers..'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting2:);
+		setPriority;
 		newFadedText: 'Highlighting slower tasks';
 		element: [ self elementForPicture: 'lifeware/2-clusters-slow-tasks-highlighted.png' ]
 ]
@@ -613,7 +612,7 @@ MindTheGapSlideshow >> lifewareTesting3: aSlide [
 Since the machines in our cluster are not all the same, we ask if the scheduling issues are related to particular machines. Here we inspect the execution timelines of all the workers on a given machine.
 '>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting3:);
+		setPriority;
 		newFadedText: 'Grouping workers by machine';
 		element: [ self elementForPicture: 'lifeware/3-clusters-by-machine.png' ]
 ]
@@ -625,7 +624,7 @@ MindTheGapSlideshow >> lifewareTesting4: aSlide [
 
 We dive into a particular machine to see what''s going one. We can see clearly that only one worker is having scheduling problems.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting4:);
+		setPriority;
 		newFadedText: 'Diving into a machine';
 		element: [ self elementForPicture: 'lifeware/4-machine-view.png' ]
 ]
@@ -633,12 +632,11 @@ We dive into a particular machine to see what''s going one. We can see clearly t
 { #category : #slides }
 MindTheGapSlideshow >> lifewareTesting5: aSlide [
 	<gtSlide>
-	<text:
-'## VM consumption per worker
+	<text: '## VM consumption per worker
 
 We inspect the total VM memory consumption and free memory per worker.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting5:);
+		setPriority;
 		newFadedText: 'VM consumption per worker';
 		element: [ self elementForPicture: 'lifeware/5-worker-view.png' ]
 ]
@@ -646,13 +644,14 @@ We inspect the total VM memory consumption and free memory per worker.'>
 { #category : #slides }
 MindTheGapSlideshow >> lifewareTesting6: aSlide [
 	"<gtSlide>"
+
 	<text: '***REMOVE***
 
 ## 6 Lifeware test running and exploration
 
 '>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting6:);
+		setPriority;
 		newFadedText: '6 Lifeware test running and exploration';
 		element: [ self elementForPicture: 'lifeware/6-physical-view.png' ]
 ]
@@ -660,14 +659,13 @@ MindTheGapSlideshow >> lifewareTesting6: aSlide [
 { #category : #slides }
 MindTheGapSlideshow >> lifewareTesting7: aSlide [
 	<gtSlide>
-	<text: 
-'## Inspecting individual tasks
+	<text: '## Inspecting individual tasks
 
 Finally we can dive into the individual tasks. Here we can verify that indeed the problem is just with the scheduling. By updating the historical data of the time taken to run each test, we can better schedule the test runs and reduce the delays.
 
 We were able to perform this analysis because we could turn every question into a cheap and lightweight tool that would let us turn the execution data into an explorable model of the test runs.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting7:);
+		setPriority;
 		newFadedText: 'Inspecting individual tasks';
 		element: [ self elementForPicture: 'lifeware/7-task-view.png' ]
 ]
@@ -681,7 +679,7 @@ Lifeware has a *very* large number of test cases for their life insurance SPL. T
 
 In this lightweight visualization we see that a few of these are taking twice as long, but why?'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lifewareTesting:);
+		setPriority;
 		newFadedText: 'Lifeware test running and exploration';
 		element: [  "self placeholder "self elementForPicture: 'lifeware/1-cluster-view.png' ]
 ]
@@ -689,14 +687,13 @@ In this lightweight visualization we see that a few of these are taking twice as
 { #category : #slides }
 MindTheGapSlideshow >> lightweightTools: aSlide [
 	<gtSlide>
-	<text: 
-'## Lightweight tools are more effective than reading code
+	<text: '## Lightweight tools are more effective than reading code
 
 One of the key reengineering patterns is *Study the Exceptional Entities*, which helps you to learn quickly about potential problems in a software system by asking questions about outliers, such as very large classes, or classes with many fields but little behavior.
 
 Very lightweight tools and metrics can be enough to gain insight into a complex system. In this system complexity view, we map the numbers of attributes, methods and lines of codes to the width, height and color of classes in a hierarchy. This immediately highlights classes with abnormally high lines of code, or lots of data with little behavior.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #lightweightTools:);
+		setPriority;
 		newFadedText: 'Lightweight tools are more effective than reading code';
 		element: [ self elementForPicture: 'lightweightTools.jpg' ]
 ]
@@ -1033,7 +1030,7 @@ In this case we see that optical mark cards evolve to punch cards to interactive
 
 What''s interesting is that when the technology is sufficiently evolved, new opportunities arise that could not be imagined before. In this case, since the feedback loop is so short with live programming, we can experiment in ways that were not possible before.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #markCardsMap:);
+		setPriority;
 		newFadedText: 'Closing the execution gap';
 		element: [ self scaledWardleyMapForJson: self markCards2TerminalsJSON ]
 ]
@@ -1045,7 +1042,7 @@ MindTheGapSlideshow >> modelingGap: aSlide [
 
 After high school, I studied Mathematics at Waterloo, and then switched to Computer Science at UofT. There I experienced the enormous gap between conceptual models and implementation.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #modelingGap:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Modeling Gap');
 		paragraphWithFormat: (self
 				asBigText: '
@@ -1065,7 +1062,7 @@ The IDE is more than a text editor. First, instead of starting to explore a syst
 
 Second, we must be able to answer questions relevant to our *context*. Instead of using off-the-shelf tools or plugins, we should be able to use cheap and composable tools specific to our domain.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #moldableDevelopment:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'Moldable development');
 		paragraphWithFormat: (self
 				asBigText: '
@@ -1087,7 +1084,7 @@ Now, instead of manual cobbling together a view, we can easily obtain a view usi
 
 In the end we can more quickly support decision-making not only for developers, but also business stakeholders.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #moldableDevelopmentMap:);
+		setPriority;
 		newFadedText: 'Mapping moldable development';
 		element: [ self scaledWardleyMapForJson: self moldableDevelopmentMapJSON ]
 ]
@@ -1413,7 +1410,7 @@ Understanding doesn''t arise simply from navigating, but from being able to navi
 
 For each of the custom navigational views we have seen, a few lines of code are all that are needed to define them. We can ALT-click on the tabs to see the code. For example, the Slides view or the Slide deck view are extremely short, and leverage the fact that all the parts are composable.'>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #moldingIDE:);
+		setPriority;
 		startPage: (self db pageNamed: 'Molding the IDE')
 ]
 
@@ -1446,7 +1443,7 @@ Also during the 1960s, an American computer scientist, Alan Kay, noticed that co
 
 He convinced Xerox PARC to fund the development of not just the language, but the entire system down to the metal. The Smalltalk team indeed built not only the Smalltalk language and VM technology, but also the first graphical workstations and windowing systems.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #oopEarlyHistory:);
+		setPriority;
 		newFadedText: 'A brief early history of OOP';
 		element: [ self elementForPicture: 'oopEarlyHistory.jpg' ]
 ]
@@ -1454,14 +1451,13 @@ He convinced Xerox PARC to fund the development of not just the language, but th
 { #category : #slides }
 MindTheGapSlideshow >> oopMap: aSlide [
 	<gtSlide>
-<text: 
-'## Closing the modeling gap
+	<text: '## Closing the modeling gap
 
 Object-oriented programming made it possible to trace concepts from requirements through design down to implementation. This certainly made it easier to develop software systems, but what is interesting is that this enabled long-term growth. Not only development, but maintenance and evolution of such systems was facilitated by making it easier to navigate from requirements to code.
 
 For early adopters of OO technology in the 1980s, this resulted in large, legacy OO systems by the mid 1990s.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #oopMap:);
+		setPriority;
 		newFadedText: 'Closing the modeling gap';
 		element: [ self scaledWardleyMapForJson: self oopMapJSON ]
 ]
@@ -1823,7 +1819,7 @@ Unluckily plugins are (in my experience) not pleasant to implement, it is hard t
 
 Finally, plugins don''t know anything about your context, so like SO and ChatGPT, the likelihood that they will help you for *your* problem is slim.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #plugins:);
+		setPriority;
 		newFadedText: 'Plugins are  hard to find, hard to build, and hard to compose';
 		element: [ self elementForPicture: 'adapters.jpg' ]
 ]
@@ -1831,19 +1827,16 @@ Finally, plugins don''t know anything about your context, so like SO and ChatGPT
 { #category : #slides }
 MindTheGapSlideshow >> productivityGap: aSlide [
 	<gtSlide>
-<text: 
-'# The Productivity Gap
+	<text: '# The Productivity Gap
 
 Whereas in the 1980s most of the resistance to OO technology came from concerns about performance (after all, every message to an object entails at least one additional indirection), by the 1990s machines were fast enough that developer productivity was seen as being more important.
 
 But what is “productivity”?'>
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #productivityGap:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Productivity Gap');
-		paragraphWithFormat:
-				(self
-						asBigText: 
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 From conception to realization
 ')
@@ -1858,7 +1851,7 @@ Design patterns are valuable not only as a way to teach software developers abou
 
 Frameworks and components also raise the level of conversation. Instead of dealing with many unconnected applications, we deal with a Software Product Line of applications sharing a common code base.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #productivityMap:);
+		setPriority;
 		newFadedText: 'Closing the productivity gap';
 		element: [ self scaledWardleyMapForJson: self productivityMapJSON ]
 ]
@@ -2119,8 +2112,7 @@ MindTheGapSlideshow >> productivityMapJSON [
 { #category : #slides }
 MindTheGapSlideshow >> programmingIsModeling: aSlide [
 	<gtSlide>
-	<text: 
-'## Programming is Modeling
+	<text: '## Programming is Modeling
 
 First, I would say, that “programming is modeling”. This is not a new observation, but it can be interpreted in several different ways.
 
@@ -2130,7 +2122,7 @@ Object-oriented programming changed that by allowing not only the design but the
 
 One lesson we can learn from model-driven approaches is that instead of generating code from models, instead we should generate views from the code.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #programmingIsModeling:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'Programming is Modeling')
 ]
 
@@ -2143,7 +2135,7 @@ We can go further, however. Kristen Nygaard, one of the inventors of Simula, the
 
 I would interpret that today as meaning that software is more than just text. It can and should be seen as a living system that expresses knowledge about itself. Instead of seeing the IDE as a glorified text editor, it should be seen as an environment for exploring, querying and analyzing software systems. Instead of having to head to Google, StackOverflow or ChatGPT to answer questions about our software, we should be able to answer the questions in the systems themselves.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #programmingIsUnderstanding:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'Programming is Understanding')
 ]
 
@@ -2160,7 +2152,7 @@ Although Stack Overflow clearly suffers from this problem, AI-based answers such
 
 The screenshots show answers I obtained from SO and ChatGPT to actual questions I had about GitHub pages. In both cases I struggled to get the information relevant for my context.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #qaToolsUnreliable:);
+		setPriority;
 		newFadedText: 'Q&A tools lack context, so give unreliable results';
 		element: [ self elementForPicture: 'so-chatGpt.jpg' ]
 ]
@@ -2174,7 +2166,7 @@ MindTheGapSlideshow >> readingDoesNotScale: aSlide [
 
 On the other hand, *reading code for very large systems does not scale.* You simply cannot read hundreds of thousands of lines of code, let alone many millions of LOC.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #readingDoesNotScale:);
+		setPriority;
 		newFadedText: 'Reading code does not scale';
 		element: [ self elementForPicture: 'library.jpg' ]
 ]
@@ -2186,7 +2178,7 @@ MindTheGapSlideshow >> reengineeringLifecycle: aSlide [
 
 Our strategy was to recover lost design knowledge by reverse engineering and analyzing the legacy software, and then migrating it step-by-step towards a newer and cleaner architecture.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #reengineeringLifecycle:);
+		setPriority;
 		newFadedText: 'The Reengineering lifecycle';
 		element: [ self elementForPicture: 'reengineeringLifecycle.jpg' ]
 ]
@@ -2198,7 +2190,7 @@ MindTheGapSlideshow >> reengineeringOOlegacy: aSlide [
 
 Object-oriented programming was so successful that by the mid-1990s there were already large, legacy OO systems. We started a European project called FAMOOS in 1996 with industrial partners Nokia and Daimler-Benz to reengineer legacy OO software towards cleaner, more scalable component-based frameworks.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #reengineeringOOlegacy:);
+		setPriority;
 		newFadedText: 'How to reengineer OO legacy systems towards component-based frameworks?';
 		element: [ self elementForPicture: 'reengineeringOOlegacy.jpg' ]
 ]
@@ -2214,7 +2206,7 @@ For example, the pattern *Interview during demo* focuses attention on concrete f
 
 One of the outcomes of this work was the open-source book, *Object-Oriented Reengineering Patterns.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #reengineeringPatterns:);
+		setPriority;
 		newFadedText: 'Reengineering patterns';
 		element: [ self elementForPicture: 'reengineeringPatterns.jpg' ]
 ]
@@ -2306,7 +2298,7 @@ This great photo shows Margaret Hamilton, NASA''s lead software engineer for the
 
 But software productivity clearly isn''t just producing more code in the same amount of time, otherwise refactoring would be seen as negative productivity! The trick is to produce more value for the customer, whether this is more code or less.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #softwareProductivity:);
+		setPriority;
 		newFadedText: 'What is Software Productivity?';
 		element: [ self elementForPicture: 'margaretHamiltonApolloCode.jpg' ]
 ]
@@ -2320,7 +2312,7 @@ Let us move to the present day.
 
 We know that unfettered growth of software systems leads to legacy issues. Very large software systems don''t scale well for decision making because we don''t, and *can''t*, understand them. Let''s take a look for some of the reasons.'>
 	^ aSlide paragraph
-		priority: (self priorityFor: #sustainabilityGap:);
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Sustainability Gap');
 		paragraphWithFormat: (self
 				asBigText: '
@@ -2336,7 +2328,7 @@ MindTheGapSlideshow >> testingBook: aSlide [
 
 During the FAMOOS project we were concerned with a particular project that we could find no test cases. When we asked, we were told, “Oh, but we have very extensive test cases!” “Great!” we said, “Can we see them?” They then brought us a big book of test cases that some poor person had to manually step through every time the tests were run.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #testingBook:);
+		setPriority;
 		newFadedText: 'The testing book';
 		element: [ self elementForPicture: 'book.jpg' ]
 ]
@@ -2344,17 +2336,14 @@ During the FAMOOS project we were concerned with a particular project that we co
 { #category : #slides }
 MindTheGapSlideshow >> testingGap: aSlide [
 	<gtSlide>
-<text: 
-'# The Testing Gap
+	<text: '# The Testing Gap
 
 Once upon a time (and also today), testing was a manual process.'>
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #testingGap:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asTitle: 'The Testing Gap');
-		paragraphWithFormat:
-				(self
-						asBigText: 
-'
+		paragraphWithFormat: (self
+				asBigText: '
 
 
 From manual to automated testing
@@ -2376,7 +2365,7 @@ The obvious downside was the need to manually write the test cases. In any case,
 
 The open question is where we can go with generated tests. So far these mostly just identify cases where the system fails. Property-based testing can test business logic.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #testingMap:);
+		setPriority;
 		newFadedText: 'From manual to automated testing';
 		element: [ self scaledWardleyMapForJson: self testingMapJSON ]
 ]
@@ -2608,7 +2597,7 @@ MindTheGapSlideshow >> theElectronicOffice: aSlide [
 
 The task for my MSc project was, together with another Masters student, to build a workflow system on top of another prototype of an electronic Office Forms System. OFS was itself built as a layer on top of MRS, the Micro-Relational System, one of the first implementations of a relation database management system for Unix.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #theElectronicOffice:);
+		setPriority;
 		newFadedText: 'Building the Electronic Office (1980)';
 		element: [ self elementForPicture: 'theElectronicOffice.jpg' ]
 ]
@@ -2620,7 +2609,7 @@ MindTheGapSlideshow >> theTypist: aSlide [
 
 As an amusing parenthesis, I saw this displayed in the Open Air museum in Reykjavik in 2015. It looks fine, except the “typewriter” was not a typewriter at all.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #theTypist:);
+		setPriority;
 		newFadedText: 'The typist at the kitchen table?';
 		element: [ self elementForPicture: 'reykjavikMuseumTheTypist.jpg' ]
 ]
@@ -2636,7 +2625,7 @@ I was a professor of Software Engineering at the University of Bern from 1994 un
 
 Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell you a few stories over the roughly 50 years since I started programming, and reflect on how numerous advances in improving feedback loops in software processes have led to some interesting and sometimes surprising opportunities.'>
 	^ aSlide titleWithFooter
-		priority: (self priorityFor: #titleSlide:);
+		setPriority;
 		titleBottomPadding: 20;
 		subtitleBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Mind the gap');
@@ -2687,7 +2676,7 @@ MindTheGapSlideshow >> whereAreTheObjects: aSlide [
 
 I was very excited about the project, and had a clear idea of what to do, before even looking at the code. When I opened the box, however, I had trouble mapping the concepts to the C code.'>
 	^ aSlide labelAndElement
-		priority: (self priorityFor: #whereAreTheObjects:);
+		setPriority;
 		newFadedText: 'Where are the Objects?';
 		element: [ self elementForPicture: 'whereAreTheObjects.jpg' ]
 ]

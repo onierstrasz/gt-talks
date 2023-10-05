@@ -21,20 +21,22 @@ MakingSystemsExplainableSlideshow class >> show [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> coda: aSlide [
 	<gtSlide>
-	^ (aSlide textAndElement)
+	^ aSlide textAndElement
 		elementWeight: 0.5;
-		priority: (self priorityFor: #coda:);
-		newTextWithFormat: 
-			(self asHeader: 'Conclusion
+		setPriority;
+		newTextWithFormat: (self
+				asHeader: 'Conclusion
 
-'),
-			(self asBigText: 'Custom views and examples are used not only to analyze foreign systems, but are heavily used within GT itself') ,
-			(self asText: '
+')
+				, (self
+						asBigText: 'Custom views and examples are used not only to analyze foreign systems, but are heavily used within GT itself')
+				, (self
+						asText: '
 
 
 Blue classes and packages contain at least one custom view.
 Green ones have at least one example..');
-		element: [ GtTour new treemapWithViewsAndExamples  ]
+		element: [ GtTour new treemapWithViewsAndExamples ]
 ]
 
 { #category : #page }
@@ -50,7 +52,7 @@ MakingSystemsExplainableSlideshow >> database [
 MakingSystemsExplainableSlideshow >> documentingRules: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #documentingRules:);
+		setPriority;
 		startPage: (self db pageNamed: 'Documenting the rules')
 ]
 
@@ -75,7 +77,7 @@ MakingSystemsExplainableSlideshow >> documentingRulesPage [
 MakingSystemsExplainableSlideshow >> download: aSlide [
 	<gtSlide>
 	^ aSlide title
-		priority: (self priorityFor: #download:);
+		setPriority;
 		titleWithFormat: (self asSubtitle: 'Try it yourself ...');
 		titleBottomPadding: 60;
 		subtitleWithFormat: (self
@@ -88,13 +90,11 @@ https://gtoolkit.com
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> exampleHeading: aSlide [
 	<gtSlide>
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #exampleHeading:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Examples');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Tests should return example objects that can be used to compose further tests as well as documentation.
 ') italic
 ]
@@ -103,7 +103,7 @@ Tests should return example objects that can be used to compose further tests as
 MakingSystemsExplainableSlideshow >> examples: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #examples:);
+		setPriority;
 		startPage: (self db pageNamed: 'Examples')
 ]
 
@@ -146,7 +146,7 @@ MakingSystemsExplainableSlideshow >> examplesPage [
 MakingSystemsExplainableSlideshow >> exploringRuby: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #exploringRuby:);
+		setPriority;
 		startPage: (self db pageNamed: 'Exploring Ruby code')
 ]
 
@@ -180,7 +180,7 @@ MakingSystemsExplainableSlideshow >> exploringRubyPage [
 MakingSystemsExplainableSlideshow >> exploringViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #exploringViews:);
+		setPriority;
 		startPage: (self db pageNamed: 'Exploring custom views')
 ]
 
@@ -263,8 +263,8 @@ MakingSystemsExplainableSlideshow >> initializeDb [
 MakingSystemsExplainableSlideshow >> inspectingLudo: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		  priority: (self priorityFor: #inspectingLudo:);
-		  startPage: (self db pageNamed: 'Inspecting the Ludo game')
+		setPriority;
+		startPage: (self db pageNamed: 'Inspecting the Ludo game')
 ]
 
 { #category : #page }
@@ -320,14 +320,11 @@ MakingSystemsExplainableSlideshow >> inspectingLudoPage [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> inspectorHeading: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #inspectorHeading:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'The Inspector');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Use an object inspector rather than a text editor to put live objects rather than code at the center of the IDE.
 ') italic
 ]
@@ -336,21 +333,18 @@ Use an object inspector rather than a text editor to put live objects rather tha
 MakingSystemsExplainableSlideshow >> lepiter: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #lepiter:);
+		setPriority;
 		startPage: (self db pageNamed: 'Lepiter')
 ]
 
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> lepiterHeading: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #lepiterHeading:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Lepiter');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Use a live notebook to author and explore narratives that connect live objects and code.
 ') italic
 ]
@@ -414,12 +408,12 @@ MakingSystemsExplainableSlideshow >> lepiterPage [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> ludoIntro: aSlide [
 	<gtSlide>
-	
-	^ (aSlide textAndElement)
+	^ aSlide textAndElement
 		elementWeight: 0.5;
-		priority: (self priorityFor: #ludoIntro:);
-		newTextWithFormat: (self asHeader: 'Explaining the Ludo game') bold,
-			(self asText: '
+		setPriority;
+		newTextWithFormat: (self asHeader: 'Explaining the Ludo game') bold
+				, (self
+						asText: '
 
 The Ludo game was a (Java) programming exercise for 1st year students.
 
@@ -431,7 +425,7 @@ We can play this version of the game, but we cannot talk to it.');
 MakingSystemsExplainableSlideshow >> millerColumns: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #millerColumns:);
+		setPriority;
 		startPage: (self db pageNamed: 'Miller columns')
 ]
 
@@ -467,14 +461,11 @@ MakingSystemsExplainableSlideshow >> millerColumnsPage [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> moldableHeading: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #moldableHeading:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable Views');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Use custom views to answer domain-specific questions about objects.
 ') italic
 ]
@@ -483,7 +474,7 @@ Use custom views to answer domain-specific questions about objects.
 MakingSystemsExplainableSlideshow >> moldableViews: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #moldableViews:);
+		setPriority;
 		startPage: (self db pageNamed: 'Moldable views')
 ]
 
@@ -540,14 +531,11 @@ MakingSystemsExplainableSlideshow >> moldableViewsPage [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> part1: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #part1:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Part I');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Explaining the Ludo game.
 ')
 ]
@@ -555,14 +543,11 @@ Explaining the Ludo game.
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> part2: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #part2:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Part II');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 Make systems explainable by shifting the focus in the IDE from editing source code to exploring live objects, source code, and narratives that link them.
 ') italic
 ]
@@ -570,14 +555,11 @@ Make systems explainable by shifting the focus in the IDE from editing source co
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> part3: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #part3:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Conclusion');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 
 Systems become explainable by linking code and examples within live documentation.
 ') italic
@@ -587,7 +569,7 @@ Systems become explainable by linking code and examples within live documentatio
 MakingSystemsExplainableSlideshow >> queryingObjects: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #queryingObjects:);
+		setPriority;
 		startPage: (self db pageNamed: 'Querying objects')
 ]
 
@@ -668,8 +650,8 @@ MakingSystemsExplainableSlideshow >> queryingObjectsPage [
 MakingSystemsExplainableSlideshow >> scriptingAScenario: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		  priority: (self priorityFor: #scriptingAScenario:);
-		  startPage: (self db pageNamed: 'Scripting a scenario' )
+		setPriority;
+		startPage: (self db pageNamed: 'Scripting a scenario')
 ]
 
 { #category : #page }
@@ -774,27 +756,28 @@ MakingSystemsExplainableSlideshow >> slidePriorities [
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> summary: aSlide [
 	<gtSlide>
-	
-	^ (aSlide paragraph)
-		priority: (self priorityFor: #summary:);
+	^ aSlide paragraph
+		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'The story so far ...');
-		paragraphWithFormat:
-				(self
-						asBigText:
-							'
+		paragraphWithFormat: (self
+				asBigText: '
 
-— The '), (self asBigText: 'Object Inspector') italic, (self asBigText: ' lets you explore live objects with custom views
+— The ') , (self asBigText: 'Object Inspector') italic
+				, (self
+						asBigText: ' lets you explore live objects with custom views
 
-— '), (self asBigText: 'Lepiter notebooks') italic, (self asBigText: ' enable narratives linking live objects and code
+— ') , (self asBigText: 'Lepiter notebooks') italic
+				, (self
+						asBigText: ' enable narratives linking live objects and code
 
-— Test methods return '), (self asBigText: 'live examples') italic 
+— Test methods return ') , (self asBigText: 'live examples') italic
 ]
 
 { #category : #slides }
 MakingSystemsExplainableSlideshow >> titleSlide: aSlide [
 	<gtSlide>
 	^ aSlide title
-		priority: (self priorityFor: #titleSlide:);
+		setPriority;
 		titleBottomPadding: 60;
 		titleWithFormat: (self asTitle: 'Making systems explainable');
 		subtitleWithFormat: (self asBigText: '@onierstrasz — feenk.com')
@@ -804,7 +787,7 @@ MakingSystemsExplainableSlideshow >> titleSlide: aSlide [
 MakingSystemsExplainableSlideshow >> trackingState: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #trackingState:);
+		setPriority;
 		startPage: (self db pageNamed: 'Tracking state')
 ]
 
@@ -852,7 +835,7 @@ MakingSystemsExplainableSlideshow >> trackingStatePage [
 MakingSystemsExplainableSlideshow >> visualizingObjects: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: (self priorityFor: #visualizingObjects:);
+		setPriority;
 		startPage: (self db pageNamed: 'Visualizing objects')
 ]
 
