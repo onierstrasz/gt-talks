@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T11:32:10.897989+02:00"
+						"dateAndTimeString" : "2023-10-23T12:01:39.406136+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Edit {{gtClass:name=Vissoft2022Slideshow}}. "
+				"string" : "Edit {{gtClass:name=MakingSystemsExplainableSlideshow}}. "
 			},
 			{
 				"__type" : "pharoSnippet",

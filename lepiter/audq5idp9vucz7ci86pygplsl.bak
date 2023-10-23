@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T11:32:17.328719+02:00"
+						"dateAndTimeString" : "2023-10-05T15:31:26.873032+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GXf8dUGiDQCC21XbCORYDw=="
 				},
-				"code" : "Vissoft2022Slideshow show"
+				"code" : "MakingSystemsExplainableSlideshow show"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-17T17:30:01.325025+02:00"
+						"dateAndTimeString" : "2023-10-05T15:31:28.898355+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "xCPVGEe4DQCYBJ6cDkULEg=="
 				},
-				"code" : "Vissoft2022Slideshow new"
+				"code" : "MakingSystemsExplainableSlideshow new"
 			},
 			{
 				"__type" : "pharoSnippet",
