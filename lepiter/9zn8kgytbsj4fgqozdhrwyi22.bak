@@ -842,43 +842,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:15:30.026278+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-10-24T12:08:32.155245+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "X2rmoq3ADQC/AwWiBC7epQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Project diary|db=2j9m7db2i4oz116bexd7wbdxo}} — Ludo Game, SPL {{gtPage:Documenting the domain: the Ludo game case study|db=2j9m7db2i4oz116bexd7wbdxo}}  "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2023-09-01T15:14:39.251553+02:00"
 								}
 							},
@@ -901,43 +864,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "{{gtPage:Contextual playground|db=2j9m7db2i4oz116bexd7wbdxo}} — "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:15:43.652247+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:15:45.109853+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "tXvBo63ADQC/OTnZBC7epQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Example object|db=2j9m7db2i4oz116bexd7wbdxo}} — "
 						},
 						{
 							"__type" : "textSnippet",
@@ -990,43 +916,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:15:17.563299+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:15:18.672354+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "x/v6pK3ADQC/cN/iBC7epQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Custom action|db=2j9m7db2i4oz116bexd7wbdxo}} — "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2023-09-01T15:15:56.021039+02:00"
 								}
 							},
@@ -1064,7 +953,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:07.503459+02:00"
+									"dateAndTimeString" : "2023-09-01T15:15:30.026278+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1075,17 +964,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:08.560815+02:00"
+									"dateAndTimeString" : "2023-10-24T12:09:38.69736+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "tbi6oa3ADQC+wuc2BC7epQ=="
+								"uidString" : "X2rmoq3ADQC/AwWiBC7epQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Collection wrapper|db=2j9m7db2i4oz116bexd7wbdxo}} — "
+							"string" : "{{gtPage:Project diary|db=2j9m7db2i4oz116bexd7wbdxo}} — GT book case studies; Ludo Game, SPL {{gtPage:Documenting the domain: the Ludo game case study|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 						},
 						{
 							"__type" : "textSnippet",
@@ -1101,7 +990,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:09.341947+02:00"
+									"dateAndTimeString" : "2023-09-01T15:15:43.652247+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1112,17 +1001,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:24.316311+02:00"
+									"dateAndTimeString" : "2023-09-01T15:15:45.109853+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "9mpss63ADQCA6jlrBC7epQ=="
+								"uidString" : "tXvBo63ADQC/OTnZBC7epQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Landscape picture|db=2j9m7db2i4oz116bexd7wbdxo}} — ?"
+							"string" : "{{gtPage:Example object|db=2j9m7db2i4oz116bexd7wbdxo}} — "
 						},
 						{
 							"__type" : "textSnippet",
@@ -1138,7 +1027,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:09.58367+02:00"
+									"dateAndTimeString" : "2023-09-01T15:15:17.563299+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1149,17 +1038,166 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-09-01T15:16:40.29167+02:00"
+									"dateAndTimeString" : "2023-09-01T15:15:18.672354+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "vRxws63ADQCA7g8SBC7epQ=="
+								"uidString" : "x/v6pK3ADQC/cN/iBC7epQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Narrative picture|db=2j9m7db2i4oz116bexd7wbdxo}} — ?"
+							"string" : "{{gtPage:Custom action|db=2j9m7db2i4oz116bexd7wbdxo}} — "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:07.503459+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:08.560815+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "tbi6oa3ADQC+wuc2BC7epQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:Collection wrapper|db=2j9m7db2i4oz116bexd7wbdxo}} — "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:09.341947+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:24.316311+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "9mpss63ADQCA6jlrBC7epQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:Landscape picture|db=2j9m7db2i4oz116bexd7wbdxo}} — ?"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:09.58367+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-09-01T15:16:40.29167+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "vRxws63ADQCA7g8SBC7epQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:Narrative picture|db=2j9m7db2i4oz116bexd7wbdxo}} — ?"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-10-24T14:17:19.661752+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-10-24T14:17:23.700343+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "C6SgDtfEDQCc+5DEAfPvFw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "#Extras"
 						}
 					]
 				},

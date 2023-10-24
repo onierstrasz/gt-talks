@@ -19,13 +19,109 @@ TODO'>
 
 ]
 
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> contextualPlayground: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Contextual playground')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> contextualPlaygroundPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Contextual playground')
+		addSnippet: (LeTextSnippet new
+				string: '## Start by inspecting an instance.';
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: 'EsugWebsiteWrapper new repoDir: (FileLocator imageDirectory / ''esug.github.io'')';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '## Code directly in the Playground:';
+				yourself);
+		addSnippet: (LeElementSnippet new
+				code: '(GtInspectorScripterExamples new
+	scriptedInspectorOn: (EsugWebsiteWrapper new repoDir: FileLocator imageDirectory / ''esug.github.io'')
+	WithPlaygroundText: ''repoDir allChildrenMatching: ''''*.pillar'''''')
+	elementWithoutParent';
+				codeVisible: false;
+				elementHeight: 437;
+				codeHeight: 50;
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '## Extract useful code as methods, examples or tests.';
+				yourself);
+		yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> customAction: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Custom action')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> customActionPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Custom action')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> exampleObject: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Example Object')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> exampleObjectPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Example Object')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
 { #category : #initalization }
 MoldableDevelopmentPatternsSlideshow >> initializeDb [
 	self db addPage: self moldableObjectPage.
-	"self db addPage: self viewableDataWrapperPage.
+	self db addPage: self viewableDataWrapperPage.
 	self db addPage: self contextualPlaygroundPage.
 	self db addPage: self viewableEntityPage.
-	self db addPage: self customActionPage."
+	self db addPage: self simpleViewPage.
+	self db addPage: self projectDiaryPage.
+	self db addPage: self exampleObjectPage.
+	self db addPage: self customActionPage. 
 ]
 
 { #category : #slides }
@@ -90,8 +186,8 @@ MoldableDevelopmentPatternsSlideshow >> moldableObject: aSlide [
 	<noTest>
 	<text: '## Pattern: Moldable object
 
-TODO
-OLD TEXT:
+REDO THIS -- use a different example
+
 This is perhaps the hardest pattern to learn.
 
 Where would you rather be when you are developing code?
@@ -207,6 +303,58 @@ scenery addConnectionWithStencil: (GtSceneryLineStencil new) from: item8 to: ite
 ^ scenery
 ]
 
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> projectDiary: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Project Diary')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> projectDiaryPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Project Diary')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> simpleView: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Simple View')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> simpleViewPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Simple View')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
 { #category : #accessing }
 MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 	"This method defines the slide priorities implicitly by their order instead of by fixed numbers.
@@ -223,6 +371,13 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 		
 		moldableDevelopmentPatterns:
 			moldableObject:
+			viewableDataWrapper:
+			contextualPlayground:
+			viewableEntity:
+			simpleView:
+			projectDiary:
+			exampleObject:
+			customAction:
 		
 		conclusions:
 	
@@ -258,6 +413,119 @@ TODO'>
 		subtitleBottomPadding: 40;
 		titleWithFormat: (self asTitle: 'Moldable Development Patterns');
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> viewableDataWrapper: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: Viewable data wrapper
+
+Although sometimes you may have the luxury to work on a greenfield project, most projects start from some existing data and code.
+
+When we load the data into our environment, we will obtain the default views for that data.
+
+Here, for example, we have loaded the cloned ESUG website repo and are inspecting the contents.
+
+We obtain a completely generic view of the folders and files that tells us nothing about the domain.
+
+*(Evaluate the first snippet showing the FileLocator views.)*
+
+We would like to turn this into a proper domain object that tells us interesting things about itself.
+
+As a first step, then, we can *wrap* the data into a dedicated object.
+
+When we do this, at first glance the result appears to be even worse, as now we just get a generic *Raw* view of the new object.
+
+*(Inspect the first EsugWebsiteWrapper.)* 
+
+But now we have the possibility to explore it, add behavior, and add new views.
+
+After some iterations we obtain the view we have seen earlier.
+
+*(Inspect the last snippet.)*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Viewable data wrapper')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> viewableDataWrapperPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Viewable data wrapper')
+		addSnippet: (LeTextSnippet new
+				string: '## Start by grabbing your data.';
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: 'repoDir := FileLocator imageDirectory / ''esug.github.io''.
+
+"Clone the repo if we haven''t already done so."
+repoDir exists
+	ifFalse: [ repo := ''git@github.com:ESUG/esug.github.io.git''.
+		repository := IceRepositoryCreator fromUrl: repo to: repoDir ].
+repoDir';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '## Wrap it in a new class.';
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: 'EsugWebsiteWrapper new repoDir: repoDir';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '## Add views to answer questions about the data.';
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: 'EsugWebsite instance';
+				yourself);
+		yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> viewableEntity: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO*'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Viewable Entity')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> viewableEntityPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Viewable Entity')
+		addSnippet: (LeTextSnippet new
+				string: '## We inspect the ESUG website and navigate to the pages ...';
+				yourself);
+		addSnippet: (LeElementSnippet new
+				code: '(GtInspectorScripterExamples new
+	scriptedInspectorOn: EsugWebsiteWrapperWithPages esug
+	WithPlaygroundText: ''self pages'')
+	elementWithoutParent';
+				codeVisible: false;
+				elementHeight: 530;
+				codeHeight: 50;
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '## We like this and want to make it a custom view.';
+				addSnippet: (LeElementSnippet new
+						code: '''gtPagesFor: aView
+	<gtView>
+	^ aView forward
+		title: ''''Pages'''';
+		priority: 10;
+		object: [ self pages ];
+		view: #gtItemsFor:'' gtStringFor: GtPhlowView new';
+						codeVisible: false;
+						elementHeight: 166;
+						codeHeight: 50;
+						yourself);
+				yourself);
+		yourself
 ]
 
 { #category : #slides }
