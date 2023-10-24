@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-02T17:22:20.994183+02:00"
+						"dateAndTimeString" : "2023-10-24T09:42:53.790275+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-25T15:30:52.712971+02:00"
+						"dateAndTimeString" : "2023-10-24T09:42:53.790275+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cewWPhm3DQCo6e8hBq0PDA=="
+					"uidString" : "oGEvOdPEDQC4q1k4COW+qA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[*** ESUG 2023 Teaching MD experience talk]]"
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
