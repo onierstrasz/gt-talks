@@ -7,12 +7,61 @@ Class {
 	#category : #'GtTalks-Slideshows'
 }
 
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> collectionWrapper [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Collection Wrapper')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> collectionWrapper: aSlide [
+	<gtSlide>
+	<noTest>
+	<text: '## Pattern: ...
+
+TODO -- Website; IMDB
+
+'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Pattern: Collection Wrapper')
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> collectionWrapperPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Pattern: Collection Wrapper')
+	addSnippet: (LeTextSnippet new
+			string: '# PLACEHOLDER';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'to do for a later version ...';
+			yourself);
+	yourself
+]
+
 { #category : #slides }
 MoldableDevelopmentPatternsSlideshow >> conclusions: aSlide [
 	<gtSlide>
 	<text: '# Conclusions 
 
-TODO'>
+TODO
+
+Takeaway messages:
+- The system is the source of knowledge. The goal of MD is to make that knowledge accessible.
+- Every problem is different and requires custom tools. GT is an environment that makes it cheap to build such tools by making the platform itself moldable.
+- MD requires a paradigm shift, that puts moldable objects rather than source code in focus, but it can be learned with the help of patterns.
+
+'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asTitle: 'Conclusions')
@@ -25,7 +74,9 @@ MoldableDevelopmentPatternsSlideshow >> contextualPlayground: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- Ludo game, stack machine
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Contextual playground')
@@ -66,7 +117,9 @@ MoldableDevelopmentPatternsSlideshow >> customAction: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- SPL; stack machine
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Custom action')
@@ -92,7 +145,9 @@ MoldableDevelopmentPatternsSlideshow >> exampleObject: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- Ludo; stack machine
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Example Object')
@@ -120,8 +175,9 @@ MoldableDevelopmentPatternsSlideshow >> initializeDb [
 	self db addPage: self viewableEntityPage.
 	self db addPage: self simpleViewPage.
 	self db addPage: self projectDiaryPage.
+	self db addPage: self collectionWrapper.
 	self db addPage: self exampleObjectPage.
-	self db addPage: self customActionPage. 
+	self db addPage: self customActionPage
 ]
 
 { #category : #slides }
@@ -186,7 +242,7 @@ MoldableDevelopmentPatternsSlideshow >> moldableObject: aSlide [
 	<noTest>
 	<text: '## Pattern: Moldable object
 
-REDO THIS -- use a different example
+REDO -- Ludo game, stack machine 
 
 This is perhaps the hardest pattern to learn.
 
@@ -309,7 +365,9 @@ MoldableDevelopmentPatternsSlideshow >> projectDiary: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- GT book case studies; Ludo Game, SPL
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Project Diary')
@@ -335,7 +393,9 @@ MoldableDevelopmentPatternsSlideshow >> simpleView: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- Ludo game Players etc; Stack machine state
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Simple View')
@@ -376,6 +436,7 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 			viewableEntity:
 			simpleView:
 			customAction:
+			collectionWrapper:
 			exampleObject:
 			projectDiary:
 	
@@ -420,6 +481,8 @@ MoldableDevelopmentPatternsSlideshow >> viewableDataWrapper: aSlide [
 	<gtSlide>
 	<noTest>
 	<text: '## Pattern: Viewable data wrapper
+
+REDO -- website, IMDB movie list
 
 Although sometimes you may have the luxury to work on a greenfield project, most projects start from some existing data and code.
 
@@ -487,7 +550,9 @@ MoldableDevelopmentPatternsSlideshow >> viewableEntity: aSlide [
 	<noTest>
 	<text: '## Pattern: ...
 
-TODO*'>
+TODO -- Ludo game, IMDB JSON view
+
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Viewable Entity')
