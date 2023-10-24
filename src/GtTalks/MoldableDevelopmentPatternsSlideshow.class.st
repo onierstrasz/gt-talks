@@ -375,10 +375,10 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 			contextualPlayground:
 			viewableEntity:
 			simpleView:
-			projectDiary:
-			exampleObject:
 			customAction:
-		
+			exampleObject:
+			projectDiary:
+	
 		conclusions:
 	
 	)
