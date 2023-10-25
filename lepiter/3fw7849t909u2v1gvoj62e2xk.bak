@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-25T09:18:10.849727+02:00"
+						"dateAndTimeString" : "2023-10-25T09:21:42.206223+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-25T09:18:10.849727+02:00"
+						"dateAndTimeString" : "2023-10-25T09:21:49.870091+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "[[MD Patterns slideshow]]"
 			},
 			{
 				"__type" : "textSnippet",
