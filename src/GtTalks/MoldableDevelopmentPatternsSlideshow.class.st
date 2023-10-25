@@ -22,20 +22,6 @@ TODO -- Website; IMDB
 ]
 
 { #category : #page }
-MoldableDevelopmentPatternsSlideshow >> collectionWrapperInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Collection Wrapper in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
-]
-
-{ #category : #page }
 MoldableDevelopmentPatternsSlideshow >> collectionWrapperPage [
 	<gtExample>
 	<noTest>
@@ -86,20 +72,6 @@ TODO -- Ludo game, stack machine
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Contextual Playground')
-]
-
-{ #category : #page }
-MoldableDevelopmentPatternsSlideshow >> contextualPlaygroundInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Contextual Playground in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
 ]
 
 { #category : #page }
@@ -214,21 +186,18 @@ Moldable development works by applying a number of learnable patterns.');
 { #category : #initalization }
 MoldableDevelopmentPatternsSlideshow >> initializeDb [
 	self db addPage: self moldableObjectPage.
-	self db addPage: self moldableObjectInPracticePage.
-	self db addPage: self viewableDataWrapperPage.
-	self db addPage: self viewableDataWrapperInPracticePage.
+
 	self db addPage: self contextualPlaygroundPage.
-	self db addPage: self contextualPlaygroundInPracticePage.
+
+	self db addPage: self viewableDataWrapperPage.
 	self db addPage: self viewableEntityPage.
-	self db addPage: self viewableEntityInPracticePage.
 	self db addPage: self simpleViewPage.
-	self db addPage: self simpleViewInPracticePage.
 	self db addPage: self projectDiaryPage.
-	self db addPage: self projectDiaryInPracticePage.
-	self db addPage: self collectionWrapperPage. 
-	self db addPage: self collectionWrapperInPracticePage.
+	self db addPage: self collectionWrapperPage.
 	self db addPage: self exampleObjectPage.
-	self db addPage: self customActionPage
+	self db addPage: self customActionPage.
+	
+	self db addPage: self placeholderPage.
 ]
 
 { #category : #slides }
@@ -345,67 +314,33 @@ MoldableDevelopmentPatternsSlideshow >> moldableObject: aSlide [
 
 <text: '## Pattern: Moldable object
 
-REDO -- Ludo game, stack machine 
+In moldable development, we focus on molding live objects to iteratively answer questions.
 
-This is perhaps the hardest pattern to learn.
+As a consequence, instead of starting from source code, we start with a live object that we can mold.
 
-Where would you rather be when you are developing code?
+If we already have an existing code base, we just start by inspecting an instance to work with.
 
-Staring at the source code, or viewing the live object that you are working on?
+This can come from a code snippet in a notebook page or a Playground, or from a runnable method.
 
-Here we see at the top a typical Coder view of a class where we can browse and edit the methods.
+In case you are starting a greenfield project, you won''t have any existing classes or objects, so you can start by writing a snippet to create one.
 
-But this is actually the least interesting view we can have because each method is seen divorced from the context in which it is used and interacts with other methods.
+Here `MyStackMachine` does not exist, so we “fix it” and create a new class and package.
 
-From the very first day that we start to program, we learn to write some code in a text editor, and we compile it and run it.
+Now we have a moldable object to inspect.
 
-It always takes a few steps to see the end result.
+Once you have an object, you can inspect it, explore it, and extend it.
 
-But why not reverse this?
+We''d like to initialize it, so we can add an `initialize` method in the Meta view.
 
-Below here we see a *moldable object*, that is, a live instance of the PillarWebsite object that we can interact with.
+We add a stack slot and initialize it as an OrderedCollection.
 
-While it can be cumbersome to navigate from the code view to see its effect, it is usually easy to navigate from the live object to its code.
+We run `self initialize` in the playground, and refresh the Raw view to see the new state.
 
-Suppose for, for example, that we don''t like the way the *Links* are displayed.
-
-We can directly go to the code and change, for example, the width of the *Link* column.
-
-*(Opt-click on the Links tab and change the `300` width to `200`.)*
-
-From the moldable object we can experiment with new features, extract methods and examples or tests, and immediately see the effect.'>
+From here we can navigate to inspect the empty stack state.'>
 
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Moldable object')
-]
-
-{ #category : #slides }
-MoldableDevelopmentPatternsSlideshow >> moldableObjectInPractice: aSlide [
-	<gtSlide>
-
-<text: '## Moldable object in practice
-
-TO DO stack machine 
-'>
-
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'Moldable Object in practice')
-]
-
-{ #category : #page }
-MoldableDevelopmentPatternsSlideshow >> moldableObjectInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Moldable Object in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
 ]
 
 { #category : #page }
@@ -421,20 +356,30 @@ MoldableDevelopmentPatternsSlideshow >> moldableObjectPage [
 			yourself);
 	addSnippet: (LeTextSnippet new
 			string: '#Example';
+			addSnippet: (LeTextSnippet new
+					string: 'Start with a snippet to create a moldable object. Create the class if it doesn''t exist yet.';
+					yourself);
 			addSnippet: (LePharoSnippet new
-					code: 'GtLudoGame new ';
+					code: 'sm := MyStackMachine new.';
 					yourself);
 			addSnippet: (LeTextSnippet new
-					string: 'Gives you a view like this:';
-					yourself);
-			addSnippet: (LeElementSnippet new
-					code: 'GtInspector newOn: GtLudoGame new ';
-					codeVisible: false;
-					elementHeight: 503;
-					codeHeight: 50;
+					string: 'Now we can inspect it and extend it.';
 					yourself);
 			yourself);
 	yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> moldableObjectScenery: aSlide [
+	<gtSlide>
+
+<text: '# Moldable Object
+
+Moldable development starts with a moldable object.'>
+
+	^ aSlide element
+		setPriority;
+		element: [ self patternSceneryHighlighting: 'Moldable Object' ]
 ]
 
 { #category : #figures }
@@ -492,6 +437,30 @@ scenery addConnectionWithStencil: (GtSceneryLineStencil new) from: item4 to: ite
 ^ scenery
 ]
 
+{ #category : #figures }
+MoldableDevelopmentPatternsSlideshow >> patternSceneryHighlighting: patternName [
+	| scenery |
+	scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.
+	((scenery items collect: [ :item | item stencil text ])
+		detect: [ :text | text asString = patternName ]) italic underline.
+	^ scenery
+]
+
+{ #category : #page }
+MoldableDevelopmentPatternsSlideshow >> placeholderPage [
+	"Use this page as a template."
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Placeholder page')
+		addSnippet: (LeTextSnippet new
+				string: '#TO DO';
+				addSnippet: (LeTextSnippet new
+						string: 'to do';
+						yourself);
+				yourself);
+		yourself
+]
+
 { #category : #slides }
 MoldableDevelopmentPatternsSlideshow >> projectDiary: aSlide [
 	<gtSlide>
@@ -504,20 +473,6 @@ TODO -- GT book case studies; Ludo Game, SPL
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Project Diary')
-]
-
-{ #category : #page }
-MoldableDevelopmentPatternsSlideshow >> projectDiaryInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Project Diary in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
 ]
 
 { #category : #page }
@@ -549,20 +504,6 @@ TODO -- Ludo game Players etc; Stack machine state
 ]
 
 { #category : #page }
-MoldableDevelopmentPatternsSlideshow >> simpleViewInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Simple View in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
-]
-
-{ #category : #page }
 MoldableDevelopmentPatternsSlideshow >> simpleViewPage [
 	<gtExample>
 	<noTest>
@@ -591,10 +532,12 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 			spl:
 	
 		howToPracticeMoldableDevelopment:
-			moldableObject:
-			moldableObjectInPractice:
-			viewableDataWrapper:
+			moldableObjectScenery:
+				moldableObject:
+		
 			contextualPlayground:
+			
+			viewableDataWrapper:
 			viewableEntity:
 			simpleView:
 			customAction:
@@ -691,20 +634,6 @@ After some iterations we obtain the view we have seen earlier.
 ]
 
 { #category : #page }
-MoldableDevelopmentPatternsSlideshow >> viewableDataWrapperInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Viewable Data Wrapper in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
-]
-
-{ #category : #page }
 MoldableDevelopmentPatternsSlideshow >> viewableDataWrapperPage [
 	<gtExample>
 	<noTest>
@@ -748,20 +677,6 @@ TODO -- Ludo game, IMDB JSON view
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Viewable Entity')
-]
-
-{ #category : #page }
-MoldableDevelopmentPatternsSlideshow >> viewableEntityInPracticePage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Viewable Entity in practice')
-		addSnippet: (LeTextSnippet new
-				string: '#TO DO';
-				addSnippet: (LeTextSnippet new
-						string: 'to do';
-						yourself);
-				yourself);
-		yourself
 ]
 
 { #category : #page }
