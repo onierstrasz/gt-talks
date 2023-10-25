@@ -1486,14 +1486,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-10-25T10:06:00.407525+02:00"
+									"dateAndTimeString" : "2023-10-25T13:42:19.883577+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "iHiEf+fEDQCYFQEMA1dFow=="
 							},
-							"code" : "scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.\r((scenery items collect: [ :item | item stencil text ])\r\tdetect: [ :text | text asString = 'Custom Action' ]) italic underline.\rscenery"
+							"code" : "scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.\rscenery items do: [:item | item stencil text medium].\r((scenery items collect: [ :item | item stencil text ])\r\tdetect: [ :text | text asString = 'Custom Action' ]) bolditalic underline.\rscenery"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1554,7 +1554,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-10-25T13:08:18.319506+02:00"
+									"dateAndTimeString" : "2023-10-25T13:08:46.446509+02:00"
 								}
 							},
 							"uid" : {
@@ -1564,7 +1564,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "NB: If we also want to set a border or a color, then we need to extend {{gt"
+							"string" : "NB: If we also want to set a border or a color, then we need to extend {{gtMethod:name=GtSceneryTextStencil>>#create}} (eg in a subclass.)"
 						}
 					]
 				},

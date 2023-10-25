@@ -1486,14 +1486,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-10-25T10:06:00.407525+02:00"
+									"dateAndTimeString" : "2023-10-25T13:42:32.901172+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "iHiEf+fEDQCYFQEMA1dFow=="
 							},
-							"code" : "scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.\r((scenery items collect: [ :item | item stencil text ])\r\tdetect: [ :text | text asString = 'Custom Action' ]) italic underline.\rscenery"
+							"code" : "scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.\rscenery items do: [:item | item stencil text medium].\r((scenery items collect: [ :item | item stencil text ])\r\tdetect: [ :text | text asString = 'Custom Action' ]) bold  .\rscenery"
 						},
 						{
 							"__type" : "pharoSnippet",

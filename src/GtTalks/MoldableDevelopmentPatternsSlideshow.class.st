@@ -64,11 +64,16 @@ Takeaway messages:
 MoldableDevelopmentPatternsSlideshow >> contextualPlayground: aSlide [
 	<gtSlide>
 
-<text: '## Pattern: ...
+<text: '## Pattern: Contextual Playground
 
-TODO -- Ludo game, stack machine
+In a conventional development process, you must constantly switch context between writing code, and running or testing it. By starting instead from a moldable object, you can stay within the context of a live object to explore and experiment with new features.
 
-'>
+Here we inspect our current version of the state machine, and ask how to add a number to the top of the stack. We navigate to the stack instance, and query its Meta view for "add" methods. We find the `addLast:` message, and try it out in the contexual playground of the  moldable object.
+
+We like what we see, so we extract the code as a method called `!`.
+
+We similarly experiment with and extract methods `stack`, `top`, and `isEmpty`.'>
+
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Pattern: Contextual Playground')
@@ -79,28 +84,44 @@ MoldableDevelopmentPatternsSlideshow >> contextualPlaygroundPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Pattern: Contextual Playground')
-		addSnippet: (LeTextSnippet new
-				string: '## Start by inspecting an instance.';
-				yourself);
-		addSnippet: (LePharoSnippet new
-				code: 'EsugWebsiteWrapper new repoDir: (FileLocator imageDirectory / ''esug.github.io'')';
-				yourself);
-		addSnippet: (LeTextSnippet new
-				string: '## Code directly in the Playground:';
-				yourself);
-		addSnippet: (LeElementSnippet new
-				code: '(GtInspectorScripterExamples new
-	scriptedInspectorOn: (EsugWebsiteWrapper new repoDir: FileLocator imageDirectory / ''esug.github.io'')
-	WithPlaygroundText: ''repoDir allChildrenMatching: ''''*.pillar'''''')
-	elementWithoutParent';
-				codeVisible: false;
-				elementHeight: 437;
-				codeHeight: 50;
-				yourself);
-		addSnippet: (LeTextSnippet new
-				string: '## Extract useful code as methods, examples or tests.';
-				yourself);
-		yourself
+	addSnippet: (LeTextSnippet new
+			string: '#Intent';
+			addSnippet: (LeTextSnippet new
+					string: 'Prototype new behavior in a Playground of a *Moldable Object*. Experimental code snippets will be bound to the content of the object, can be inspected, and can be extracted as methods.';
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '#Example';
+			addSnippet: (LeTextSnippet new
+					string: 'We inspect an instance of our stack machine, and experiment with adding numbers to the stack.';
+					yourself);
+			addSnippet: (LeElementSnippet new
+					code: 'GtInspector newOn: StackMachineV0 new';
+					codeVisible: false;
+					elementHeight: 424;
+					codeHeight: 50;
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: 'When we are happy with the code, we can extract it as a method `!`.';
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: 'We similarly experiment and extract methods `stack`, `isEmpty`, `top`, and `pop`.';
+					yourself);
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> contextualPlaygroundScenery: aSlide [
+	<gtSlide>
+
+<text: '# Contextual Playground
+
+A Contextual Playground offers a way to experiment with a moldable object and extend its behavior.'>
+
+	^ aSlide element
+		setPriority;
+		element: [ self patternSceneryHighlighting: 'Contextual Playground' ]
 ]
 
 { #category : #slides }
@@ -160,6 +181,21 @@ MoldableDevelopmentPatternsSlideshow >> exampleObjectPage [
 ]
 
 { #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> exampleObjectScenery: aSlide [
+	<gtSlide>
+
+<text: '# Example Object
+
+TODO
+
+'>
+
+	^ aSlide element
+		setPriority;
+		element: [ self patternSceneryHighlighting: 'Example Object' ]
+]
+
+{ #category : #slides }
 MoldableDevelopmentPatternsSlideshow >> howToPracticeMoldableDevelopment: aSlide [
 	<gtSlide>
 
@@ -204,7 +240,7 @@ MoldableDevelopmentPatternsSlideshow >> initializeDb [
 MoldableDevelopmentPatternsSlideshow >> inspectingLudo: aSlide [
 	<gtSlide>
 
-<text: '# Inspecting a live game
+<text: '## Inspecting a live game
 
 Imagine, on the other hand, a development process which starts not from the source code but from live objects.
 
@@ -250,7 +286,7 @@ We can also program with the live object, for example, to make the `Moves` view 
 MoldableDevelopmentPatternsSlideshow >> ludoGame: aSlide [
 	<gtSlide>
 	
-<text: '# Understanding the Ludo game
+<text: '## Understanding the Ludo game
 
 Consider this toy example of a Ludo game given as a Java programming exercise to first-year CS students at the University of Bern.
 
@@ -279,7 +315,7 @@ We can play with this implementation of a Ludo game, but how does it work?');
 MoldableDevelopmentPatternsSlideshow >> ludoSourceCode: aSlide [
 	<gtSlide>
 
-<text: '# Browsing the Ludo source code
+<text: '## Browsing the Ludo source code
 
 At this point we can try to browse the source code of the game.
 
@@ -441,8 +477,9 @@ scenery addConnectionWithStencil: (GtSceneryLineStencil new) from: item4 to: ite
 MoldableDevelopmentPatternsSlideshow >> patternSceneryHighlighting: patternName [
 	| scenery |
 	scenery := self patternMapScenery.
+	scenery items do: [ :item | item stencil text thin ].
 	((scenery items collect: [ :item | item stencil text ])
-		detect: [ :text | text asString = patternName ]) italic underline.
+		detect: [ :text | text asString = patternName ]) bold.
 	^ scenery
 ]
 
@@ -534,15 +571,21 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 		howToPracticeMoldableDevelopment:
 			moldableObjectScenery:
 				moldableObject:
+			contextualPlaygroundScenery:
+				contextualPlayground:
+				
+			exampleObjectScenery:
+				exampleObject:
+			
+
+			viewableEntityScenery:
+				viewableEntity:
 		
-			contextualPlayground:
+			simpleView:
 			
 			viewableDataWrapper:
-			viewableEntity:
-			simpleView:
 			customAction:
 			collectionWrapper:
-			exampleObject:
 			projectDiary:
 	
 		conclusions:
@@ -554,7 +597,7 @@ MoldableDevelopmentPatternsSlideshow >> slidePriorities [
 MoldableDevelopmentPatternsSlideshow >> spl: aSlide [
 	<gtSlide>
 
-<text: '# Inspecting an interpreter
+<text: '## Inspecting an interpreter
 
 Moldable development can apply to any kind of project.
 
@@ -685,33 +728,43 @@ MoldableDevelopmentPatternsSlideshow >> viewableEntityPage [
 	<noTest>
 	^ (LePage named: 'Pattern: Viewable Entity')
 		addSnippet: (LeTextSnippet new
-				string: '## We inspect the ESUG website and navigate to the pages ...';
-				yourself);
-		addSnippet: (LeElementSnippet new
-				code: '(GtInspectorScripterExamples new
-	scriptedInspectorOn: EsugWebsiteWrapperWithPages esug
-	WithPlaygroundText: ''self pages'')
-	elementWithoutParent';
-				codeVisible: false;
-				elementHeight: 530;
-				codeHeight: 50;
+				string: '#Intent';
+				addSnippet: (LeTextSnippet new
+						string: 'Turn interesting data into a *viewable entity*. ';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Extract the navigation steps into a new custom view for the moldable object you start navigating from. ';
+						yourself);
 				yourself);
 		addSnippet: (LeTextSnippet new
-				string: '## We like this and want to make it a custom view.';
-				addSnippet: (LeElementSnippet new
-						code: '''gtPagesFor: aView
-	<gtView>
-	^ aView forward
-		title: ''''Pages'''';
-		priority: 10;
-		object: [ self pages ];
-		view: #gtItemsFor:'' gtStringFor: GtPhlowView new';
-						codeVisible: false;
-						elementHeight: 166;
-						codeHeight: 50;
+				string: '#Example';
+				addSnippet: (LeTextSnippet new
+						string: 'We explore an instance of our stack machine with two values pushed on it.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'StackMachineV1 new
+	! 3;
+	! 4;
+	yourself';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'We find a view that we like and add it to the stack machine.';
 						yourself);
 				yourself);
 		yourself
+]
+
+{ #category : #slides }
+MoldableDevelopmentPatternsSlideshow >> viewableEntityScenery: aSlide [
+	<gtSlide>
+
+<text: '# Viewable Entity
+
+As you discover interesting facts about your moldable domain objects, you want to turn these facts into Vieable Entities. In other words, these will then become views of your moldable object.'>
+
+	^ aSlide element
+		setPriority;
+		element: [ self patternSceneryHighlighting: 'Viewable Entity' ]
 ]
 
 { #category : #slides }
