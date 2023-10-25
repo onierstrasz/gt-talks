@@ -1528,6 +1528,43 @@
 								"uidString" : "bM4zr+fEDQCnqszDD9WisA=="
 							},
 							"code" : "MoldableDevelopmentPatternsSlideshow new\r\tpatternSceneryHighlighting: 'Moldable Object'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-10-25T13:07:34.377267+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-10-25T13:08:46.446509+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "l6MBM+rEDQC4J3bPBM3X3Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "NB: If we also want to set a border or a color, then we need to extend {{gtMethod:name=GtSceneryTextStencil>>#create}} (eg in a subclass.)"
 						}
 					]
 				},

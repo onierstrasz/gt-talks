@@ -440,7 +440,7 @@ scenery addConnectionWithStencil: (GtSceneryLineStencil new) from: item4 to: ite
 { #category : #figures }
 MoldableDevelopmentPatternsSlideshow >> patternSceneryHighlighting: patternName [
 	| scenery |
-	scenery := MoldableDevelopmentPatternsSlideshow new patternMapScenery.
+	scenery := self patternMapScenery.
 	((scenery items collect: [ :item | item stencil text ])
 		detect: [ :text | text asString = patternName ]) italic underline.
 	^ scenery
