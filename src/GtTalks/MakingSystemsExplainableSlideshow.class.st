@@ -2,7 +2,7 @@
 Slideshow for the VISSOFT 2022 Keynote.
 
 ```
-VissoftSlideshow show
+MakingSystemsExplainableSlideshow show
 ```
 
 "
@@ -42,9 +42,7 @@ Green ones have at least one example..');
 { #category : #page }
 MakingSystemsExplainableSlideshow >> database [
 	"All the pages"
-
-	<gtExample>
-	<noTest>
+	"<gtExample>"
 	^ self db
 ]
 
@@ -58,8 +56,8 @@ MakingSystemsExplainableSlideshow >> documentingRules: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> documentingRulesPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Documenting the rules')
 		addSnippet: (LeTextSnippet new
 				string: '**Q How can we document all the rules of the game?** ';
@@ -67,7 +65,7 @@ MakingSystemsExplainableSlideshow >> documentingRulesPage [
 						string: 'The examples have been design to test all possible scenarios. We can now reuse these examples to document the rules.';
 						yourself);
 				addSnippet: (LeTextSnippet new
-						string: 'See, for example: {{gtPage:Documenting the domain: the Ludo game case study|db=2j9m7db2i4oz116bexd7wbdxo}}';
+						string: 'See, for example: Documenting the domain: the Ludo game case study';
 						yourself);
 				yourself);
 		yourself
@@ -109,8 +107,8 @@ MakingSystemsExplainableSlideshow >> examples: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> examplesPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Examples')
 		addSnippet: (LeTextSnippet new
 				string: '### Tests that return examples have numerous advantages';
@@ -133,7 +131,7 @@ MakingSystemsExplainableSlideshow >> examplesPage [
 						string: 'Each stage of the refactoring produces a scripted example that can be used as the starting point of the next stage.';
 						yourself);
 				addSnippet: (LeTextSnippet new
-						string: 'Here we see that last stage of an extract-method refactoring in {{gtMethod:name=GtPharoSnippetCoderByScripterExamples >> #forUnaryExtraction_04_click_extract_method | expanded=true}}  ';
+						string: 'Here we see that last stage of an extract-method refactoring in GtPharoSnippetCoderByScripterExamples >> #forUnaryExtraction_04_click_extract_method  ';
 						yourself);
 				addSnippet: (LeTextSnippet new
 						string: 'Expand the first line of the script to see the previous stage. Evaluate it to see the result up to that point.';
@@ -152,14 +150,14 @@ MakingSystemsExplainableSlideshow >> exploringRuby: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> exploringRubyPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Exploring Ruby code')
 		addSnippet: (LeTextSnippet new
 				string: '***Q Can we also get syntax explanations for other languages?*** ';
 				yourself);
 		addSnippet: (LeTextSnippet new
-				string: 'The following example is from {{gtPage:Analyzing Ruby on Rails: the Whitehall case study|db=2j9m7db2i4oz116bexd7wbdxo}}.';
+				string: 'The following example is from Analyzing Ruby on Rails: the Whitehall case study.';
 				yourself);
 		addSnippet: (LeTextSnippet new
 				string: 'We can explore the Syntax Explanation view for Ruby code.';
@@ -186,8 +184,8 @@ MakingSystemsExplainableSlideshow >> exploringViews: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> exploringViewsPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Exploring custom views')
 		addSnippet: (LeTextSnippet new
 				string: '**Q How is the Ludo game built up?** ';
@@ -245,7 +243,8 @@ MakingSystemsExplainableSlideshow >> exploringViewsPage [
 
 { #category : #initialization }
 MakingSystemsExplainableSlideshow >> initializeDb [
-	self db addPage: self inspectingLudoPage.
+	super initializeDb.
+	"self db addPage: self inspectingLudoPage.
 	self db addPage: self scriptingAScenarioPage.
 	self db addPage: self exploringViewsPage.
 	self db addPage: self trackingStatePage.
@@ -256,7 +255,7 @@ MakingSystemsExplainableSlideshow >> initializeDb [
 	self db addPage: self moldableViewsPage.
 	self db addPage: self exploringRubyPage.
 	self db addPage: self lepiterPage.
-	self db addPage: self examplesPage.
+	self db addPage: self examplesPage."
 ]
 
 { #category : #slides }
@@ -269,8 +268,8 @@ MakingSystemsExplainableSlideshow >> inspectingLudo: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> inspectingLudoPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Inspecting the Ludo game')
 		addSnippet: (LeTextSnippet new
 				string: '##Playing the game ...';
@@ -351,8 +350,8 @@ Use a live notebook to author and explore narratives that connect live objects a
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> lepiterPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Lepiter')
 		addSnippet: (LeTextSnippet new
 				string: '*Lepiter is a live notebook of interconnected pages containing snippets of text, live code, examples, and other entities.* ';
@@ -369,10 +368,10 @@ MakingSystemsExplainableSlideshow >> lepiterPage [
 		addSnippet: (LeTextSnippet new
 				string: '## Tutorials as narratives';
 				addSnippet: (LeTextSnippet new
-						string: 'The {{gtPage:Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}} Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples: ';
+						string: 'The Glamorous Toolkit Book contains numerous tutorials as notebook pages containing text, links to code, live diagrams, code snippets, and examples: ';
 						yourself);
 				addSnippet: (LeTextSnippet new
-						string: '{{gtPage:Working with collections in Pharo|db=2j9m7db2i4oz116bexd7wbdxo}}';
+						string: 'Working with collections in Pharo';
 						yourself);
 				yourself);
 		addSnippet: (LeTextSnippet new
@@ -384,7 +383,7 @@ MakingSystemsExplainableSlideshow >> lepiterPage [
 						string: 'Here is an example of a custom analysis tool built out of existing pieces:';
 						yourself);
 				addSnippet: (LeTextSnippet new
-						string: '{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}  ';
+						string: 'Rewriting Pharo code  ';
 						yourself);
 				yourself);
 		addSnippet: (LeTextSnippet new
@@ -396,7 +395,7 @@ MakingSystemsExplainableSlideshow >> lepiterPage [
 						string: 'Notebooks can also serve as a medium for explaining designs, scenarios, algorithms, and both technical and non-technical documentation.';
 						yourself);
 				addSnippet: (LeTextSnippet new
-						string: '{{gtPage:Explaining the squarified treemap algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}';
+						string: 'Explaining the squarified treemap algorithm';
 						yourself);
 				yourself);
 		addSnippet: (LeTextSnippet new
@@ -431,8 +430,8 @@ MakingSystemsExplainableSlideshow >> millerColumns: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> millerColumnsPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Miller columns')
 		addSnippet: (LeTextSnippet new
 				string: '##Exploring and navigating objects and code with Miller columns';
@@ -480,8 +479,8 @@ MakingSystemsExplainableSlideshow >> moldableViews: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> moldableViewsPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Moldable views')
 		addSnippet: (LeTextSnippet new
 				string: '*A moldable view offers a way to answer a domain-specific question about an object.* ';
@@ -575,8 +574,8 @@ MakingSystemsExplainableSlideshow >> queryingObjects: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> queryingObjectsPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Querying objects')
 		addSnippet: (LeTextSnippet new
 				string: '##Querying with dedicated playgrounds';
@@ -656,8 +655,8 @@ MakingSystemsExplainableSlideshow >> scriptingAScenario: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> scriptingAScenarioPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Scripting a scenario')
 		addSnippet: (LeTextSnippet new
 				string: '**Q How can we script the scenario of one player landing on another player''s piece?**  ';
@@ -724,9 +723,9 @@ m';
 { #category : #accessing }
 MakingSystemsExplainableSlideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
-	<gtExample>
+	"<gtExample>"
 	^ #( 
-		#titleSlide:
+		titleSlide:
 		part1:
 			ludoIntro:
 			inspectingLudo:
@@ -793,8 +792,8 @@ MakingSystemsExplainableSlideshow >> trackingState: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> trackingStatePage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Tracking state')
 		addSnippet: (LeTextSnippet new
 				string: '**Q How can we step through the individual states of a game?** ';
@@ -841,8 +840,8 @@ MakingSystemsExplainableSlideshow >> visualizingObjects: aSlide [
 
 { #category : #page }
 MakingSystemsExplainableSlideshow >> visualizingObjectsPage [
+	<lePage>
 	<gtExample>
-	<noTest>
 	^ (LePage named: 'Visualizing objects')
 		addSnippet: (LeTextSnippet new
 				string: '*A custom view offers a way to elevate an ad hoc query into a domain-specific UI extension.* ';
