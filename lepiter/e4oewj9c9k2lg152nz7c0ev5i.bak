@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-06T09:28:14.452691+01:00"
+						"dateAndTimeString" : "2024-03-06T09:28:34.256817+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[](https://seg.inf.unibe.ch/teaching/current/seminar/)"
+				"string" : " [](https://seg.inf.unibe.ch/teaching/current/seminar/)"
 			},
 			{
 				"__type" : "textSnippet",

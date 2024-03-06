@@ -18,6 +18,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-06T09:32:57.430473+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-06T09:33:39.597234+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QorzilvPDQCjFDLlAL2D8Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See [](https://www.oscar.nierstrasz.org/talks/2022-10-03-VISSOFT-MakingSystemsExplainable)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-08-10T11:31:47.895434+02:00"
 					}
 				},
@@ -29,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-10T11:32:10.897989+02:00"
+						"dateAndTimeString" : "2023-10-23T12:01:39.406136+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Edit {{gtClass:name=Vissoft2022Slideshow}}. "
+				"string" : "Edit {{gtClass:name=MakingSystemsExplainableSlideshow}}. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -313,12 +350,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-02T09:02:08.428865+02:00"
+			"dateAndTimeString" : "2024-03-06T09:32:56.530247+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "VISSOFT Talk"
+		"title" : "VISSOFT Talk (2022)"
 	},
 	"uid" : {
 		"__type" : "uuid",

@@ -208,12 +208,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-03-06T09:25:52.134143+01:00"
+			"dateAndTimeString" : "2024-03-06T09:35:29.5091+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Kanban seminar proposal"
+		"title" : "Kanban seminar proposal (2024)"
 	},
 	"uid" : {
 		"__type" : "uuid",

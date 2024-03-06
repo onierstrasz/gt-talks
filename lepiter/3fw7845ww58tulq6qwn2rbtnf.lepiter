@@ -18,6 +18,78 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-06T09:34:10.826199+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-06T09:34:44.779729+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6HdTj1vPDQCjs1NlAL2D8Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See [Mind the gap](https://www.oscar.nierstrasz.org/talks/2023-06-09-MindTheGap-BATbern50) page on my website."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-05-16T15:01:34.454254+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-10-05T15:27:36.621599+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ojRq6DC4DQChxbcfDBJDeA=="
+							},
+							"code" : "MindTheGapSlideshow new."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-06-12T15:48:13.626977+02:00"
 					}
 				},
@@ -42,10 +114,45 @@
 				"string" : "Inspect the live slideshow instance:"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-03-06T09:34:50.334326+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-03-06T09:34:53.59569+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "YUuukVvPDQCknzUUAL2D8Q=="
+							},
+							"code" : "MindTheGapSlideshow show."
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -55,7 +162,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-05-16T15:01:34.454254+02:00"
+						"dateAndTimeString" : "2024-03-06T09:34:59.431851+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,14 +173,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-10-05T15:27:36.621599+02:00"
+						"dateAndTimeString" : "2024-03-06T09:35:14.479665+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ojRq6DC4DQChxbcfDBJDeA=="
+					"uidString" : "xSI5klvPDQCkzYKWAL2D8Q=="
 				},
-				"code" : "MindTheGapSlideshow new."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Play the slideshow:"
 			},
 			{
 				"__type" : "textSnippet",
@@ -170,12 +280,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-05-22T23:18:31.98605+02:00"
+			"dateAndTimeString" : "2024-03-06T09:34:09.924127+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "BATbern50 talk"
+		"title" : "BATbern50 talk (2023)"
 	},
 	"uid" : {
 		"__type" : "uuid",
