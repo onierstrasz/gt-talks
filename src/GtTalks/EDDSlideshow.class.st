@@ -485,8 +485,9 @@ Example-Driven Development is superficially like Test-Driven Development, where 
 It sounds simple, but it actually changes the development process in several fundamental ways.'>
 	^ aSlide title
 		setPriority;
-		titleBottomPadding: 30;
-		titleWithFormat: (self asTitle: 'Example-Driven Development')
+		titleBottomPadding: 20;
+		titleWithFormat: (self asTitle: 'Example-Driven Development');
+		subtitleWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
 { #category : #slides }
