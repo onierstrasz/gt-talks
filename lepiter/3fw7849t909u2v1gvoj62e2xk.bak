@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-06T09:25:42.83207+01:00"
+						"dateAndTimeString" : "2024-03-06T09:35:29.522002+01:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Kanban seminar proposal]]"
+				"string" : "[[Kanban seminar proposal (2024)]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-06T09:25:50.422646+01:00"
+						"dateAndTimeString" : "2024-03-06T09:35:36.097709+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[DrGeo seminar proposal]]"
+				"string" : "[[DrGeo seminar proposal (2024)]]"
 			},
 			{
 				"__type" : "textSnippet",
