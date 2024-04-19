@@ -245,12 +245,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-19T08:38:44.189665+02:00"
+			"dateAndTimeString" : "2024-04-19T14:40:02.969559+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "* EDD talk Zurich"
+		"title" : "EDD talk Zurich (2024)"
 	},
 	"uid" : {
 		"__type" : "uuid",

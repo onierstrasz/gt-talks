@@ -12,7 +12,21 @@ GtTalksHomeSection >> batBernCard [
 		title: 'BATbern50 talk';
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'onierstrasz/gt-talks/lepiter';
-		pageName: 'BATbern50 talk';
+		pageName: 'BATbern50 talk (2023)';
+		priority: 50;
+		assertInvariant;
+		yourself
+]
+
+{ #category : #accessing }
+GtTalksHomeSection >> eddCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'EDD talk Zurich (2024)';
+		description: 'Presentations as Gt slideshows';
+		databaseName: 'onierstrasz/gt-talks/lepiter';
+		pageName: 'EDD talk Zurich (2024)';
 		priority: 20;
 		assertInvariant;
 		yourself
@@ -45,8 +59,8 @@ GtTalksHomeSection >> vissoftCard [
 		title: 'VISSOFT Talk';
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'onierstrasz/gt-talks/lepiter';
-		pageName: 'VISSOFT Talk';
-		priority: 20;
+		pageName: 'VISSOFT Talk (2022)';
+		priority: 51;
 		assertInvariant;
 		yourself
 ]
