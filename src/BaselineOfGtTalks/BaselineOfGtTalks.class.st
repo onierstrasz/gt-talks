@@ -5,6 +5,12 @@ Class {
 }
 
 { #category : #accessing }
+BaselineOfGtTalks class >> gtDependencyAnalysisPreloadedBaselines [
+	^ super gtDependencyAnalysisPreloadedBaselines
+		copyWith: BaselineOfGToolkit
+]
+
+{ #category : #accessing }
 BaselineOfGtTalks class >> loadLepiter [
 	| currentProperties |
 	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
