@@ -4,7 +4,7 @@ Initially prepared for presentation on 2024-04-26 at [Smalltalk Meetup Zurich](h
 "
 Class {
 	#name : #EDDSlideshow,
-	#superclass : #GtShortSlideshow,
+	#superclass : #PrioritySlideshow,
 	#category : #'GtTalks-Slideshows'
 }
 
