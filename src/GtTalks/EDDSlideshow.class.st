@@ -468,14 +468,14 @@ We iterate until we''re done!'>
 		newTextWithFormat: (self asSubtitle: 'EDD in a Nutshell') , self cr
 				, (self
 						asText: '
-• Start with an object
-  — Prototype behavior in the playground
-  — Extract methods
-  — Introduce useful views
-• Extract examples
-  — Prototype assertions in the playground
-  — Add them to the example method
-  — Reuse examples as setups for new examples
+• Start with an '),( self asText: 'object') italic,( self asText: '
+  — '),( self asText: 'Prototype') italic,( self asText: ' behavior in the playground
+  — '),( self asText: 'Extract') italic,( self asText: ' methods
+  — Introduce useful '),( self asText: 'views') italic,( self asText: '
+• '),( self asText: 'Extract') italic,( self asText: ' examples
+  — Prototype '),( self asText: 'assertions') italic,( self asText: ' in the playground
+  — '),( self asText: 'Add them') italic,( self asText: ' to the example method
+  — '),( self asText: 'Reuse') italic,( self asText: ' examples as setups for new examples
 ')
 ]
 
@@ -508,8 +508,7 @@ Green tests can be used to detect regressions, but otherwise they don''t help yo
 
 How do we write the simplest code that passes?
 
-What use is a green test?
-') italic
+What use is a green test?') italic
 ]
 
 { #category : #slides }
