@@ -30,7 +30,8 @@ Evaluate `other := 100 euros asPrice. self = other` and see it fails.
 Open the code bubble for `=` (alternatively search for `=` in the Meta view).
 Evaluate a new snippet `self money = other money` and see it passes.
 Browse the `=` method of money and see it has been overridden.
-Rewrite the `hundredEuros` example, adding the assertion.'>
+Rewrite the `hundredEuros` example, adding the assertion.
+Use an *Extract temporary* refactoring to assign the example expression to a variable `price`, and then express the assertion over that.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Adding assertions')
@@ -99,14 +100,20 @@ EDDSlideshow >> composingExamples: aSlide [
 '## Composing examples
 
 Once we have an example, we can also use it as a setup for another example.
-
 `chooseMatchingPair` is another example method that starts with `fixedGame` as its setup.
+
 As in a conventional test, we can check some preconditions, perform one or more operations, and then check some postconditions.
 The difference, again, is that we return the object under test, so we can explore it.
 We can also reuse it as a setup for yet another example, in this case, `playToEnd`.
 
 If we switch to the *Examples map* view, we can see all the dependencies between the examples.'>
-
+<demo:
+'Browse the `chooseMatchingPair` example.
+Open the `fixedGame` code bubble.
+Inspect the result.
+Browse senders of `chooseMatchingPair`.
+Browse `playToEnd`.
+Explore the *Examples map*.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Composing examples';
@@ -224,6 +231,11 @@ Like any test, it has a setup, which in this case creates a `game` object.
 We check some assertions, in this case perform no further operations, and then we return the object under test.
 
 This allows not only to carry out the tests, but also to inspect the result.'>
+<demo:
+'Explain the method.
+Inspect the result.
+Play the game.
+Explore the views.'>
 		^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'An example of an example')
@@ -282,6 +294,10 @@ All these classes have a common abstract *Money* superclass for shared behavior.
 Inspect the `42 euros + 10 usd` snippet.
 Click on the GtTZeroMoney class.
 Click on the GtTMoney class.'>
+<demo:
+'Inspect the snippets.
+QUickly browse the classes.
+'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Money classes')
@@ -348,6 +364,23 @@ Possibly over multiple lines.
 ')
 ]
 
+{ #category : #slides }
+EDDSlideshow >> priceExamples: aSlide [
+	<gtSlide>
+	<text:
+'## Price Examples
+
+After a number of iterations we end up with something like this, with a hierarchy of examples covering test cases for prices.'>
+<demo:
+'Run all the examples.
+Show the longest chain, i.e., for `displayOfConcretePriceDiscountedByMoneyAndDiscountedByPercentage` and inspect the result.
+Show the Overview with the price composition.'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Price Examples';
+		element: [ (GtCoderElement forClass: GtDPriceExamples) createInPager maximized ]
+]
+
 { #category : #accessing }
 EDDSlideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
@@ -372,6 +405,7 @@ EDDSlideshow >> slidePriorities [
 			addingViews:
 			extractingExamples:
 			addingAssertions:
+			priceExamples:
 		
 		summarySlide:
 		
@@ -395,7 +429,6 @@ Create the accessors.
 Change the argument of `money:` to `aMoney`.
 Inspect the result.
 Inspect its `money` slot.'>
-	self removePackage: 'EDDPrices'.
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Start from an object')
@@ -427,6 +460,7 @@ We prototype any behavior in the playground of the live object, and then extract
 We create views that explain what is interesting about the object.
 We extract interesting instances as example methods of a dedicated examples class.
 We prototype tests in the playground of the live example, before adding them as assertions to an example.
+We reuse the examples as setups for new examples.
 We iterate until we''re done!'>
 	^ aSlide textAndElement
 		elementWeight: 0.3;
@@ -435,11 +469,13 @@ We iterate until we''re done!'>
 				, (self
 						asText: '
 • Start with an object
-• Prototype behavior in the playground
-• Extract methods
-• Introduce useful views
+  — Prototype behavior in the playground
+  — Extract methods
+  — Introduce useful views
 • Extract examples
-• Prototype assertions in the playground
+  — Prototype assertions in the playground
+  — Add them to the example method
+  — Reuse examples as setups for new examples
 ')
 ]
 
@@ -451,7 +487,7 @@ EDDSlideshow >> tddTrouble: aSlide [
 With TDD, you develop code by incrementally adding a test for a new feature, which fails.
 Then you write the “simplest code” that passes the new test.
 You add new tests, refactoring as needed, until you have fully covered everything that the new feature should fulfil, as specified by the tests.
- 
+
 **But:** *Where do tests come from?*
 When you write a test, you actually have to “guess first” to imagine what objects to create, exercise and test.
 
@@ -515,10 +551,10 @@ EDDSlideshow >> whyExamples: aSlide [
 
 What are example methods good for?
 
-As we have seen, examples make dependencies between tests explicit by reusing examples as setups for other examples, thus formaing a hierarchy of examples.
+As we have seen, examples make dependencies between tests explicit by reusing examples as setups for other examples, thus forming a hierarchy of examples.
 
-Best practice in test design supposedly should avoid dependencies between tests, but studies have shown that this is a lie.
-In reality tests without dependencies lead to a great deal of duplicated code, and cascading failures due to the same setups being repeated in numerous tests.
+Best practice in test design supposedly should avoid dependencies between tests, but studies have shown that this practice instead leads to implicit dependencies due to duplicated code in test setups.
+This in turn leads to cascading failures due to the same setups being repeated in numerous tests.
 By factoring out the commonalities as examples, the duplication is removed, and cascading failures are avoided.
 
 A further benefit is that examples can be used in live documentation, and, as we shall see, examples support an exploratory approach to test-driven development, that we call example-driven development, or EDD.'>
@@ -529,8 +565,8 @@ A further benefit is that examples can be used in live documentation, and, as we
 				asText: '
 
 • Example composition reduces:
-	• code duplication,
-	• cascading failures.
+	— code duplication,
+	— cascading failures.
 • Examples can be reused in live documentation.
 • EDD is an exploratory approach to TDD.
 ')

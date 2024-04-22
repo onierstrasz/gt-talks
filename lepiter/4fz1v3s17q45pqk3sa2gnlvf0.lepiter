@@ -131,7 +131,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-19T08:45:08.806008+02:00"
+									"dateAndTimeString" : "2024-04-22T09:46:38.783898+02:00"
 								}
 							},
 							"editEmail" : {
@@ -142,17 +142,51 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-19T08:45:34.748747+02:00"
+									"dateAndTimeString" : "2024-04-22T09:46:45.816356+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "769oKs/SDQCvvh2RDkUPSw=="
+								"uidString" : "ROLUFc/SDQCUVcGqDkUPSw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Need to add some explanatory slides, with an overview of examples and EDD vs TDD."
+							"string" : "Add a slide showing the finished example."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-22T09:50:52.157919+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-22T09:51:48.449363+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZJD5bgzTDQCFGT/BCQQOew=="
+							},
+							"code" : "GtDPriceExamples"
 						},
 						{
 							"__type" : "textSnippet",
@@ -168,7 +202,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-19T08:39:23.574844+02:00"
+									"dateAndTimeString" : "2024-04-22T09:50:43.382551+02:00"
 								}
 							},
 							"editEmail" : {
@@ -179,17 +213,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-19T08:39:57.440689+02:00"
+									"dateAndTimeString" : "2024-04-22T09:50:43.382551+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "ROLUFc/SDQCUVcGqDkUPSw=="
+								"uidString" : "ca5zbgzTDQCE5oYeCQQOew=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "See also {{gtPage:*** Tests vs Examples|db=cqvjoxfnf6zd764ibqa67pln6}} in my personal db"
+							"string" : ""
 						}
 					]
 				},
