@@ -267,14 +267,14 @@ EDDSlideshow >> modelingPrices: aSlide [
 Let''s work through an example where we want to model *prices* for goods, that may be *discounted* by fixed amounts, or percentages, or even combinations of different types of discounts.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Modeling prices');
+		subtitleWithFormat: (self asSubtitle: 'EDD Exercise: Modeling prices');
 		paragraphWithFormat: (self
 				asText: '
 A price can be something like 100 EUR.
-Prices can be added or multiplied.
-A price can also be discounted either by a fixed amount of money, or by a percentage.
-All operations can be combined arbitrarily.
-And for audit purposes, we want to track all operations that lead to a concrete amount of money.
+Prices can be '),( self asText: 'added') italic,( self asText: ' or '),( self asText: 'multiplied') italic,( self asText: '.
+A price can also be '),( self asText: 'discounted') italic,( self asText: ' either by a fixed amount of money, or by a percentage.
+All operations can be '),( self asText: 'combined arbitrarily') italic,( self asText: '.
+And for audit purposes, we want to '),( self asText: 'track') italic,( self asText: ' all operations that lead to a concrete amount of money.
 ')
 ]
 
@@ -504,12 +504,12 @@ Green tests can be used to detect regressions, but otherwise they don''t help yo
 		paragraphWithFormat: (self
 				asText: '
 
-Where do tests come from?
+'), (self asText: 'Where do tests come from?
 
 How do we write the simplest code that passes?
 
 What use is a green test?
-')
+') italic
 ]
 
 { #category : #slides }
@@ -539,8 +539,8 @@ Through this simple change, instead of a passing test simply being green, we get
 		paragraphWithFormat: (self
 				asText: '
 
-An example (method) is a test that returns an example.
-')
+An example (method) is a test that '), (self asText: 'returns an example.
+') italic
 ]
 
 { #category : #slides }
@@ -564,10 +564,10 @@ A further benefit is that examples can be used in live documentation, and, as we
 		paragraphWithFormat: (self
 				asText: '
 
-• Example composition reduces:
+• Example composition reduces:'),(self asText: '
 	— code duplication,
-	— cascading failures.
-• Examples can be reused in live documentation.
-• EDD is an exploratory approach to TDD.
+	— cascading failures.') italic,( self asText: '
+• Examples can be reused in '),(self asText: 'live documentation.') italic,(self asText: '
+• EDD is an '),( self asText: 'exploratory approach') italic,( self asText: ' to TDD.
 ')
 ]
