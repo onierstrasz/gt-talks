@@ -53,7 +53,8 @@ GtTalksHomeSection >> tocCard [
 
 { #category : #accessing }
 GtTalksHomeSection >> vissoftCard [
-	<gtSectionCard>
+	"NB: Moved to a separate repo"
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'VISSOFT Talk';
