@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-19T10:04:22.473179+02:00"
+						"dateAndTimeString" : "2024-07-19T18:03:48.466928+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "48BG3/bZDQCSIr1EDmX7YA=="
 				},
-				"code" : "HuaweiGTSlideshow new"
+				"code" : "HuaweiGTSlideshow new."
 			},
 			{
 				"__type" : "textSnippet",
