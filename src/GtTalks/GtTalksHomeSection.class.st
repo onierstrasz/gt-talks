@@ -44,7 +44,7 @@ GtTalksHomeSection >> tocCard [
 	^ GtHomeCard page
 		title: 'Oscar''s Gt Talks';
 		description: 'Presentations as Gt slideshows';
-		databaseName: 'onierstrasz/gt-talks/lepiter';
+		databaseName: 'GT Talks';
 		pageName: 'Gt Talks TOC';
 		priority: 10;
 		assertInvariant;
