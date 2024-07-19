@@ -192,7 +192,7 @@
 							"string" : "These slides contain some raw material to reuse."
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -205,7 +205,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-07-19T11:43:25.541542+02:00"
+									"dateAndTimeString" : "2024-07-19T11:53:33.59551+02:00"
 								}
 							},
 							"editEmail" : {
@@ -216,14 +216,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-07-19T11:43:25.97189+02:00"
+									"dateAndTimeString" : "2024-07-19T11:53:38.003748+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "GwmLQ/jZDQCAZEvKB2eE+g=="
+								"uidString" : "E+ypZ/jZDQCC60FAB2eE+g=="
 							},
-							"code" : "EDDSlideshow new."
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[EDD talk Zurich (2024)]] "
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -258,6 +261,40 @@
 								"uidString" : "8++4R/jZDQCBFhpcB2eE+g=="
 							},
 							"code" : "OscarHomeSection new vamosCard."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-19T16:28:33.783196+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-19T16:28:33.783196+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "FRhGP/zZDQCj4RKcAWdhMg=="
+							},
+							"code" : ""
 						},
 						{
 							"__type" : "textSnippet",
