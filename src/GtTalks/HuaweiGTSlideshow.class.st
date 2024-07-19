@@ -17,6 +17,7 @@ Example-Driven Development is superficially like Test-Driven Development, where 
 		paragraphWithFormat: (self
 				asText: 
 '
+resembles TDD, where you drive development by constructing test methods that return example objects.
 ')
 ]
 
@@ -109,7 +110,12 @@ The opposite of an explainable system is an *opaque* one, which makes it hard fo
 				asText: '
 
 ') , (self asText: 'Opaque systems') italic
-				, (self asText: ' make it hard for you to understand how they work.')
+				, (self asText: ' make it hard for you to understand
+how they work.
+
+
+'), (self asText: 'Explainable systems') italic, (self asText: ' expose their inner workings
+so that you can have a conversation with them.')
 ]
 
 { #category : #slides }
@@ -355,12 +361,9 @@ We can see the classes of the Ludo implementation, and browse the source code of
 HuaweiGTSlideshow >> summarySlide: aSlide [
 	<gtSlide>
 	<text:
-'TODO
-
-# Placeholder
-'>	
+'# Summary'>	
 	| slideSelectors |
-	slideSelectors := #(explainableLudo: gtTour:).
+	slideSelectors := #(explainableSystems: gt: edd: examples:).
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A summary slide';
