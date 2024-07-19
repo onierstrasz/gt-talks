@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-21T13:41:59.829322+02:00"
+						"dateAndTimeString" : "2024-07-19T10:02:24.035515+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-21T13:42:02.831194+02:00"
+						"dateAndTimeString" : "2024-07-19T10:02:24.035515+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "eBS2i/vSDQC8Je1EBe3wAg=="
+					"uidString" : "7ss/2vbZDQCQndMJDmX7YA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "NB: the "
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -485,6 +485,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "[[BATbern50 talk (2023)]]  "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-21T13:42:18.830543+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-21T13:42:24.230659+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3QLYjPvSDQC8pvNeBe3wAg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[VISSOFT 2022]]"
 			}
 		]
 	},

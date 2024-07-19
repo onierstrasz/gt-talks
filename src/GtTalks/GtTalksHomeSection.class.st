@@ -11,7 +11,7 @@ GtTalksHomeSection >> batBernCard [
 	^ GtHomeCard page
 		title: 'BATbern50 talk';
 		description: 'Presentations as Gt slideshows';
-		databaseName: 'onierstrasz/gt-talks/lepiter';
+		databaseName: 'GT Talks';
 		pageName: 'BATbern50 talk (2023)';
 		priority: 50;
 		assertInvariant;
@@ -20,13 +20,27 @@ GtTalksHomeSection >> batBernCard [
 
 { #category : #accessing }
 GtTalksHomeSection >> eddCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'EDD talk Zurich (2024)';
 		description: 'Presentations as Gt slideshows';
-		databaseName: 'onierstrasz/gt-talks/lepiter';
+		databaseName: 'GT Talks';
 		pageName: 'EDD talk Zurich (2024)';
+		priority: 20;
+		assertInvariant;
+		yourself
+]
+
+{ #category : #accessing }
+GtTalksHomeSection >> huaweiCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'Huawei Meeting';
+		description: 'Huawei Explainable Systems presentation (2024)';
+		databaseName: 'GT Talks';
+		pageName: 'Huawei GT overview';
 		priority: 20;
 		assertInvariant;
 		yourself
@@ -59,8 +73,8 @@ GtTalksHomeSection >> vissoftCard [
 	^ GtHomeCard page
 		title: 'VISSOFT Talk';
 		description: 'Presentations as Gt slideshows';
-		databaseName: 'onierstrasz/gt-talks/lepiter';
-		pageName: 'VISSOFT Talk (2022)';
+		databaseName: 'GT Talks';
+		pageName: 'VISSOFT 2022';
 		priority: 51;
 		assertInvariant;
 		yourself
