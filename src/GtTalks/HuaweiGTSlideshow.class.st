@@ -10,7 +10,7 @@ HuaweiGTSlideshow >> edd: aSlide [
 	<text:
 '# 3. Example-Driven Development
 
-Example-Driven Development is superficially like Test-Driven Development, where you drive development by constructing tests methods that return example objects.'>
+Example-Driven Development is superficially like Test-Driven Development, where you drive development by constructing test methods that return example objects.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: '3. Example-Driven Development');
@@ -185,6 +185,20 @@ Each notebook page contains not only hyperlinked text, but other kinds of snippe
 ]
 
 { #category : #slides }
+HuaweiGTSlideshow >> liveDocumentation: aSlide [
+	<gtSlide>
+	<text:
+'## Live documentation
+
+Here we see an example of a live notebook page that documents the Ludo game with the help of live examples.'>
+
+	^ aSlide lepiterPage
+		setPriority;
+		pageNamed: 'Executable domain-driven design: the Ludo game case study' from: 'Glamorous Toolkit Book';
+		yourself
+]
+
+{ #category : #slides }
 HuaweiGTSlideshow >> ludoExamples: aSlide [
 	<gtSlide>
 	<text:
@@ -329,12 +343,13 @@ HuaweiGTSlideshow >> slidePriorities [
 			gtTour:
 			lepiter:
 			moldableInspector:
-			#gtComponents:
+			gtComponents:
 		
 		edd:
 			troubleWithTests:
 			examples:
 			ludoExamples:
+			liveDocumentation:
 			examplesExplorer:
 			pervasiveTools:
 		
