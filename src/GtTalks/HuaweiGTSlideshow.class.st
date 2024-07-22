@@ -51,20 +51,20 @@ Examples also support an exploratory approach to test-driven development, that w
 { #category : #slides }
 HuaweiGTSlideshow >> examplesExplorer: aSlide [
 	<gtSlide>
-	<text: 
-'## Examples explorer
+	<text: '## Examples explorer
 
 Here we see the examples explorer for the entire GT system.
 
 We can dive in, for example, to see the examples maps for all the gtoolkit demos.
 
 Note that the Examples Explorer is not a separate tool, but simply an object with numerous custom views defined.'>
-<demo:
-'- Dive into `gtoolkit-demos` and see the example maps.'>
+	<demo: '- Dive into `gtoolkit-demos` and see the example maps.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Examples explorer';
-		element: [ GtInspector forObject: GtRlGToolkitExamplesExplorer buildForGToolkitProject ]
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: GtRlGToolkitExamplesExplorer buildForGToolkitProject))
+				maximized ]
 ]
 
 { #category : #slides }

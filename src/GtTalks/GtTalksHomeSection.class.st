@@ -6,7 +6,7 @@ Class {
 
 { #category : #accessing }
 GtTalksHomeSection >> batBernCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'BATbern50 talk';
@@ -53,7 +53,7 @@ GtTalksHomeSection >> sectionTitle [
 
 { #category : #accessing }
 GtTalksHomeSection >> tocCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Oscar''s Gt Talks';
