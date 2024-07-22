@@ -53,7 +53,7 @@ GtTalksHomeSection >> sectionTitle [
 
 { #category : #accessing }
 GtTalksHomeSection >> tocCard [
-	"<gtSectionCard>"
+	<gtSectionCard>
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Oscar''s Gt Talks';
