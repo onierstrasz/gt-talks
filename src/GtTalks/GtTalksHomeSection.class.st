@@ -34,7 +34,7 @@ GtTalksHomeSection >> eddCard [
 
 { #category : #accessing }
 GtTalksHomeSection >> huaweiCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Huawei Meeting';
