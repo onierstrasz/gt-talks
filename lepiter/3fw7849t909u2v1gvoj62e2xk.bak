@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T11:30:17.214516+02:00"
+						"dateAndTimeString" : "2024-09-02T11:31:11.640499+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[*** Moldable Exceptions — Onward! (2024)]]"
+				"string" : "[[Moldable Exceptions — Onward! (2024)]]"
 			},
 			{
 				"__type" : "textSnippet",

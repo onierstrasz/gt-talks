@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T11:30:11.15058+02:00"
+						"dateAndTimeString" : "2024-09-02T15:57:19.38475+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "To be presented at [Onward! 2024](https://2024.splashcon.org/track/splash-2024-Onward-papers)."
 			},
 			{
 				"__type" : "pharoSnippet",

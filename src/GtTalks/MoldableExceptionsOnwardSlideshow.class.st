@@ -37,20 +37,15 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> title: aSlide [
 	<gtSlide>
-	<text:
-'TODO # Moldable Exceptions
+	<text: 'TODO # Moldable Exceptions
 
 FIX THIS LAYOUT
 
 '>
-	^ aSlide paragraph
+	^ aSlide titleWithCenteredTexts
 		setPriority;
-		subtitleWithFormat: (self asTitle: 'Moldable Exceptions');
-		paragraphWithFormat: (self asBigText:
-'
-
-andrei.chis@feenk.com
-tudor.girba@feenk.com
-oscar.nierstrasz@feenk.com
-')
+		titleWithFormat: (self asTitle: 'Moldable Exceptions');
+		newTextWithFormat: (self asBigText: 'andrei.chis@feenk.com');
+		newTextWithFormat: (self asBigText: 'tudor.girba@feenk.com');
+		newTextWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com') underline
 ]
