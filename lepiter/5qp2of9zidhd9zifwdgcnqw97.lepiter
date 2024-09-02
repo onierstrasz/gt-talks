@@ -381,12 +381,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-07-19T10:02:36.011813+02:00"
+			"dateAndTimeString" : "2024-09-02T11:29:46.883374+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Huawei GT overview"
+		"title" : "Huawei GT overview — Explaining Explainable Systems"
 	},
 	"uid" : {
 		"__type" : "uuid",

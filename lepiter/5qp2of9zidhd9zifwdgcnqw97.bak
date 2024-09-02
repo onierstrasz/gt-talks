@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-23T16:03:46.004537+02:00"
+						"dateAndTimeString" : "2024-07-23T16:03:49.277461+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For meeting at Huawei Bern on 2024-07-23. (See notes in my pers"
+				"string" : "For meeting at Huawei Bern on 2024-07-23. (See notes in my personal KB.)"
 			},
 			{
 				"__type" : "pharoSnippet",

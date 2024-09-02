@@ -1,3 +1,6 @@
+"
+For meeting at Huawei Bern on 2024-07-23. (See notes in my personal KB.)
+"
 Class {
 	#name : #HuaweiGTSlideshow,
 	#superclass : #PrioritySlideshow,
