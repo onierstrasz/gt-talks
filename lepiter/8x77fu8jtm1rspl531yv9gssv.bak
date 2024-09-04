@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T15:57:48.433852+02:00"
+						"dateAndTimeString" : "2024-09-04T09:59:29.106287+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Adapted from [[EDD talk Zurich (2024)]]"
+				"string" : "Cloned from [[EDD talk Zurich (2024)]]. Need to adapt to available time and desired message."
 			},
 			{
 				"__type" : "textSnippet",
@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T15:58:13.842478+02:00"
+						"dateAndTimeString" : "2024-09-04T09:57:22.622539+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "w96pEIXdDQCBQQydDQe1lg=="
 				},
-				"code" : "EDDLiveSlideshow new"
+				"code" : "EDDLiveSlideshow new "
 			},
 			{
 				"__type" : "textSnippet",
@@ -211,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T16:04:54.673641+02:00"
+						"dateAndTimeString" : "2024-09-02T16:05:10.287529+02:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[We need a title slide with multi-line "
+				"string" : "[[We need a title slide with multi-line title, subtitle and footer]]"
 			}
 		]
 	},
