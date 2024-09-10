@@ -200,7 +200,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T16:04:39.632849+02:00"
+						"dateAndTimeString" : "2024-09-04T10:00:09.817664+02:00"
 					}
 				},
 				"editEmail" : {
@@ -211,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T16:05:10.287529+02:00"
+						"dateAndTimeString" : "2024-09-04T10:00:09.817664+02:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[We need a title slide with multi-line title, subtitle and footer]]"
+				"string" : ""
 			}
 		]
 	},
