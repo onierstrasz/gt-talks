@@ -5,6 +5,57 @@ Class {
 }
 
 { #category : #slides }
+MoldableExceptionsOnwardSlideshow >> comparison: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+self assert: Snaffle foo = Snaffle bar
+
+'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: 'self assert:
+	Snaffle foo = Snaffle bar'
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> comparisonMolded: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+
+self assert: Snaffle foo equals: Snaffle bar
+
+'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: 'self assert: Snaffle foo
+	equals: Snaffle bar'
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> debuggersUnloved: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Need an example of code that triggers a debugger but why?
+'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Debuggers are unloved beasts';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: '"Need an example of code that triggers a debugger but why?"
+'
+]
+
+{ #category : #slides }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
 	<gtSlide>
 	<text:
@@ -27,6 +78,11 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 	^ #( 
 		title:
 		
+		debuggersUnloved:
+		
+		comparison:
+		
+		comparisonMolded:
 		
 		"summarySlide:"
 		
