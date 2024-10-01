@@ -56,19 +56,47 @@ Need an example of code that triggers a debugger but why?
 ]
 
 { #category : #slides }
+MoldableExceptionsOnwardSlideshow >> fileError: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+This also has a corrective action'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: '''foo/bar/baz'' asFileReference createDirectory.'
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> moldableTools: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Placeholder'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: '"Code to evaluate."
+3+4.'
+]
+
+{ #category : #slides }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
 	<gtSlide>
 	<text:
 'TODO
 
 Placeholder'>
-	^ aSlide paragraph
+	^ aSlide headingAndCode
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Placeholder');
-		paragraphWithFormat: (self
-				asText: 'Paragraph body.
-Possibly over multiple lines.
-')
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: '"Code to evaluate."
+3+4.'
 ]
 
 { #category : #accessing }
@@ -79,10 +107,12 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		title:
 		
 		debuggersUnloved:
-		
 		comparison:
-		
 		comparisonMolded:
+		fileError:
+		tooManyRedirects:
+		
+		moldableTools:
 		
 		"summarySlide:"
 		
@@ -103,4 +133,21 @@ MoldableExceptionsOnwardSlideshow >> title: aSlide [
 		newFooterWithFormat: (self asBigText: 'andrei.chis@feenk.com');
 		newFooterWithFormat: (self asBigText: 'tudor.girba@feenk.com');
 		newFooterWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com') underline
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> tooManyRedirects: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Placeholder'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Heading';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: 'ZnClient new 
+	url: ''https://www.gmail.com'';
+	maxNumberOfRedirects: 3;
+	get'
 ]
