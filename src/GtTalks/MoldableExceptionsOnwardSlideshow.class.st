@@ -8,15 +8,22 @@ Class {
 MoldableExceptionsOnwardSlideshow >> comparison: aSlide [
 	<gtSlide>
 	<text:
-'# TODO
+'# The trouble with generic debuggers
 
-self assert: Snaffle foo = Snaffle bar
+The problem with generic debuggers is that they are all the same. They all show you more or less the same stack-oriented view of the execution context no matter what kind of error is raised.
 
-'>
-	^ aSlide headingAndCode
+In this example we assert that two strings are equal, and enter the debugger when they aren''t. The example is not very complex, but the debugger does not really help us to figure out what is wrong.
+
+Even if we dive into the code, we do not immediately see what is wrong.'>
+
+<demo:
+'- Evaluate the example.
+- Inspect the two subexpressions.
+- We do not immediately see what is wrong.'>
+
+^ aSlide headingAndCode
 		setPriority;
 		heading: 'The trouble with generic debuggers';
-		"addTextSnippet: 'Text snippet';"
 		addCodeSnippet: 'self assert:
 	Snaffle foo = Snaffle bar'
 ]
@@ -25,16 +32,21 @@ self assert: Snaffle foo = Snaffle bar
 MoldableExceptionsOnwardSlideshow >> comparisonMolded: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Custom debugger views
 
+If we change the example slightly to use `#assert:equals:` instead of simply `#assert:`, then we know that the error is due to a failed comparison. With this extra knowledge, we can inform the debugger to provide a more informative domain-specific view.
 
-self assert: Snaffle foo equals: Snaffle bar
+The textual diff shows us exactly where the problem lies.
 
-'>
+We can still access the generic debugger view, if we want.'>
+
+<demo:
+'- This time we see the detailed comparison.
+- Show also the generic view.'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Heading';
-		addTextSnippet: 'Text snippet';
+		heading: 'Custom debugger views';
 		addCodeSnippet: 'self assert: Snaffle foo
 	equals: Snaffle bar'
 ]
@@ -43,17 +55,37 @@ self assert: Snaffle foo equals: Snaffle bar
 MoldableExceptionsOnwardSlideshow >> debuggingSpecifications: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Debugging specifications
 
-SKIP THIS?
+*(Skip if time is short.)*
 
-Placeholder'>
+We can also configure customizations in various ways.
+
+In the first example, if we inspect the debugging session, we can see that an *Assertion Failure* specification has been detected, and we can explore its properties. We see in `gtExceptionDebuggerSpecification` that it is enabled only when there are compatible types to compare.
+
+If we inspect the code of the second exception, we see in the method `gtExceptionDebuggerSpecification` that `availableAutomatically` is set to false. This means the generic stack view will be shown by default.
+
+The class `GtMoldableExceptionSpecificDebuggerSpecification` supports a number of such configurations.'>
+
+<demo:
+'- Trigger the first debugger
+- Inspect the debugging session and shows its properties
+- Inspect the AssertionFailure exception and shows its view is the same
+- Trigger the second debugger
+- Inspect the exception and go to the Meta view
+- Show the code for gtExceptionDebuggerSpecification
+- Open the `super` code bubble
+- Explore the class comment of `GtMoldableExceptionSpecificDebuggerSpecification`'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Heading';
-		addTextSnippet: 'Text snippet';
-		addCodeSnippet: '"Code to evaluate."
-3+4.'
+		heading: 'Debugging specifications';
+		addCodeSnippet: 'self assert: Snaffle foo
+	equals: Snaffle bar';
+		addCodeSnippet: 'ZnClient new 
+	url: ''https://www.gmail.com'';
+	maxNumberOfRedirects: 3;
+	get'
 ]
 
 { #category : #page }
@@ -142,8 +174,7 @@ viewBuilder
 MoldableExceptionsOnwardSlideshow >> examplesPage: aSlide [
 	<gtSlide>
 	<text:
-'TO DO
-
+'Here are a few more examples for discussion.
 '>
 	^ aSlide lepiterPage
 		setPriority;
@@ -154,14 +185,71 @@ MoldableExceptionsOnwardSlideshow >> examplesPage: aSlide [
 MoldableExceptionsOnwardSlideshow >> fileError: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# File System Errors
 
-This also has a corrective action'>
+In this example we not only obtain a more informative view showing us what is wrong with our request, highlighting the missing directories in our path, as opposed to the terse message we get in the generic debugger view, but we are also offered corrective actions.
+'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Heading';
-		addTextSnippet: 'Text snippet';
+		heading: 'File System Errors';
 		addCodeSnippet: '''foo/bar/baz'' asFileReference createDirectory.'
+]
+
+{ #category : #page }
+MoldableExceptionsOnwardSlideshow >> metricsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Some metrics')
+	addSnippet: (LeTextSnippet new
+			string: 'These create new debugger views and actions:';
+			addSnippet: (LePharoSnippet new
+					code: '#gtExceptionView gtPragmas';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: '(#gtExceptionView gtPragmas contents collect: #methodClass) asSet';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: '#gtExceptionAction gtPragmas';
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'These extend the default debugger:';
+			addSnippet: (LePharoSnippet new
+					code: '#gtContextView gtPragmas';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: '#gtContextView: gtPragmas';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: '#gtStackAction gtPragmas';
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'Controls what you get when you embed the debugger in the coder (i.e., when an exception is raised within a code snippet).';
+			addSnippet: (LePharoSnippet new
+					code: '#gtEmbeddedDebuggerView gtPragmas';
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
+	<gtSlide>
+	<text:
+'Some metrics for discussion.
+'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Some metrics')
 ]
 
 { #category : #slides }
@@ -170,7 +258,12 @@ MoldableExceptionsOnwardSlideshow >> moldableDevelopment: aSlide [
 	<text:
 '## Moldable development in a nutshell
 
-Moldable development is a methodology that makes a system explainable by extending it with numerous custom tools that answer specific questions about the system and its underlying domain concepts.'>
+Moldable development is a methodology that makes a system explainable by extending it with numerous custom tools that answer specific questions about the system and its underlying domain concepts.
+
+Moldable development depends on the existence of *moldable tools*, IDE tools that have been opened up to accommodate and enable custom tools within well-defined contexts.
+
+For the moldable debugger, this happens when a specific kind of exception is raised.
+'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable development');
@@ -178,7 +271,11 @@ Moldable development is a methodology that makes a system explainable by extendi
 				asText: 
 '
 
-extends a system with ') , (self asText: 'custom analysis tools') italic , (self asText: ' that answer questions about its inner workings, and make it ') , (self asText: 'explainable') italic, (self asText: '.
+extends a system with ') , (self asText: 'custom analysis tools') italic , (self asText: '
+that answer questions about its inner workings, 
+and make it ') , (self asText: 'explainable') italic, (self asText: '.
+
+A ') , (self asText: 'moldable tool') italic, (self asText: ' is an IDE tool that has been opened up to accommodate custom tools that are enabled  in a well-defined context (') , (self asText: 'e.g.') italic, (self asText: ', an object, a class).
 ')
 ]
 
@@ -186,12 +283,11 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 MoldableExceptionsOnwardSlideshow >> moldableInspector: aSlide [
 	<gtSlide>
 	<text:
-'## TODO -- Moldable Inspector
+'# The Moldable Inspector
 
-Old text:
-## Explainable Ludo
+The Moldable Inspector is an example of a moldable tool.
 
-Here we see an object inspector on a live instance of the Ludo game we saw earlier. The difference is that in addition to interacting with it, we can also explore it to understand how it works.
+Here we see a moldable object inspector on a live instance of a Ludo game.
 
 The usual inspector view of objects is the *Raw* view which only shows the state of the object''s instance variables. Instead we have molded the inspector to show us several custom views that explain various aspects of the game.
 
@@ -200,6 +296,7 @@ We can see the state of the Players, the individual Squares, and the history of 
 We can furthermore dive into a particular move, and see further custom views that explain what happened. We can even step through the moves to obtain a kind of animation of the history of the game.
 
 Each custom tool consists of a short method that informs the inspector, or another IDE tool of the extension.'>
+
 <demo: 
 '- Show the Raw view
 - Show the views one by one
@@ -207,34 +304,18 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 - Step through the moves
 - Show the code of the Moves custom view
 '>
+
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'An explainable Ludo game';
+		newFadedText: 'The Moldable Inspector';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: GtLudoRecordingGameExamples new gameShowingAllMoves6))
 				maximized ]
 ]
 
 { #category : #slides }
-MoldableExceptionsOnwardSlideshow >> moldableTools: aSlide [
-	<gtSlide>
-	<text:
-'TODO
-
-Placeholder'>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Moldable tools');
-		paragraphWithFormat: (self
-				asText: 
-'
-... TODO explain how moldable tools are open to extensions
-')
-]
-
-{ #category : #slides }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text:
 'TODO
 
@@ -260,7 +341,6 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		tooManyRedirects:
 		
 		moldableDevelopment:
-		moldableTools:
 		moldableInspector:
 		
 		specifyingViews:
@@ -268,10 +348,13 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		
 		debuggingSpecifications:
 		
-		summarySlide:
+		summary:
 		
-		placeholder:
+		"summarySlide:"
+		
+		"placeholder:"
 		examplesPage:
+		metricsPage:
 	)
 ]
 
@@ -279,35 +362,75 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 MoldableExceptionsOnwardSlideshow >> specifyingActions: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Specifying actions
 
-Placeholder'>
+Custom actions are specified in a similar way, but with a different annotation..
+
+This action actually has two different pragmas since it appears both in the custom view and the stack view.
+
+It''s just a dropdown menu that retries the action with the same debugger.'>
+
+<demo:
+'- Trigger the exception
+- Show the action code with two pragmas
+- Show the action appears in both debugger views'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Heading';
-		addTextSnippet: 'Text snippet';
-		addCodeSnippet: '"Code to evaluate."
-3+4.'
+		heading: 'Too many URL redirects';
+		addCodeSnippet: 'ZnClient new 
+	url: ''https://www.gmail.com'';
+	maxNumberOfRedirects: 3;
+	get'
 ]
 
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> specifyingViews: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Specifying debugger views
 
-Placeholder'>
+We specifying debugger views in pretty much the same way as inspector views, only  using a different pragma (or annotation).
+
+In this code snippet we start with a live example of a partially played Ludo game, we programatically roll a 6, and attempt to move player B forward.
+
+This raises a domain-specific assertion failure to which we have associated a custom view to explain the problem. In the *Moves* view we clearly see that it is the turn of Player C.
+
+In fact, the view we use is a pre-existing inspector view, so there is essentially no additional cost to reuse it in this context.'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Specifying views';
-		addTextSnippet: 'Text snippet';
-		addCodeSnippet: '"Code to evaluate."
-3+4.'
+		heading: 'Specifying debugger views';
+		addCodeSnippet: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
+	roll: 6;
+	moveTokenNamed: ''B'';
+	yourself.'
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> summary: aSlide [
+	<gtSlide>
+	<text:
+'# Summary'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Summary');
+		paragraphWithFormat: (self
+				asText: 
+'
+
+• Generic debuggers fail to give you domain-specific insights
+
+• Custom debugger views can be associated with domain-specific exceptions
+
+• Customizing a moldable debugger can be easy and inexpensive
+')
 ]
 
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> summarySlide: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text:
 'TODO
 
@@ -342,13 +465,20 @@ Today I''d like to tell you about *Moldable Exceptions*, which is to say, how yo
 MoldableExceptionsOnwardSlideshow >> tooManyRedirects: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Too many URL redirects
 
-Placeholder'>
+This example raises an error when retrieving the content behind a URL if too many redirects occur.
+
+In this case the generic view is the default one, rather than the detailed view of the redirects.
+
+In both cases, however, there is a custom *Retry* action that lets us proceed and retry with a higher threshold of redirects.'>
+
+<demo:
+'- Show the views and retry.'>
+
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Heading';
-		addTextSnippet: 'Text snippet';
+		heading: 'Too many URL redirects';
 		addCodeSnippet: 'ZnClient new 
 	url: ''https://www.gmail.com'';
 	maxNumberOfRedirects: 3;
