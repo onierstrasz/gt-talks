@@ -153,7 +153,116 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-02T16:04:33.165567+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-03T09:29:01.395063+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qOJDKIXdDQCEcNJADQe1lg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Title slide\nAn example of an example: Ludo documentation example of types of moves\nThe Trouble with tests\nExample = test + factory\nComposing tests — Ludo example map\nTurning tests into examples is easy (Memory example from Pharo?)\nExamples as documentation — Squarified Treemap ...\nExample-Driven Development — live development of examples\nSummary"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-03T10:03:32.029861+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-03T10:03:38.499098+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+s49uu/fDQCorn8iAID3pA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Turning tests into examples"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-03T10:03:40.199289+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-03T10:08:21.783014+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "iHa6uu/fDQCpOixRAID3pA=="
+							},
+							"code" : "(TestCase allSubclasses\r\tcollect: [ :c | c methods select: [ :m | m selector beginsWith: 'test' ] ]) sorted: [:a :b | a size > b size ]"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -163,7 +272,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T16:04:33.165567+02:00"
+						"dateAndTimeString" : "2024-10-03T09:28:53.656489+02:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +283,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T16:04:33.165567+02:00"
+						"dateAndTimeString" : "2024-10-03T09:28:53.656489+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "qOJDKIXdDQCEcNJADQe1lg=="
+					"uidString" : "k1VcPu/fDQCizJ88AID3pA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "# Outline"
 			},
 			{
 				"__type" : "textSnippet",

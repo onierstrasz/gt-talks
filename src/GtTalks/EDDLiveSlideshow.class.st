@@ -5,341 +5,57 @@ Class {
 }
 
 { #category : #slides }
-EDDLiveSlideshow >> addingAssertions: aSlide [
+EDDLiveSlideshow >> exampleMetrics: aSlide [
 	<gtSlide>
-	<text: '## Adding assertions
+	<text: '# Examples within GT (bonus slide)
 
-We now have an example, but we aren''t testing anything yet.
-
-Rather than directly adding tests to the example method, let''s explore first.
-We expect that a price object should equal another price object with the same money value.
-We see that this fails.
-
-Let''s have a look at the `=` method. It''s testing for object identity.
-Now let''s see what happens if we directly compare the `money` slots.
-This passes. We see that Money has implemented `=`, so we should do the same.
-
-We have the code we want right here, so let''s extract it.
-Now we can go back to the example and add a test.'>
-	<demo: 'Inspect the example and open the playground.
-Evaluate `other := 100 euros asPrice. self = other` and see it fails.
-Open the code bubble for `=` (alternatively search for `=` in the Meta view).
-Evaluate a new snippet `self money = other money` and see it passes.
-Browse the `=` method of money and see it has been overridden.
-Rewrite the `hundredEuros` example, adding the assertion.
-Use an *Extract temporary* refactoring to assign the example expression to a variable `price`, and then express the assertion over that.'>
-	^ aSlide lepiterPage
+Examples are heavily used within GT, both as test cases and to create documentation.'>
+	<demo: '- Run at end during Q&A
+- Inspect, switch to the inspector, and show the *Metrics* view'>
+	^ aSlide headingAndCode
 		setPriority;
-		startPage: (self db pageNamed: 'Adding assertions')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> addingAssertionsPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Adding assertions')
-	addSnippet: (LeTextSnippet new
-			string: 'Let''s introduce some tests.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'PriceExamples new hundredEuros.';
-			yourself);
-	yourself
+		heading: 'Examples within GT';
+		addCodeSnippet: '#gtExample gtPragmas'
 ]
 
 { #category : #slides }
-EDDLiveSlideshow >> addingViews: aSlide [
+EDDLiveSlideshow >> ludoCaseStudyPage: aSlide [
 	<gtSlide>
-	<text: '## Adding a view
+	<text: '# Examples as Documentation
 
-Our new Price object has only an ugly generic view, but its money slot has a nice  view we could reuse.
+Here we see the Glamorous Toolkit (or GT) Book, a knowledge base for GT, a moldable development environment.
 
-We go to the `Meta` view of the Price object and add a new view method that forwards itself to the Details view of its `money` slot.
+This page documents the Ludo game case study using embedded examples. If we scroll down, we see different kinds of moves of the game examplified, including an “impossible move.”
 
-A view is just a method that takes a view object as an argument, has a `<gtView>` pragma, and uses the view API to create the view we want, in this case a `forward` view.
+We can dive into this example, and explore various views of the move, and even replay the game up to this point to understand how we got here.
 
-We set the title of the view to `Money`, the priority to 10 so it appears early in the list of views, the object we want to forward to is the money slot, and the view is its `gtDisplayFor:` view.
+If we explore the source code of the example, we see it belongs to a class of example methods. This move is just the last move of another example that shows all 5 kinds of moves. The method looks just like a unit test case, with the only difference being that we return the fixture as a result that we can inspect.
 
-The moment we commit the view code, the view becomes available.'>
-	<demo: 'Inspect the price object.
-Inspect the money slot and view the `Details` view code.
-Copy the method name.
-Go back to the Price inspector and switch to the `Meta` view.
-Add a forwarding `gtMoneyFor:` method.
-Show the new view.
+We can also reuse the results to build new examples. Here is a map of all the examples in this class showing how they are composed.
+
+If we break one of the examples, then the dependent tests won''t be run.
 '>
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'Adding a view')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> addingViewsPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Adding a view')
-	addSnippet: (LeTextSnippet new
-			string: 'We want to lift the money *Details* view to our Price object.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '100 euros asPrice.';
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> composingExamples: aSlide [
-	<gtSlide>
-	<text: 
-'## Composing examples
-
-Once we have an example, we can also use it as a setup for another example.
-`chooseMatchingPair` is another example method that starts with `fixedGame` as its setup.
-
-As in a conventional test, we can check some preconditions, perform one or more operations, and then check some postconditions.
-The difference, again, is that we return the object under test, so we can explore it.
-We can also reuse it as a setup for yet another example, in this case, `playToEnd`.
-
-If we switch to the *Examples map* view, we can see all the dependencies between the examples.'>
-<demo:
-'Browse the `chooseMatchingPair` example.
-Open the `fixedGame` code bubble.
-Inspect the result.
-Browse senders of `chooseMatchingPair`.
-Browse `playToEnd`.
-Explore the *Examples map*.'>
+	<demo: '
+- Scroll down to Impossible move
+- Inspect the example
+- Replay to here
+- Inspect the moved of the game
+- Go back and inspect the source code
+- Open the code bubble of `gameShowingAllMoves5`
+- Show that it returns an example
+- Inspect the example
+- Show the example map
+- Break an assertion
+- Run the examples and show which are not run
+'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Composing examples';
-		element: [ (GtCoderElement forClass: GtMemoryGameExamples) createInPager maximized ]
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> concretePrice: aSlide [
-	<gtSlide>
-	<text: '# Introducing a Concrete Price
-
-Just like we have a hierarchy of Money classes, we expect to end up with a hierarchy of Price objects, including an abstract root class, a concrete, fixed price, and several kinds of discounted prices.
-Instead of designing this hierarchy up-front, we''ll develop it incrementally, driven by examples.
-
-We''ll start with an example of a concrete (as opposed to an abstract) Price object.'>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Introducing a Concrete Price');
-		paragraphWithFormat: (self
-				asText: '
-A price can be something like 100 EUR.
-Prices can be added or multiplied.
-...
-')
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> extractingExamples: aSlide [
-	<gtSlide>
-	<text: '## Extracting an example
-
-At this point it looks like we have a nice example for testing, so let''s extract it as an example.
-
-We introduce a new class to hold our examples, and give the example a suitable name.
-
-Note that the extracted example method has a `<gtExample>` pragma, and unlike a usual test method, it returns an instance.'>
-	<demo: 'Select all the code, right-click and *Extract example*
-Set the receiver to `PriceExamples` and the selector to `hundredEuros`.
-Choose `EDDPrices` as the package and `Examples` as the tag.
-Accept the refactoring.
-Inspect the result.
-Browse the code bubble.'>
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'Extracting an example')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> extractingExamplesPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Extracting an example')
-	addSnippet: (LeTextSnippet new
-			string: 'This could make a nice example for testing.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '100 euros asPrice.';
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> factoryMethod: aSlide [
-	<gtSlide>
-	<text: '## Create a factory method
-
-We would  like to be able to create a price object by sending `asPrice` to a Money instance.
-
-We start by inspecting the Money instance.
-We prototype the code to create the Price instance.
-We try it out.
-And we extract the factory method.
-We change the method to be an extension from the `EDDPrices` package.
-
-Now we can simply write `100 euros asPrice`.'>
-	<demo: 'Inspect the money.
-Open the playground.
-Code up `ConcretePrice new money: self; yourself`
-Inspect the result.
-Extract the `asPrice` method.
-Browse the new method.
-Change the category to `*EDDPrices`.
-Go back to the page and change the code to `100 euros asPrice` and inspect it.'>
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'Create a factory method')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> factoryMethodPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Create a factory method')
-	addSnippet: (LeTextSnippet new
-			string: 'We want to be able to create a Price object by sending `asPrice` to a Money instance.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '100 euros.';
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> memoryExample: aSlide [
-	<gtSlide>
-	<text: 
-'## An example of an example ...
-
-Here we see a simple example of an example method.
-It is annotated with a `<gtExample>` pragma to flag it as an example.
-
-Like any test, it has a setup, which in this case creates a `game` object.
-We check some assertions, in this case perform no further operations, and then we return the object under test.
-
-This allows not only to carry out the tests, but also to inspect the result.'>
-<demo:
-'Explain the method.
-Inspect the result.
-Play the game.
-Explore the views.'>
-		^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'An example of an example')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> memoryExamplePage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'An example of an example')
-	addSnippet: (LeTextSnippet new
-			string: 'An example method is a test that returns the object under test.';
-			yourself);
-	addSnippet: (LeElementSnippet new
-			code: 'GtPharoMethodCoder forMethod: GtMemoryGameExamples >> #fixedGame';
-			codeVisible: false;
-			elementHeight: 220;
-			codeHeight: 50;
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> modelingPrices: aSlide [
-	<gtSlide>
-	<text: '# Modeling prices
-
-Let''s work through an example where we want to model *prices* for goods, that may be *discounted* by fixed amounts, or percentages, or even combinations of different types of discounts.'>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'EDD Exercise: Modeling prices');
-		paragraphWithFormat: (self
-				asText: '
-A price can be something like 100 EUR.
-Prices can be '),( self asText: 'added') italic,( self asText: ' or '),( self asText: 'multiplied') italic,( self asText: '.
-A price can also be '),( self asText: 'discounted') italic,( self asText: ' either by a fixed amount of money, or by a percentage.
-All operations can be '),( self asText: 'combined arbitrarily') italic,( self asText: '.
-And for audit purposes, we want to '),( self asText: 'track') italic,( self asText: ' all operations that lead to a concrete amount of money.
-')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> moneyClasses: aSlide [
-	<gtSlide>
-	<text: '## Money classes
-
-To simplify our task, we assume that we already have classes that model different amounts of money, such as 42 € or 10 USD.
-
-An amount of money is always in a *currency* such as euros or US dollars.
-A *bag* of money consists of amounts of mixed currencies.
-A *zero* amount of money doesn''t have a currency.
-
-All these classes have a common abstract *Money* superclass for shared behavior.'>
-	<demo: 'Inspect the `42 euros` snippet.
-Inspect the `42 euros + 10 usd` snippet.
-Click on the GtTZeroMoney class.
-Click on the GtTMoney class.'>
-<demo:
-'Inspect the snippets.
-QUickly browse the classes.
-'>
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'Money classes')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> moneyClassesPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Money classes')
-	addSnippet: (LeTextSnippet new
-			string: 'We already have classes that model amounts of money.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '42 euros.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '42 euros + 10 usd.';
-			yourself);
-	addSnippet: (LeElementSnippet new
-			code: 'GtTMoneyUML new umlDiagram.';
-			codeVisible: false;
-			elementHeight: 226;
-			codeHeight: 50;
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> moneyExamples: aSlide [
-	<gtSlide>
-	<text: '## Money examples
-
-The money classes are heavily covered by examples, which are essentially unit tests that also return example objects.
-
-This means that a passing test is not just green, but also returns an object that can be explored, reused as a setup for another example, or embedded into live documentation.
-Unlike tests, however, examples don''t come “first” but they are extracted during the example-driven development process.'>
-	<demo: 'Run all the examples.
-Inspect the first example.
-Open the code bubbles to see how they are composed.
-Go to the Examples map to show all the dependencies.'>
-	^ aSlide labelAndElement
-		setPriority;
-		newFadedText: 'Money Examples';
-		element: [ (GtCoderElement forClass: GtTMoneyExamples) createInPager maximized ]
+		newFadedText: 'Examples as Documentation';
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook
+								pageNamed: 'Executable domain-driven design: the Ludo game case study')))
+				maximized ]
 ]
 
 { #category : #slides }
@@ -360,161 +76,58 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #slides }
-EDDLiveSlideshow >> priceExamples: aSlide [
-	<gtSlide>
-	<text:
-'## Price Examples
-
-After a number of iterations we end up with something like this, with a hierarchy of examples covering test cases for prices.'>
-<demo:
-'Run all the examples.
-Show the longest chain, i.e., for `displayOfConcretePriceDiscountedByMoneyAndDiscountedByPercentage` and inspect the result.
-Show the Overview with the price composition.'>
-	^ aSlide labelAndElement
-		setPriority;
-		newFadedText: 'Price Examples';
-		element: [ (GtCoderElement forClass: GtDPriceExamples) createInPager maximized ]
-]
-
 { #category : #accessing }
 EDDLiveSlideshow >> slidePriorities [
-	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
 		title:
-		
-		tddTrouble:
-
+		ludoCaseStudyPage:
 		whatsAnExample:
-			memoryExample:
-			composingExamples:
-			whyExamples:
-
-		modelingPrices:
-			moneyClasses:
-			moneyExamples:
-		
-		concretePrice:
-			startFromAnObject:
-			factoryMethod:
-			addingViews:
-			extractingExamples:
-			addingAssertions:
-			priceExamples:
-		
-		summarySlide:
-		
-		"placeholder:"
+		turningTestsIntoExamples:
+		squarifiedTreemapPage:
+		whyExamples:
+		exampleMetrics:
 	)
 ]
 
 { #category : #slides }
-EDDLiveSlideshow >> startFromAnObject: aSlide [
+EDDLiveSlideshow >> squarifiedTreemapPage: aSlide [
 	<gtSlide>
-	<text: '## Start from an object
+	<text:
+'# Explaining the squarified treemap algorithm
 
-Instead of starting by imagining and writing a test case as an example method, we start by creating an instance of the class we need.
-We first simply ask how we want to create our concrete instance of a price, and we write that code in a snippet.
+Here''s another case study where examples are used to document an algorithm. The squarified Treemap algorithm generates very nicely laid out treemaps using a simple algorithm described in this paper.
 
-Neither the class nor the constructor exist, so we create them as fixit operations.
-Now we have a first concrete Price object!'>
-	<demo: 'Create the ConcretePrice class as a fixit.
-Give it the `EDDPrices` package, the `Model` tag, and a `money` slot.
-Create the accessors.
-Change the argument of `money:` to `aMoney`.
-Inspect the result.
-Inspect its `money` slot.'>
-	^ aSlide lepiterPage
+A better way to understand the algorithm is using live examples. The picture looks the same, but we can dive into it. At each subdivision step we see whether the algorithm accepts the new node, or if it changes direction to maintain a squarified look.
+
+'>
+
+<demo:
+'- Scroll down to the paper
+- Scroll to the example right after the paper
+- Dive into the example
+- Show the *Steps figure* and the *Steps list*'>
+
+
+	^ aSlide labelAndElement
 		setPriority;
-		startPage: (self db pageNamed: 'Start from an object')
-]
-
-{ #category : #page }
-EDDLiveSlideshow >> startFromAnObjectPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Start from an object')
-	addSnippet: (LeTextSnippet new
-			string: 'As a first step, we just have to get an object to work with.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'ConcretePrice new money: 100 euros.';
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> summarySlide: aSlide [
-	<gtSlide>
-	<text: '# EDD in a Nutshell
-
-Summing up, instead of starting by writing a test, we first create a live object to explore.
-
-We prototype any behavior in the playground of the live object, and then extract methods that work.
-We create views that explain what is interesting about the object.
-We extract interesting instances as example methods of a dedicated examples class.
-We prototype tests in the playground of the live example, before adding them as assertions to an example.
-We reuse the examples as setups for new examples.
-We iterate until we''re done!'>
-	^ aSlide textAndElement
-		elementWeight: 0.3;
-		setPriority;
-		newTextWithFormat: (self asSubtitle: 'EDD in a Nutshell') , self cr
-				, (self
-						asText: '
-• Start with an '),( self asText: 'object') italic,( self asText: '
-  — '),( self asText: 'Prototype') italic,( self asText: ' behavior in the playground
-  — '),( self asText: 'Extract') italic,( self asText: ' methods
-  — Introduce useful '),( self asText: 'views') italic,( self asText: '
-• '),( self asText: 'Extract') italic,( self asText: ' examples
-  — Prototype '),( self asText: 'assertions') italic,( self asText: ' in the playground
-  — '),( self asText: 'Add them') italic,( self asText: ' to the example method
-  — '),( self asText: 'Reuse') italic,( self asText: ' examples as setups for new examples
-')
-]
-
-{ #category : #slides }
-EDDLiveSlideshow >> tddTrouble: aSlide [
-	<gtSlide>
-	<text: '# The Trouble with TDD
-
-With TDD, you develop code by incrementally adding a test for a new feature, which fails.
-Then you write the “simplest code” that passes the new test.
-You add new tests, refactoring as needed, until you have fully covered everything that the new feature should fulfil, as specified by the tests.
-
-**But:** *Where do tests come from?*
-When you write a test, you actually have to “guess first” to imagine what objects to create, exercise and test.
-
-*How do we write the simplest code that passes?*
-A test that fails gives you a debugger context, but then you have to go somewhere else to add some new classes and methods.
-
-*What use is a green test?*
-Green tests can be used to detect regressions, but otherwise they don''t help you much to create new tests or explore the running system.
-
-*With Example-Driven Development we try to answer these questions.*'>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'The Trouble with TDD');
-		paragraphWithFormat: (self
-				asText: '
-
-'), (self asText: 'Where do tests come from?
-
-How do we write the simplest code that passes?
-
-What use is a green test?') italic
+		newFadedText: 'Explaining the squarified treemap algorithm';
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook pageNamed: 'Explaining the squarified treemap algorithm')))
+				maximized ]
 ]
 
 { #category : #slides }
 EDDLiveSlideshow >> title: aSlide [
 	<gtSlide>
-	<text: 
-'# Example-Driven Development
+	<text: '# Example-Driven Development -- bridging tests and documentation
 
-Example-Driven Development is superficially like Test-Driven Development, where you drive development by constructing tests methods that return example objects.
-It sounds simple, but it actually changes the development process in several fundamental ways.'>
+Hello. My name is Oscar Nierstrasz.
+
+Today I''d like to show you how turning tests cases into factories for examples can enable opportunities for embedding live examples into documentation.
+
+Furthermore, examples can form the basis of a development process driven by the creation of examples.'>
 	^ aSlide titleWithFooters
 		setPriority;
 		titleWithFormat: (self asTitle: 'Example-driven development:');
@@ -525,12 +138,57 @@ It sounds simple, but it actually changes the development process in several fun
 ]
 
 { #category : #slides }
+EDDLiveSlideshow >> turningTestsIntoExamples: aSlide [
+	<gtSlide>
+	<text: '# Turning tests  into examples
+
+Turning conventional tests into examples is straightforward. Here we have a class that tests the `FileLocator` utility.
+
+If we run these tests, they are green, but we cannot explore an example unless we break an assertion so the test fails.
+
+We can turn this test into an example easily as follows. We change the method name to leave the old test method as it is. We add a `<gtExample>` pragma (annotation). And finally we return the fixture. Now we have a green test that returns an example that we can explore.
+'>
+	<demo: '- Show the class
+- Edit the test case
+- Inspect the example'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Turning tests  into examples')
+]
+
+{ #category : #page }
+EDDLiveSlideshow >> turningTestsIntoExamplesPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Turning tests  into examples')
+	addSnippet: (LeTextSnippet new
+			string: '{{gtClass:name=FileLocatorTest}} contains numerous conventional tests.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'FileLocatorTest methods 
+	select: [ :m | m selector beginsWith: ''test'' ].';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We can run them, but that''s all.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'Let''s convert this to an example:';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '{{gtMethod:name=FileLocatorTest>>#testFileSystem|expanded}}';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
 EDDLiveSlideshow >> whatsAnExample: aSlide [
 	<gtSlide>
 	<text: '# What''s an Example?
 
 An example method is just a test method that happens to return the object being tested.
 Through this simple change, instead of a passing test simply being green, we get back an object that we can inspect, explore, and reuse for various purposes.'>
+
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'What''s an Example?');
@@ -545,22 +203,21 @@ An example (method) is a test that '), (self asText: 'returns an example.
 EDDLiveSlideshow >> whyExamples: aSlide [
 	<gtSlide>
 	<text: 
-'## Why examples?
+'# Summary -- Why examples?
 
 What are example methods good for?
 
 As we have seen, examples make dependencies between tests explicit by reusing examples as setups for other examples, thus forming a hierarchy of examples.
 
-Best practice in test design supposedly should avoid dependencies between tests, but studies have shown that this practice instead leads to implicit dependencies due to duplicated code in test setups.
-This in turn leads to cascading failures due to the same setups being repeated in numerous tests.
-By factoring out the commonalities as examples, the duplication is removed, and cascading failures are avoided.
+Best practice in test design supposedly should avoid dependencies between tests, but studies have shown that this practice instead leads to implicit dependencies due to duplicated code in test setups. This in turn leads to cascading failures due to the same setups being repeated in numerous tests. By factoring out the commonalities as examples, the duplication is removed, and cascading failures are avoided.
 
 A further benefit is that examples can be used in live documentation, and, as we shall see, examples support an exploratory approach to test-driven development, that we call example-driven development, or EDD.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Why examples?');
+		subtitleWithFormat: (self asSubtitle: 'Summary');
 		paragraphWithFormat: (self
-				asText: '
+				asText: 
+'
 
 • Example composition reduces:'),(self asText: '
 	— code duplication,

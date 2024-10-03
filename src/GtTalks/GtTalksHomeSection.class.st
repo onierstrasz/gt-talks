@@ -33,6 +33,22 @@ GtTalksHomeSection >> eddCard [
 ]
 
 { #category : #accessing }
+GtTalksHomeSection >> eddLiveSlideshowCard [
+	<gtSectionCard>
+
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'EDD Live Slideshow';
+		description: 'EDD Live (2024) presentation';
+		priority: 30;
+		slideshowClassSymbol: #EDDLiveSlideshow
+			baseLineName: 'GtTalks'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalks;
+		yourself
+]
+
+{ #category : #accessing }
 GtTalksHomeSection >> huaweiCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -43,6 +59,22 @@ GtTalksHomeSection >> huaweiCard [
 		pageName: 'Huawei GT overview';
 		priority: 20;
 		assertInvariant;
+		yourself
+]
+
+{ #category : #accessing }
+GtTalksHomeSection >> moldableExceptionsSlideshowCard [
+	<gtSectionCard>
+
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'Moldable Exceptions Slideshow';
+		description: 'Moldable Exceptions Onward! (2024) presentation';
+		priority: 20;
+		slideshowClassSymbol: #MoldableExceptionsOnwardSlideshow
+			baseLineName: 'GtTalks'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalks;
 		yourself
 ]
 

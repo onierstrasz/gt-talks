@@ -278,7 +278,7 @@ And for audit purposes, we want to '),( self asText: 'track') italic,( self asTe
 ')
 ]
 
-{ #category : #page }
+{ #category : #slides }
 EDDSlideshow >> moneyClasses: aSlide [
 	<gtSlide>
 	<text: '## Money classes
