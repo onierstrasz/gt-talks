@@ -223,6 +223,7 @@ A further benefit is that examples can be used in live documentation, and, as we
 	— code duplication,
 	— cascading failures.') italic,( self asText: '
 • Examples can be reused in '),(self asText: 'live documentation.') italic,(self asText: '
+• Examples are a '),(self asText: 'stepstone for further development.') italic,(self asText: '
 • EDD is an '),( self asText: 'exploratory approach') italic,( self asText: ' to TDD.
 ')
 ]
