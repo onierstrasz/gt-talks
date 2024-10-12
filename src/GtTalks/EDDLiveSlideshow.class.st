@@ -234,7 +234,9 @@ As we have seen, examples make dependencies between tests explicit by reusing ex
 
 Best practice in test design supposedly should avoid dependencies between tests, but studies have shown that this practice instead leads to implicit dependencies due to duplicated code in test setups. This in turn leads to cascading failures due to the same setups being repeated in numerous tests. By factoring out the commonalities as examples, the duplication is removed, and cascading failures are avoided.
 
-A further benefit is that examples can be used in live documentation, and, as we shall see, examples support an exploratory approach to test-driven development, that we call example-driven development, or EDD.'>
+A further benefit is that examples can be used in live documentation.
+
+Examples also support an exploratory approach to test-driven development, that we call example-driven development, or EDD. The key differences is that, instead of starting from the source code test cases, we start from existing live examples to code new features, and create new, tested examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Summary');
