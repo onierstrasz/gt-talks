@@ -91,16 +91,17 @@ The class `GtMoldableExceptionSpecificDebuggerSpecification` supports a number o
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> debuggingViews: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '# Debugging views
 
-# Debugging views
+A nice use case is to catch common errors and offer repairs.
 
+In this example we have an object with an optional view that should only appear if there is data to display. Unfortunately there is an error, and a broken view is shown instead. The problem is that instead of returning the view, it should return an empty view.
 
-
-GtPhlowViewsCollectorSameViewError
-
-Placeholder'>
+The moldable exception not only highlights the error with an explanation, but it even offers a simple refactoring to fix the error. If we apply the refactoring, execution continues and the correct inspecxtor view is returned.'>
+	<demo: '- Inspect the first snippet.
+- Show the view code.
+- Inspect the second snippet.
+- Show the proposed refactoring and apply it.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Debugging Views')
@@ -125,99 +126,6 @@ MoldableExceptionsOnwardSlideshow >> debuggingViewsPage [
 			code: 'Snaffle new';
 			yourself);
 	yourself
-]
-
-{ #category : #page }
-MoldableExceptionsOnwardSlideshow >> examplesPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'More examples')
-	addSnippet: (LeTextSnippet new
-			string: '# Ludo';
-			addSnippet: (LeTextSnippet new
-					string: 'Ludo game playing errors offer debugging views.';
-					yourself);
-			addSnippet: (LePharoSnippet new
-					code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
-	moveTokenNamed: ''B'';
-	yourself.';
-					yourself);
-			addSnippet: (LePharoSnippet new
-					code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
-	roll: 6;
-	moveTokenNamed: ''B'';
-	yourself.';
-					yourself);
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: '# SPL';
-			addSnippet: (LeTextSnippet new
-					string: 'SPL is a simple programming language for a Compiler Construction course.';
-					yourself);
-			addSnippet: (LeTextSnippet new
-					string: '##Execution errors';
-					addSnippet: (LePharoSnippet new
-							code: 'SPL contextFor: ''3/0;''';
-							yourself);
-					addSnippet: (LePharoSnippet new
-							code: 'SPL contextFor: ''x+0;''';
-							yourself);
-					yourself);
-			addSnippet: (LeTextSnippet new
-					string: '## Parsing errors';
-					addSnippet: (LePharoSnippet new
-							code: 'SPL contextFor: ''3+4.''';
-							yourself);
-					yourself);
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: '# Lepiter duplicated pages';
-			addSnippet: (LeTextSnippet new
-					string: 'We show a view of the two pages and can add actions for fixing and continuing ';
-					yourself);
-			addSnippet: (LeTextSnippet new
-					string: 'See {{gtClass:name=LeDuplicatePageIdError}} raised in {{gtMethod:name=LeDatabase>>#setPage:}}';
-					yourself);
-			addSnippet: (LePharoSnippet new
-					code: 'page1 := LePage named: ''A Duplicate Page''.
-page2 := LePage named: ''A Duplicate Page''.
-db := (LeDatabase new).
-db addPage: page1.
-db addPage: page2.';
-					yourself);
-			addSnippet: (LeTextSnippet new
-					string: 'Currently no action is available ....';
-					yourself);
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: '# Collector errors';
-			addSnippet: (LeTextSnippet new
-					string: 'Collector errors for extensions ({{gtClass:name=GtPhlowViewsCollectorSameViewError}}) indicate that the wrong view/action/search was returned; we can have other several cases for this.';
-					yourself);
-			addSnippet: (LePharoSnippet new
-					code: 'viewBuilder := GtPhlowView empty. 
-viewBuilder
-	basicOn: GtPhlowViewWithErrorExamples new 
-	perform: #gtViewWithReturningSameViewFor:
-	withArguments: {viewBuilder}.';
-					yourself);
-			addSnippet: (LeTextSnippet new
-					string: 'In this case the exception is raised when the wrong kind of object is returned. There are many similar situations. It could be a type error, or also an object in the wrong state.';
-					yourself);
-			yourself);
-	yourself
-]
-
-{ #category : #slides }
-MoldableExceptionsOnwardSlideshow >> examplesPage: aSlide [
-	<gtSlide>
-	<text:
-'Here are a few more examples for discussion.
-'>
-	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self db pageNamed: 'More examples')
 ]
 
 { #category : #slides }
@@ -283,9 +191,7 @@ MoldableExceptionsOnwardSlideshow >> metricsPage [
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
 	<gtSlide>
-	<text:
-'Some metrics for discussion.
-'>
+	<text: '... Some metrics for discussion.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Some metrics')
@@ -352,6 +258,81 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 				maximized ]
 ]
 
+{ #category : #page }
+MoldableExceptionsOnwardSlideshow >> moreExamplesPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'More examples')
+	addSnippet: (LeTextSnippet new
+			string: '# Ludo';
+			addSnippet: (LeTextSnippet new
+					string: 'Ludo game playing errors offer debugging views.';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
+	moveTokenNamed: ''B'';
+	yourself.';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
+	roll: 6;
+	moveTokenNamed: ''B'';
+	yourself.';
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '# SPL';
+			addSnippet: (LeTextSnippet new
+					string: 'SPL is a simple programming language for a Compiler Construction course.';
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: '##Execution errors';
+					addSnippet: (LePharoSnippet new
+							code: 'SPL contextFor: ''3/0;''';
+							yourself);
+					addSnippet: (LePharoSnippet new
+							code: 'SPL contextFor: ''x+0;''';
+							yourself);
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: '## Parsing errors';
+					addSnippet: (LePharoSnippet new
+							code: 'SPL contextFor: ''3+4.''';
+							yourself);
+					yourself);
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '# Lepiter duplicated pages';
+			addSnippet: (LeTextSnippet new
+					string: 'We show a view of the two pages and can add actions for fixing and continuing ';
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: 'See {{gtClass:name=LeDuplicatePageIdError}} raised in {{gtMethod:name=LeDatabase>>#setPage:}}';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: 'page1 := LePage named: ''A Duplicate Page''.
+page2 := LePage named: ''A Duplicate Page''.
+db := (LeDatabase new).
+db addPage: page1.
+db addPage: page2.';
+					yourself);
+			addSnippet: (LeTextSnippet new
+					string: 'Currently no action is available ....';
+					yourself);
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> moreExamplesPage: aSlide [
+	<gtSlide>
+	<text: '... More examples for discussion.'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'More examples')
+]
+
 { #category : #slides }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
@@ -391,7 +372,7 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		summary:
 
 		"placeholder:"
-		examplesPage:
+		#moreExamplesPage:
 		metricsPage:
 	)
 ]
