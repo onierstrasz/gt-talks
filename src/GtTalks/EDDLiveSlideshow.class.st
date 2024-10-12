@@ -10,8 +10,7 @@ EDDLiveSlideshow >> exampleMetrics: aSlide [
 	<text: '# Examples within GT (bonus slide)
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
-	<demo: '- Run at end during Q&A
-- Inspect, switch to the inspector, and show the *Metrics* view'>
+	<demo: '- Run at end during Q&A'>
 	"^ aSlide headingAndCode
 		setPriority;
 		heading: 'Examples within GT';
