@@ -12,10 +12,34 @@ EDDLiveSlideshow >> exampleMetrics: aSlide [
 Examples are heavily used within GT, both as test cases and to create documentation.'>
 	<demo: '- Run at end during Q&A
 - Inspect, switch to the inspector, and show the *Metrics* view'>
-	^ aSlide headingAndCode
+	"^ aSlide headingAndCode
 		setPriority;
 		heading: 'Examples within GT';
-		addCodeSnippet: '#gtExample gtPragmas'
+		addCodeSnippet: '#gtExample gtPragmas'"
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Examples within GT')
+]
+
+{ #category : #page }
+EDDLiveSlideshow >> exampleMetricsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Examples within GT')
+	addSnippet: (LeTextSnippet new
+			string: '*Metrics view of example methods in the current image:*';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: '#gtExample gtPragmas';
+			yourself);
+	addSnippet: (LeElementSnippet new
+			code: '(GtSearchPragmasFilter new symbol: #gtExample) gtMetricsFor: GtPhlowView new ';
+			codeVisible: false;
+			elementHeight: 175;
+			codeHeight: 50;
+			yourself);
+	yourself
 ]
 
 { #category : #slides }
