@@ -156,12 +156,12 @@ MoldableExceptionsOnwardSlideshow >> metricsPage [
 			addSnippet: (LePharoSnippet new
 					code: '#gtExceptionView gtPragmas';
 					yourself);
-			addSnippet: (LeElementSnippet new
+			"addSnippet: (LeElementSnippet new
 					code: '#gtExceptionView gtPragmas gtMetricsFor: GtPhlowView new';
 					codeVisible: false;
 					elementHeight: 140;
 					codeHeight: 50;
-					yourself);
+					yourself);"
 			addSnippet: (LePharoSnippet new
 					code: '(#gtExceptionView gtPragmas contents collect: #methodClass) asSet';
 					yourself);
