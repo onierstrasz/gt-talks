@@ -6,7 +6,7 @@ Class {
 
 { #category : #slides }
 EDDLiveSlideshow >> exampleMetrics: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text: '# Examples within GT (bonus slide)
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
@@ -32,12 +32,12 @@ EDDLiveSlideshow >> exampleMetricsPage [
 	addSnippet: (LePharoSnippet new
 			code: '#gtExample gtPragmas';
 			yourself);
-	addSnippet: (LeElementSnippet new
+	"addSnippet: (LeElementSnippet new
 			code: '(GtSearchPragmasFilter new symbol: #gtExample) gtMetricsFor: GtPhlowView new ';
 			codeVisible: false;
 			elementHeight: 175;
 			codeHeight: 50;
-			yourself);
+			yourself);"
 	yourself
 ]
 
@@ -109,7 +109,7 @@ EDDLiveSlideshow >> slidePriorities [
 		turningTestsIntoExamples:
 		squarifiedTreemapPage:
 		whyExamples:
-		exampleMetrics:
+		"exampleMetrics:"
 	)
 ]
 
