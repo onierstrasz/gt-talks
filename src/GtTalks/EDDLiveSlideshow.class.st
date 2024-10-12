@@ -42,6 +42,23 @@ EDDLiveSlideshow >> exampleMetricsPage [
 ]
 
 { #category : #slides }
+EDDLiveSlideshow >> examplesExplorer: aSlide [
+	<gtSlide>
+	<text: '# (extra) Examples explorer
+
+Here we see the examples explorer for the entire GT system.
+
+We can dive in, for example, to see the examples maps for all the gtoolkit demos.'>
+	<demo: '- Dive into `gtoolkit-demos` and see the example maps.'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Examples explorer';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: GtRlGToolkitExamplesExplorer buildForGToolkitProject))
+				maximized ]
+]
+
+{ #category : #slides }
 EDDLiveSlideshow >> ludoCaseStudyPage: aSlide [
 	<gtSlide>
 	<text: '# Examples as Documentation
@@ -82,6 +99,23 @@ If we break one of the examples, then the dependent tests won''t be run.
 ]
 
 { #category : #slides }
+EDDLiveSlideshow >> pervasiveTools: aSlide [
+	<gtSlide>
+	<text: '# (extra) Custom tools are pervasive
+
+This visualization shows a treemap of packages and classes in the current image.
+
+Blue classes have at least one custom view and green ones have at least one example. This shows that custom tools were  heavily used to build the moldable development environment itself.
+
+Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
+	<demo: '- Click on the top-left class (BlElement)'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Custom tools are pervasive.';
+		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
+]
+
+{ #category : #slides }
 EDDLiveSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -109,7 +143,12 @@ EDDLiveSlideshow >> slidePriorities [
 		turningTestsIntoExamples:
 		squarifiedTreemapPage:
 		whyExamples:
+
 		"exampleMetrics:"
+		
+		"Extra slides"
+		pervasiveTools:
+		examplesExplorer:
 	)
 ]
 
