@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-04T10:11:02.419323+02:00"
+						"dateAndTimeString" : "2024-09-04T10:11:14.097182+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "*Th"
+				"string" : "*This page was cloned from the paper repo*"
 			},
 			{
 				"__type" : "textSnippet",
@@ -957,14 +957,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-09-04T10:10:39.596036+02:00"
+									"dateAndTimeString" : "2024-10-12T09:43:38.213553-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "BhZUcqjdDQCB2TQhBivpKg=="
 							},
-							"code" : "viewBuilder := GtPhlowView empty. \rviewBuilder\r\tbasicOn: GtPhlowViewWithErrorExamples new \r\tperform: #gtViewWithReturningSameViewFor:\r\twithArguments: {viewBuilder}."
+							"code" : "viewBuilder := GtPhlowView empty. \rviewBuilder\r\tbasicOn: GtPhlowViewWithErrorExamples new \r\tperform: #gtViewDataFor:\r\twithArguments: {viewBuilder}."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1076,6 +1076,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(We can have an example with a block styler ....)"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-12T09:51:53.319828-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-12T09:51:58.719012-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BYqgpKngDQCTFnmhD3cIYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Version without Builder"
 						}
 					]
 				},

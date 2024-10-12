@@ -957,14 +957,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-09-04T10:10:39.596036+02:00"
+									"dateAndTimeString" : "2024-10-12T09:43:38.213553-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "BhZUcqjdDQCB2TQhBivpKg=="
 							},
-							"code" : "viewBuilder := GtPhlowView empty. \rviewBuilder\r\tbasicOn: GtPhlowViewWithErrorExamples new \r\tperform: #gtViewWithReturningSameViewFor:\r\twithArguments: {viewBuilder}."
+							"code" : "viewBuilder := GtPhlowView empty. \rviewBuilder\r\tbasicOn: GtPhlowViewWithErrorExamples new \r\tperform: #gtViewDataFor:\r\twithArguments: {viewBuilder}."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1076,6 +1076,112 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(We can have an example with a block styler ....)"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-10-12T09:52:03.563546-04:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-10-12T09:52:17.488055-04:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "dNE8pangDQCTl1uDD3cIYQ=="
+										},
+										"code" : "Snaffle new data: (1 to: 10)"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-10-12T09:52:18.380221-04:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-10-12T09:52:21.125385-04:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "A/IepqngDQCUUnl5D3cIYQ=="
+										},
+										"code" : "Snaffle new"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-12T09:51:53.319828-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-10-12T09:52:00.230093-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BYqgpKngDQCTFnmhD3cIYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##Version without Builder"
 						}
 					]
 				},

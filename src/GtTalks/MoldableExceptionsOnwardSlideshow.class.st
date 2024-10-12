@@ -88,6 +88,45 @@ The class `GtMoldableExceptionSpecificDebuggerSpecification` supports a number o
 	get'
 ]
 
+{ #category : #slides }
+MoldableExceptionsOnwardSlideshow >> debuggingViews: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Debugging views
+
+
+
+GtPhlowViewsCollectorSameViewError
+
+Placeholder'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Debugging Views')
+]
+
+{ #category : #page }
+MoldableExceptionsOnwardSlideshow >> debuggingViewsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Debugging Views')
+	addSnippet: (LeTextSnippet new
+			string: 'An optional view:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'Snaffle new data: (1 to: 10)';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'A common error:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'Snaffle new';
+			yourself);
+	yourself
+]
+
 { #category : #page }
 MoldableExceptionsOnwardSlideshow >> examplesPage [
 	<lePage>
@@ -256,7 +295,7 @@ MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
 MoldableExceptionsOnwardSlideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text:
-'## Moldable development in a nutshell
+'# Moldable development in a nutshell
 
 Moldable development is a methodology that makes a system explainable by extending it with numerous custom tools that answer specific questions about the system and its underlying domain concepts.
 
@@ -345,13 +384,12 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		
 		specifyingViews:
 		specifyingActions:
+		debuggingViews:
 		
 		debuggingSpecifications:
 		
 		summary:
-		
-		"summarySlide:"
-		
+
 		"placeholder:"
 		examplesPage:
 		metricsPage:
