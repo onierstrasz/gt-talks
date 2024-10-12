@@ -80,8 +80,10 @@ The class `GtMoldableExceptionSpecificDebuggerSpecification` supports a number o
 	^ aSlide headingAndCode
 		setPriority;
 		heading: 'Debugging specifications';
+		addTextSnippet: '*A conditional debugger view:*';
 		addCodeSnippet: 'self assert: Snaffle foo
 	equals: Snaffle bar';
+		addTextSnippet: '*Suppressing the automatic debugger view:*';
 		addCodeSnippet: 'ZnClient new 
 	url: ''https://www.gmail.com'';
 	maxNumberOfRedirects: 3;
@@ -153,6 +155,12 @@ MoldableExceptionsOnwardSlideshow >> metricsPage [
 			string: 'These create new debugger views and actions:';
 			addSnippet: (LePharoSnippet new
 					code: '#gtExceptionView gtPragmas';
+					yourself);
+			addSnippet: (LeElementSnippet new
+					code: '#gtExceptionView gtPragmas gtMetricsFor: GtPhlowView new';
+					codeVisible: false;
+					elementHeight: 140;
+					codeHeight: 50;
 					yourself);
 			addSnippet: (LePharoSnippet new
 					code: '(#gtExceptionView gtPragmas contents collect: #methodClass) asSet';
