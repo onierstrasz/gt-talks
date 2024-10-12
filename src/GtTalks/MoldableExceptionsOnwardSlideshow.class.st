@@ -295,7 +295,7 @@ MoldableExceptionsOnwardSlideshow >> moreExamplesPage [
 					string: 'SPL is a simple programming language for a Compiler Construction course.';
 					yourself);
 			addSnippet: (LeTextSnippet new
-					string: '##Execution errors';
+					string: '*Execution errors*';
 					addSnippet: (LePharoSnippet new
 							code: 'SPL contextFor: ''3/0;''';
 							yourself);
@@ -304,7 +304,7 @@ MoldableExceptionsOnwardSlideshow >> moreExamplesPage [
 							yourself);
 					yourself);
 			addSnippet: (LeTextSnippet new
-					string: '## Parsing errors';
+					string: '*Parsing errors*';
 					addSnippet: (LePharoSnippet new
 							code: 'SPL contextFor: ''3+4.''';
 							yourself);
