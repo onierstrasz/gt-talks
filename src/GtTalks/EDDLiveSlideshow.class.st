@@ -289,7 +289,7 @@ Examples also support an exploratory approach to test-driven development, that w
 • Examples are a '),(self asText: 'stepstone for further development.') italic,(self asText: '
 • EDD is an '),( self asText: 'exploratory approach') italic,( self asText: ' to TDD.
 
-'),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/eddLive') glamorousCodeFont,
+'),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/eddLivePaper') glamorousCodeFont,
 (self asText: '
 Download: ') italic,(self asText: 'gtoolkit.com') glamorousCodeFont
 ]

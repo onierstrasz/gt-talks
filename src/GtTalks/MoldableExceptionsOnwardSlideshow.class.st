@@ -452,9 +452,11 @@ MoldableExceptionsOnwardSlideshow >> summary: aSlide [
 • Customizing a moldable debugger '),(self asText: 'can be easy') italic,(self asText: '
 
 
-'),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/moldableExceptions') glamorousCodeFont,
+'),(self asText: 'Read: ') italic,
+((self asText: 'tinyurl.com/moldableExceptionsPaper') glamorousCodeFont fontSize: 28),
 (self asText: '
-Download: ') italic,(self asText: 'gtoolkit.com') glamorousCodeFont
+Download: ') italic,
+((self asText: 'gtoolkit.com') glamorousCodeFont fontSize: 28)
 ]
 
 { #category : #slides }
