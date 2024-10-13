@@ -283,11 +283,13 @@ Examples also support an exploratory approach to test-driven development, that w
 				asText: 
 '
 
-• Example composition reduces:'),(self asText: '
-	— code duplication,
-	— cascading failures.') italic,( self asText: '
+• Examples can be '),(self asText: 'composed.') italic,
+( self asText: '
 • Examples can be reused in '),(self asText: 'live documentation.') italic,(self asText: '
 • Examples are a '),(self asText: 'stepstone for further development.') italic,(self asText: '
 • EDD is an '),( self asText: 'exploratory approach') italic,( self asText: ' to TDD.
-')
+
+'),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/eddLive') glamorousCodeFont,
+(self asText: '
+Download: ') italic,(self asText: 'gtoolkit.com') glamorousCodeFont
 ]

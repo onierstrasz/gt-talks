@@ -447,12 +447,14 @@ MoldableExceptionsOnwardSlideshow >> summary: aSlide [
 				asText: 
 '
 
-• Generic debuggers fail to give you domain-specific insights
+• Generic debuggers ') ,(self asText: 'don''t understand your domain') italic,(self asText: '
+• Exceptions can trigger '),(self asText: 'custom debugger views') italic,(self asText: '
+• Customizing a moldable debugger '),(self asText: 'can be easy') italic,(self asText: '
 
-• Custom debugger views can be associated with domain-specific exceptions
 
-• Customizing a moldable debugger can be easy and inexpensive
-')
+'),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/moldableExceptions') glamorousCodeFont,
+(self asText: '
+Download: ') italic,(self asText: 'gtoolkit.com') glamorousCodeFont
 ]
 
 { #category : #slides }
