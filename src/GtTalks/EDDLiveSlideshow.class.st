@@ -25,9 +25,10 @@ We can also create a new example by extracting the Films of Akira Kurosawa, usin
 - Update the FilmCollection view with a Directors column.
 - In the context of `FilmCollectionExamples new` start from self collection and build up the Kurosawa example
 - Extract it as an example:
-
+```
 FilmCollection new
 	data: ((self collection films select: [ :f | f directors = ''Akira Kurosawa'' ]) collect: #data)
+```
 '>
 	^ aSlide lepiterPage
 		setPriority;
