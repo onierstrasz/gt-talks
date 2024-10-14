@@ -39,5 +39,19 @@ Film >> printOn: aStream [
 
 { #category : #accessing }
 Film >> title [
-	^ self data at: 'Title'
+	| title |
+	title := self data at: 'Title'.
+	self assert: title notNil.
+	self assert: title notEmpty.
+	^ title
+]
+
+{ #category : #accessing }
+Film >> year [
+	| year |
+	year := self data at: 'Year'.
+	self assert: year notNil.
+	self assert: year notEmpty.
+	self assert: year isAllDigits.
+	^ year asNumber
 ]

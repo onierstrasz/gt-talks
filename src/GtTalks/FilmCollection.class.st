@@ -33,8 +33,13 @@ FilmCollection >> gtFilmsFor: aView [
 		column: 'Index'
 			text: [ :eachItem :eachIndex | eachIndex asRopedText foreground: Color gray ]
 			width: 45;
+		column: 'Year'
+			text: [ :film | film year ]
+			width: 60;
 		column: 'Title'
-			text: [ :film | film title ]
+			text: [ :film | film title ];
+		column: 'Directors'
+			text: [ :film | film directors ]
 ]
 
 { #category : #view }

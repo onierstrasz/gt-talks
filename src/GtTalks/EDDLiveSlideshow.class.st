@@ -5,8 +5,50 @@ Class {
 }
 
 { #category : #slides }
+EDDLiveSlideshow >> buildingOnExamples: aSlide [
+	<gtSlide>
+	<text: '# Building on Examples
+
+Here we see a partial implementation of a Film Collection created from an exported csv of an IMDB collection. The csv file is an example, as is the JSON data we obtain by parsing the CSV, and the FilmCollection example that wraps the JSON data.
+
+Each example is a test case with some assertions, but it also returns the object under test. If we explore the collection, we see that there are more interesting fields that might be nice to see in the Films view.
+
+We verify that we can send `directors` to a film instance, and we update the Films view to show the Directors as well.
+
+We can also create a new example by extracting the Films of Akira Kurosawa, using that to build a new FilmCollection, and extracting it as an example.
+'>
+	<demo: '- Browse the `collection` method.
+- Show how it is composed.
+- Inspect the collection.
+- Inspect a film.
+- Query its directors.
+- Update the FilmCollection view with a Directors column.
+- In the context of `FilmCollectionExamples new` start from self collection and build up the Kurosawa example
+- Extract it as an example
+'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'Building on Examples')
+]
+
+{ #category : #page }
+EDDLiveSlideshow >> buildingOnExamplesPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Building on Examples')
+	addSnippet: (LeTextSnippet new
+			string: 'A {{gtClass:name=FilmCollection}} is a collection of {{gtClass:name=Film}} objects constructed from an exported csv of an IMDB collection. Here''s an example we would like to build on:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'FilmCollectionExamples new collection.';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
 EDDLiveSlideshow >> exampleMetrics: aSlide [
-	"<gtSlide>"
+	<gtSlide>
 	<text: '# Examples within GT (bonus slide)
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
@@ -141,14 +183,14 @@ EDDLiveSlideshow >> slidePriorities [
 		ludoCaseStudyPage:
 		whatsAnExample:
 		turningTestsIntoExamples:
+		buildingOnExamples:
 		squarifiedTreemapPage:
 		whyExamples:
 
-		"exampleMetrics:"
-		
 		"Extra slides"
 		pervasiveTools:
 		examplesExplorer:
+		exampleMetrics:
 	)
 ]
 

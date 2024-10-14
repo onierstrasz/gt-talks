@@ -7,10 +7,15 @@ Class {
 { #category : #accessing }
 FilmCollectionExamples >> collection [
 	<gtExample>
-	| films |
-	films := FilmCollection new data: self json.
-	self assert: films data size equals: 1938.
-	^ films
+	| collection |
+	collection := FilmCollection new data: self json.
+	self assert: collection data size equals: 1938.
+	self
+		assert: (collection films select: 
+			[ :film | film year < 1895 
+				or: [ film year > Date today year ] ])
+				isEmpty.
+	^ collection
 ]
 
 { #category : #accessing }
@@ -30,4 +35,12 @@ FilmCollectionExamples >> json [
 	json := (CSV2JSON for: self csv) jsonObject.
 	self assert: json size equals: 1938.
 	^ json
+]
+
+{ #category : #accessing }
+FilmCollectionExamples >> kurosawa [
+	<gtExample>
+	^ FilmCollection new
+		data: ((self collection films select: [ :f | f directors = 'Akira Kurosawa' ])
+				collect: #data)
 ]
