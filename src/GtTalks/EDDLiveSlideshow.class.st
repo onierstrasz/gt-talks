@@ -53,7 +53,7 @@ EDDLiveSlideshow >> buildingOnExamplesPage [
 { #category : #slides }
 EDDLiveSlideshow >> exampleMetrics: aSlide [
 	<gtSlide>
-	<text: '# (extra) Examples within GT
+	<text: '... Examples within GT
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
 	<demo: '- Run at end during Q&A'>
@@ -86,7 +86,7 @@ EDDLiveSlideshow >> exampleMetricsPage [
 { #category : #slides }
 EDDLiveSlideshow >> examplesExplorer: aSlide [
 	<gtSlide>
-	<text: '# (extra) Examples explorer
+	<text: '... Examples explorer
 
 Here we see the examples explorer for the entire GT system.
 
@@ -143,7 +143,7 @@ If we break one of the examples, then the dependent tests won''t be run.
 { #category : #slides }
 EDDLiveSlideshow >> pervasiveTools: aSlide [
 	<gtSlide>
-	<text: '# (extra) Custom tools are pervasive
+	<text: '... Custom tools are pervasive
 
 This visualization shows a treemap of packages and classes in the current image.
 
@@ -244,7 +244,7 @@ Furthermore, examples can form the basis of a development process driven by the 
 { #category : #slides }
 EDDLiveSlideshow >> turningTestsIntoExamples: aSlide [
 	<gtSlide>
-	<text: '# (extra) Turning tests  into examples
+	<text: '... Turning tests  into examples
 
 Turning conventional tests into examples is straightforward. Here we have a class that tests the `FileLocator` utility.
 
