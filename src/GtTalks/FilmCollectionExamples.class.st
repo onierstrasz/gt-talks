@@ -4,7 +4,7 @@ Class {
 	#category : #'GtTalks-FilmDemo'
 }
 
-{ #category : #accessing }
+{ #category : #example }
 FilmCollectionExamples >> collection [
 	<gtExample>
 	| collection |
@@ -18,17 +18,25 @@ FilmCollectionExamples >> collection [
 	^ collection
 ]
 
-{ #category : #accessing }
+{ #category : #example }
 FilmCollectionExamples >> csv [
 	<gtExample>
 	| csv |
-	csv := (FileLocator gtResource / 'feenkcom' / 'gtoolkit-demos' / 'data'
-			/ 'imdb' / 'Movies.csv') contents.
+	csv := self imdbFile contents.
 	self assert: csv lines size equals: 1939.
 	^ csv
 ]
 
-{ #category : #accessing }
+{ #category : #example }
+FilmCollectionExamples >> imdbFile [
+	<gtExample>
+	| file |
+	file := FileLocator gtResource / 'feenkcom' / 'gtoolkit-demos' / 'data'
+			/ 'imdb' / 'Movies.csv'.
+	^ file
+]
+
+{ #category : #example }
 FilmCollectionExamples >> json [
 	<gtExample>
 	| json |

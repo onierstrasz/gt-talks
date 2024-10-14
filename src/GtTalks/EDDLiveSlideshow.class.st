@@ -53,7 +53,7 @@ EDDLiveSlideshow >> buildingOnExamplesPage [
 { #category : #slides }
 EDDLiveSlideshow >> exampleMetrics: aSlide [
 	<gtSlide>
-	<text: '# Examples within GT (bonus slide)
+	<text: '# (extra) Examples within GT
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
 	<demo: '- Run at end during Q&A'>
@@ -186,13 +186,13 @@ EDDLiveSlideshow >> slidePriorities [
 		title:
 		ludoCaseStudyPage:
 		whatsAnExample:
-		turningTestsIntoExamples:
 		buildingOnExamples:
 		squarifiedTreemapPage:
 		whyExamples:
 
 		"Extra slides"
 		pervasiveTools:
+		turningTestsIntoExamples:
 		examplesExplorer:
 		exampleMetrics:
 	)
@@ -248,7 +248,7 @@ Furthermore, examples can form the basis of a development process driven by the 
 { #category : #slides }
 EDDLiveSlideshow >> turningTestsIntoExamples: aSlide [
 	<gtSlide>
-	<text: '# Turning tests  into examples
+	<text: '# (extra) Turning tests  into examples
 
 Turning conventional tests into examples is straightforward. Here we have a class that tests the `FileLocator` utility.
 
@@ -330,9 +330,11 @@ Examples also support an exploratory approach to test-driven development, that w
 '
 
 • Examples can be '),(self asText: 'composed.') italic,
+(self asText: '
+• Examples are a '),(self asText: 'stepstone for further development.') italic,
 ( self asText: '
-• Examples can be reused in '),(self asText: 'live documentation.') italic,(self asText: '
-• Examples are a '),(self asText: 'stepstone for further development.') italic,(self asText: '
+• Examples can be reused in '),(self asText: 'live documentation.') italic,
+(self asText: '
 • EDD is an '),( self asText: 'exploratory approach') italic,( self asText: ' to TDD.
 
 '),(self asText: 'Read: ') italic,(self asText: 'tinyurl.com/eddLivePaper') glamorousCodeFont,
