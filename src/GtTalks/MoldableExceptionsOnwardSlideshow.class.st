@@ -404,7 +404,7 @@ It''s just a dropdown menu that retries the action with the same debugger.'>
 
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Too many URL redirects';
+		heading: 'Specifying actions';
 		addCodeSnippet: 'ZnClient new 
 	url: ''https://www.gmail.com'';
 	maxNumberOfRedirects: 3;
