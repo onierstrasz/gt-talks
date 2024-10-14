@@ -57,10 +57,6 @@ EDDLiveSlideshow >> exampleMetrics: aSlide [
 
 Examples are heavily used within GT, both as test cases and to create documentation.'>
 	<demo: '- Run at end during Q&A'>
-	"^ aSlide headingAndCode
-		setPriority;
-		heading: 'Examples within GT';
-		addCodeSnippet: '#gtExample gtPragmas'"
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'Examples within GT')
