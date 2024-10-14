@@ -36,11 +36,3 @@ FilmCollectionExamples >> json [
 	self assert: json size equals: 1938.
 	^ json
 ]
-
-{ #category : #accessing }
-FilmCollectionExamples >> kurosawa [
-	<gtExample>
-	^ FilmCollection new
-		data: ((self collection films select: [ :f | f directors = 'Akira Kurosawa' ])
-				collect: #data)
-]

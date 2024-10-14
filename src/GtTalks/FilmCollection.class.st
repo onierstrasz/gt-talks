@@ -37,9 +37,7 @@ FilmCollection >> gtFilmsFor: aView [
 			text: [ :film | film year ]
 			width: 60;
 		column: 'Title'
-			text: [ :film | film title ];
-		column: 'Directors'
-			text: [ :film | film directors ]
+			text: [ :film | film title ]
 ]
 
 { #category : #view }
