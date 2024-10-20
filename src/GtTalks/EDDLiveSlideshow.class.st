@@ -9,13 +9,13 @@ EDDLiveSlideshow >> buildingOnExamples: aSlide [
 	<gtSlide>
 	<text: '# Building on Examples
 
-Here we see a partial implementation of a Film Collection created from an exported csv of an IMDB collection. The csv file is an example, as is the JSON data we obtain by parsing the CSV, and the FilmCollection example that wraps the JSON data.
+What can we do with an example?
 
-Each example is a test case with some assertions, but it also returns the object under test. If we explore the collection, we see that there are more interesting fields that might be nice to see in the Films view.
+Here we see a partial implementation of a Film Collection object created from an exported CSV of an IMDB collection. The CSV file is an example, as is the JSON data we obtain by parsing the CSV, and the FilmCollection example that wraps the JSON data. Each example is a test case with some assertions, but it also returns the object under test. 
 
-We verify that we can send `directors` to a film instance, and we update the Films view to show the Directors as well.
+If we explore the collection, we see that there are more interesting fields that might be nice to see in the Films view. We verify that we can send `directors` to a film instance, and we update the Films view to show the Directors as well.
 
-We can also create a new example by extracting the Films of Akira Kurosawa, using that to build a new FilmCollection, and extracting it as an example.
+(Optional) We can also create a new example by extracting the Films of Akira Kurosawa, using that to build a new FilmCollection, and extracting it as an example.
 '>
 	<demo: '- Browse the `collection` method.
 - Show how it is composed.
@@ -105,18 +105,15 @@ EDDLiveSlideshow >> ludoCaseStudyPage: aSlide [
 	<gtSlide>
 	<text: '# Examples as Documentation
 
-Here we see the Glamorous Toolkit (or GT) Book, a knowledge base for GT, a moldable development environment.
+Here we see a part of our environment, the Glamorous Toolkit book, a knowledge base of notebook pages with live examples. This page explains the Ludo Game, a programming exercise of a well-known game for children in which tokens move around a board on the roll of a die.
 
-This page documents the Ludo game case study using embedded examples. If we scroll down, we see different kinds of moves of the game examplified, including an “impossible move.”
+Here is an example of an impossible move in the game, where the token cannot move because the roll of the die would move it past the end of the board. We can explore the live example, navigate to the game, and from there to the players, the squares, and even the history of moves.
 
-We can dive into this example, and explore various views of the move, and even replay the game up to this point to understand how we got here.
+What are we seeing? In each case this is just an object inspector, augmented with custom views to show interesting aspects of the domain objects.
 
-If we explore the source code of the example, we see it belongs to a class of example methods. This move is just the last move of another example that shows all 5 kinds of moves. The method looks just like a unit test case, with the only difference being that we return the fixture as a result that we can inspect.
+The source code of this example is here. It''s just returning a move from this game object, which is produced by this test method. Here we see the setup, we perform some actions, and some assertions, and finally — and this is the important part — we return the object under test, which is the example.
 
-We can also reuse the results to build new examples. Here is a map of all the examples in this class showing how they are composed.
-
-If we break one of the examples, then the dependent tests won''t be run.
-'>
+Note that the setup is created by another test, and so on. In fact, we have a tree of tests, shown in this example maps. Note only can we compose tests, but if a test fails, then its dependent tests will not be run.'>
 	<demo: '
 - Scroll down to Impossible move
 - Inspect the example
@@ -227,11 +224,10 @@ EDDLiveSlideshow >> title: aSlide [
 	<gtSlide>
 	<text: '# Example-Driven Development -- bridging tests and documentation
 
-Hello. My name is Oscar Nierstrasz.
+Hello. My name is Oscar Nierstrasz, and I work for feenk.
 
-Today I''d like to show you how turning tests cases into factories for examples can enable opportunities for embedding live examples into documentation.
-
-Furthermore, examples can form the basis of a development process driven by the creation of examples.'>
+We modernize legacy systems by opening their domain models and making them explainable by extending domain objects with large numbers of custom tools. One of the development techniques we use is called Example-Driven Development, which I''ll explain to you now.
+'>
 	^ aSlide titleWithFooters
 		setPriority;
 		titleWithFormat: (self asTitle: 'Example-driven development:');
