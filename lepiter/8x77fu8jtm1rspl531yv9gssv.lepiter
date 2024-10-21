@@ -150,6 +150,40 @@
 				"code" : "EDDLiveSlideshow new "
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-20T18:44:28.504697-07:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-20T18:44:28.888863-07:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "S+bDh1ThDQCi5QAYBmq8Tg=="
+				},
+				"code" : "GtLudoRecordingGameExamples allMethods do: #clearExampleAndTestCaches."
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
