@@ -342,6 +342,23 @@ MoldableExceptionsOnwardSlideshow >> moreExamplesPage: aSlide [
 ]
 
 { #category : #slides }
+MoldableExceptionsOnwardSlideshow >> pervasiveTools: aSlide [
+	<gtSlide>
+	<text: '... Custom tools are pervasive
+
+This visualization shows a treemap of packages and classes in the current image.
+
+Blue classes have at least one custom view and green ones have at least one example. This shows that custom tools were  heavily used to build the moldable development environment itself.
+
+Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
+	<demo: '- Click on the top-left class (BlElement)'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Custom tools are pervasive.';
+		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
+]
+
+{ #category : #slides }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -380,7 +397,8 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 		summary:
 
 		"placeholder:"
-		#moreExamplesPage:
+		pervasiveTools:
+		moreExamplesPage:
 		metricsPage:
 	)
 ]
