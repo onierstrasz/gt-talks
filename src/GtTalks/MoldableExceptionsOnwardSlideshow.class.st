@@ -428,10 +428,11 @@ In fact, the view we use is a pre-existing inspector view, so there is essential
 	^ aSlide headingAndCode
 		setPriority;
 		heading: 'Specifying debugger views';
-		addCodeSnippet: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
-	roll: 6;
-	moveTokenNamed: ''B'';
-	yourself.'
+		addCodeSnippet: 'GtLudoRecordingGameExamples new
+	bEntersAndPlaysWithAahead
+		roll: 6;
+		moveTokenNamed: ''B'';
+		yourself.'
 ]
 
 { #category : #slides }
