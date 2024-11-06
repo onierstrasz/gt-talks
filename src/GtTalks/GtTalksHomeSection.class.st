@@ -34,8 +34,7 @@ GtTalksHomeSection >> eddCard [
 
 { #category : #accessing }
 GtTalksHomeSection >> eddLiveSlideshowCard [
-	<gtSectionCard>
-
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'EDD Live Slideshow';
@@ -63,9 +62,23 @@ GtTalksHomeSection >> huaweiCard [
 ]
 
 { #category : #accessing }
-GtTalksHomeSection >> moldableExceptionsSlideshowCard [
+GtTalksHomeSection >> moldableDevelopmentInPracticeYowSlideshowCard [
 	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'MD in Practice (Yow!)';
+		description: 'Moldable Development in Practice (Yow!)';
+		priority: 20;
+		slideshowClassSymbol: #MDInPracticeYow2024
+			baseLineName: 'GtTalks'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalks;
+		yourself
+]
 
+{ #category : #accessing }
+GtTalksHomeSection >> moldableExceptionsSlideshowCard [
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Moldable Exceptions Slideshow';

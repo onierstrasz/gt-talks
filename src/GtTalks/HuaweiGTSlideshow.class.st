@@ -335,7 +335,7 @@ HuaweiGTSlideshow >> slidePriorities [
 	^ #( 
 		title:
 		
-		#explainableSystems:
+		explainableSystems:
 			runningSystem:
 			sourceEditor:
 			moreOpaqueness:
