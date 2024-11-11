@@ -170,14 +170,9 @@ MDInPracticeYow2024 >> slidePriorities [
 			explainableLudo:
 		
 		githubFeenkOrgJSon:
+			githubFeenkOrgWrapped:
 		
-		"GH REST API
-		Example: JSON
-		
-		
-		"
-		
-		
+		"COBOL"
 		
 		
 		placeholder:

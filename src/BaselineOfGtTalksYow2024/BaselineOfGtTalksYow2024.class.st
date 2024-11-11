@@ -6,7 +6,8 @@ Class {
 
 { #category : #loading }
 BaselineOfGtTalksYow2024 class >> loadDependencies [
-	"self loadGt4Cobol"
+	"Not currently used -- the dependency is directly in the baseline."
+	self loadGt4Cobol
 ]
 
 { #category : #loading }
