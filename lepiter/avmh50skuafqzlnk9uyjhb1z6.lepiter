@@ -265,6 +265,151 @@
 				"string" : ""
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:28:53.328972+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:29:25.017639+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tBnEfgbjDQC3uE6xB2kvkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This requires additional packages to be loaded (gt4cobol), so is in a separate package with its own baseline."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:29:28.315676+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:30:10.356173+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
+				},
+				"code" : "Metacello new\r\tbaseline: 'GtTalksYow204';\r\trepository: 'github://onierstrasz/gt-talks:main/src';\r\tload"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:28:50.930725+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:28:50.930725+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LYGffgbjDQC3lKQLB2kvkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Z+ifgbjDQC3mF2kB2kvkg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -365,7 +510,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:12:28.693337+01:00"
+									"dateAndTimeString" : "2024-11-11T15:34:05.129334+01:00"
 								}
 							},
 							"uid" : {
@@ -375,7 +520,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We can look at a couple of case studies and the patterns they use."
+							"string" : "We can look at a couple of case studies and the patterns they use.\nIntro\nThe problem with opaque systems closed Ludo\nMoldable Development — open Ludo\nExample: GitHub REST API\nExample: Cobol CardDemo\nPattern: Custom View\nPattern: Moldable Tool\nPattern: Example Object\nPatterns Overview\nCoda ..."
 						}
 					]
 				},
