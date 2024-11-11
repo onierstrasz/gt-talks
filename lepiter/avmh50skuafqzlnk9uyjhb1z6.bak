@@ -326,14 +326,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-11T16:29:51.433502+01:00"
+						"dateAndTimeString" : "2024-11-11T16:30:10.356173+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
 				},
-				"code" : "Metacello new\r\t\t\t\tbaseline: 'GtTalks';\r\t\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\t\tload.\r\t\t\t#BaselineOfGtTalks asClass loadLepiter."
+				"code" : "Metacello new\r\tbaseline: 'GtTalksYow204';\r\trepository: 'github://onierstrasz/gt-talks:main/src';\r\tload"
 			},
 			{
 				"__type" : "textSnippet",

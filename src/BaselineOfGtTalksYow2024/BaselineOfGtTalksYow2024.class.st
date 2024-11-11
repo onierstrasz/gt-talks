@@ -6,7 +6,7 @@ Class {
 
 { #category : #loading }
 BaselineOfGtTalksYow2024 class >> loadDependencies [
-	self loadGt4Cobol
+	"self loadGt4Cobol"
 ]
 
 { #category : #loading }
@@ -21,5 +21,11 @@ BaselineOfGtTalksYow2024 class >> loadGt4Cobol [
 { #category : #baselines }
 BaselineOfGtTalksYow2024 >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: 'GtTalksYow2024' ]
+	spec
+		for: #common
+		do: [ spec
+				baseline: 'GToolkit4Cobol'
+				with: [ spec repository: 'github://feenkcom/gt4cobol:main/src' ].
+
+			spec package: 'GtTalksYow2024' ]
 ]
