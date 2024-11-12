@@ -6,17 +6,8 @@ Class {
 
 { #category : #loading }
 BaselineOfGtTalksYow2024 class >> loadDependencies [
-	"Not currently used -- the dependency is directly in the baseline."
-	self loadGt4Cobol
-]
-
-{ #category : #loading }
-BaselineOfGtTalksYow2024 class >> loadGt4Cobol [
-	Metacello new
-		repository: 'github://feenkcom/gt4cobol:main/src';
-		baseline: 'GToolkit4Cobol';
-		load.
-	#BaselineOfGToolkit4Cobol asClass loadLepiter
+	BaselineOfGtTalks loadLepiter.
+	AWSCardDemo initializeDownload
 ]
 
 { #category : #baselines }
@@ -27,6 +18,8 @@ BaselineOfGtTalksYow2024 >> baseline: spec [
 		do: [ spec
 				baseline: 'GToolkit4Cobol'
 				with: [ spec repository: 'github://feenkcom/gt4cobol:main/src' ].
-
+			spec
+				baseline: 'GtTalks'
+				with: [ spec repository: 'github://onierstrasz/gt-talks:main/src' ].
 			spec package: 'GtTalksYow2024' ]
 ]
