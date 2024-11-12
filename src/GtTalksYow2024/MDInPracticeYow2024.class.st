@@ -1,8 +1,40 @@
 Class {
 	#name : #MDInPracticeYow2024,
 	#superclass : #PrioritySlideshow,
+	#instVars : [
+		'cardDemoModel'
+	],
 	#category : #'GtTalksYow2024-Slideshows'
 }
+
+{ #category : #slides }
+MDInPracticeYow2024 >> cardDemo: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'AWS CardDemo';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: self cardDemoModel))
+				maximized ]
+]
+
+{ #category : #accessing }
+MDInPracticeYow2024 >> cardDemoModel [
+	cardDemoModel
+		ifNil: [ AWSCardDemo
+				model: (GtCobolImporter new
+						copyBookDirectories: {AWSCardDemo rootDirectory / 'app/cpy'.
+								AWSCardDemo rootDirectory / 'app/cpy-bms'};
+						importDirectory: AWSCardDemo rootDirectory;
+						model).
+			cardDemoModel := AWSCardDemo model ].
+	^ cardDemoModel
+]
 
 { #category : #slides }
 MDInPracticeYow2024 >> explainableLudo: aSlide [
@@ -172,6 +204,8 @@ MDInPracticeYow2024 >> slidePriorities [
 		githubFeenkOrgJSon:
 			githubFeenkOrgWrapped:
 		
+		
+		cardDemo:
 		"COBOL"
 		
 		

@@ -564,40 +564,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:20.854254+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:26.265679+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "s7HUTwfjDQCEQM1+BIPDvQ=="
-							},
-							"code" : "AWSCardDemo\r\tmodel: (GtCobolImporter new\r\t\t\tcopyBookDirectories: AWSCardDemo copyBookDirectories;\r\t\t\timportDirectory: AWSCardDemo rootDirectory;\r\t\t\tmodel).\rAWSCardDemo model"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-11-11T17:27:27.525004+01:00"
 								}
 							},
