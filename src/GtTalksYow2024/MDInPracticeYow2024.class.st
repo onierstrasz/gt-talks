@@ -159,6 +159,22 @@ Googling or using online resources typically yields many false positives, as do 
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> patternMap: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A Map of Moldable Development Patterns';
+		element: [ (GtPager
+				createWrappedOn: LePageMondrianMapExamples new patternMapWithCategories
+						pageMapWithExplicitPositions) maximized ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> placeholder: aSlide [
 	<gtSlide>
 	<text:
@@ -208,6 +224,7 @@ MDInPracticeYow2024 >> slidePriorities [
 		cardDemo:
 		"COBOL"
 		
+		patternMap:
 		
 		placeholder:
 	)
