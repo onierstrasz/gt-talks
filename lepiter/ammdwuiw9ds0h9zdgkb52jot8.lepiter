@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:40.841158+01:00"
+						"dateAndTimeString" : "2024-11-15T11:46:43.939284+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,91 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:48.502421+01:00"
+						"dateAndTimeString" : "2024-11-15T11:46:43.942664+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kwiu9FLjDQCcRYzlBbSGsw=="
+					"uidString" : "iaQt/FLjDQCeVxKHBbSGsw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Include material from [[Exploring Lecene defect data]]."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:48.736022+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:47:04.200979+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "nDee+lLjDQCdEbg3BbSGsw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Perhaps recycle some material from the [[VAMOS 2024]] talk."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:38.039438+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:48:07.052394+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "5gD7+VLjDQCcdMHVBbSGsw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Rename this when the talk takes shape."
+				"string" : "The VAMOS slides are in the [feenk-stories](https://github.com/feenkcom/feenk-stories) repo."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -129,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:42:13.330234+01:00"
+						"dateAndTimeString" : "2024-11-15T11:45:40.658637+01:00"
 					}
 				},
 				"editEmail" : {
@@ -140,14 +66,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:47:25.374035+01:00"
+						"dateAndTimeString" : "2024-11-15T11:45:40.658637+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SXLu9FLjDQCcSHz9BbSGsw=="
+					"uidString" : "zAVKAVPjDQCXiCD2BbSGsw=="
 				},
-				"code" : "Monash2024 new"
+				"code" : "Smalltalk globals\r\tat: #FkEmbracingVariabilitySlideshow\r\tifAbsent: [ Metacello new\r\t\t\trepository: 'github://feenkcom/feenk-stories:main/src';\r\t\t\tbaseline: 'FeenkStories';\r\t\t\tload.\r\t\t#BaselineOfFeenkStories asClass loadLepiter.\r\t\tMetacello new\r\t\t\trepository: 'github://feenkcom/feenk-stories:main/src';\r\t\t\tbaseline: 'FeenkEmbracingVariabilityVAMOS2024';\r\t\t\tload ]."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-15T11:44:50.99275+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-15T11:45:55.228301+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Oi9U/lLjDQCeZkl0BbSGsw=="
+				},
+				"code" : "GtPresenterSlideShow openInSpace: #FkEmbracingVariabilitySlideshow asClass."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-15T11:45:55.778026+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-15T11:46:00.672758+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "h7wwAlPjDQCXrDPWBbSGsw=="
+				},
+				"code" : "#FkEmbracingVariabilitySlideshow asClass new."
 			}
 		]
 	},
@@ -159,7 +153,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-11-15T11:25:39.357146+01:00"
+			"dateAndTimeString" : "2024-11-15T11:44:14.88046+01:00"
 		}
 	},
 	"editEmail" : {
@@ -170,15 +164,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-11-15T11:25:39.357146+01:00"
+			"dateAndTimeString" : "2024-11-15T11:44:14.88046+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Monash talk"
+		"title" : "VAMOS 2024"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "8f0c9eb8-52e3-0d00-9ba9-b1eb08055981"
+		"uuid" : "5c2a2dfc-52e3-0d00-9e56-cdc005b486b3"
 	}
 }

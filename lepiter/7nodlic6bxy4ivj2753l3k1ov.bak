@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:48:07.052394+01:00"
+						"dateAndTimeString" : "2024-11-15T11:43:38.039438+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Rename this when the talk takes shape."
+				"string" : ""
 			},
 			{
 				"__type" : "pharoSnippet",
