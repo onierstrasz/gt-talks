@@ -23,5 +23,9 @@ BaselineOfGtTalks class >> loadLepiter [
 { #category : #accessing }
 BaselineOfGtTalks >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: 'GtTalks' ]
+	spec
+		for: #common
+		do: [ spec
+				package: 'GtTalksMonash';
+				package: 'GtTalks' ]
 ]
