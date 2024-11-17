@@ -43,6 +43,17 @@ LargeDefectPredictionBenchmarkExample >> lucene230Dataset [
 ]
 
 { #category : #example }
+LargeDefectPredictionBenchmarkExample >> luceneDatasets [
+	<gtExample>
+	| lucene |
+	lucene := (LargeDefectPredictionBenchmarkExample new repoFolder
+			/ 'JIRA-defect-dataset' allChildrenMatching: 'lucene*.csv')
+			collect: [ :f | DefectDataset forFile: f ].
+	self assert: lucene size equals: 4.
+	^ lucene
+]
+
+{ #category : #example }
 LargeDefectPredictionBenchmarkExample >> repoFolder [
 	<gtExample>
 	| repoFolder repo repository |

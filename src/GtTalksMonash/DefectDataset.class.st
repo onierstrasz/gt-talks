@@ -5,9 +5,7 @@ https://github.com/awsm-research/Large-Defect-Prediction-Benchmark
 "
 Class {
 	#name : #DefectDataset,
-	#superclass : #Object,
-	#traits : 'TDefectDatafileGroup',
-	#classTraits : 'TDefectDatafileGroup classTrait',
+	#superclass : #DefectDatafileGroup,
 	#instVars : [
 		'rawData',
 		'file'
