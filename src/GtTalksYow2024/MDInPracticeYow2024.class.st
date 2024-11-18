@@ -37,6 +37,29 @@ MDInPracticeYow2024 >> cardDemoModel [
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> coda: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+
+These patterns are supported by GT, but are not specific to it.
+By making your development tools moldable, you can support a form of moldable development for your own platform.
+
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Coda');
+		paragraphWithFormat: (self
+				asText: 
+'Paragraph body.
+Possibly over multiple lines.
+')
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> explainableLudo: aSlide [
 	<gtSlide>
 	<text:
@@ -159,6 +182,69 @@ Googling or using online resources typically yields many false positives, as do 
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> patternComposedNarrative: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+# Placeholder
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Pattern: Composed Narrative');
+		paragraphWithFormat: (self asText: '
+Problem: ') italic
+				, (self
+						asText: 'How can you explain an issue with a software system in an intuitive way that is easy for a reader to follow?
+
+')
+				, (self asText: 'Solution:  ') italic
+				, (self
+						asText: 'Create a narrative composed of views of various objects or tools, where each view leads to the next by performing a particular action or step.')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> patternCustomView: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Pattern: Custom View');
+		paragraphWithFormat: (self
+				asText: '
+Problem: ') italic, (self
+				asText: 'How do you make it easy to find interesting information that you discover while exploring a live domain model?
+
+') , (self
+				asText: 'Solution:  ') italic, (self
+				asText: 'Turn interesting data into a custom view.')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> patternExampleObject: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+# Placeholder
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Pattern: Example Object');
+		paragraphWithFormat: (self asText: '
+Problem: ') italic
+				, (self
+						asText: 'How do you create an object in a particular state to start a moldable development task?
+
+')
+				, (self asText: 'Solution:  ') italic
+				, (self
+						asText: 'Wrap examples as (instance) methods that optionally evaluate some tests (assertions), and return the example instance.')
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> patternMap: aSlide [
 	<gtSlide>
 	<text:
@@ -172,6 +258,27 @@ MDInPracticeYow2024 >> patternMap: aSlide [
 		element: [ (GtPager
 				createWrappedOn: LePageMondrianMapExamples new patternMapWithCategories
 						pageMapWithExplicitPositions) maximized ]
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> patternMoldableTool: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+# Placeholder
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Pattern: Moldable Tool');
+		paragraphWithFormat: (self asText: '
+Problem: ') italic
+				, (self
+						asText: 'How can you extend the development environment with custom tools that address questions about your application domain?
+
+')
+				, (self asText: 'Solution:  ') italic
+				, (self
+						asText: 'Make the development tools moldable to the dynamic context of the artifacts they work with, by associating custom behavior to those artifacts.')
 ]
 
 { #category : #slides }
@@ -220,13 +327,25 @@ MDInPracticeYow2024 >> slidePriorities [
 		githubFeenkOrgJSon:
 			githubFeenkOrgWrapped:
 		
-		
 		cardDemo:
-		"COBOL"
+		
+		patternCustomView:
+		
+		patternMoldableTool:
+		
+		patternComposedNarrative:
 		
 		patternMap:
 		
+		coda:
+		
+		summarySlide:
+		
 		placeholder:
+		
+		"EXTRA SLIDES"
+		
+		patternExampleObject:
 	)
 	
 	"We can look at a couple of case studies and the patterns they use.
@@ -243,6 +362,21 @@ Coda ..."
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> summarySlide: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+'>
+	| slideSelectors |
+	slideSelectors := #(explainableSystems: patternMap:).
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A summary slide';
+		element: [ self summaryElementFor: slideSelectors ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> title: aSlide [
 	<gtSlide>
 	<text:
@@ -251,6 +385,10 @@ MDInPracticeYow2024 >> title: aSlide [
 # Moldable Development in Practice — Patterns for Legacy Modernization
 
 Hello. My name is Oscar Nierstrasz.
+
+
+
+
 
 '>
 

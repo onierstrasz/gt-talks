@@ -357,7 +357,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+						"dateAndTimeString" : "2024-11-18T10:02:29.966226+01:00"
 					}
 				},
 				"uid" : {
@@ -367,7 +367,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "See also:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-18T10:02:31.4377+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-18T10:02:31.875487+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eyLo6Y3jDQCtJuw5AbGjDg=="
+				},
+				"code" : "MoldableDevelopmentPatternsSlideshow new"
 			},
 			{
 				"__type" : "textSnippet",
