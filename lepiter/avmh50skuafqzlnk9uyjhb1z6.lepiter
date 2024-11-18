@@ -280,78 +280,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T13:26:49.926846+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T13:30:08.757281+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "NdWRxJDjDQCKKH9KBA+kLA=="
-							},
-							"code" : "MDInPracticeYow2024 new preload"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T13:26:40.950558+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T13:26:48.094291+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "OdsIxJDjDQCJz2hXBA+kLA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Preload examples:"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-11-11T16:29:28.315676+01:00"
 								}
 							},
@@ -363,14 +291,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:00:20.881753+01:00"
+									"dateAndTimeString" : "2024-11-18T20:22:39.87604+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
 							},
-							"code" : "Metacello new\r\trepository: 'github://onierstrasz/gt-talks:main/src';\r\tbaseline: 'GtTalksYow2024';\r\tload"
+							"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksYow2024\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksYow2024';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksYow2024 asClass loadDependencies ].\r#MDInPracticeYow2024 asClass new"
 						}
 					]
 				},
