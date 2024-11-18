@@ -23,6 +23,25 @@ MDInPracticeYow2024 >> cardDemo: aSlide [
 				maximized ]
 ]
 
+{ #category : #slides }
+MDInPracticeYow2024 >> cardDemoExample: aSlide [
+	<gtSlide>
+	<text:
+'# Example: Exploring the COBOL CardDemo
+
+The AWS CardDemo is an open source COBOL mainframe application that is available for exploring and testing various kinds of legacy modernization technologies.
+
+[blog url](https://aws.amazon.com/blogs/opensource/introducing-open-source-aws-carddemo-for-mainframe-modernization/)'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Exploring the COBOL CardDemo');
+		paragraphWithFormat: (self
+				asText: 
+'
+The AWS CardDemo is an open source COBOL application for testing legacy mainframe modernization technology.')
+]
+
 { #category : #accessing }
 MDInPracticeYow2024 >> cardDemoModel [
 	cardDemoModel
@@ -42,7 +61,7 @@ MDInPracticeYow2024 >> coda: aSlide [
 	<text:
 'TODO
 
-# Placeholder
+# Coda
 
 These patterns are supported by GT, but are not specific to it.
 By making your development tools moldable, you can support a form of moldable development for your own platform.
@@ -92,12 +111,14 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 { #category : #slides }
 MDInPracticeYow2024 >> explainableSystems: aSlide [
 	<gtSlide>
-	<text: '# 1. Explainable Systems
+	<text: 
+'# Explainable Systems
 
 The opposite of an explainable system is an *opaque* one, which makes it hard for you to answer questions about how it works.'>
+
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: '1. What are Explainable Systems?');
+		subtitleWithFormat: (self asSubtitle: 'What are Explainable Systems?');
 		paragraphWithFormat: (self
 				asText: '
 
@@ -111,14 +132,34 @@ so that you can have a conversation with them.')
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> githubExample: aSlide [
+	<gtSlide>
+	<text:
+'# Example: Exploring the GitHub REST API
+
+The GitHub REST API provides information about organizations, user and repositories in the form of JSON data.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Exploring the GitHub REST API');
+		paragraphWithFormat: (self
+				asText: 
+'
+The GitHub REST API serves information in the form of JSON data.
+')
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> githubFeenkOrgJSon: aSlide [
 	<gtSlide>
-	<text: '***TODO***
+	<text:
+'## Raw JSON data of the feenk GitHub organization
 
+Here we see the raw JSON data of the feenk organization. It exposes a number of domain concepts, but not in a way that is easy to navigate or understand.
 '>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'JSON data of the feenk GitHub organization';
+		newFadedText: 'Raw JSON data of the feenk GitHub organization';
 		element: [ (GtPager
 				createWrappedOn: (PatternScripterExamples new prettyJsonGitHubDictionary
 						gtJSONFor: GtPhlowProtoView new)) maximized ]
@@ -127,12 +168,21 @@ MDInPracticeYow2024 >> githubFeenkOrgJSon: aSlide [
 { #category : #slides }
 MDInPracticeYow2024 >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
-	<text: '***TODO***
+	<text:
+'***TODO***
 
+## The feenk GitHub organization JSON as a wrapped, moldable  object
+
+If we *wrap* the raw JSON data as an object, we can then “mold” this object to provide a useful interface for exploring it, and navigating to other, interesting entities.
+
+TODO: More details ....
 '>
+<demo:
+'TODO'
+>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'feenk GitHub organization as a wrapped, moldable  object';
+		newFadedText: 'The feenk GitHub organization JSON as a wrapped, moldable  object';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: PatternScripterExamples new wrappedGitHubOrganization))
 				maximized ]
@@ -162,14 +212,12 @@ MDInPracticeYow2024 >> moreOpaqueness: aSlide [
 	<text:
 '## Opaqueness
 
-Other ways of understanding opaque systems are also commonly ineffective.
+Other means of understanding opaque systems are also commonly ineffective.
 
-Documentation is typically incomplete, out of date, and inconsistent with the current implementation.
-
-Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
+Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Ineffective ways to understand opaque systems');
+		subtitleWithFormat: (self asSubtitle: 'Ineffective means to understand opaque systems');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -186,7 +234,9 @@ MDInPracticeYow2024 >> patternComposedNarrative: aSlide [
 	<gtSlide>
 	<text: 'TODO
 
-# Placeholder
+# Pattern: Composed Narrative
+
+
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -208,7 +258,8 @@ MDInPracticeYow2024 >> patternCustomView: aSlide [
 	<text:
 'TODO
 
-# Placeholder
+# Pattern: Custom View
+
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -250,7 +301,8 @@ MDInPracticeYow2024 >> patternMap: aSlide [
 	<text:
 'TODO
 
-# Placeholder
+# A Map of Moldable Development Patterns
+
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -265,7 +317,10 @@ MDInPracticeYow2024 >> patternMoldableTool: aSlide [
 	<gtSlide>
 	<text: 'TODO
 
-# Placeholder
+# Pattern: Moldable Tool
+
+
+
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -302,10 +357,13 @@ Possibly over multiple lines.
 { #category : #slides }
 MDInPracticeYow2024 >> runningSystem: aSlide [
 	<gtSlide>
-	<text: '## Running systems are typically opaque
+	<text:
+'## Running systems are typically opaque
 
 A running system just shows its UI. You can interact with this, but you can''t gain any insight into the inner workings of the game or its logic.'>
-	<demo: '- Click on the die repeatedly, and make moves when possible.'>
+	<demo:
+'- Click on the die repeatedly, and make moves when possible.'>
+
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'You can interact with a running system, but you can''t ask it questions.';
@@ -324,10 +382,12 @@ MDInPracticeYow2024 >> slidePriorities [
 			moldableDevelopment:
 			explainableLudo:
 		
-		githubFeenkOrgJSon:
+		githubExample:
+			githubFeenkOrgJSon:
 			githubFeenkOrgWrapped:
 		
-		cardDemo:
+		cardDemoExample:
+			cardDemo:
 		
 		patternCustomView:
 		
@@ -338,8 +398,7 @@ MDInPracticeYow2024 >> slidePriorities [
 		patternMap:
 		
 		coda:
-		
-		summarySlide:
+			summarySlide:
 		
 		placeholder:
 		
@@ -367,6 +426,7 @@ MDInPracticeYow2024 >> summarySlide: aSlide [
 	<text:
 'TODO
 
+## Summary
 '>
 	| slideSelectors |
 	slideSelectors := #(explainableSystems: patternMap:).
@@ -380,17 +440,13 @@ MDInPracticeYow2024 >> summarySlide: aSlide [
 MDInPracticeYow2024 >> title: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
-
-# Moldable Development in Practice — Patterns for Legacy Modernization
+'# Moldable Development in Practice — Patterns for Legacy Modernization
 
 Hello. My name is Oscar Nierstrasz.
 
+As developers, we spend much of our time trying to understand the software systems we are working with, instead of actually writing productive code.
 
-
-
-
-'>
+Today I''d like to talk to you about Moldable Development, an approach that opens up our legacy software to expose the internal domain models and makes them explainable. First I''ll  show you a couple of examples to illustrate moldable development, and then I''ll present a few of the patterns we have found that capture best practice in moldable development.'>
 
 	^ aSlide titleWithFooters
 		setPriority;
