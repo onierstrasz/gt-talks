@@ -514,7 +514,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T09:56:29.01626+01:00"
+						"dateAndTimeString" : "2024-11-18T09:59:29.331947+01:00"
 					}
 				},
 				"uid" : {
@@ -524,7 +524,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Moldable Development Patterns -- Smalltalks 2023]]"
+				"string" : "[[Moldable Development Patterns —  Smalltalks 2023]]"
 			},
 			{
 				"__type" : "textSnippet",

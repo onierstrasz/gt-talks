@@ -109,6 +109,62 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> composedGameExample: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A composed example  method';
+		element: [ GtPager
+				createWrappedOn: (GtPharoMethodCoder forMethod: GtLudoGameExamples >> #playerArolls6)
+						asExpandedOnlyElement vFitContentLimited ]
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> customViewTypes: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Some Custom Views
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Some Custom Views');
+		paragraphWithFormat: (self
+				asText: 
+'
+- List
+- Columned list
+- Columned tree
+- Forward (to existing view)
+- Mondrian (graph with layout)
+- Explicit (hand-crafted GUI)
+...
+')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> emptyGameExample: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A basic example  method';
+		element: [ GtPager
+				createWrappedOn: (GtPharoMethodCoder forMethod: GtLudoGameExamples >> #emptyGame)
+						asExpandedOnlyElement vFitContentLimited ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> explainableLudo: aSlide [
 	<gtSlide>
 	<text:
@@ -159,6 +215,48 @@ how they work.
 
 '), (self asText: 'Explainable systems') italic, (self asText: ' expose their inner workings
 so that you can have a conversation with them.')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> ghReposForView: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# A columned list view
+
+'>
+		^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A columned list view';
+		element: [ PatternScripterExamples new wrappedGitHubOrganizationReposSourceView ]
+]
+
+{ #category : #page }
+MDInPracticeYow2024 >> githubDemoPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'GitHub REST API demo')
+	addSnippet: (LeTextSnippet new
+			string: 'First we explore the URL string.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'url := ''https://api.github.com/orgs/feenkcom''.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We learn how to extract the JSON dictionary and wrap it as an object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We find some interesting views and  lift them to the wrapped object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We continue to explore, e.g., the list of repositories, and wrap those, also giving them views.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
 ]
 
 { #category : #slides }
@@ -219,6 +317,73 @@ TODO: More details ....
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> githubOrgDemoPage: aSlide [
+	<gtSlide>
+	<text:
+'## GitHub REST API demo
+
+We demo how  to apply moldable development in exploring the GitHub REST API.
+
+'>
+<demo:
+'- Inspect the URL
+- View the contents
+- See how to get the contents, and add a snippet to extract this
+- See how to get the JSON data, and add a snippet
+- Wrap the dictionary as an Org object
+- Inspect the Org instance and navigate to the JSON view of the data
+- Lift the view to the org
+- Inspect the repos_url
+- Extract the array of JSONs
+- Wrap them as Repo objects and cache them in a repos slot
+- Give them a printString so they display nicely
+- Add JSON views to the Repo objects and continue
+'>
+		^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'GitHub REST API demo')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> moldableCoder: aSlide [
+	<gtSlide>
+
+<text:
+'***TODO***
+
+## The moldable code editor
+
+'>
+
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'The moldable code editor';
+		element: [ (GtCoderElement forClass: GtLudoRecordingGameExamples) createInPager maximized ]
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> moldableDebugger: aSlide [
+	<gtSlide>
+
+<text:
+'***TODO***
+
+## The moldable debugger
+
+'>
+<demo:
+'- Show the comparison view
+- Inspect the Exception and see this is just an inspector view
+'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Custom debugger views';
+		addCodeSnippet: 'self 
+	assert: Yow expectedString
+	equals: Yow computedString'
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text:
@@ -261,7 +426,7 @@ Reading source code does not scale to large systems. Documentation is typically 
 
 { #category : #slides }
 MDInPracticeYow2024 >> patternComposedNarrative: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text: 'TODO
 
 # Pattern: Composed Narrative
@@ -368,7 +533,7 @@ Problem: ') italic
 
 { #category : #slides }
 MDInPracticeYow2024 >> placeholder: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text:
 'TODO
 
@@ -419,30 +584,35 @@ MDInPracticeYow2024 >> slidePriorities [
 			moldableDevelopment:
 			explainableLudo:
 		
-		githubExample:
-			githubFeenkOrgJSon:
-			githubFeenkOrgWrapped:
-		
 		cardDemoExample:
 			cardDemoFiles:
 			cardDemo:
+			
+		githubExample:
+			githubFeenkOrgJSon:
+			githubOrgDemoPage:
+			githubFeenkOrgWrapped:
 		
 		patternCustomView:
+			ghReposForView:
+			customViewTypes:
 		
 		patternMoldableTool:
+			moldableCoder:
+			moldableDebugger:
 		
-		patternComposedNarrative:
-		
+		patternExampleObject:
+			emptyGameExample:
+			composedGameExample:
+			whyExamples:
+
 		patternMap:
 		
 		coda:
 			summarySlide:
 		
-		placeholder:
+		"placeholder:"
 		
-		"EXTRA SLIDES"
-		
-		patternExampleObject:
 	)
 	
 	"We can look at a couple of case studies and the patterns they use.
@@ -493,4 +663,26 @@ Today I''d like to talk to you about Moldable Development, an approach that open
 		titleWithFormat: (self asTitle: 'Moldable Development in Practice');
 		subtitleWithFormat: (self asSubtitle: 'Patterns for Legacy Modernization');
 		newFooterWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> whyExamples: aSlide [
+	<gtSlide>
+	<text: 
+'***TODO***
+
+
+## Why examples?
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Why examples?');
+		paragraphWithFormat: (self
+				asText: '
+
+• Examples can be composed.
+• Examples are a form of live documentation.
+• Examples are a starting point for further development.
+')
 ]
