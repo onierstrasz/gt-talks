@@ -395,6 +395,11 @@ Now we can nicely navigate from the organization to each repository.
 		startPage: (self db pageNamed: 'GitHub REST API demo')
 ]
 
+{ #category : #initalization }
+MDInPracticeYow2024 >> initialize [
+	self preload
+]
+
 { #category : #slides }
 MDInPracticeYow2024 >> intermezzo: aSlide [
 	<gtSlide>
