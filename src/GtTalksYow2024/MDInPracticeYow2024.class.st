@@ -1,11 +1,24 @@
 Class {
 	#name : #MDInPracticeYow2024,
 	#superclass : #PrioritySlideshow,
-	#instVars : [
+	#classInstVars : [
 		'cardDemoModel'
 	],
 	#category : #'GtTalksYow2024-Slideshows'
 }
+
+{ #category : #accessing }
+MDInPracticeYow2024 class >> cardDemoModel [
+	cardDemoModel
+		ifNil: [ AWSCardDemo
+				model: (GtCobolImporter new
+						copyBookDirectories: {AWSCardDemo rootDirectory / 'app/cpy'.
+								AWSCardDemo rootDirectory / 'app/cpy-bms'};
+						importDirectory: AWSCardDemo rootDirectory;
+						model).
+			cardDemoModel := AWSCardDemo model ].
+	^ cardDemoModel
+]
 
 { #category : #slides }
 MDInPracticeYow2024 >> cardDemo: aSlide [
@@ -13,7 +26,10 @@ MDInPracticeYow2024 >> cardDemo: aSlide [
 	<text:
 'TODO
 
-# Placeholder
+# The wrapped CardDemo
+
+From a bitmap we can navigate to its source code, and to the dependency map of programs and screens. We can also navigate from source to other source code.
+
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -42,17 +58,31 @@ The AWS CardDemo is an open source COBOL mainframe application that is available
 The AWS CardDemo is an open source COBOL application for testing legacy mainframe modernization technology.')
 ]
 
+{ #category : #slides }
+MDInPracticeYow2024 >> cardDemoFiles: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+
+## The raw CardDemo files
+
+
+We can see the source files and screens, but how are they related?
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'The raw CardDemo files';
+		element: [ (GtPager
+				createWrappedOn: (self cardDemoModel gtRootFolderFor: GtPhlowProtoView new))
+				maximized ]
+]
+
 { #category : #accessing }
 MDInPracticeYow2024 >> cardDemoModel [
-	cardDemoModel
-		ifNil: [ AWSCardDemo
-				model: (GtCobolImporter new
-						copyBookDirectories: {AWSCardDemo rootDirectory / 'app/cpy'.
-								AWSCardDemo rootDirectory / 'app/cpy-bms'};
-						importDirectory: AWSCardDemo rootDirectory;
-						model).
-			cardDemoModel := AWSCardDemo model ].
-	^ cardDemoModel
+	"Cache it once on the class side"
+
+	^ self class cardDemoModel
 ]
 
 { #category : #slides }
@@ -354,6 +384,13 @@ Possibly over multiple lines.
 ')
 ]
 
+{ #category : #initalization }
+MDInPracticeYow2024 >> preload [
+	"Preload and cache these examples."
+	^ {PatternScripterExamples new feenkGitHubOrgData.
+		self cardDemoModel}
+]
+
 { #category : #slides }
 MDInPracticeYow2024 >> runningSystem: aSlide [
 	<gtSlide>
@@ -387,6 +424,7 @@ MDInPracticeYow2024 >> slidePriorities [
 			githubFeenkOrgWrapped:
 		
 		cardDemoExample:
+			cardDemoFiles:
 			cardDemo:
 		
 		patternCustomView:
