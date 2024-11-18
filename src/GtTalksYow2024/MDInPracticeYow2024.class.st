@@ -24,13 +24,19 @@ MDInPracticeYow2024 class >> cardDemoModel [
 MDInPracticeYow2024 >> cardDemo: aSlide [
 	<gtSlide>
 	<text:
-'TODO
-
-# The wrapped CardDemo
+'## The wrapped CardDemo
 
 From a bitmap we can navigate to its source code, and to the dependency map of programs and screens. We can also navigate from source to other source code.
 
 '>
+<demo:
+'- Inspect `All BMS Maps`
+- Click on the first screen (just to the left of the screen itself)
+- Go to the `Programs & screen view to see the screen hierarchy
+- Go to the first program
+- Inspect the variables
+- See the Overlapping view '>
+
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'AWS CardDemo';
@@ -51,24 +57,23 @@ The AWS CardDemo is an open source COBOL mainframe application that is available
 
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Exploring the COBOL CardDemo');
+		subtitleWithFormat: (self asSubtitle: 'The AWS CardDemo');
 		paragraphWithFormat: (self
 				asText: 
 '
-The AWS CardDemo is an open source COBOL application for testing legacy mainframe modernization technology.')
+is an open source COBOL application for testing legacy mainframe modernization technology.')
 ]
 
 { #category : #slides }
 MDInPracticeYow2024 >> cardDemoFiles: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
-
-## The raw CardDemo files
+'## The raw CardDemo files
 
 
-We can see the source files and screens, but how are they related?
-
+We can see the source files and screens, but how are they related?'>
+<demo:
+'- Browse the `app/cbl` and `diagrams` folders
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -125,13 +130,27 @@ MDInPracticeYow2024 >> composedGameExample: aSlide [
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> customLudoView: aSlide [
+	<gtSlide>
+	<text: '***TODO***
+
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A custom view';
+		element: [ PatternScripterExamples new customViewCustomMovesViewScript ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> customViewTypes: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## Some Custom Views
 
-# Some Custom Views
-'>
+Here are a few of the different kinds of custom views that GT supports.
+
+Most of these are simple, though the explicit view allows you to create arbitrary GUI components as views, such as the Ludo game and move views, and the GitHub collaborator cards view.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Some Custom Views');
@@ -141,6 +160,7 @@ MDInPracticeYow2024 >> customViewTypes: aSlide [
 - List
 - Columned list
 - Columned tree
+- Text editor
 - Forward (to existing view)
 - Mondrian (graph with layout)
 - Explicit (hand-crafted GUI)
@@ -221,11 +241,16 @@ so that you can have a conversation with them.')
 MDInPracticeYow2024 >> ghReposForView: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## A columned list view
 
-# A columned list view
+The Glamorous Toolkit supports several kinds of custom views out of the box. One of these, which we already saw several times, is a columned list: a list with several, labeled columns.
 
-'>
+Specifying such a view is quite straightforward. You define a method of the domain object with a `<gtView>` annotation, and ask the `aView` factory object for a `columnedList`. You then specify a `title` for the view, in this case `Repositories`, a “priority”, which determines the order in which the views appear, the items of the list, and the titles and text of each of the columns.
+
+That''s it. Many of the other standard views are similarly simple to specify.
+
+Note that in this case views are specified in SMalltalk, but the specifications are similar in Python,  or other languages.'>
+
 		^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A columned list view';
@@ -269,11 +294,11 @@ The GitHub REST API provides information about organizations, user and repositor
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Exploring the GitHub REST API');
+		subtitleWithFormat: (self asSubtitle: 'The GitHub REST API');
 		paragraphWithFormat: (self
 				asText: 
 '
-The GitHub REST API serves information in the form of JSON data.
+serves information in the form of JSON data.
 ')
 ]
 
@@ -297,16 +322,14 @@ Here we see the raw JSON data of the feenk organization. It exposes a number of 
 MDInPracticeYow2024 >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
+'***TODO: add some custom actions and searches***
 
 ## The feenk GitHub organization JSON as a wrapped, moldable  object
 
-If we *wrap* the raw JSON data as an object, we can then “mold” this object to provide a useful interface for exploring it, and navigating to other, interesting entities.
-
-TODO: More details ....
+After a few iterations we enrich the GitHub organization model with several more entities and views, according to whatever interests us.
 '>
 <demo:
-'TODO'
+'Browse the model ...'
 >
 	^ aSlide labelAndElement
 		setPriority;
@@ -324,6 +347,19 @@ MDInPracticeYow2024 >> githubOrgDemoPage: aSlide [
 
 We demo how  to apply moldable development in exploring the GitHub REST API.
 
+First we explore the URL string to see how we can retrieve the contents. We extract the JSON string, find out haw to parse it, and retrieve a dictionary of values.
+
+Now to explore further we turn this into a domain object representing a GitHub Organization. If we explore the basic raw view we can find the underlying data. We lift the dictionary view to make it available to our domain object as a view.
+
+One interesting piece of data is the `repos_url`. We see it returns an array of JSONs, one for each repository. We extract this as a method.
+
+We wrap each of the repo JSON dictionaries as a Repo object. We fix the default printString to show the name of the repo.
+
+We generate a JSON dictionary view directly from the raw data of the repo.
+
+We generate a repos view from the list of repos that now shows the proper repo names.
+
+Now we can nicely navigate from the organization to each repository.
 '>
 <demo:
 '- Inspect the URL
@@ -342,6 +378,31 @@ We demo how  to apply moldable development in exploring the GitHub REST API.
 		^ aSlide lepiterPage
 		setPriority;
 		startPage: (self db pageNamed: 'GitHub REST API demo')
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> intermezzo: aSlide [
+	<gtSlide>
+	<text:
+'# Intermezzo -- So what?
+
+What have we seen?
+
+We''ve seen a few different examples of software systems, as executable code, source code, and web APIs that have been transformed into explorable domain models.
+
+In each case we have decorated these models with tiny, custom tools that show us various things of interest.
+
+How does this work?
+
+The idea of moldable development is to make it very easy to add such custom tools by opening up the development tools themselves to lightweight extensions. This can be done in a systematic way, which we can describe a set of patterns. Now let''s look at a few of these patterns in a bit more detail.'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'So what? ...');
+		paragraphWithFormat: (self
+				asText: 
+'
+')
 ]
 
 { #category : #slides }
@@ -412,13 +473,13 @@ Other means of understanding opaque systems are also commonly ineffective.
 Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Ineffective means to understand opaque systems');
+		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software:');
 		paragraphWithFormat: (self
 				asText: 
 '
-• Source code
-• Documentation
-• Online resources
+• Browsing source code
+• Reading documentation
+• Consulting online resources
 • Generic analysis tools
 • Generative AI
 ')
@@ -451,11 +512,13 @@ Problem: ') italic
 MDInPracticeYow2024 >> patternCustomView: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Pattern: Custom View
 
-# Pattern: Custom View
+When you explore a software system and find interesting stuff, how can you ensure that you will be able to easily that stuff again?
 
-'>
+The core idea of this pattern is to take the steps you perform to find and display the interesting data and turn them into a custom view of the object inspector of a suitable domain object.
+
+This is exactly what we saw in the Ludo game, in the Cobol CardDemo, and in the GitHub REST API examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Pattern: Custom View');
@@ -474,7 +537,9 @@ MDInPracticeYow2024 >> patternExampleObject: aSlide [
 	<gtSlide>
 	<text: 'TODO
 
-# Placeholder
+# Pattern: Example Object
+
+
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -557,6 +622,19 @@ MDInPracticeYow2024 >> preload [
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> rawLudoView: aSlide [
+	<gtSlide>
+	<text: '***TODO***
+
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A raw  view';
+		element: [ PatternScripterExamples new customViewRawViewScript ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> runningSystem: aSlide [
 	<gtSlide>
 	<text:
@@ -593,11 +671,15 @@ MDInPracticeYow2024 >> slidePriorities [
 			githubOrgDemoPage:
 			githubFeenkOrgWrapped:
 		
+		intermezzo:
+		
 		patternCustomView:
 			ghReposForView:
 			customViewTypes:
 		
 		patternMoldableTool:
+			rawLudoView:
+			customLudoView:
 			moldableCoder:
 			moldableDebugger:
 		
