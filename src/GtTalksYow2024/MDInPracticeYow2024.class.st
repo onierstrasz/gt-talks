@@ -93,27 +93,25 @@ MDInPracticeYow2024 >> cardDemoModel [
 { #category : #slides }
 MDInPracticeYow2024 >> coda: aSlide [
 	<gtSlide>
-	<text:
-'# Coda
+	<text: '# Coda
 
 These patterns are supported by GT, but are not specific to it. By making your development tools moldable, you can support a form of moldable development for your own platform.'>
-
-	^ aSlide paragraph
+	^ aSlide textAndElement
+		elementWeight: 0.4;
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Coda');
-		paragraphWithFormat: (self
-				asText: 
-'
+		newTextWithFormat: (self asSubtitle: 'Coda')
+				, (self
+						asText: '
 
-Moldable development is a '), (self
-				asText: 'generally applicable development methodology') italic, (self
-				asText: ' which seeks to make software systems '), (self
-				asText: 'explainable') italic, (self
-				asText: ' by making domain objects visible, and extending them with custom analysis tools.
+Moldable development is a ')
+				, (self asText: 'generally applicable development methodology') italic
+				, (self asText: ' which seeks to make software systems ')
+				, (self asText: 'explainable') italic
+				, (self
+						asText: ' by making domain objects visible, and extending them with custom analysis tools.
 
-'), (self
-				asText: 'See:') italic, (self
-				asText: ' gtoolkit.com') glamorousCodeFont
+');
+		element: [ self qrCodeElement ]
 ]
 
 { #category : #slides }
@@ -341,9 +339,7 @@ Here we see the raw JSON data of the feenk organization. It exposes a number of 
 MDInPracticeYow2024 >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
 	<text:
-'***TODO: add some custom actions and searches***
-
-## The feenk GitHub organization JSON as a wrapped, moldable  object
+'## The feenk GitHub organization JSON as a wrapped, moldable  object
 
 After a few iterations we enrich the GitHub organization model with several more entities and views, according to whatever interests us.
 '>
@@ -644,6 +640,25 @@ MDInPracticeYow2024 >> preload [
 	"Preload and cache these examples."
 	^ {PatternScripterExamples new feenkGitHubOrgData.
 		self cardDemoModel}
+]
+
+{ #category : #example }
+MDInPracticeYow2024 >> qrCodeElement [
+	<gtExample>
+	| qrCode url container |
+	qrCode := GtFileUtility
+			imageElementFromFileReference: FileLocator gtResource 
+			/ 'onierstrasz/gt-talks/data/images/yow2024-qr-code.png'.
+	url := BlTextElement new
+			text: 'oscar.nierstrasz.org/yow2024' 
+				asRopedText glamorousCodeFont.
+	url constraints linear horizontal alignCenter.
+	url constraints linear vertical alignTop.
+	container := BlElement new layout: BlLinearLayout vertical.
+	container constraints horizontal exact: 300.
+	container constraints vertical exact: 300.
+	container addChildren: {qrCode. url}.
+	^ container
 ]
 
 { #category : #slides }

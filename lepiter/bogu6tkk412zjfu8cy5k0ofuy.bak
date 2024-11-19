@@ -42,6 +42,114 @@
 				"string" : "How to script click on play and inspect?"
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:15:49.257868+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:16:00.517622+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GaS5YKHjDQCu5fg7A9q1HA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This is broken:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:16:03.175027+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:16:03.436481+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "NQGOYaHjDQCvOiP/A9q1HA=="
+				},
+				"code" : "method := GtLudoGameExamples >> #playerArolls6.\nscripter := BlScripter new.\nscripter\n\telement: (GtPharoMethodCoder forMethod: method) asExpandedOnlyElement vFitContentLimited.\n\nscripter click\n\tlabel: 'Go to the play and inspect button';\n\tid: GtMethodCoderPlayAndInspectExampleActionId;\n\tplay.\n\nscripter elementWithoutParent"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:16:05.707391+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T09:16:12.363979+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SqS0YaHjDQCvROQfA9q1HA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The problem is that we need a pager:"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -66,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T19:50:20.200286+01:00"
+						"dateAndTimeString" : "2024-11-19T09:16:31.851266+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bYdV95XjDQCsyrNXD5JIxQ=="
 				},
-				"code" : "method := GtLudoGameExamples >> #playerArolls6.\rscripter := BlScripter new.\rscripter\r\telement: (GtPharoMethodCoder forMethod: method) asExpandedOnlyElement \"vFitContentLimited\".\r\rscripter click\r\tlabel: 'Go to the play and inspect button';\r\tid: GtMethodCoderPlayAndInspectExampleActionId;\r\tplay.\r\rscripter \"elementWithoutParent\""
+				"code" : "method := GtLudoGameExamples >> #playerArolls6.\rscripter := BlScripter new.\rscripter\r\telement: (GtPager createWrappedOn: (GtCoder forMethod: method)).\rscripter click\r\tlabel: 'Click the play and inspect button';\r\tid: GtMethodCoderPlayAndInspectExampleActionId;\r\tplay.\rscripter \"elementWithoutParent\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -137,7 +245,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T19:48:50.376023+01:00"
+						"dateAndTimeString" : "2024-11-19T09:15:45.761352+01:00"
 					}
 				},
 				"uid" : {
@@ -147,7 +255,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "JK suggested this instead."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -163,7 +271,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T19:48:08.246791+01:00"
+						"dateAndTimeString" : "2024-11-19T09:14:06.79763+01:00"
 					}
 				},
 				"editEmail" : {
@@ -174,14 +282,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T19:49:15.603327+01:00"
+						"dateAndTimeString" : "2024-11-19T09:16:25.26924+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "qkw5GJbjDQCurx7/D5JIxQ=="
+					"uidString" : "xTmeWqHjDQCuWBTqA9q1HA=="
 				},
-				"code" : "method := GtLudoGameExamples >> #playerArolls6.\rscripter := BlScripter new.\rscripter\r\telement: (GtPharoMethodCoder forMethod: method) asExpandedOnlyElement \"vFitContentLimited\".\r\rscripter click\r\treferenceSender;\r\tlabel: 'Go to the play and inspect button';\r\t// GtMethodCoderPlayAndInspectExampleActionId;\r\tplay.\r\rscripter elementWithoutParent"
+				"code" : "method := GtLudoGameExamples >> #playerArolls6.\rscripter := BlScripter new.\rscripter element: (GtPager createWrappedOn: (GtCoder forMethod: method)).\rscripter methodCoder\r\tclickOnPlayAndInspectExampleButton;\r\tplay.\rscripter\t\"elementWithoutParent\""
 			}
 		]
 	},

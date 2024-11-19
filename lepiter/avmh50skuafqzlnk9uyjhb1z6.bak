@@ -228,10 +228,122 @@
 				"string" : "# About"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T08:12:25.900111+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T08:12:48.37643+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lQIHfqDjDQCLvJ99A9q1HA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Add some actions and searches to the GhOrganization example"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T08:28:10.204068+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T08:28:23.041073+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "n/BPtqDjDQCQjevWA9q1HA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Move examples etc to the slideshow itself (to be checked)"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T08:12:49.35432+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T09:05:36.902048+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "z+Rsf6DjDQCM9IIAA9q1HA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Create a Resource page on my website; add QR code to last slide (need to fix alignment)"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -241,7 +353,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:57.857637+01:00"
+						"dateAndTimeString" : "2024-11-19T08:12:22.873671+01:00"
 					}
 				},
 				"editEmail" : {
@@ -252,14 +364,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:04:27.454612+01:00"
+						"dateAndTimeString" : "2024-11-19T08:12:25.426034+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mddE45/iDQCDUDltCArAtw=="
+					"uidString" : "hdPYfaDjDQCLlTk2A9q1HA=="
 				},
-				"code" : "MDInPracticeYow2024 new"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# To do"
 			},
 			{
 				"__type" : "textSnippet",
@@ -280,7 +395,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T16:29:28.315676+01:00"
+									"dateAndTimeString" : "2024-11-06T14:03:57.857637+01:00"
 								}
 							},
 							"editEmail" : {
@@ -291,58 +406,55 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:00:20.881753+01:00"
+									"dateAndTimeString" : "2024-11-06T14:04:27.454612+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
+								"uidString" : "mddE45/iDQCDUDltCArAtw=="
 							},
-							"code" : "Metacello new\r\trepository: 'github://onierstrasz/gt-talks:main/src';\r\tbaseline: 'GtTalksYow2024';\r\tload"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-11T16:28:53.328972+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T13:33:25.514796+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "tBnEfgbjDQC3uE6xB2kvkg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "NB: This slideshow requires additional packages to be loaded (gt4cobol), so is in a separate package with its own baseline."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
+							"code" : "MDInPracticeYow2024 new"
+						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-11T16:29:28.315676+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-18T20:22:39.87604+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
+										},
+										"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksYow2024\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksYow2024';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksYow2024 asClass loadDependencies ].\r#MDInPracticeYow2024 asClass new"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -352,7 +464,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T10:02:31.4377+01:00"
+									"dateAndTimeString" : "2024-11-11T16:28:53.328972+01:00"
 								}
 							},
 							"editEmail" : {
@@ -363,14 +475,89 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T10:02:31.875487+01:00"
+									"dateAndTimeString" : "2024-11-18T13:33:25.514796+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "eyLo6Y3jDQCtJuw5AbGjDg=="
+								"uidString" : "tBnEfgbjDQC3uE6xB2kvkg=="
 							},
-							"code" : "MoldableDevelopmentPatternsSlideshow new"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "NB: This slideshow requires additional packages to be loaded (gt4cobol), so is in a separate package with its own baseline."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-18T10:02:31.4377+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-18T10:02:31.875487+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "eyLo6Y3jDQCtJuw5AbGjDg=="
+										},
+										"code" : "MoldableDevelopmentPatternsSlideshow new"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-18T10:02:29.966226+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "8Z+ifgbjDQC3mF2kB2kvkg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "See also:"
 						}
 					]
 				},
@@ -382,7 +569,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+						"dateAndTimeString" : "2024-11-19T08:11:59.661682+01:00"
 					}
 				},
 				"editEmail" : {
@@ -393,17 +580,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-18T10:02:29.966226+01:00"
+						"dateAndTimeString" : "2024-11-19T08:12:03.966375+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8Z+ifgbjDQC3mF2kB2kvkg=="
+					"uidString" : "+KN2fKDjDQCLVxSkA9q1HA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "See also:"
+				"string" : "#Loading"
 			},
 			{
 				"__type" : "textSnippet",
