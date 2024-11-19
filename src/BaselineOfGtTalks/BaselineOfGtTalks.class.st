@@ -26,6 +26,6 @@ BaselineOfGtTalks >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
-				package: 'GtTalksMonash';
+				"package: 'GtTalksMonash';"
 				package: 'GtTalks' ]
 ]
