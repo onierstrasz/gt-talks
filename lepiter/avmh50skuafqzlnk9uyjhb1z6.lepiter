@@ -317,6 +317,40 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:57:31.375216+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:57:55.452379+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oTQEo6PjDQCNNpk5BQMYOg=="
+							},
+							"code" : "feenk := GhOrganizationExamples new feenkcomOrganization."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-11-19T11:14:23.347184+01:00"
 								}
 							},

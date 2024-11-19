@@ -168,6 +168,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T13:59:11.883565+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T13:59:30.970556+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "dB4pVqXjDQCaH8szAMHh3A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "***NB:*** Will probably need a separate package and baseline to load the demos."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-11-19T11:10:56.12957+01:00"
 								}
 							},
@@ -216,7 +253,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:11:14.747643+01:00"
+									"dateAndTimeString" : "2024-11-19T11:11:22.320075+01:00"
 								}
 							},
 							"uid" : {
@@ -226,7 +263,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "gt4openai"
+							"string" : "gt4openai — chatGPT tutors"
 						}
 					]
 				},

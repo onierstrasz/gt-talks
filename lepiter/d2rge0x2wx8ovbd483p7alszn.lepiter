@@ -8,7 +8,42 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:02:30.453362+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:03:12.752284+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/gz/YaXjDQCYKt8WAMHh3A=="
+							},
+							"code" : "Smalltalk globals\r\tat: #BaselineOfGt4AtProto\r\tifAbsent: [ Metacello new\r\t\t\trepository: 'github://feenkcom/gt4atproto:main/src';\r\t\t\tbaseline: 'Gt4AtProto';\r\t\t\tload.\r\t\t#BaselineOfGt4AtProto asClass loadLepiter ]"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -18,7 +53,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:00:22.269046+01:00"
+						"dateAndTimeString" : "2024-11-19T14:02:28.370582+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +64,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-14T11:38:57.043969+01:00"
+						"dateAndTimeString" : "2024-11-19T14:22:35.163637+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "nEBr1p/iDQC/4RqBCArAtw=="
+					"uidString" : "rEXfYaXjDQCYIGbvAMHh3A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To be presented at [Yow! Melbourne 2024](https://yowcon.com/melbourne-2024) as well as Brisbane and Sydney."
+				"string" : "# Load the repo"
 			},
 			{
 				"__type" : "textSnippet",
@@ -60,7 +95,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:03:09.454332+01:00"
+									"dateAndTimeString" : "2024-11-19T14:02:28.562231+01:00"
 								}
 							},
 							"editEmail" : {
@@ -71,17 +106,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:03:10.261081+01:00"
+									"dateAndTimeString" : "2024-11-19T14:08:52.415897+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "9kdi4J/iDQCDOsFSCArAtw=="
+								"uidString" : "PTLiYaXjDQCYJSDlAMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[Yow! talk page](https://yowcon.com/melbourne-2024/speakers/3759/oscar-nierstrasz)"
+							"string" : "Copied from my private db ..."
 						},
 						{
 							"__type" : "textSnippet",
@@ -97,7 +132,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:01:59.65732+01:00"
+									"dateAndTimeString" : "2024-11-19T14:08:52.751021+01:00"
 								}
 							},
 							"editEmail" : {
@@ -108,17 +143,51 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:02:23.720579+01:00"
+									"dateAndTimeString" : "2024-11-19T14:09:11.832747+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "QEE53J/iDQCBntVxCArAtw=="
+								"uidString" : "A3XIeKXjDQCbJwaVAMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Time: 45 m = 40 m talk + 5 m Q&A"
+							"string" : "Get the login credentials from the `.secrets` folder."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:07:48.796991+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:07:49.398312+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "b5b4dKXjDQCaElgxAMHh3A=="
+							},
+							"code" : "blueskySecrets := STON fromString: (FileLocator home / '.secrets/bluesky.txt') contents.\rusername := blueskySecrets at: 'username'.\rhandle := blueskySecrets at: 'handle'.\rpassword := blueskySecrets at: 'password'."
 						},
 						{
 							"__type" : "textSnippet",
@@ -134,7 +203,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:02:26.040392+01:00"
+									"dateAndTimeString" : "2024-11-19T14:09:17.940407+01:00"
 								}
 							},
 							"editEmail" : {
@@ -145,17 +214,51 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:02:45.53327+01:00"
+									"dateAndTimeString" : "2024-11-19T14:09:51.386674+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "INPL3Z/iDQCCddpvCArAtw=="
+								"uidString" : "LNBIeqXjDQCcOqINAMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "**Title:** Moldable Development in Practice — Patterns for Legacy Modernization"
+							"string" : "Create a client."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:08:18.831006+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:50:44.456744+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZOHCdqXjDQCarezmAMHh3A=="
+							},
+							"code" : "pdsUrl := 'https://bsky.social'.\rgeneratedClient := GtApGeneratedClient onServer: pdsUrl.\rgeneratedClient loginUser: handle withPass: password.\rgeneratedClient"
 						},
 						{
 							"__type" : "textSnippet",
@@ -171,7 +274,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:02:34.512168+01:00"
+									"dateAndTimeString" : "2024-11-19T14:09:19.714003+01:00"
 								}
 							},
 							"editEmail" : {
@@ -182,17 +285,122 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:02:49.988264+01:00"
+									"dateAndTimeString" : "2024-11-19T14:24:02.934975+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "+BdN3p/iDQCCotApCArAtw=="
+								"uidString" : "kOBjeqXjDQCcPyWnAMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "**Abstract:** As Developers, we often struggle to understand the important details of the (legacy) software systems we continuously develop.  Moldable Development is an approach to open up software systems to expose their internal domain models and make them explainable.\nBut how does this work in practice? Through a series of case studies we will illustrate a number of key patterns behind moldable development."
+							"string" : "Get an actor for myself and browse my posts, followers etc. Can also create and submit a new post."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:08:38.248331+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:08:43.098709+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Lirrd6XjDQCauRjxAMHh3A=="
+							},
+							"code" : "(generatedClient appBskyActorGetProfileActor: handle) client: generatedClient"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:07:51.587741+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:10:45.19284+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "OS0jdaXjDQCaHMlaAMHh3A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Get an actor for another user."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:10:47.073101+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:10:50.931792+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "idqYf6XjDQCd9iAjAMHh3A=="
+							},
+							"code" : "actor := 'tudorgirba.com'.\r(generatedClient appBskyActorGetProfileActor: actor) client: generatedClient"
 						}
 					]
 				},
@@ -204,7 +412,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:01.455894+01:00"
+						"dateAndTimeString" : "2024-11-19T14:22:41.270204+01:00"
 					}
 				},
 				"editEmail" : {
@@ -215,265 +423,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:09.070817+01:00"
+						"dateAndTimeString" : "2024-11-19T14:23:02.199338+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wmSh2p/iDQCBcfv+CArAtw=="
+					"uidString" : "6qYqqqXjDQCeeme3AMHh3A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# About"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T08:12:25.900111+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T08:12:48.37643+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "lQIHfqDjDQCLvJ99A9q1HA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Add some actions and searches to the GhOrganization example"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:12:33.02954+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:40:06.481429+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "iLYuAqPjDQC7UJXHA6Aptg=="
-							},
-							"code" : "feenk := PatternScripterExamples new wrappedGitHubOrganization."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:57:31.375216+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:57:46.247924+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "oTQEo6PjDQCNNpk5BQMYOg=="
-							},
-							"code" : "feenk := GhOrganizationExamples"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:14:23.347184+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:14:25.348575+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "vwTCCKPjDQC9viWgA6Aptg=="
-							},
-							"code" : "feenk"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:31:31.456653+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:31:46.708784+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "fbwJRqPjDQCK0VP0BQMYOg=="
-							},
-							"code" : "#gtSearch gtPragmas "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T08:12:49.35432+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:12:22.893143+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "z+Rsf6DjDQCM9IIAA9q1HA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Create a Resource page on my website; add QR code to last slide (DONE)"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T08:12:22.873671+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T08:12:25.426034+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "hdPYfaDjDQCLlTk2A9q1HA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# To do"
+				"string" : "# Accessing user data"
 			},
 			{
 				"__type" : "textSnippet",
@@ -494,7 +454,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:03:57.857637+01:00"
+									"dateAndTimeString" : "2024-11-19T14:43:39.106134+01:00"
 								}
 							},
 							"editEmail" : {
@@ -505,55 +465,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:04:27.454612+01:00"
+									"dateAndTimeString" : "2024-11-19T15:11:04.091903+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "mddE45/iDQCDUDltCArAtw=="
+								"uidString" : "ULMj9aXjDQChWZHaAMHh3A=="
 							},
-							"code" : "MDInPracticeYow2024 new"
+							"code" : "client := Bluesky new"
 						},
 						{
-							"__type" : "textSnippet",
+							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-11-11T16:29:28.315676+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-11-18T20:22:39.87604+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "APTZgAbjDQC8Md9lB2kvkg=="
-										},
-										"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksYow2024\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksYow2024';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksYow2024 asClass loadDependencies ].\r#MDInPracticeYow2024 asClass new"
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -563,7 +488,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T16:28:53.328972+01:00"
+									"dateAndTimeString" : "2024-11-19T14:53:30.996236+01:00"
 								}
 							},
 							"editEmail" : {
@@ -574,58 +499,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T13:33:25.514796+01:00"
+									"dateAndTimeString" : "2024-11-19T15:06:42.116018+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "tBnEfgbjDQC3uE6xB2kvkg=="
+								"uidString" : "9TtrGKbjDQCobF48AMHh3A=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "NB: This slideshow requires additional packages to be loaded (gt4cobol), so is in a separate package with its own baseline."
+							"code" : "myActor := client actor"
 						},
 						{
-							"__type" : "textSnippet",
+							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-11-18T10:02:31.4377+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-11-18T10:02:31.875487+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "eyLo6Y3jDQCtJuw5AbGjDg=="
-										},
-										"code" : "MoldableDevelopmentPatternsSlideshow new"
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -635,7 +522,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T16:28:51.135198+01:00"
+									"dateAndTimeString" : "2024-11-19T15:06:28.241733+01:00"
 								}
 							},
 							"editEmail" : {
@@ -646,17 +533,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-18T10:02:29.966226+01:00"
+									"dateAndTimeString" : "2024-11-19T15:07:06.626992+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "8Z+ifgbjDQC3mF2kB2kvkg=="
+								"uidString" : "1A+/RqbjDQCqJvAtAMHh3A=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "See also:"
+							"code" : "tudorActor := client actorFor: 'tudorgirba.com'"
 						}
 					]
 				},
@@ -668,7 +552,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T08:11:59.661682+01:00"
+						"dateAndTimeString" : "2024-11-19T14:53:20.634615+01:00"
 					}
 				},
 				"editEmail" : {
@@ -679,17 +563,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T08:12:03.966375+01:00"
+						"dateAndTimeString" : "2024-11-19T15:07:34.155195+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+KN2fKDjDQCLVxSkA9q1HA=="
+					"uidString" : "AE91FqbjDQCnX7wtAMHh3A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Loading"
+				"string" : "# Wrapping the behavior"
 			},
 			{
 				"__type" : "textSnippet",
@@ -710,7 +594,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-06T14:12:03.661573+01:00"
+									"dateAndTimeString" : "2024-11-19T14:43:36.414597+01:00"
 								}
 							},
 							"editEmail" : {
@@ -721,56 +605,120 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T15:34:05.129334+01:00"
+									"dateAndTimeString" : "2024-11-19T14:43:36.414597+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "4Z85AKDiDQCEKsk9CArAtw=="
+								"uidString" : "O6D69KXjDQChUtqpAMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We can look at a couple of case studies and the patterns they use.\nIntro\nThe problem with opaque systems closed Ludo\nMoldable Development — open Ludo\nExample: GitHub REST API\nExample: Cobol CardDemo\nPattern: Custom View\nPattern: Moldable Tool\nPattern: Example Object\nPatterns Overview\nCoda ..."
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:11:52.460672+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:12:03.416969+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ObeO/5/iDQCD5P/8CArAtw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# Outline ..."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
+							"string" : ""
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T14:43:40.813493+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T15:11:04.062886+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "a8M99aXjDQChXc90AMHh3A=="
+							},
+							"code" : "client := Bluesky new.\rclient client queryOn: 'app.bsky.feed.getTimeline'."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T15:10:35.915498+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T15:10:44.030186+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "UkOCVabjDQCsCIhcAMHh3A=="
+							},
+							"code" : "client client appBskyFeedGetTimelineAlgorithm: nil"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T15:14:44.052328+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T15:15:07.271963+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0odMZKbjDQCwEepIAMHh3A=="
+							},
+							"code" : "client client appBskyFeedGetAuthorFeedActor: client handle"
+						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -785,7 +733,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:26:22.602965+01:00"
+									"dateAndTimeString" : "2024-11-19T15:09:10.273866+01:00"
 								}
 							},
 							"editEmail" : {
@@ -796,20 +744,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:30:30.208906+01:00"
+									"dateAndTimeString" : "2024-11-19T15:09:10.273866+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "SNlbTAfjDQCEFwnWBIPDvQ=="
+								"uidString" : "+XhnUKbjDQCrSr66AMHh3A=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Do we need all of these?"
+							"string" : ""
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -822,7 +770,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:26:25.035499+01:00"
+									"dateAndTimeString" : "2024-11-19T15:09:10.520183+01:00"
 								}
 							},
 							"editEmail" : {
@@ -833,116 +781,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:26:25.46173+01:00"
+									"dateAndTimeString" : "2024-11-19T15:09:10.520183+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "E/WATAfjDQCEHkJ5BIPDvQ=="
+								"uidString" : "mTprUKbjDQCrT2S0AMHh3A=="
 							},
-							"code" : "AWSCardDemo initializeDownload"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
+							"paragraphStyle" : {
+								"__type" : "textStyle"
 							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:26:26.84409+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:13.2651+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "oZCcTAfjDQCEJ86KBIPDvQ=="
-							},
-							"code" : "AWSCardDemo\r\tmodel: (GtCobolImporter new\r\t\tcopyBookDirectories: {\r\t\t\tAWSCardDemo rootDirectory / 'app/cpy'.\r\t\t\tAWSCardDemo rootDirectory / 'app/cpy-bms'};\r\t\timportDirectory: AWSCardDemo rootDirectory;\r\t\t\tmodel).\rAWSCardDemo model"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:13.994549+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:20.123615+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "lQVsTwfjDQCENdUoBIPDvQ=="
-							},
-							"code" : "asts := (AWSCardDemo rootDirectory\r\t\tallChildrenMatching: '*' , CobolParser fileExtension)\r\t\tcollect: [ :each | CobolParser loadSource: each withLibraries: AWSCardDemo copyBookDirectories ].\rAWSCardDemo asts: asts.\rasts"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:27.525004+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-11T17:27:31.320684+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "J3s6UAfjDQCESzGFBIPDvQ=="
-							},
-							"code" : "signOnProgram := AWSCardDemo model entityNamed: #COSGN00C.\rview := GtMondrian new.\rGtCobolProgram paintProgramDependenciesWith: view from: {signOnProgram}.\rview"
+							"string" : ""
 						}
 					]
 				},
@@ -954,7 +803,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:58.938915+01:00"
+						"dateAndTimeString" : "2024-11-19T14:07:52.014685+01:00"
 					}
 				},
 				"editEmail" : {
@@ -965,91 +814,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-11T17:27:39.858928+01:00"
+						"dateAndTimeString" : "2024-11-19T14:43:35.674307+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "s1dV45/iDQCDVcSSCArAtw=="
+					"uidString" : "z7ApdaXjDQCaJj0dAMHh3A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Cobol snippets"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:59.197378+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:59.197378+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mUtZ45/iDQCDWt0OCArAtw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:59.790052+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-06T14:03:59.790052+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "q1li45/iDQCDX0BLCArAtw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"string" : "# Lexicons"
 			}
 		]
 	},
@@ -1061,7 +836,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-11-06T14:00:22.210864+01:00"
+			"dateAndTimeString" : "2024-11-19T14:00:28.199108+01:00"
 		}
 	},
 	"editEmail" : {
@@ -1072,15 +847,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-11-06T14:00:22.210864+01:00"
+			"dateAndTimeString" : "2024-11-19T14:00:28.199108+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Moldable Development in Practice — Yow! (2024)"
+		"title" : "Exploring the gt4atproto demo"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "c25b6ad6-9fe2-0d00-bfe0-6b2f080ac0b7"
+		"uuid" : "039cb55a-a5e3-0d00-9d27-a21600c1e1dc"
 	}
 }
