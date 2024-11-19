@@ -710,14 +710,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T15:14:48.075803+01:00"
+									"dateAndTimeString" : "2024-11-19T15:15:07.271963+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "0odMZKbjDQCwEepIAMHh3A=="
 							},
-							"code" : "client client appBskyFeedGetTimelineAlgorithm: nil"
+							"code" : "client client appBskyFeedGetAuthorFeedActor: client handle"
 						},
 						{
 							"__type" : "textSnippet",

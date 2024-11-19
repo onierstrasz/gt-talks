@@ -465,14 +465,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T15:11:04.091903+01:00"
+									"dateAndTimeString" : "2024-11-19T15:18:28.975325+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ULMj9aXjDQChWZHaAMHh3A=="
 							},
-							"code" : "client := Bluesky new"
+							"code" : "client := BlueskyDemo new"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -642,14 +642,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T15:11:04.062886+01:00"
+									"dateAndTimeString" : "2024-11-19T15:18:28.951065+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "a8M99aXjDQChXc90AMHh3A=="
 							},
-							"code" : "client := Bluesky new.\rclient client queryOn: 'app.bsky.feed.getTimeline'."
+							"code" : "client := BlueskyDemo new.\rclient client queryOn: 'app.bsky.feed.getTimeline'."
 						},
 						{
 							"__type" : "pharoSnippet",
