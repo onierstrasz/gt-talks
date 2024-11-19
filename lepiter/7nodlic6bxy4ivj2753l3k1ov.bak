@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:48.502421+01:00"
+						"dateAndTimeString" : "2024-11-19T14:02:11.331453+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Include material from [[Exploring Lecene defect data]]."
+				"string" : "Include material from [[Exploring Lucene defect data]]."
 			},
 			{
 				"__type" : "textSnippet",
@@ -148,6 +148,40 @@
 					"uidString" : "SXLu9FLjDQCcSHz9BbSGsw=="
 				},
 				"code" : "Monash2024 new"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T16:59:13.252475+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-19T16:59:39.565189+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Ju/42afjDQCMw2ZpCtunig=="
+				},
+				"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksMonash\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksYow2024';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksMonash asClass loadDependencies ].\r#Monash2024 asClass new"
 			},
 			{
 				"__type" : "textSnippet",
