@@ -153,7 +153,82 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:10:56.12957+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:11:06.40829+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TiRo/KLjDQCxQ6c3A6Aptg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "gt4at — BlueSky"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:11:10.642253+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:11:22.320075+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oU4V/aLjDQC0UM5FA6Aptg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "gt4openai — chatGPT tutors"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -174,7 +249,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T17:20:42.280784+01:00"
+						"dateAndTimeString" : "2024-11-19T11:10:55.376592+01:00"
 					}
 				},
 				"uid" : {
@@ -184,13 +259,87 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "# Demos to work out"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:07:30.74279+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:07:34.952274+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TC8q8KLjDQCtylYFA6Aptg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "See the mindmap"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:10:36.451198+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-19T11:10:36.944114+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "D987+6LjDQCuO+a+A6Aptg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Monash 2024\n\tTitle?\n\t\tGT: A Moldable Research Platform\n\t\tMoldable Development as a Research Methodology\n\t\tMolding Explainable Systems as a Research Methodology\n\tWhat is MD?\n\t\tExplainable systems\n\tMD for research\n\t\tSoftware Analysis\n\t\tExploring data\n\t\t\tGitHub REST API\n\t\t\tEGAD\n\t\tChatGPT\n\t\t\tNormal chat\n\t\t\t\tWhat can we do?\n\t\tgt4atprotocol\n\t\t\tBlueSky\n\t\t\t\tWhat to demo?\n\tResearch lifecycle\n\t\tPose questions\n\t\tExplore data\n\t\tBuild domain model\n\t\tAdd custom tools\n\tTools\n\t\tMoldable IDE tools\n\t\tLanguage Workbenches\n\t\tVisualization tools\n\t\t\tBloc\n\t\t\tMondrian\n\t\t\tScripter etc\n"
+						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
