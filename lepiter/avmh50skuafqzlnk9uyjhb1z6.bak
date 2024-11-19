@@ -328,14 +328,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:57:46.247924+01:00"
+									"dateAndTimeString" : "2024-11-19T11:57:55.452379+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "oTQEo6PjDQCNNpk5BQMYOg=="
 							},
-							"code" : "feenk := GhOrganizationExamples"
+							"code" : "feenk := GhOrganizationExamples new feenkcomOrganization."
 						},
 						{
 							"__type" : "pharoSnippet",
