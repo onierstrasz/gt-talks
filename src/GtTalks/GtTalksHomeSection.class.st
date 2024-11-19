@@ -4,7 +4,7 @@ Class {
 	#category : #'GtTalks-Sections'
 }
 
-{ #category : #accessing }
+{ #category : #pageCard }
 GtTalksHomeSection >> batBernCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -13,12 +13,34 @@ GtTalksHomeSection >> batBernCard [
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'GT Talks';
 		pageName: 'BATbern50 talk (2023)';
-		priority: 50;
+		setPriority;
 		assertInvariant;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #priorities }
+GtTalksHomeSection >> cardPriorities [
+	<gtExample>
+	^ #(
+		tocCard
+		
+		yowCard
+		yowSlideshowCard
+		
+		monashCard
+		monashSlideshowCard
+
+		eddLiveSlideshowCard
+		moldableExceptionsSlideshowCard
+		
+		eddCard
+		huaweiCard
+		batBernCard
+		vissoftCard
+				)
+]
+
+{ #category : #pageCard }
 GtTalksHomeSection >> eddCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -27,19 +49,19 @@ GtTalksHomeSection >> eddCard [
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'GT Talks';
 		pageName: 'EDD talk Zurich (2024)';
-		priority: 20;
+		setPriority;
 		assertInvariant;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #slideshowCard }
 GtTalksHomeSection >> eddLiveSlideshowCard [
 	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'EDD Live Slideshow';
 		description: 'EDD Live (2024) presentation';
-		priority: 30;
+		setPriority;
 		slideshowClassSymbol: #EDDLiveSlideshow
 			baseLineName: 'GtTalks'
 			repo: 'github://onierstrasz/gt-talks:main/src'
@@ -47,7 +69,7 @@ GtTalksHomeSection >> eddLiveSlideshowCard [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #pageCard }
 GtTalksHomeSection >> huaweiCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -56,20 +78,49 @@ GtTalksHomeSection >> huaweiCard [
 		description: 'Huawei Explainable Systems presentation (2024)';
 		databaseName: 'GT Talks';
 		pageName: 'Huawei GT overview';
-		priority: 20;
+		setPriority;
 		assertInvariant;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #slideshowCard }
 GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Moldable Exceptions Slideshow';
 		description: 'Moldable Exceptions Onward! (2024) presentation';
-		priority: 20;
+		setPriority;
 		slideshowClassSymbol: #MoldableExceptionsOnwardSlideshow
+			baseLineName: 'GtTalks'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalks;
+		yourself
+]
+
+{ #category : #pageCard }
+GtTalksHomeSection >> monashCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'Monash talk';
+		description: 'Notebook for Monash presentation';
+		databaseName: 'GT Talks';
+		pageName: 'Monash talk';
+		setPriority;
+		assertInvariant;
+		yourself
+]
+
+{ #category : #slideshowCard }
+GtTalksHomeSection >> monashSlideshowCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'Monash Slideshow';
+		description: 'Yow! (2024) presentation';
+		setPriority;
+		slideshowClassSymbol: #Monash2024
 			baseLineName: 'GtTalks'
 			repo: 'github://onierstrasz/gt-talks:main/src'
 			loadLepiterBaseline: #BaselineOfGtTalks;
@@ -81,7 +132,7 @@ GtTalksHomeSection >> sectionTitle [
 	^ 'Oscar''s GT Talks'
 ]
 
-{ #category : #accessing }
+{ #category : #pageCard }
 GtTalksHomeSection >> tocCard [
 	<gtSectionCard>
 	<gtExample>
@@ -90,12 +141,12 @@ GtTalksHomeSection >> tocCard [
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'GT Talks';
 		pageName: 'Gt Talks TOC';
-		priority: 10;
+		setPriority;
 		assertInvariant;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : #pageCard }
 GtTalksHomeSection >> vissoftCard [
 	"NB: Moved to a separate repo"
 	"<gtSectionCard>"
@@ -105,7 +156,36 @@ GtTalksHomeSection >> vissoftCard [
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'GT Talks';
 		pageName: 'VISSOFT 2022';
-		priority: 51;
+		setPriority;
 		assertInvariant;
+		yourself
+]
+
+{ #category : #pageCard }
+GtTalksHomeSection >> yowCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'Yow MD in Practice';
+		description: 'Notebook for Yow! presentation';
+		databaseName: 'GT Talks';
+		pageName: 'Moldable Development in Practice — Yow! (2024)';
+		setPriority;
+		assertInvariant;
+		yourself
+]
+
+{ #category : #slideshowCard }
+GtTalksHomeSection >> yowSlideshowCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'Yow! Slideshow';
+		description: 'Yow! (2024) presentation';
+		setPriority;
+		slideshowClassSymbol: #MDInPracticeYow2024
+			baseLineName: 'GtTalksYow2024'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalksYow2024;
 		yourself
 ]
