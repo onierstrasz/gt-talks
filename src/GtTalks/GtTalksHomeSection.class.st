@@ -121,9 +121,9 @@ GtTalksHomeSection >> monashSlideshowCard [
 		description: 'Yow! (2024) presentation';
 		setPriority;
 		slideshowClassSymbol: #Monash2024
-			baseLineName: 'GtTalks'
+			baseLineName: 'GtTalksMonash'
 			repo: 'github://onierstrasz/gt-talks:main/src'
-			loadLepiterBaseline: #BaselineOfGtTalks;
+			loadLepiterBaseline: #BaselineOfGtTalksMonash;
 		yourself
 ]
 
