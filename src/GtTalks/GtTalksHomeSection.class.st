@@ -118,7 +118,7 @@ GtTalksHomeSection >> monashSlideshowCard [
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Monash Slideshow';
-		description: 'Yow! (2024) presentation';
+		description: 'Monash presentation';
 		setPriority;
 		slideshowClassSymbol: #Monash2024
 			baseLineName: 'GtTalksMonash'

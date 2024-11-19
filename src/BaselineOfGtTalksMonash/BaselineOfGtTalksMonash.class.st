@@ -7,7 +7,8 @@ Class {
 { #category : #'as yet unclassified' }
 BaselineOfGtTalksMonash class >> loadDependencies [
 	BaselineOfGtTalks loadLepiter.
-	"AWSCardDemo initializeDownload"
+	#BaselineOfGt4AtProto asClass loadLepiter.
+	#BaselineOfGt4Llm asClass loadAllLepiterDatabases
 ]
 
 { #category : #baselines }
