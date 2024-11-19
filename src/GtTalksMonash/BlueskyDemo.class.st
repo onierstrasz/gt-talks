@@ -10,7 +10,7 @@ We assume that login credentials are in the `secretsFile` as a JSON that looks l
 
 "
 Class {
-	#name : #Bluesky,
+	#name : #BlueskyDemo,
 	#superclass : #Object,
 	#instVars : [
 		'client'
@@ -19,27 +19,27 @@ Class {
 }
 
 { #category : #accessing }
-Bluesky class >> actor [
+BlueskyDemo class >> actor [
 ]
 
 { #category : #accessing }
-Bluesky >> actor [
+BlueskyDemo >> actor [
 	^ self actorFor: self handle
 ]
 
 { #category : #accessing }
-Bluesky >> actorFor: aHandle [
+BlueskyDemo >> actorFor: aHandle [
 	^ (self client appBskyActorGetProfileActor: aHandle) client: self client
 ]
 
 { #category : #initialization }
-Bluesky >> blueskySecrets [
+BlueskyDemo >> blueskySecrets [
 	self assert: self secretsFile exists.
 	^ STON fromString: self secretsFile contents
 ]
 
 { #category : #accessing }
-Bluesky >> client [
+BlueskyDemo >> client [
 	client
 		ifNil: [ client := GtApGeneratedClient onServer: self pdsUrl.
 			client loginUser: self handle withPass: self password ].
@@ -47,26 +47,26 @@ Bluesky >> client [
 ]
 
 { #category : #initialization }
-Bluesky >> handle [
+BlueskyDemo >> handle [
 	^ self blueskySecrets at: 'handle'
 ]
 
 { #category : #initialization }
-Bluesky >> password [
+BlueskyDemo >> password [
 	^ self blueskySecrets at: 'password'
 ]
 
 { #category : #constant }
-Bluesky >> pdsUrl [
+BlueskyDemo >> pdsUrl [
 	^ 'https://bsky.social'
 ]
 
 { #category : #constant }
-Bluesky >> secretsFile [
+BlueskyDemo >> secretsFile [
 	^ FileLocator home / '.secrets/bluesky.txt'
 ]
 
 { #category : #accessing }
-Bluesky >> username [
+BlueskyDemo >> username [
 	^ self blueskySecrets at: 'username'
 ]
