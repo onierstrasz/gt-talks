@@ -646,6 +646,27 @@ MDInPracticeYow2024 >> preload [
 MDInPracticeYow2024 >> qrCodeElement [
 	<gtExample>
 	| qrCode url container |
+	qrCode := (GtFileUtility
+			imageElementFromFileReference: FileLocator gtResource / 'onierstrasz/gt-talks/data/images/yow2024-qr-code.png')
+			constraintsDo: [ :c | 
+				c horizontal exact: 400.
+				c vertical exact: 400 ].
+
+	url := BlTextElement new
+			text: 'oscar.nierstrasz.org/yow2024' asRopedText glamorousCodeFont.
+
+	container := BrVerticalPane new
+			fitContent;
+			alignCenter;
+			addChildren: {qrCode.
+					url}.
+	^ container
+]
+
+{ #category : #example }
+MDInPracticeYow2024 >> qrCodeElementOLD [
+	<gtExample>
+	| qrCode url container |
 	qrCode := GtFileUtility
 			imageElementFromFileReference: FileLocator gtResource 
 			/ 'onierstrasz/gt-talks/data/images/yow2024-qr-code.png'.
