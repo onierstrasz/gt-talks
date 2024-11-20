@@ -832,3 +832,10 @@ Finally, examples can be used as starting point for moldable development in the 
 • Examples are a starting point for further development.
 ')
 ]
+
+{ #category : #accessing }
+MDInPracticeYow2024 >> wordsPerMinute [
+	"Override in subclasses, if desired."
+
+	^ 100
+]
