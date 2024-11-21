@@ -398,6 +398,7 @@ Now we can nicely navigate from the organization to each repository.
 { #category : #initalization }
 MDInPracticeYow2024 >> initialize [
 	super initialize.
+	GtGitHubTokenHolder exampleReadAndCacheTokenFromFile.
 	self preload
 ]
 
