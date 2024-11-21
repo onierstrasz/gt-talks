@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T14:01:17.409329+01:00"
+						"dateAndTimeString" : "2024-11-21T15:20:21.122038+01:00"
 					}
 				},
 				"uid" : {
@@ -110,41 +110,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T14:01:20.863575+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T14:01:21.332124+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "IjLZXaXjDQCdRjWkAMHh3A=="
-				},
-				"code" : "GtOpenAIClient apiKeyFile"
+				"string" : "Start a chat using the stored secret:"
 			},
 			{
 				"__type" : "pharoSnippet",

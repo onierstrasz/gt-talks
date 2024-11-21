@@ -657,22 +657,15 @@ Monash2024 >> slidePriorities [
 		
 		mdForResearch:
 		
+		"Lucene example?"
+		
 		gtTools:
 			smaccPage:
 			splFactorial:
 			gtBookLinksMondrian:
 			gtToolingTreemap:
 		
-		"
-	Tools
-		Moldable IDE tools
-		Language Workbenches
-		Visualization tools
-			Bloc
-			Mondrian
-			Scripter etc
-		"
-		
+		takeaways:
 		
 		summarySlide:
 		placeHolder:
@@ -729,6 +722,37 @@ Monash2024 >> summarySlide: aSlide [
 		setPriority;
 		newFadedText: 'Summary';
 		element: [ self summaryElementFor: slideSelectors ]
+]
+
+{ #category : #slides }
+Monash2024 >> takeaways: aSlide [
+	<gtSlide>
+	<text:
+'
+TODO
+# Takeaways
+
+Add main points
+
+
+
+
+'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Takeaways:');
+		paragraphWithFormat: (self
+				asText: 
+'
+
+• To do
+
+
+'),
+(self asText: '
+Download: ') italic,
+((self asText: 'gtoolkit.com') glamorousCodeFont fontSize: 28)
 ]
 
 { #category : #slides }

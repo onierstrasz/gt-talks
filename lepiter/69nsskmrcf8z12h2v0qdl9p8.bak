@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-21T13:42:36.761282+02:00"
+						"dateAndTimeString" : "2024-04-21T13:42:57.290815+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The VISSOFT 2022 talk and extended abstract have m"
+				"string" : "The VISSOFT 2022 talk and extended abstract have moved to a [separate repo](https://github.com/feenkcom/paper-explainable-systems-vissoft2022)."
 			}
 		]
 	},
