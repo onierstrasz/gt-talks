@@ -1,3 +1,6 @@
+"
+Simple demo of moldable exceptions within the moldable debugger.
+"
 Class {
 	#name : #Yow,
 	#superclass : #Object,
@@ -11,7 +14,7 @@ Yow class >> computedString [
 
 { #category : #demos }
 Yow class >> debuggingExample [
-	self assert: Yow expectedStringForTest equals: Yow computedStringForTest
+	self assert: Yow expectedString equals: Yow computedString
 ]
 
 { #category : #demos }
