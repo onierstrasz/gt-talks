@@ -287,7 +287,7 @@ Now we can nicely navigate from the organization to each repository.
 Monash2024 >> gtBookLinksMondrian: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
+'TODO
 
 Visualization of the pages in the book itself that are reachable 
 by following links contrasted with standalone pages.
@@ -307,8 +307,7 @@ Monash2024 >> gtToolingTreemap: aSlide [
 	<gtSlide>
 	<text:
 '
-
-*** TODO ***
+TODO
 
 ... Custom tools are pervasive
 
@@ -350,6 +349,139 @@ Visualization tools
 'Paragraph body.
 Possibly over multiple lines.
 ')
+]
+
+{ #category : #slides }
+Monash2024 >> lexiconExample: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# A lexicon file
+
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A lexicon file';
+		element: [ self lexiconProfileExtract gtJSONFor: GtPhlowProtoView new ]
+]
+
+{ #category : #slides }
+Monash2024 >> lexiconGeneratedClass: aSlide [
+	<gtSlide>
+
+<text:
+'
+TODO
+
+## Code generated from a lexicon
+
+'>
+
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Code generated from a lexicon';
+		element: [ (GtCoderElement forClass: AppBskyActorProfileMain) createInPager maximized ]
+]
+
+{ #category : #example }
+Monash2024 >> lexiconProfile [
+	<gtExample>
+	^ '{
+  "lexicon": 1,
+  "id": "app.bsky.actor.profile",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A declaration of a Bluesky account profile.",
+      "key": "literal:self",
+      "record": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string",
+            "maxGraphemes": 64,
+            "maxLength": 640
+          },
+          "description": {
+            "type": "string",
+            "description": "Free-form profile description text.",
+            "maxGraphemes": 256,
+            "maxLength": 2560
+          },
+          "avatar": {
+            "type": "blob",
+            "description": "Small image to be displayed next to posts from account. AKA, ''profile picture''",
+            "accept": ["image/png", "image/jpeg"],
+            "maxSize": 1000000
+          },
+          "banner": {
+            "type": "blob",
+            "description": "Larger horizontal image to display behind profile view.",
+            "accept": ["image/png", "image/jpeg"],
+            "maxSize": 1000000
+          },
+          "labels": {
+            "type": "union",
+            "description": "Self-label values, specific to the Bluesky application, on the overall account.",
+            "refs": ["com.atproto.label.defs#selfLabels"]
+          },
+          "joinedViaStarterPack": {
+            "type": "ref",
+            "ref": "com.atproto.repo.strongRef"
+          },
+          "pinnedPost": {
+            "type": "ref",
+            "ref": "com.atproto.repo.strongRef"
+          },
+          "createdAt": { "type": "string", "format": "datetime" }
+        }
+      }
+    }
+  }
+}
+'
+]
+
+{ #category : #example }
+Monash2024 >> lexiconProfileExtract [
+	<gtExample>
+	^ '{
+  "lexicon": 1,
+  "id": "app.bsky.actor.profile",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A declaration of a Bluesky account profile.",
+      "key": "literal:self",
+      "record": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string",
+            "maxGraphemes": 64,
+            "maxLength": 640
+          },
+          "description": {
+            "type": "string",
+            "description": "Free-form profile description text.",
+            "maxGraphemes": 256,
+            "maxLength": 2560
+          },
+          "avatar": {
+            "type": "blob",
+            "description": "Small image to be displayed next to posts from account. AKA, ''profile picture''",
+            "accept": ["image/png", "image/jpeg"],
+            "maxSize": 1000000
+          },
+          "...": {},
+          "createdAt": { "type": "string", "format": "datetime" }
+        }
+      }
+    }
+  }
+}
+'
 ]
 
 { #category : #slides }
@@ -497,7 +629,11 @@ Monash2024 >> slidePriorities [
 			githubOrgDemoPage:
 			githubFeenkOrgWrapped:
 
+		"CONTINUE HERE"
+			
 		blueSkyExplorer:
+			lexiconExample:
+			lexiconGeneratedClass:
 		
 		llmTutorExplorer:
 		
@@ -530,7 +666,7 @@ Monash2024 >> smaccPage: aSlide [
 	<gtSlide>
 	<text:
 '
-***TODO***
+TODO
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -545,7 +681,9 @@ Monash2024 >> smaccPage: aSlide [
 Monash2024 >> splFactorial: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
+'
+TODO
+
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -559,7 +697,8 @@ Monash2024 >> splFactorial: aSlide [
 Monash2024 >> summarySlide: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
+'TODO
+
 # Summary
 '>
 	| slideSelectors |
@@ -578,7 +717,7 @@ Monash2024 >> summarySlide: aSlide [
 Monash2024 >> title: aSlide [
 	<gtSlide>
 	<text:
-'***TODO***
+'TODO
 
 # GT: A Moldable Research Platform
 
