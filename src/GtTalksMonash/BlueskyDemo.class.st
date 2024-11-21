@@ -22,8 +22,10 @@ Class {
 BlueskyDemo class >> actor [
 ]
 
-{ #category : #accessing }
+{ #category : #example }
 BlueskyDemo >> actor [
+	<gtExample>
+	<noTest>
 	^ self actorFor: self handle
 ]
 
@@ -32,14 +34,23 @@ BlueskyDemo >> actorFor: aHandle [
 	^ (self client appBskyActorGetProfileActor: aHandle) client: self client
 ]
 
+{ #category : #example }
+BlueskyDemo >> actorGirba [
+	<gtExample>
+	<noTest>
+	^ self actorFor: 'tudorgirba.com'
+]
+
 { #category : #initialization }
 BlueskyDemo >> blueskySecrets [
 	self assert: self secretsFile exists.
 	^ STON fromString: self secretsFile contents
 ]
 
-{ #category : #accessing }
+{ #category : #example }
 BlueskyDemo >> client [
+	<gtExample>
+	<noTest>
 	client
 		ifNil: [ client := GtApGeneratedClient onServer: self pdsUrl.
 			client loginUser: self handle withPass: self password ].

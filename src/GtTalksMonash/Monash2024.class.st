@@ -40,6 +40,22 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
+Monash2024 >> blueSkyUser: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Inspecting a BlueSky user';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: BlueskyDemo new actor))
+				maximized ]
+]
+
+{ #category : #slides }
 Monash2024 >> cardDemo: aSlide [
 	<gtSlide>
 	<text:
@@ -629,11 +645,13 @@ Monash2024 >> slidePriorities [
 			githubOrgDemoPage:
 			githubFeenkOrgWrapped:
 
-		"CONTINUE HERE"
 			
 		blueSkyExplorer:
+			blueSkyUser:
 			lexiconExample:
 			lexiconGeneratedClass:
+		
+		"CONTINUE HERE"
 		
 		llmTutorExplorer:
 		

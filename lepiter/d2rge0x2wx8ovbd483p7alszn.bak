@@ -1218,14 +1218,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-21T14:28:50.677303+01:00"
+									"dateAndTimeString" : "2024-11-21T14:30:11.397517+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "+xze+83jDQCmrB7ID4Yh+g=="
 							},
-							"code" : ""
+							"code" : "atprotoDirectory / 'lexicons'"
 						}
 					]
 				},
