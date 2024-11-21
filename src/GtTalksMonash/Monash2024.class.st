@@ -284,6 +284,75 @@ Now we can nicely navigate from the organization to each repository.
 ]
 
 { #category : #slides }
+Monash2024 >> gtBookLinksMondrian: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+
+Visualization of the pages in the book itself that are reachable 
+by following links contrasted with standalone pages.
+
+NB example of a Throwaway Analysis Tool
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A Mondrian reachability graph of pages in the GT book';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: PatternScripterExamples new gtBookLinksMondrian))
+				maximized ]
+]
+
+{ #category : #slides }
+Monash2024 >> gtToolingTreemap: aSlide [
+	<gtSlide>
+	<text:
+'
+
+*** TODO ***
+
+... Custom tools are pervasive
+
+This visualization shows a treemap of packages and classes in the current image.
+
+Blue classes have at least one custom view and green ones have at least one example. This shows that custom tools were  heavily used to build the moldable development environment itself.
+
+Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
+<demo: '- Click on the top-left class (BlElement)'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A Treemap of packages with custom views and examples';
+		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
+]
+
+{ #category : #slides }
+Monash2024 >> gtTools: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# Placeholder
+
+Show  examples of each
+
+Moldable IDE tools
+Language Workbenches
+Visualization tools
+	Bloc
+	Mondrian
+	Scripter etc
+
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Outline');
+		paragraphWithFormat: (self
+				asText: 
+'Paragraph body.
+Possibly over multiple lines.
+')
+]
+
+{ #category : #slides }
 Monash2024 >> llmTutorExplorer: aSlide [
 	<gtSlide>
 	<text:
@@ -314,6 +383,8 @@ Grow a model, adding custom analysis tools
 
 Build a model, form hypotheses, run experiments, consolidate results into new knowledge
 
+
+		
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -321,10 +392,12 @@ Build a model, form hypotheses, run experiments, consolidate results into new kn
 		paragraphWithFormat: (self
 				asText: 
 '
-• Model a problem domain
-• Form hypotheses
-• Run experiments through custom tools
-• Consolidate new knowledge as examples
+
+• Pose questions
+• Gather information (explore software data)
+• Form hypotheses (build models)
+• Run experiments (custom tooling)
+• Consolidate new knowledge (extract examples)
 ')
 ]
 
@@ -414,7 +487,6 @@ Monash2024 >> slidePriorities [
 			moreOpaqueness:
 			moldableDevelopment:
 			explainableLudo:
-			mdForResearch:
 		
 		cardDemoExample:
 			cardDemoFiles:
@@ -429,23 +501,15 @@ Monash2024 >> slidePriorities [
 		
 		llmTutorExplorer:
 		
+		mdForResearch:
+		
+		gtTools:
+			smaccPage:
+			splFactorial:
+			gtBookLinksMondrian:
+			gtToolingTreemap:
 		
 		"
-	MD for research
-		Software Analysis-- cobol
-		Exploring data
-			GitHub REST API
-		gt4atprotocol
-			BlueSky
-				What to demo?
-		ChatGPT
-			Normal chat
-				What can we do?
-	Research lifecycle
-		Pose questions
-		Explore data
-		Build domain model
-		Add custom tools
 	Tools
 		Moldable IDE tools
 		Language Workbenches
@@ -459,6 +523,55 @@ Monash2024 >> slidePriorities [
 		summarySlide:
 		placeHolder:
 	)
+]
+
+{ #category : #slides }
+Monash2024 >> smaccPage: aSlide [
+	<gtSlide>
+	<text:
+'
+***TODO***
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'SmaCC parsing engine';
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook pageNamed: 'Querying SmaCC abstract syntax trees (ASTs)')))
+				maximized ]
+]
+
+{ #category : #slides }
+Monash2024 >> splFactorial: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'A small step interpreter built with PetitParser';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: SPLContextExamples new factorial))
+				maximized ]
+]
+
+{ #category : #slides }
+Monash2024 >> summarySlide: aSlide [
+	<gtSlide>
+	<text:
+'***TODO***
+# Summary
+'>
+	| slideSelectors |
+	slideSelectors := #(
+		explainableSystems:
+		cardDemo: 
+		gtToolingTreemap:
+		mdForResearch:).
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Summary';
+		element: [ self summaryElementFor: slideSelectors ]
 ]
 
 { #category : #slides }
