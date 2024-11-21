@@ -18,11 +18,11 @@ BaselineOfGtTalksMonash >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
+				baseline: 'GToolkit4Cobol'
+				with: [ spec repository: 'github://feenkcom/gt4cobol:main/src' ].
+			spec
 				baseline: 'Gt4AtProto'
-				with: [ spec
-						baseline: 'GToolkit4Cobol'
-						with: [ spec repository: 'github://feenkcom/gt4cobol:main/src' ].
-					spec repository: 'github://feenkcom/gt4atproto:main/src' ].
+				with: [ spec repository: 'github://feenkcom/gt4atproto:main/src' ].
 			spec
 				baseline: 'Gt4Llm'
 				with: [ spec repository: 'github://feenkcom/gt4llm:main/src' ].
