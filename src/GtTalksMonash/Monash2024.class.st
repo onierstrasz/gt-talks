@@ -178,33 +178,6 @@ how they work.
 so that you can have a conversation with them.')
 ]
 
-{ #category : #page }
-Monash2024 >> githubDemoPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'GitHub REST API demo')
-	addSnippet: (LeTextSnippet new
-			string: 'First we explore the URL string.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'url := ''https://api.github.com/orgs/feenkcom''.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We learn how to extract the JSON dictionary and wrap it as an object.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We find some interesting views and  lift them to the wrapped object.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We continue to explore, e.g., the list of repositories, and wrap those, also giving them views.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: '';
-			yourself);
-	yourself
-]
-
 { #category : #slides }
 Monash2024 >> githubExample: aSlide [
 	<gtSlide>
@@ -256,6 +229,33 @@ After a few iterations we enrich the GitHub organization model with several more
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: PatternScripterExamples new wrappedGitHubOrganization))
 				maximized ]
+]
+
+{ #category : #page }
+Monash2024 >> githubOrgDemoPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'GitHub REST API demo')
+	addSnippet: (LeTextSnippet new
+			string: 'First we explore the URL string.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'url := ''https://api.github.com/orgs/feenkcom''.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We learn how to extract the JSON dictionary and wrap it as an object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We find some interesting views and  lift them to the wrapped object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We continue to explore, e.g., the list of repositories, and wrap those, also giving them views.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
 ]
 
 { #category : #page }
@@ -609,6 +609,62 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
+Monash2024 >> postMessageTutor: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# A social media post tutor
+'>
+	^ aSlide lepiterPage
+		setPriority;
+		startPage: (self db pageNamed: 'A social media post tutor')
+
+
+]
+
+{ #category : #page }
+Monash2024 >> postMessageTutorPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'A social media post tutor')
+	addSnippet: (LeTextSnippet new
+			string: '*A sample social media post:*';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'Moldable development supports decision-making by making software systems explainable. This is done by making it cheap to add numerous custom tools to your software, turning it into a live, explorable domain model. Based on several years of experience of applying moldable development to both open-source and industrial systems, we have identified several mutually supporting patterns to explain how moldable development works in practice.
+
+These patterns target (i) readers curious to learn about moldable development, (ii) current users of the Glamorous Toolkit moldable IDE wanting to learn best practices, and (iii) developers interested in applying moldable development using other platforms and technology.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'snippetForAnalysis := thisSnippet previousSibling';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '*A “tutor” to check the grammar of the post:*';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'demoTutor := GtDPostTutor forSnippet: snippetForAnalysis.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'demoChat := demoTutor createAssistant addChat.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
 Monash2024 >> runningSystem: aSlide [
 	<gtSlide>
 	<text:
@@ -622,6 +678,23 @@ A running system just shows its UI. You can interact with this, but you can''t g
 		setPriority;
 		newFadedText: 'You can interact with a running system, but you can''t ask it questions.';
 		element: [ GtLudoGame new asElement asScalableElement ]
+]
+
+{ #category : #slides }
+Monash2024 >> simpleChat: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+# A simple chat
+
+We can connect to an openAI assistant, but we really want to control the whole experience.
+'>
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'A simple chat';
+		addTextSnippet: 'Text snippet';
+		addCodeSnippet: 'GtOpenAIChat withApiKeyFromFile sendMessage: ''Hello GPT!'''
 ]
 
 { #category : #accessing }
@@ -654,6 +727,8 @@ Monash2024 >> slidePriorities [
 		"CONTINUE HERE"
 		
 		llmTutorExplorer:
+			simpleChat:
+			postMessageTutor:
 		
 		mdForResearch:
 		
@@ -715,8 +790,8 @@ Monash2024 >> summarySlide: aSlide [
 	| slideSelectors |
 	slideSelectors := #(
 		explainableSystems:
-		cardDemo: 
-		gtToolingTreemap:
+		"cardDemo: 
+		gtToolingTreemap:"
 		mdForResearch:).
 	^ aSlide labelAndElement
 		setPriority;

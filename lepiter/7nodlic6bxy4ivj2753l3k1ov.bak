@@ -174,14 +174,201 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T16:59:39.565189+01:00"
+						"dateAndTimeString" : "2024-11-19T16:59:51.187875+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Ju/42afjDQCMw2ZpCtunig=="
 				},
-				"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksMonash\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksYow2024';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksMonash asClass loadDependencies ].\r#Monash2024 asClass new"
+				"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksMonash\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksMonash';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksMonash asClass loadDependencies ].\r#Monash2024 asClass new"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-22T08:26:12.682191+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-22T08:26:24.897262+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WdTUCN3jDQCcrw1mDt5jxA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "GT: A Moldable Research Platform"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-22T08:41:38.516832+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-22T08:42:41.34691+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "A/IDQN3jDQCdNvdrDt5jxA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Moldable development makes systems explainable by augmenting their domain model with lots of tiny custom analysis tools."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-22T08:42:44.766146+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-11-22T08:43:52.926583+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "3c/2Q93jDQCfxNrHDt5jxA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "GT supports a moldable development process in which you pose questions, explore an information space, create domain models, carry out experiments"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-22T08:26:25.675892+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-11-22T08:41:38.235982+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "thibCd3jDQCcx1eMDt5jxA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Key points:"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-22T08:26:02.770281+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-22T08:26:11.609509+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BpU9CN3jDQCcT+fHDt5jxA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Title & Abstract"
 			},
 			{
 				"__type" : "textSnippet",
@@ -320,7 +507,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T11:10:55.376592+01:00"
+						"dateAndTimeString" : "2024-11-22T08:25:51.940583+01:00"
 					}
 				},
 				"uid" : {
@@ -330,7 +517,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Demos to work out"
+				"string" : "# Demos to work on"
 			},
 			{
 				"__type" : "textSnippet",
@@ -373,43 +560,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "See the mindmap"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:10:36.451198+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-19T11:10:36.944114+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "D987+6LjDQCuO+a+A6Aptg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Monash 2024\n\tTitle?\n\t\tGT: A Moldable Research Platform\n\t\tMoldable Development as a Research Methodology\n\t\tMolding Explainable Systems as a Research Methodology\n\tWhat is MD?\n\t\tExplainable systems\n\tMD for research\n\t\tSoftware Analysis\n\t\tExploring data\n\t\t\tGitHub REST API\n\t\t\tEGAD\n\t\tChatGPT\n\t\t\tNormal chat\n\t\t\t\tWhat can we do?\n\t\tgt4atprotocol\n\t\t\tBlueSky\n\t\t\t\tWhat to demo?\n\tResearch lifecycle\n\t\tPose questions\n\t\tExplore data\n\t\tBuild domain model\n\t\tAdd custom tools\n\tTools\n\t\tMoldable IDE tools\n\t\tLanguage Workbenches\n\t\tVisualization tools\n\t\t\tBloc\n\t\t\tMondrian\n\t\t\tScripter etc\n"
 						},
 						{
 							"__type" : "textSnippet",

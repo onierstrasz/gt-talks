@@ -274,33 +274,6 @@ Note that in this case views are specified in SMalltalk, but the specifications 
 		element: [ PatternScripterExamples new wrappedGitHubOrganizationReposSourceView ]
 ]
 
-{ #category : #page }
-MDInPracticeYow2024 >> githubDemoPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'GitHub REST API demo')
-	addSnippet: (LeTextSnippet new
-			string: 'First we explore the URL string.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'url := ''https://api.github.com/orgs/feenkcom''.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We learn how to extract the JSON dictionary and wrap it as an object.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We find some interesting views and  lift them to the wrapped object.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'We continue to explore, e.g., the list of repositories, and wrap those, also giving them views.';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: '';
-			yourself);
-	yourself
-]
-
 { #category : #slides }
 MDInPracticeYow2024 >> githubExample: aSlide [
 	<gtSlide>
@@ -352,6 +325,33 @@ After a few iterations we enrich the GitHub organization model with several more
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: PatternScripterExamples new wrappedGitHubOrganization))
 				maximized ]
+]
+
+{ #category : #page }
+MDInPracticeYow2024 >> githubOrgDemoPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'GitHub REST API demo')
+	addSnippet: (LeTextSnippet new
+			string: 'First we explore the URL string.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'url := ''https://api.github.com/orgs/feenkcom''.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We learn how to extract the JSON dictionary and wrap it as an object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We find some interesting views and  lift them to the wrapped object.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'We continue to explore, e.g., the list of repositories, and wrap those, also giving them views.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
 ]
 
 { #category : #slides }
