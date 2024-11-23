@@ -839,6 +839,9 @@ Monash2024 >> title: aSlide [
 # GT: A Moldable Research Platform
 
 
+
+Abstract: The Glamorous Toolkit is an open-source platform for making software systems explainable by exposing domain entities and augmenting them with numerous custom analysis tools. We show how GT can be used as a research platform in which you pose questions in notebook pages, explore information by building domain models, carry out experiments with tiny, custom tools, and consolidate knowledge by constructing live examples.
+
 '>
 
 	^ aSlide titleWithFooters
