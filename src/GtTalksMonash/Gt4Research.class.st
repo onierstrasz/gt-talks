@@ -134,6 +134,27 @@ Gt4Research >> cardDemoModel [
 ]
 
 { #category : #slides }
+Gt4Research >> defectPredictionBenchmark: aSlide [
+	<gtSlide>
+	<text:
+'# Large Defect Prediction Benchmark
+
+This example was provided by Kla Tantithamthavorn. It''s a large dataset of CSV files of quality metrics computed over various open-source Java projects. Here we see the lucene data file  within the JIRA project.
+
+[GH repo](https://github.com/awsm-research/Large-Defect-Prediction-Benchmark)
+'>
+<demo:
+'- Navigate within JIRA to the first lucene dataset.
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Large Defect Prediction Benchmark';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: LargeDefectPredictionBenchmarkExample new repoFolder))
+				maximized ]
+]
+
+{ #category : #slides }
 Gt4Research >> explainableLudo: aSlide [
 	<gtSlide>
 	<text:
@@ -316,13 +337,13 @@ Now we can nicely navigate from the organization to each repository.
 Gt4Research >> gtBookLinksMondrian: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## A Mondrian reachability graph of pages in the GT book
 
-Visualization of the pages in the book itself that are reachable 
-by following links contrasted with standalone pages.
+Mondrian is a builder for graph-based visualizations.
 
-NB example of a Throwaway Analysis Tool
-'>
+Here we see a visualization of the notebook pages in the book itself that are reachable by following links contrasted with standalone pages. The nodes and edges are live, so you can navigate to other domain entities.
+
+NB: The FCA lattice we saw earlier was also built with Mondrian.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A Mondrian reachability graph of pages in the GT book';
@@ -335,14 +356,9 @@ NB example of a Throwaway Analysis Tool
 Gt4Research >> gtToolingTreemap: aSlide [
 	<gtSlide>
 	<text:
-'
-TODO
+'## A Treemap of packages with custom views and examples
 
-... Custom tools are pervasive
-
-This visualization shows a treemap of packages and classes in the current image.
-
-Blue classes have at least one custom view and green ones have at least one example. This shows that custom tools were  heavily used to build the moldable development environment itself.
+Custom tools are pervasive. This visualization shows a treemap of packages and classes in the current image. Blue classes have at least one custom view and green ones have at least one example. This shows that custom tools were  heavily used to build the moldable development environment itself.
 
 Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 <demo: '- Click on the top-left class (BlElement)'>
@@ -356,27 +372,22 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 Gt4Research >> gtTools: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# GT includes numerous R&D tools
 
-# Placeholder
-
-Show  examples of each
-
-Moldable IDE tools
-Language Workbenches
-Visualization tools
-	Bloc
-	Mondrian
-	Scripter etc
-
+We''ve already seen many examples of custom inspector views. The coder editor and even the debugger are similarly moldable. We''ve also see a few examples of notebook pages with code snippets, and we''ve seen live examples embedded in these slides.
 '>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Outline');
+		subtitleWithFormat: (self asSubtitle: 'GT includes numerous R&D tools:');
 		paragraphWithFormat: (self
 				asText: 
-'Paragraph body.
-Possibly over multiple lines.
+'
+
+• Moldable Inspector, Code editor and Debugger
+• Live notebook knowledge base
+• Language workbenches
+• Visualization tools
+• ...
 ')
 ]
 
@@ -511,38 +522,78 @@ Gt4Research >> lexiconProfileExtract [
 Gt4Research >> llmTutorExplorer: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Exploring an LLM chat
 
-# Exploring an LLM chat
-
-
-'>
+In this example, we use GT as a platform for managing chats with openAI assistants. We not only want to chat with an assistant, but we want to manage the interactions and mold the experience to obtai useful results.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Exploring an LLM chat');
 		paragraphWithFormat: (self
 				asText: 
-'Paragraph body.
-Possibly over multiple lines.
-')
+'
+
+• Managing the chat.
+• Molding the interactions.')
+]
+
+{ #category : #slides }
+Gt4Research >> luceneDataExampleClass: aSlide [
+	<gtSlide>
+	<text:
+'# The Defect Prediction Benchmark example class
+
+Many of the examples we have seen are encapsulated as example methods. These are essentially unit test methods that additionally return the object under test. This is the class containing the examples we have just seen.
+
+When you discover interesting results, the idea is to encapsulate these as example methods so you can easily reproduce the live examples, for documentation or for further research.
+'>
+		^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'The Defect Prediction Benchmark example class';
+		element: [ (GtCoderElement forClass: LargeDefectPredictionBenchmarkExample) createInPager maximized ]
+]
+
+{ #category : #slides }
+Gt4Research >> luceneDefectData: aSlide [
+	<gtSlide>
+	<text:
+'## The Lucene 2.3.0 defect dataset
+
+Here we see the wrapped Lucene 2.3 dataset with an overview showing whether each class contains bugs classified as “real” or “heuristically” identified. We also see the lines of code and complexity of each class. We can dive into a class to see a custom view showing the other metrics.
+
+We have an action to extract just the files flagged as buggy.
+
+We can also apply formal concept analysis to categorize files according to which thresholds selected metrics reach, in this case short, medium or long methods, and low or high complexity. Finally we can visualize the resulting lattice, showing which combinations of properties are most common. For example, low complexity and medium-sized methods are common.
+
+The point of this is not to show you that we discovered something new about the dataset, but rather  that we can use moldable development to structure the research methodology and carry out experiments.'>
+<demo:
+'- Click on a file to see its metrics.
+- Click the buggy action to see just the buggy files.
+- Click the FCA action.
+- Show the Properties view.
+- Show the lattice.
+- Click on a large concept to see the details.
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'The Lucene 2.3.0 defect dataset';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: LargeDefectPredictionBenchmarkExample new lucene230Dataset))
+				maximized ]
 ]
 
 { #category : #slides }
 Gt4Research >> mdForResearch: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Moldable Development as a Research Methodology
 
-# Moldable Development as a Research Methodology
+To sum up, moldable development is an approach to making software systems explainable by making their domain models accessible, and augmenting  them with inexpensive analysis tools.
 
-Iteratively model and explore software, data, algorithms etc
-Grow a model, adding custom analysis tools
+The moldable development methodology is to iteratively model and explore software data, adding custom analysis tools as you explore.
 
-Build a model, form hypotheses, run experiments, consolidate results into new knowledge
+The GT platform is open source and we host a thriving community on Discord.
 
-
-		
-'>
+Thanks for listening.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable Development as a Research Methodology');
@@ -553,9 +604,14 @@ Build a model, form hypotheses, run experiments, consolidate results into new kn
 • Pose questions
 • Gather information (explore software data)
 • Form hypotheses (build models)
-• Run experiments (custom tooling)
+• Run experiments (mold custom tools)
 • Consolidate new knowledge (extract examples)
-')
+
+'), (self
+				asText: 
+'Go to:') italic, (self
+				asText: 
+' gtoolkit.com') glamorousCodeFont
 ]
 
 { #category : #slides }
@@ -601,7 +657,7 @@ Reading source code does not scale to large systems. Documentation is typically 
 
 { #category : #slides }
 Gt4Research >> placeholder: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<text:
 'TODO
 
@@ -621,9 +677,27 @@ Possibly over multiple lines.
 Gt4Research >> postMessageTutor: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## A social media post tutor
 
-## A social media post tutor
+In this example, we want help from an openAI assistant to check the grammar of social media posts. We don''t just want it to correct the results, but want to be able to vet and control the answers it proposes.
+
+Here''s a snippet containing a draft post we would like to check. We create a so-called “tutor” that knows the snippet and manages the chat with the openAI assistant. A tutor not only can talk to an AI, but it can send it *instructions*. The instructions in particular introduce the domain of social media posts.
+
+This tutor knows the default chat action but also the specific ones to create a title or to correct grammar.
+
+Now let''s start a chat and ask the AI to correct the grammar. With a normal chat we would just get the correct text back. Here instead we get a result with a Diff view, which is more useful. This is just a simple custom view defined on the message itself.
+
+If we like the proposal, we can accept the change with a custom action.'>
+<demo:
+'- Grab the snippet.
+- Inspect the tutor.
+- Show the Instructions with the Post component.
+- Show the Actions.
+- Start a chat.
+- Request it to correct the grammar.
+- Show the diff view.
+- Inspect the message and see the diff view comes from the message, with an extra annotation.
+- Accept the change and show the snippet update.
 '>
 	^ aSlide lepiterPage
 		setPriority;
@@ -639,24 +713,25 @@ Gt4Research >> postMessageTutorPage [
 	<noTest>
 	^ (LePage named: 'A social media post tutor')
 	addSnippet: (LeTextSnippet new
-			string: '*A sample social media post:*';
-			yourself);
-	addSnippet: (LeTextSnippet new
-			string: 'Moldable development supports decision-making by making software systems explainable. This is done by making it cheap to add numerous custom tools to your software, turning it into a live, explorable domain model. Based on several years of experience of applying moldable development to both open-source and industrial systems, we have identified several mutually supporting patterns to explain how moldable development works in practice.
+			string: '# A sample social media post:';
+			addSnippet: (LeTextSnippet new
+					string: 'Moldable development supports decision-making by making software systems explainable. This is done by making it cheap to add numerous custom tools to your software, turning it into a live, explorable domain model. Based on several years of experience of applying moldable development to both open-source and industrial systems, we have identified several mutually supporting patterns to explain how moldable development works in practice.
 
 These patterns target (i) readers curious to learn about moldable development, (ii) current users of the Glamorous Toolkit moldable IDE wanting to learn best practices, and (iii) developers interested in applying moldable development using other platforms and technology.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'snippetForAnalysis := thisSnippet previousSibling';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: 'snippetForAnalysis := thisSnippet previousSibling.';
+					yourself);
 			yourself);
 	addSnippet: (LeTextSnippet new
-			string: '*A “tutor” to check the grammar of the post:*';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'demoTutor := GtDPostTutor forSnippet: snippetForAnalysis.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: 'demoChat := demoTutor createAssistant addChat.';
+			string: '# A “tutor” to check the grammar of the post:';
+			addSnippet: (LePharoSnippet new
+					code: 'demoTutor := GtDPostTutor 
+	forSnippet: snippetForAnalysis.';
+					yourself);
+			addSnippet: (LePharoSnippet new
+					code: 'demoChat := demoTutor createAssistant addChat.';
+					yourself);
 			yourself);
 	addSnippet: (LeTextSnippet new
 			string: '';
@@ -693,17 +768,27 @@ A running system just shows its UI. You can interact with this, but you can''t g
 Gt4Research >> simpleChat: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## A simple chat
 
-## A simple chat
-
-We can connect to an openAI assistant, but we really want to control the whole experience.
-'>
-	^ aSlide headingAndCode
+We can connect to an openAI assistant, and carry out a simple conversation. But this is not very interesting. We really want to control the whole experience. '>
+	^ aSlide lepiterPage
 		setPriority;
-		heading: 'A simple chat';
-		addTextSnippet: 'Text snippet';
-		addCodeSnippet: 'GtOpenAIChat withApiKeyFromFile sendMessage: ''Hello GPT!'''
+		startPage: (self db pageNamed: 'A simple chat')
+]
+
+{ #category : #page }
+Gt4Research >> simpleChatPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'A simple chat')
+	addSnippet: (LePharoSnippet new
+			code: 'chat := GtOpenAIChat withApiKeyFromFile.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'chat sendMessage: ''Can you please briefly explain moldable development?''';
+			yourself);
+	yourself
 ]
 
 { #category : #accessing }
@@ -733,15 +818,13 @@ Gt4Research >> slidePriorities [
 			lexiconExample:
 			lexiconGeneratedClass:
 		
-		"CONTINUE HERE"
-		
 		llmTutorExplorer:
 			simpleChat:
 			postMessageTutor:
 		
-		mdForResearch:
-		
-		"Lucene example?"
+		defectPredictionBenchmark:
+			luceneDefectData:
+			luceneDataExampleClass:
 		
 		gtTools:
 			smaccPage:
@@ -749,10 +832,8 @@ Gt4Research >> slidePriorities [
 			gtBookLinksMondrian:
 			gtToolingTreemap:
 		
-		takeaways:
-		
+		mdForResearch:
 		summarySlide:
-		placeHolder:
 	)
 ]
 
@@ -760,9 +841,11 @@ Gt4Research >> slidePriorities [
 Gt4Research >> smaccPage: aSlide [
 	<gtSlide>
 	<text:
-'
-TODO
-'>
+'## SmaCC
+
+SmaCC is a modern parsing engine supporting a variety of parsing strategies.
+
+Here we see a GT notebook page explaining how to query the ASTs produced by SmaCC, with the help of a live, embedded example of JavaScript code and its AST.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'SmaCC parsing engine';
@@ -776,10 +859,15 @@ TODO
 Gt4Research >> splFactorial: aSlide [
 	<gtSlide>
 	<text:
-'
-TODO
+'## A small step interpreter built with PetitParser
 
-'>
+PetitParser, on the other hand is a parser combinator framework that supports island parsing, which is useful for extract selected information from source or data files.
+
+In this example we use PetitParser to produce a small-step semantics interpreter by transforming the ASTs of a program and its continuations.'>
+<demo:
+'- Show some execution steps.
+- Run to the end.
+- Walk through the resulting history, with the AST view at the right.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A small step interpreter built with PetitParser';
@@ -792,51 +880,17 @@ TODO
 Gt4Research >> summarySlide: aSlide [
 	<gtSlide>
 	<text:
-'TODO
-
-# Summary
-'>
+'# Summary'>
 	| slideSelectors |
 	slideSelectors := #(
 		explainableSystems:
-		"cardDemo: 
-		gtToolingTreemap:"
+		moldableDevelopment:
+		gtTools:
 		mdForResearch:).
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Summary';
 		element: [ self summaryElementFor: slideSelectors ]
-]
-
-{ #category : #slides }
-Gt4Research >> takeaways: aSlide [
-	<gtSlide>
-	<text:
-'
-TODO
-# Takeaways
-
-Add main points
-
-
-
-
-'>
-
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Takeaways:');
-		paragraphWithFormat: (self
-				asText: 
-'
-
-• To do
-
-
-'),
-(self asText: '
-Download: ') italic,
-((self asText: 'gtoolkit.com') glamorousCodeFont fontSize: 28)
 ]
 
 { #category : #slides }
