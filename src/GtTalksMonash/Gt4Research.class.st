@@ -1,5 +1,5 @@
 Class {
-	#name : #Monash2024,
+	#name : #Gt4Research,
 	#superclass : #PrioritySlideshow,
 	#classInstVars : [
 		'cardDemoModel'
@@ -8,7 +8,7 @@ Class {
 }
 
 { #category : #accessing }
-Monash2024 class >> cardDemoModel [
+Gt4Research class >> cardDemoModel [
 	cardDemoModel
 		ifNil: [ AWSCardDemo
 				model: (GtCobolImporter new
@@ -21,12 +21,12 @@ Monash2024 class >> cardDemoModel [
 ]
 
 { #category : #slides }
-Monash2024 >> blueSkyExplorer: aSlide [
+Gt4Research >> blueSkyExplorer: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# Exploring BlueSky via the AT protocol
 
-# Exploring BlueSky via the AT protocol
+In this example we use the AT (Authenticated Transfer) protocol to explore the BlueSky 
 
 '>
 	^ aSlide paragraph
@@ -34,18 +34,26 @@ Monash2024 >> blueSkyExplorer: aSlide [
 		subtitleWithFormat: (self asSubtitle: 'Exploring BlueSky via the AT protocol');
 		paragraphWithFormat: (self
 				asText: 
-'Paragraph body.
-Possibly over multiple lines.
+'
+an open standard for decentralized social networking services.
 ')
 ]
 
 { #category : #slides }
-Monash2024 >> blueSkyUser: aSlide [
+Gt4Research >> blueSkyUser: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## Inspecting a BlueSky user
 
-# Placeholder
+As in the GitHub example, we use the atproto to retrieve raw data from the server, which we then wrap as domain objects. By molding these objects with custom views and actions, we obtain a customizable client environment for exploring the domain.
+
+We can also pose ad hoc queries. For example, if we explore the timeline, we can discover that we can query a post for whether it contains media. We can then use this to extract timeline posts with media.'>
+<demo:
+'- Look at the Timeline view
+- Inspect a post
+- See that it has a `hasMedia` method
+- Open the playground of the actor
+- Evaluate `self timelinePosts select: #hasMedia`
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -56,14 +64,14 @@ Monash2024 >> blueSkyUser: aSlide [
 ]
 
 { #category : #slides }
-Monash2024 >> cardDemo: aSlide [
+Gt4Research >> cardDemo: aSlide [
 	<gtSlide>
 	<text:
 '## The wrapped CardDemo
 
 From a bitmap we can navigate to its source code, and to the dependency map of programs and screens. We can also navigate from source to other source code.
 
-'>
+The central idea is to first take the raw data and wrap them as linked and explorable domain entities. Then, as we pose questions about the system, we introduce lightweight, custom tools, namely views and actions, that allow us to experiment and answer these questions.'>
 <demo:
 '- Inspect `All BMS Maps`
 - Click on the first screen (just to the left of the screen itself)
@@ -74,14 +82,14 @@ From a bitmap we can navigate to its source code, and to the dependency map of p
 
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'AWS CardDemo';
+		newFadedText: 'The wrapped CardDemo as an explainable system';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: self cardDemoModel))
 				maximized ]
 ]
 
 { #category : #slides }
-Monash2024 >> cardDemoExample: aSlide [
+Gt4Research >> cardDemoExample: aSlide [
 	<gtSlide>
 	<text:
 '# Example: Exploring the COBOL CardDemo
@@ -100,7 +108,7 @@ is an open source COBOL application for testing legacy mainframe modernization t
 ]
 
 { #category : #slides }
-Monash2024 >> cardDemoFiles: aSlide [
+Gt4Research >> cardDemoFiles: aSlide [
 	<gtSlide>
 	<text:
 '## The raw CardDemo files
@@ -119,14 +127,14 @@ We can see the source files and screens, but how are they related?'>
 ]
 
 { #category : #accessing }
-Monash2024 >> cardDemoModel [
+Gt4Research >> cardDemoModel [
 	"Cache it once on the class side"
 
 	^ self class cardDemoModel
 ]
 
 { #category : #slides }
-Monash2024 >> explainableLudo: aSlide [
+Gt4Research >> explainableLudo: aSlide [
 	<gtSlide>
 	<text:
 '## Explainable Ludo
@@ -156,7 +164,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 ]
 
 { #category : #slides }
-Monash2024 >> explainableSystems: aSlide [
+Gt4Research >> explainableSystems: aSlide [
 	<gtSlide>
 	<text: 
 '# Explainable Systems
@@ -179,10 +187,12 @@ so that you can have a conversation with them.')
 ]
 
 { #category : #slides }
-Monash2024 >> githubExample: aSlide [
+Gt4Research >> githubExample: aSlide [
 	<gtSlide>
 	<text:
 '# Example: Exploring the GitHub REST API
+
+Here''s a second example where the software data is obtained through a REST API.
 
 The GitHub REST API provides information about organizations, user and repositories in the form of JSON data.
 '>
@@ -197,7 +207,7 @@ serves information in the form of JSON data.
 ]
 
 { #category : #slides }
-Monash2024 >> githubFeenkOrgJSon: aSlide [
+Gt4Research >> githubFeenkOrgJSon: aSlide [
 	<gtSlide>
 	<text:
 '## Raw JSON data of the feenk GitHub organization
@@ -213,7 +223,7 @@ Here we see the raw JSON data of the feenk organization. It exposes a number of 
 ]
 
 { #category : #slides }
-Monash2024 >> githubFeenkOrgWrapped: aSlide [
+Gt4Research >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
 	<text:
 '## The feenk GitHub organization JSON as a wrapped, moldable  object
@@ -221,7 +231,10 @@ Monash2024 >> githubFeenkOrgWrapped: aSlide [
 After a few iterations we enrich the GitHub organization model with several more entities and views, according to whatever interests us.
 '>
 <demo:
-'Browse the model ...'
+'- Click through the repos
+- Search by name for demo
+- Browse Contributors and events
+- Click on the *Open in browser* and *Go to repository* actions '
 >
 	^ aSlide labelAndElement
 		setPriority;
@@ -232,7 +245,7 @@ After a few iterations we enrich the GitHub organization model with several more
 ]
 
 { #category : #page }
-Monash2024 >> githubOrgDemoPage [
+Gt4Research >> githubOrgDemoPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -259,7 +272,7 @@ Monash2024 >> githubOrgDemoPage [
 ]
 
 { #category : #page }
-Monash2024 >> githubOrgDemoPage: aSlide [
+Gt4Research >> githubOrgDemoPage: aSlide [
 	<gtSlide>
 	<text:
 '## GitHub REST API demo
@@ -300,7 +313,7 @@ Now we can nicely navigate from the organization to each repository.
 ]
 
 { #category : #slides }
-Monash2024 >> gtBookLinksMondrian: aSlide [
+Gt4Research >> gtBookLinksMondrian: aSlide [
 	<gtSlide>
 	<text:
 'TODO
@@ -319,7 +332,7 @@ NB example of a Throwaway Analysis Tool
 ]
 
 { #category : #slides }
-Monash2024 >> gtToolingTreemap: aSlide [
+Gt4Research >> gtToolingTreemap: aSlide [
 	<gtSlide>
 	<text:
 '
@@ -340,7 +353,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 ]
 
 { #category : #slides }
-Monash2024 >> gtTools: aSlide [
+Gt4Research >> gtTools: aSlide [
 	<gtSlide>
 	<text:
 'TODO
@@ -368,14 +381,12 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
-Monash2024 >> lexiconExample: aSlide [
+Gt4Research >> lexiconExample: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## A lexicon file
 
-# A lexicon file
-
-'>
+An interesting aspect of the atproto is that records, event stream messages and endpoints are meta-described as so-called “lexicon” files. Here we see the JSON record for a Bluesky account profile.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A lexicon file';
@@ -383,16 +394,12 @@ Monash2024 >> lexiconExample: aSlide [
 ]
 
 { #category : #slides }
-Monash2024 >> lexiconGeneratedClass: aSlide [
+Gt4Research >> lexiconGeneratedClass: aSlide [
 	<gtSlide>
+	<text:
+'## Code generated from a lexicon
 
-<text:
-'
-TODO
-
-## Code generated from a lexicon
-
-'>
+Now, instead of manually coding the wrappers for the domain entities, we can apply model-driven engineering to generate many of these classes from the lexicons. Here we see the generated class for a user profile. Custom views can then be added to the generated classes as extensions defined in traits.'>
 
 	^ aSlide labelAndElement
 		setPriority;
@@ -401,7 +408,7 @@ TODO
 ]
 
 { #category : #example }
-Monash2024 >> lexiconProfile [
+Gt4Research >> lexiconProfile [
 	<gtExample>
 	^ '{
   "lexicon": 1,
@@ -460,7 +467,7 @@ Monash2024 >> lexiconProfile [
 ]
 
 { #category : #example }
-Monash2024 >> lexiconProfileExtract [
+Gt4Research >> lexiconProfileExtract [
 	<gtExample>
 	^ '{
   "lexicon": 1,
@@ -501,12 +508,14 @@ Monash2024 >> lexiconProfileExtract [
 ]
 
 { #category : #slides }
-Monash2024 >> llmTutorExplorer: aSlide [
+Gt4Research >> llmTutorExplorer: aSlide [
 	<gtSlide>
 	<text:
 'TODO
 
 # Exploring an LLM chat
+
+
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -519,12 +528,12 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
-Monash2024 >> mdForResearch: aSlide [
+Gt4Research >> mdForResearch: aSlide [
 	<gtSlide>
 	<text:
 'TODO
 
-## Moldable Development as a Research Methodology
+# Moldable Development as a Research Methodology
 
 Iteratively model and explore software, data, algorithms etc
 Grow a model, adding custom analysis tools
@@ -550,7 +559,7 @@ Build a model, form hypotheses, run experiments, consolidate results into new kn
 ]
 
 { #category : #slides }
-Monash2024 >> moldableDevelopment: aSlide [
+Gt4Research >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text:
 '## Moldable development in a nutshell
@@ -568,7 +577,7 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 ]
 
 { #category : #slides }
-Monash2024 >> moreOpaqueness: aSlide [
+Gt4Research >> moreOpaqueness: aSlide [
 	<gtSlide>
 	<text:
 '## Opaqueness
@@ -578,7 +587,7 @@ Other means of understanding opaque systems are also commonly ineffective.
 Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software:');
+		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software');
 		paragraphWithFormat: (self
 				asText: 
 '
@@ -591,7 +600,7 @@ Reading source code does not scale to large systems. Documentation is typically 
 ]
 
 { #category : #slides }
-Monash2024 >> placeholder: aSlide [
+Gt4Research >> placeholder: aSlide [
 	<gtSlide>
 	<text:
 'TODO
@@ -609,12 +618,12 @@ Possibly over multiple lines.
 ]
 
 { #category : #slides }
-Monash2024 >> postMessageTutor: aSlide [
+Gt4Research >> postMessageTutor: aSlide [
 	<gtSlide>
 	<text:
 'TODO
 
-# A social media post tutor
+## A social media post tutor
 '>
 	^ aSlide lepiterPage
 		setPriority;
@@ -624,7 +633,7 @@ Monash2024 >> postMessageTutor: aSlide [
 ]
 
 { #category : #page }
-Monash2024 >> postMessageTutorPage [
+Gt4Research >> postMessageTutorPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -665,7 +674,7 @@ These patterns target (i) readers curious to learn about moldable development, (
 ]
 
 { #category : #slides }
-Monash2024 >> runningSystem: aSlide [
+Gt4Research >> runningSystem: aSlide [
 	<gtSlide>
 	<text:
 '## Running systems are typically opaque
@@ -681,12 +690,12 @@ A running system just shows its UI. You can interact with this, but you can''t g
 ]
 
 { #category : #slides }
-Monash2024 >> simpleChat: aSlide [
+Gt4Research >> simpleChat: aSlide [
 	<gtSlide>
 	<text:
 'TODO
 
-# A simple chat
+## A simple chat
 
 We can connect to an openAI assistant, but we really want to control the whole experience.
 '>
@@ -698,7 +707,7 @@ We can connect to an openAI assistant, but we really want to control the whole e
 ]
 
 { #category : #accessing }
-Monash2024 >> slidePriorities [
+Gt4Research >> slidePriorities [
 	<gtExample>
 	^ #( 
 		title:
@@ -748,7 +757,7 @@ Monash2024 >> slidePriorities [
 ]
 
 { #category : #slides }
-Monash2024 >> smaccPage: aSlide [
+Gt4Research >> smaccPage: aSlide [
 	<gtSlide>
 	<text:
 '
@@ -764,7 +773,7 @@ TODO
 ]
 
 { #category : #slides }
-Monash2024 >> splFactorial: aSlide [
+Gt4Research >> splFactorial: aSlide [
 	<gtSlide>
 	<text:
 '
@@ -780,7 +789,7 @@ TODO
 ]
 
 { #category : #slides }
-Monash2024 >> summarySlide: aSlide [
+Gt4Research >> summarySlide: aSlide [
 	<gtSlide>
 	<text:
 'TODO
@@ -800,7 +809,7 @@ Monash2024 >> summarySlide: aSlide [
 ]
 
 { #category : #slides }
-Monash2024 >> takeaways: aSlide [
+Gt4Research >> takeaways: aSlide [
 	<gtSlide>
 	<text:
 '
@@ -831,18 +840,18 @@ Download: ') italic,
 ]
 
 { #category : #slides }
-Monash2024 >> title: aSlide [
+Gt4Research >> title: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'# GT: A Moldable Research Platform
 
-# GT: A Moldable Research Platform
+Hi. My name is Oscar Nierstrasz.
 
+Today I''d like to show you Glamorous Toolkit (or GT), an open-source environment for “Moldable Development”, and how it can be used as a platform for carrying out research.
 
+First I''ll show you how GT can be used to make software systems explainable by exposing their domain models, and augmenting domain entities with lightweight, custom analysis tools.
 
-Abstract: The Glamorous Toolkit is an open-source platform for making software systems explainable by exposing domain entities and augmenting them with numerous custom analysis tools. We show how GT can be used as a research platform in which you pose questions in notebook pages, explore information by building domain models, carry out experiments with tiny, custom tools, and consolidate knowledge by constructing live examples.
-
-'>
+Then, through a series of examples, I''ll show you how GT can be used as a platform to pose research questions, explore models, carry out experiments, and capture acquired knowledge through live examples.'>
 
 	^ aSlide titleWithFooters
 		setPriority;

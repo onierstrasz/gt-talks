@@ -18,10 +18,6 @@ Class {
 	#category : #'GtTalksMonash-Bluesky'
 }
 
-{ #category : #accessing }
-BlueskyDemo class >> actor [
-]
-
 { #category : #example }
 BlueskyDemo >> actor [
 	<gtExample>

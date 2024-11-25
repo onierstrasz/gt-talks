@@ -104,7 +104,7 @@ GtTalksHomeSection >> monashCard [
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Monash talk';
-		description: 'Notebook for Monash presentation';
+		description: 'Notebook for Monash GT 4 Research talk';
 		databaseName: 'GT Talks';
 		pageName: 'Monash talk';
 		setPriority;
@@ -118,9 +118,9 @@ GtTalksHomeSection >> monashSlideshowCard [
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Monash Slideshow';
-		description: 'Monash presentation';
+		description: 'Monash GT4Research presentation';
 		setPriority;
-		slideshowClassSymbol: #Monash2024
+		slideshowClassSymbol: #Gt4Research
 			baseLineName: 'GtTalksMonash'
 			repo: 'github://onierstrasz/gt-talks:main/src'
 			loadLepiterBaseline: #BaselineOfGtTalksMonash;
