@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:43:38.039438+01:00"
+						"dateAndTimeString" : "2024-11-25T15:39:48.927576+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:48:07.052394+01:00"
+						"dateAndTimeString" : "2024-11-25T15:40:00.367762+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Rename this when the talk takes shape."
+				"string" : "Plan for 40m talk + 20m Q&A."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:47:25.374035+01:00"
+						"dateAndTimeString" : "2024-11-25T09:43:59.586806+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "SXLu9FLjDQCcSHz9BbSGsw=="
 				},
-				"code" : "Monash2024 new"
+				"code" : "Gt4Research new"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -174,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-19T16:59:51.187875+01:00"
+						"dateAndTimeString" : "2024-11-25T09:43:59.594248+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Ju/42afjDQCMw2ZpCtunig=="
 				},
-				"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksMonash\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksMonash';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksMonash asClass loadDependencies ].\r#Monash2024 asClass new"
+				"code" : "Smalltalk globals\r\tat: #BaselineOfGtTalksMonash\r\tifAbsent: [ Metacello new\r\t\t\tbaseline: 'GtTalksMonash';\r\t\t\trepository: 'github://onierstrasz/gt-talks:main/src';\r\t\t\tload.\r\t\t#BaselineOfGtTalksMonash asClass loadDependencies ].\r#Gt4Research asClass new"
 			},
 			{
 				"__type" : "textSnippet",

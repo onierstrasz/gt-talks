@@ -23,10 +23,11 @@ Gt4Research class >> cardDemoModel [
 { #category : #slides }
 Gt4Research >> blueSkyExplorer: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Exploring BlueSky via the AT protocol
 
-In this example we use the AT (Authenticated Transfer) protocol to explore the BlueSky 
+In this example we use the AT (Authenticated Transfer) protocol to explore the BlueSky social networking service.
 
 '>
 	^ aSlide paragraph
@@ -42,12 +43,15 @@ an open standard for decentralized social networking services.
 { #category : #slides }
 Gt4Research >> blueSkyUser: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## Inspecting a BlueSky user
 
-As in the GitHub example, we use the atproto to retrieve raw data from the server, which we then wrap as domain objects. By molding these objects with custom views and actions, we obtain a customizable client environment for exploring the domain.
+As in the GitHub example, we use atproto to retrieve raw data from the server, which we then wrap as domain objects. By molding these objects with custom views and actions, we obtain a customizable client environment for exploring the domain.
 
-We can also pose ad hoc queries. For example, if we explore the timeline, we can discover that we can query a post for whether it contains media. We can then use this to extract timeline posts with media.'>
+We can also pose ad hoc queries. For example, if we explore the timeline, we can discover that we can query a post for whether it contains media. We can then use this to extract timeline posts with media.
+
+The point is that, instead of having a fixed and closed client environment, we now have an open environment for exploring and customing the client experience.'>
 <demo:
 '- Look at the Timeline view
 - Inspect a post
@@ -66,10 +70,15 @@ We can also pose ad hoc queries. For example, if we explore the timeline, we can
 { #category : #slides }
 Gt4Research >> cardDemo: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## The wrapped CardDemo
 
-From a bitmap we can navigate to its source code, and to the dependency map of programs and screens. We can also navigate from source to other source code.
+Here we have taken the raw source files of the CardDemo and modeled the COBOL domain entities.
+
+From a bitmap we can navigate to its source code, and the map of programs and screen, showing how we can navigate through the menus of the application.
+
+The map is live, so we can navigate to indivudal screens and programs. From a program we can explore its source code, and from their to related entities. For example, we can inspect the individual variables, and see how their  memory is allocated. (COBOL variables can have overlapping definitions.)
 
 The central idea is to first take the raw data and wrap them as linked and explorable domain entities. Then, as we pose questions about the system, we introduce lightweight, custom tools, namely views and actions, that allow us to experiment and answer these questions.'>
 <demo:
@@ -91,6 +100,7 @@ The central idea is to first take the raw data and wrap them as linked and explo
 { #category : #slides }
 Gt4Research >> cardDemoExample: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Example: Exploring the COBOL CardDemo
 
@@ -104,17 +114,17 @@ The AWS CardDemo is an open source COBOL mainframe application that is available
 		paragraphWithFormat: (self
 				asText: 
 '
-is an open source COBOL application for testing legacy mainframe modernization technology.')
+is an open source COBOL mainframe application for testing legacy mainframe modernization technologies.')
 ]
 
 { #category : #slides }
 Gt4Research >> cardDemoFiles: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## The raw CardDemo files
 
-
-We can see the source files and screens, but how are they related?'>
+If we download the CardDemo files and explore them, we can see various kinds of source files and screens, but how are they related?'>
 <demo:
 '- Browse the `app/cbl` and `diagrams` folders
 '>
@@ -136,6 +146,7 @@ Gt4Research >> cardDemoModel [
 { #category : #slides }
 Gt4Research >> defectPredictionBenchmark: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Large Defect Prediction Benchmark
 
@@ -157,6 +168,7 @@ This example was provided by Kla Tantithamthavorn. It''s a large dataset of CSV 
 { #category : #slides }
 Gt4Research >> explainableLudo: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## Explainable Ludo
 
@@ -187,6 +199,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 { #category : #slides }
 Gt4Research >> explainableSystems: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text: 
 '# Explainable Systems
 
@@ -210,12 +223,13 @@ so that you can have a conversation with them.')
 { #category : #slides }
 Gt4Research >> githubExample: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Example: Exploring the GitHub REST API
 
 Here''s a second example where the software data is obtained through a REST API.
 
-The GitHub REST API provides information about organizations, user and repositories in the form of JSON data.
+The GitHub REST API provides information about organizations, users and repositories in the form of JSON data.
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -230,6 +244,7 @@ serves information in the form of JSON data.
 { #category : #slides }
 Gt4Research >> githubFeenkOrgJSon: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## Raw JSON data of the feenk GitHub organization
 
@@ -246,6 +261,7 @@ Here we see the raw JSON data of the feenk organization. It exposes a number of 
 { #category : #slides }
 Gt4Research >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## The feenk GitHub organization JSON as a wrapped, moldable  object
 
@@ -295,6 +311,7 @@ Gt4Research >> githubOrgDemoPage [
 { #category : #page }
 Gt4Research >> githubOrgDemoPage: aSlide [
 	<gtSlide>
+	<time: 9>
 	<text:
 '## GitHub REST API demo
 
@@ -336,12 +353,13 @@ Now we can nicely navigate from the organization to each repository.
 { #category : #slides }
 Gt4Research >> gtBookLinksMondrian: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A Mondrian reachability graph of pages in the GT book
 
 Mondrian is a builder for graph-based visualizations.
 
-Here we see a visualization of the notebook pages in the book itself that are reachable by following links contrasted with standalone pages. The nodes and edges are live, so you can navigate to other domain entities.
+Here we see a visualization of the notebook pages in the book itself that are reachable by following links, contrasted with standalone pages. The nodes and edges are live, so you can navigate to other domain entities.
 
 NB: The FCA lattice we saw earlier was also built with Mondrian.'>
 	^ aSlide labelAndElement
@@ -355,6 +373,7 @@ NB: The FCA lattice we saw earlier was also built with Mondrian.'>
 { #category : #slides }
 Gt4Research >> gtToolingTreemap: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## A Treemap of packages with custom views and examples
 
@@ -371,6 +390,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 { #category : #slides }
 Gt4Research >> gtTools: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# GT includes numerous R&D tools
 
@@ -394,10 +414,11 @@ We''ve already seen many examples of custom inspector views. The coder editor an
 { #category : #slides }
 Gt4Research >> lexiconExample: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A lexicon file
 
-An interesting aspect of the atproto is that records, event stream messages and endpoints are meta-described as so-called “lexicon” files. Here we see the JSON record for a Bluesky account profile.'>
+An interesting aspect of atproto is that records, event stream messages and endpoints are meta-described as so-called “lexicon” files. Here we see the JSON record for a Bluesky account profile. It has a global identifier, it describes a record type, and has properties `displayName`, `description` and `avatar`.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'A lexicon file';
@@ -407,6 +428,7 @@ An interesting aspect of the atproto is that records, event stream messages and 
 { #category : #slides }
 Gt4Research >> lexiconGeneratedClass: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## Code generated from a lexicon
 
@@ -521,10 +543,11 @@ Gt4Research >> lexiconProfileExtract [
 { #category : #slides }
 Gt4Research >> llmTutorExplorer: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Exploring an LLM chat
 
-In this example, we use GT as a platform for managing chats with openAI assistants. We not only want to chat with an assistant, but we want to manage the interactions and mold the experience to obtai useful results.'>
+In this example, we use GT as a platform for managing chats with openAI assistants. We not only want to chat with an assistant, but we want to manage the interactions and mold the experience to obtain useful results.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Exploring an LLM chat');
@@ -539,6 +562,7 @@ In this example, we use GT as a platform for managing chats with openAI assistan
 { #category : #slides }
 Gt4Research >> luceneDataExampleClass: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# The Defect Prediction Benchmark example class
 
@@ -555,6 +579,7 @@ When you discover interesting results, the idea is to encapsulate these as examp
 { #category : #slides }
 Gt4Research >> luceneDefectData: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## The Lucene 2.3.0 defect dataset
 
@@ -584,6 +609,7 @@ The point of this is not to show you that we discovered something new about the 
 { #category : #slides }
 Gt4Research >> mdForResearch: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# Moldable Development as a Research Methodology
 
@@ -617,6 +643,7 @@ Thanks for listening.'>
 { #category : #slides }
 Gt4Research >> moldableDevelopment: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## Moldable development in a nutshell
 
@@ -635,6 +662,7 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 { #category : #slides }
 Gt4Research >> moreOpaqueness: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## Opaqueness
 
@@ -649,8 +677,8 @@ Reading source code does not scale to large systems. Documentation is typically 
 '
 • Browsing source code
 • Reading documentation
-• Consulting online resources
 • Generic analysis tools
+• Consulting online resources
 • Generative AI
 ')
 ]
@@ -676,6 +704,7 @@ Possibly over multiple lines.
 { #category : #slides }
 Gt4Research >> postMessageTutor: aSlide [
 	<gtSlide>
+	<time: 4>
 	<text:
 '## A social media post tutor
 
@@ -687,7 +716,9 @@ This tutor knows the default chat action but also the specific ones to create a 
 
 Now let''s start a chat and ask the AI to correct the grammar. With a normal chat we would just get the correct text back. Here instead we get a result with a Diff view, which is more useful. This is just a simple custom view defined on the message itself.
 
-If we like the proposal, we can accept the change with a custom action.'>
+If we like the proposal, we can accept the change with a custom action.
+
+Once again, the point is not that we can interact with openAI assistants, but rather that we can model the interactions and mold them to our purposes.'>
 <demo:
 '- Grab the snippet.
 - Inspect the tutor.
@@ -751,6 +782,7 @@ These patterns target (i) readers curious to learn about moldable development, (
 { #category : #slides }
 Gt4Research >> runningSystem: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## Running systems are typically opaque
 
@@ -767,6 +799,7 @@ A running system just shows its UI. You can interact with this, but you can''t g
 { #category : #slides }
 Gt4Research >> simpleChat: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A simple chat
 
@@ -840,6 +873,7 @@ Gt4Research >> slidePriorities [
 { #category : #slides }
 Gt4Research >> smaccPage: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## SmaCC
 
@@ -858,10 +892,11 @@ Here we see a GT notebook page explaining how to query the ASTs produced by SmaC
 { #category : #slides }
 Gt4Research >> splFactorial: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A small step interpreter built with PetitParser
 
-PetitParser, on the other hand is a parser combinator framework that supports island parsing, which is useful for extract selected information from source or data files.
+PetitParser, on the other hand is a parser combinator framework that supports island parsing, which is useful for extracting selected information from source or data files.
 
 In this example we use PetitParser to produce a small-step semantics interpreter by transforming the ASTs of a program and its continuations.'>
 <demo:
@@ -879,6 +914,7 @@ In this example we use PetitParser to produce a small-step semantics interpreter
 { #category : #slides }
 Gt4Research >> summarySlide: aSlide [
 	<gtSlide>
+	<time: 0>
 	<text:
 '# Summary'>
 	| slideSelectors |
@@ -896,6 +932,7 @@ Gt4Research >> summarySlide: aSlide [
 { #category : #slides }
 Gt4Research >> title: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# GT: A Moldable Research Platform
 
