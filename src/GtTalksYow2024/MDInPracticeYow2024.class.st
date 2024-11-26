@@ -107,7 +107,9 @@ MDInPracticeYow2024 >> coda: aSlide [
 
 These patterns are supported by GT, but are not specific to it. By making your development tools moldable, you can support a form of moldable development for your own platform.
 
-Thanks for listening.'>
+Thanks for listening.
+
+[Link to slideshow Resources](https://www.oscar.nierstrasz.org/yow2024/)'>
 	^ aSlide textAndElement
 		elementWeight: 0.4;
 		setPriority;
