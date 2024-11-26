@@ -102,9 +102,12 @@ MDInPracticeYow2024 >> cardDemoModel [
 { #category : #slides }
 MDInPracticeYow2024 >> coda: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text: '# Coda
 
-These patterns are supported by GT, but are not specific to it. By making your development tools moldable, you can support a form of moldable development for your own platform.'>
+These patterns are supported by GT, but are not specific to it. By making your development tools moldable, you can support a form of moldable development for your own platform.
+
+Thanks for listening.'>
 	^ aSlide textAndElement
 		elementWeight: 0.4;
 		setPriority;
@@ -126,13 +129,16 @@ Moldable development is a ')
 { #category : #slides }
 MDInPracticeYow2024 >> composedGameExample: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A composed example  method
 
-Now it gets interesting. Once we have an example method that returns an object, we can use that object to compose new ones. Here we take our `emptyGame` as a starting point t o create a new example. It too returns an example, which can be furtrher composed.
+Now it gets interesting. Once we have an example method that returns an object, we can use that object to compose new ones. Here we take our `emptyGame` as a starting point to create a new example.
 
-In the *Examples map* of this class we can see that this example is further reused to form a whole tree of examples.
-'>
+Once we have the game instance, we perform an action, followed by a number of assertions. As before, we return an example, which can be further composed.
+
+In fact, if we explore the class of this example method, we see that there are numerous composed examples. In the *Examples map* of this class we can see how these methods are organized into an entire tree of composed examples.'>
+
 <demo:
 '- Run the example
 - Click on the method name to view the method within its class
@@ -149,6 +155,7 @@ In the *Examples map* of this class we can see that this example is further reus
 { #category : #slides }
 MDInPracticeYow2024 >> customLudoView: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A custom Inspector view
 
@@ -165,6 +172,7 @@ This works simply because the object inspector sees that the LudoGame object and
 { #category : #slides }
 MDInPracticeYow2024 >> customViewTypes: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## Some Custom Views
 
@@ -191,6 +199,7 @@ Most of these are simple, though the explicit view allows you to create arbitrar
 { #category : #slides }
 MDInPracticeYow2024 >> emptyGameExample: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A basic example  method
 
@@ -198,7 +207,7 @@ Here is a very simple example. It has the annotation `<gtExample>`, which is sim
 
 The method creates a Ludo `game` instance, and performs some assertions.
 
-The difference, and this is key, is that at the end the object is returned. This allows us not only ti run the test, but to inspect and explore the result, *even if the tests pass*.
+The difference, and this is key, is that at the end the object is returned. This allows us not only to run the test, but to inspect and explore the result, *even if the tests pass*.
 '>
 <demo:
 'Run the example and explore the result.'>
@@ -268,6 +277,7 @@ so that you can have a conversation with them.')
 { #category : #slides }
 MDInPracticeYow2024 >> ghReposForView: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## A columned list view
 
@@ -277,7 +287,7 @@ Specifying such a view is quite straightforward. You define a method of the doma
 
 That''s it. Many of the other standard views are similarly simple to specify.
 
-Note that in this case views are specified in SMalltalk, but the specifications are similar in Python,  or other languages.'>
+Note that in this case views are specified in Smalltalk, but the specifications are similar in Python,  or other languages.'>
 
 		^ aSlide labelAndElement
 		setPriority;
@@ -442,23 +452,22 @@ How does this work?
 
 The idea of moldable development is to make it very easy to add such custom tools by opening up the development tools themselves to lightweight extensions. This can be done in a systematic way, which we can describe a set of patterns. Now let''s look at a few of these patterns in a bit more detail.'>
 
-	^ aSlide paragraph
+	^ (aSlide title)
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'So what? ...');
-		paragraphWithFormat: (self
-				asText: 
-'
-')
+		titleWithFormat: (self asTitle: 'So what?')
 ]
 
 { #category : #slides }
 MDInPracticeYow2024 >> moldableCoder: aSlide [
 	<gtSlide>
+	<time: 1>
 
 <text:
 '## The moldable code editor
 
-Here is another example of a moldable tool, in this case the code browser and editor. The entities are not objects, but classes. Classes can define custom tools as methdos annotated with `<gtClassView>`. For example, the *Examples map* is a view that is activated for any class that has example methods.'>
+Here is another example of a moldable tool, in this case the code browser and editor. The entities are not objects, but classes. Classes can define custom tools as methods annotated with `<gtClassView>`. For example, the *Examples map* is a view that is activated for any class that has example methods.
+
+The *Examples* view is another custom view providing us with a simple GUI for running and exploring examples.'>
 
 	^ aSlide labelAndElement
 		setPriority;
@@ -469,15 +478,19 @@ Here is another example of a moldable tool, in this case the code browser and ed
 { #category : #slides }
 MDInPracticeYow2024 >> moldableDebugger: aSlide [
 	<gtSlide>
-
-<text:
+	<time: 1>
+	<text:
 '## The moldable debugger
 
 The same principle can be applied to many other tools. Here we have a custom debugger defined for mismatched string comparisons.
 
-This works because the `AssertionFailure` object has a custom diff tool defined with three annotations: one for the object inspector, one for the debugger, and one for the embeddecd debugger, which we just saw.'>
+If the assertion fails, we get a custom debug message showing us a diff. If we open the debugger, we get the diff view in detail, showing us where the strings do not match. If we want, we can also switch to the standard, stack-oriented debugger view.
+
+This works because the `AssertionFailure` object has a custom diff tool defined with three annotations: one for the object inspector, one for the debugger, and one for the embedded debugger, which we just saw.'>
 <demo:
-'- Show the comparison view
+'- Run the code showing the embedded diff view.
+- Open the debugger, showing the detailed diff view.
+- Switch to the stack view and back.
 - Inspect the Exception and see this is just an inspector view
 '>
 	^ aSlide headingAndCode
@@ -557,12 +570,13 @@ Problem: ') italic
 { #category : #slides }
 MDInPracticeYow2024 >> patternCustomView: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# Pattern: Custom View
 
 When you explore a software system and find interesting stuff, how can you ensure that you will be able to easily that stuff again?
 
-The core idea of this pattern is to take the steps you perform to find and display the interesting data and turn them into a custom view of the object inspector of a suitable domain object.
+The core idea of this pattern is to take the steps you perform to find and display the interesting data, and turn them into a custom view of the object inspector of a suitable domain object.
 
 This is exactly what we saw in the Ludo game, in the Cobol CardDemo, and in the GitHub REST API examples.'>
 	^ aSlide paragraph
@@ -581,9 +595,10 @@ Problem: ') italic, (self
 { #category : #slides }
 MDInPracticeYow2024 >> patternExampleObject: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text: '# Pattern: Example Object
 
-This pattern starts from the simple observation that green unit tests returning void are a lost opportunity. Instead of returning nothing, let them return the object under test as an *example*.'>
+This pattern starts from the simple observation that a green unit test that returns void is a lost opportunity. Instead of returning nothing, let it return the object under test as an *example*.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Pattern: Example Object');
@@ -601,13 +616,24 @@ Problem: ') italic
 { #category : #slides }
 MDInPracticeYow2024 >> patternMap: aSlide [
 	<gtSlide>
+	<time: 2.5>
 	<text:
 '# A Map of Moldable Development Patterns
 
 Here we see a map of the moldable development patterns we have observed and documented so far. A few of them we have talked about today.
 
-You can learn more about them within Glamorous Toolkit itself. If you download GT from gtoolkit.com, and start it, you will find these live pages documenting the patterns. There is also a PDF of the patterns if you prefer.
-'>
+At the top we see *Explainable System*, which is not really a pattern, but rather what we want to achieve.
+
+We have seen *Moldable Tool*, which is a prerequisite for the patterns below.
+
+*Example Object*, which we also saw, offers a way to obtain a *Moldable Object*. *Moldable Object* is where we start the moldable development process. We saw this in action when we were developing the GitHub Organization. Every time we wrapped some data, we obtained a moldable object that we could customize. In fact, these wrappers were examples of the *Moldable Data Wrapper* pattern we see here at the right.
+
+We used a *Contextual Playground* to write experimental code and extract methods.
+
+At the bottom we have several patterns concerning the creation of custom tools. We focused on *Custom View*, in particular the “Columned list” view, which is an example of a very *Simple View*. There are also patterns dealing with the creation of custum actions and searches.
+
+You can learn more about them within Glamorous Toolkit itself. If you download GT from gtoolkit.com, and start it, you will find these live pages documenting the patterns. There is also a PDF of the patterns if you prefer.'>
+
 <demo:
 '- Click on Explainable System.
 - Maximize it to reveal the GT book pages.
@@ -623,6 +649,7 @@ You can learn more about them within Glamorous Toolkit itself. If you download G
 { #category : #slides }
 MDInPracticeYow2024 >> patternMoldableTool: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# Pattern: Moldable Tool
 
@@ -712,10 +739,13 @@ MDInPracticeYow2024 >> qrCodeElementOLD [
 { #category : #slides }
 MDInPracticeYow2024 >> rawLudoView: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## A raw Inspector view
 
-Consider the long-suffering Object Inspector. A tool that is normally only seen from within a debugger. It classically shows you a view such as this one, where we have laboriously navigated to the 6th move of an instance of the Ludo game to understand what has happened.'>
+Consider the long-suffering Object Inspector. A tool that is normally only seen from within a debugger. It classically shows you a view such as this one, where we have laboriously navigated to the 6th move of an instance of the Ludo game to understand what has happened.
+
+Although you can explore objects and learn things in this way, it is cumbersome and ineffective.'>
 
 	^ aSlide labelAndElement
 		setPriority;
@@ -841,10 +871,11 @@ Today I''d like to talk to you about Moldable Development, an approach that open
 { #category : #slides }
 MDInPracticeYow2024 >> whyExamples: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text: 
 '## Why examples?
 
-So, why are examaples interesting? First, we can compose them, reducing code duplication and cascading errors when a dependent test fails.
+So, why are examples interesting? First, we can compose them, reducing code duplication and cascading errors when a dependent test fails.
 
 Second, the live examples can be inspected and explored, thus forming a kind of live documentation. Examples can even be embedded within notebook pages or slideshows, as we have seen here.
 
