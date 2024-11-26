@@ -23,12 +23,17 @@ MDInPracticeYow2024 class >> cardDemoModel [
 { #category : #slides }
 MDInPracticeYow2024 >> cardDemo: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## The wrapped CardDemo
 
-From a bitmap we can navigate to its source code, and to the dependency map of programs and screens. We can also navigate from source to other source code.
+Here we have taken the raw source files of the CardDemo and modeled the COBOL domain entities.
 
-'>
+From a bitmap we can navigate to its source code, and the map of programs and screen, showing how we can navigate through the menus of the application.
+
+The map is live, so we can navigate to indivudal screens and programs. From a program we can explore its source code, and from their to related entities. For example, we can inspect the individual variables, and see how their  memory is allocated. (COBOL variables can have overlapping definitions.)
+
+The central idea is to first take the raw data and wrap them as linked and explorable domain entities. Then, as we pose questions about the system, we introduce lightweight, custom tools, namely views and actions, that allow us to experiment and answer these questions.'>
 <demo:
 '- Inspect `All BMS Maps`
 - Click on the first screen (just to the left of the screen itself)
@@ -39,7 +44,7 @@ From a bitmap we can navigate to its source code, and to the dependency map of p
 
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'AWS CardDemo';
+		newFadedText: 'The wrapped CardDemo as an explainable system';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: self cardDemoModel))
 				maximized ]
@@ -48,10 +53,11 @@ From a bitmap we can navigate to its source code, and to the dependency map of p
 { #category : #slides }
 MDInPracticeYow2024 >> cardDemoExample: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Example: Exploring the COBOL CardDemo
 
-The AWS CardDemo is an open source COBOL mainframe application that is available for exploring and testing various kinds of legacy modernization technologies.
+The AWS CardDemo is an open source COBOL mainframe application that is available for exploring and testing various kinds of legacy modernization technologies. It can be freely downloaded from the AWS website.
 
 [blog url](https://aws.amazon.com/blogs/opensource/introducing-open-source-aws-carddemo-for-mainframe-modernization/)'>
 
@@ -67,13 +73,16 @@ is an open source COBOL application for testing legacy mainframe modernization t
 { #category : #slides }
 MDInPracticeYow2024 >> cardDemoFiles: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## The raw CardDemo files
 
+Here is the raw download of the files of the CardDemo. We can see there are bitmap files of the screen menus, and  cobol source files, but how are they related? 
 
-We can see the source files and screens, but how are they related?'>
+There are also some diagrams, but what do they mean?'>
 <demo:
 '- Browse the `app/cbl` and `diagrams` folders
+- Click on some of the diagrams
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -204,6 +213,7 @@ The difference, and this is key, is that at the end the object is returned. This
 { #category : #slides }
 MDInPracticeYow2024 >> explainableLudo: aSlide [
 	<gtSlide>
+	<time: 2>
 	<text:
 '## Explainable Ludo
 
@@ -234,6 +244,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 { #category : #slides }
 MDInPracticeYow2024 >> explainableSystems: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text: 
 '# Explainable Systems
 
@@ -277,10 +288,13 @@ Note that in this case views are specified in SMalltalk, but the specifications 
 { #category : #slides }
 MDInPracticeYow2024 >> githubExample: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '# Example: Exploring the GitHub REST API
 
-The GitHub REST API provides information about organizations, user and repositories in the form of JSON data.
+Here''s a second example where the software data is obtained through a REST API.
+
+The GitHub REST API provides information about organizations, users and repositories in the form of JSON data.
 '>
 	^ aSlide paragraph
 		setPriority;
@@ -295,6 +309,7 @@ serves information in the form of JSON data.
 { #category : #slides }
 MDInPracticeYow2024 >> githubFeenkOrgJSon: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## Raw JSON data of the feenk GitHub organization
 
@@ -311,13 +326,20 @@ Here we see the raw JSON data of the feenk organization. It exposes a number of 
 { #category : #slides }
 MDInPracticeYow2024 >> githubFeenkOrgWrapped: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## The feenk GitHub organization JSON as a wrapped, moldable  object
 
 After a few iterations we enrich the GitHub organization model with several more entities and views, according to whatever interests us.
-'>
+
+We can navigate to a particular repository, such as `gtoolkit-demos`, browse the individual contributors to this repository, and see what kind of git events they have contributed.
+
+We also have a couple of custom actions, for example, an action to open the repository''s webiste in a browser, or to inspect the repository if it happens to be installed locally.'>
 <demo:
-'Browse the model ...'
+'- Click through the repos
+- Search by name for demo
+- Browse Contributors and events
+- Click on the *Open in browser* and *Go to repository* actions '
 >
 	^ aSlide labelAndElement
 		setPriority;
@@ -357,6 +379,7 @@ MDInPracticeYow2024 >> githubOrgDemoPage [
 { #category : #slides }
 MDInPracticeYow2024 >> githubOrgDemoPage: aSlide [
 	<gtSlide>
+	<time: 11>
 	<text:
 '## GitHub REST API demo
 
@@ -405,6 +428,7 @@ MDInPracticeYow2024 >> initialize [
 { #category : #slides }
 MDInPracticeYow2024 >> intermezzo: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# Intermezzo -- So what?
 
@@ -467,10 +491,11 @@ This works because the `AssertionFailure` object has a custom diff tool defined 
 { #category : #slides }
 MDInPracticeYow2024 >> moldableDevelopment: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## Moldable development in a nutshell
 
-Moldable development is a methodology that makes a system explainable by extending it with numerous custom tools that answer specific questions about the system and its underlying domain concepts.'>
+Moldable development is a methodology that makes a system explainable by extending it with numerous, inexpensive and lightweight custom tools that answer specific questions about the system and its underlying domain concepts.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable development');
@@ -485,22 +510,23 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 { #category : #slides }
 MDInPracticeYow2024 >> moreOpaqueness: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '## Opaqueness
 
 Other means of understanding opaque systems are also commonly ineffective.
 
-Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
+Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Generic analysis tools can be useful for answering some questions, but they rarely help you answer very specific questions that you have. Googling or using online resources typically yields many false positives, as is the case with generative AI tools.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software:');
+		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software');
 		paragraphWithFormat: (self
 				asText: 
 '
 • Browsing source code
 • Reading documentation
-• Consulting online resources
 • Generic analysis tools
+• Consulting online resources
 • Generative AI
 ')
 ]
@@ -700,6 +726,7 @@ Consider the long-suffering Object Inspector. A tool that is normally only seen 
 { #category : #slides }
 MDInPracticeYow2024 >> runningSystem: aSlide [
 	<gtSlide>
+	<time: 0.5>
 	<text:
 '## Running systems are typically opaque
 
@@ -792,6 +819,7 @@ MDInPracticeYow2024 >> summarySlide: aSlide [
 { #category : #slides }
 MDInPracticeYow2024 >> title: aSlide [
 	<gtSlide>
+	<time: 1>
 	<text:
 '# Moldable Development in Practice — Patterns for Legacy Modernization
 

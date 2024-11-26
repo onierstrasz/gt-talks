@@ -104,7 +104,7 @@ Gt4Research >> cardDemoExample: aSlide [
 	<text:
 '# Example: Exploring the COBOL CardDemo
 
-The AWS CardDemo is an open source COBOL mainframe application that is available for exploring and testing various kinds of legacy modernization technologies.
+The AWS CardDemo is an open source COBOL mainframe application that is available for exploring and testing various kinds of legacy modernization technologies. It can be freely downloaded from the AWS website.
 
 [blog url](https://aws.amazon.com/blogs/opensource/introducing-open-source-aws-carddemo-for-mainframe-modernization/)'>
 
@@ -114,7 +114,7 @@ The AWS CardDemo is an open source COBOL mainframe application that is available
 		paragraphWithFormat: (self
 				asText: 
 '
-is an open source COBOL mainframe application for testing legacy mainframe modernization technologies.')
+is an open source COBOL application for testing legacy mainframe modernization technology.')
 ]
 
 { #category : #slides }
@@ -124,9 +124,12 @@ Gt4Research >> cardDemoFiles: aSlide [
 	<text:
 '## The raw CardDemo files
 
-If we download the CardDemo files and explore them, we can see various kinds of source files and screens, but how are they related?'>
+Here is the raw download of the files of the CardDemo. We can see there are bitmap files of the screen menus, and  cobol source files, but how are they related? 
+
+There are also some diagrams, but what do they mean?'>
 <demo:
 '- Browse the `app/cbl` and `diagrams` folders
+- Click on some of the diagrams
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -199,7 +202,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 { #category : #slides }
 Gt4Research >> explainableSystems: aSlide [
 	<gtSlide>
-	<time: 1>
+	<time: 0.5>
 	<text: 
 '# Explainable Systems
 
@@ -266,7 +269,10 @@ Gt4Research >> githubFeenkOrgWrapped: aSlide [
 '## The feenk GitHub organization JSON as a wrapped, moldable  object
 
 After a few iterations we enrich the GitHub organization model with several more entities and views, according to whatever interests us.
-'>
+
+We can navigate to a particular repository, such as `gtoolkit-demos`, browse the individual contributors to this repository, and see what kind of git events they have contributed.
+
+We also have a couple of custom actions, for example, an action to open the repository''s webiste in a browser, or to inspect the repository if it happens to be installed locally.'>
 <demo:
 '- Click through the repos
 - Search by name for demo
@@ -643,11 +649,11 @@ Thanks for listening.'>
 { #category : #slides }
 Gt4Research >> moldableDevelopment: aSlide [
 	<gtSlide>
-	<time: 1>
+	<time: 0.5>
 	<text:
 '## Moldable development in a nutshell
 
-Moldable development is a methodology that makes a system explainable by extending it with numerous custom tools that answer specific questions about the system and its underlying domain concepts.'>
+Moldable development is a methodology that makes a system explainable by extending it with numerous, inexpensive and lightweight custom tools that answer specific questions about the system and its underlying domain concepts.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable development');
@@ -668,7 +674,7 @@ Gt4Research >> moreOpaqueness: aSlide [
 
 Other means of understanding opaque systems are also commonly ineffective.
 
-Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Googling or using online resources typically yields many false positives, as do off-the-shelf analysis tools or generative AI tools.'>
+Reading source code does not scale to large systems. Documentation is typically incomplete, out of date, and inconsistent with the current implementation. Generic analysis tools can be useful for answering some questions, but they rarely help you answer very specific questions that you have. Googling or using online resources typically yields many false positives, as is the case with generative AI tools.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Inadequate means to understand software');
