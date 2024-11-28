@@ -10,12 +10,13 @@ Class {
 { #category : #accessing }
 Gt4Research class >> cardDemoModel [
 	cardDemoModel
-		ifNil: [ AWSCardDemo
-				model: (GtCobolImporter new
-						copyBookDirectories: {AWSCardDemo rootDirectory / 'app/cpy'.
-								AWSCardDemo rootDirectory / 'app/cpy-bms'};
-						importDirectory: AWSCardDemo rootDirectory;
-						model).
+		ifNil: [ AWSCardDemo model
+				ifNil: [ AWSCardDemo
+						model: (GtCobolImporter new
+								copyBookDirectories: {AWSCardDemo rootDirectory / 'app/cpy'.
+										AWSCardDemo rootDirectory / 'app/cpy-bms'};
+								importDirectory: AWSCardDemo rootDirectory;
+								model) ].
 			cardDemoModel := AWSCardDemo model ].
 	^ cardDemoModel
 ]
