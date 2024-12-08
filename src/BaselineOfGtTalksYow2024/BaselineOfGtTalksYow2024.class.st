@@ -7,7 +7,8 @@ Class {
 { #category : #loading }
 BaselineOfGtTalksYow2024 class >> loadDependencies [
 	BaselineOfGtTalks loadLepiter.
-	AWSCardDemo initializeDownload
+	AWSCardDemo initializeDownload.
+	#BaselineOfGt4AtProto asClass loadLepiter
 ]
 
 { #category : #baselines }
@@ -18,6 +19,9 @@ BaselineOfGtTalksYow2024 >> baseline: spec [
 		do: [ spec
 				baseline: 'GToolkit4Cobol'
 				with: [ spec repository: 'github://feenkcom/gt4cobol:main/src' ].
+			spec
+				baseline: 'Gt4AtProto'
+				with: [ spec repository: 'github://feenkcom/gt4atproto:main/src' ].
 			spec
 				baseline: 'GtTalks'
 				with: [ spec repository: 'github://onierstrasz/gt-talks:main/src' ].
