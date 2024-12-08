@@ -22,6 +22,29 @@ MDInPracticeYow2024 class >> cardDemoModel [
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> blueSkyUser: aSlide [
+	<gtSlide>
+	<time: 2>
+	<text:
+'## Inspecting a BlueSky user
+
+Once you have created these custom views, you end up with a powerful environment for exploring a domain. Here we have what looks like a BlueSky client, but in fact it is just an object inspector on the domain objects we get back from the AT protocol. What makes this interesting is that instead of a closed app, we get a moldable environment for interactively exploring questions about the BlueSky domain.'>
+<demo:
+'- Look at the Timeline view
+- Inspect a post
+- See that it has a `hasMedia` method
+- Open the playground of the actor
+- Evaluate `self timelinePosts select: #hasMedia`
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Inspecting a BlueSky user';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: BlueskyDemo new actor))
+				maximized ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> cardDemo: aSlide [
 	<gtSlide>
 	<time: 2>
@@ -526,7 +549,7 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 { #category : #slides }
 MDInPracticeYow2024 >> moreOpaqueness: aSlide [
 	<gtSlide>
-	<time: 1>
+	<time: 0.5>
 	<text:
 '## Opaqueness
 
@@ -782,6 +805,7 @@ MDInPracticeYow2024 >> slidePriorities [
 		explainableSystems:
 			runningSystem:
 			moreOpaqueness:
+			softwareTalks:
 			moldableDevelopment:
 			explainableLudo:
 		
@@ -799,6 +823,7 @@ MDInPracticeYow2024 >> slidePriorities [
 		patternCustomView:
 			ghReposForView:
 			customViewTypes:
+			blueSkyUser:
 		
 		patternExampleObject:
 			emptyGameExample:
@@ -814,11 +839,8 @@ MDInPracticeYow2024 >> slidePriorities [
 		patternMap:
 		
 		coda:
-		
-			"summarySlide:"
-		
-		"placeholder:"
-		
+
+
 	)
 	
 	"We can look at a couple of case studies and the patterns they use.
@@ -832,6 +854,19 @@ Pattern: Moldable Tool
 Pattern: Example Object
 Patterns Overview
 Coda ..."
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> softwareTalks: aSlide [
+	<gtSlide>
+	<time: 0.5>
+	<text: 
+'## Software wants to talk to you
+
+What''s the solution? In fact, the software is willing and able to talk to you, but you have to let it. Let''s see how this works.'>
+	^ aSlide title
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Software wants to talk to you')
 ]
 
 { #category : #slides }

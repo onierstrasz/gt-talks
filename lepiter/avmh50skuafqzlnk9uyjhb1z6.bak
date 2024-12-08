@@ -257,14 +257,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-11-20T16:54:31.735677+01:00"
+									"dateAndTimeString" : "2024-11-21T15:17:09.835065+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "mddE45/iDQCDUDltCArAtw=="
 							},
-							"code" : "MDInPracticeYow2024 new "
+							"code" : "MDInPracticeYow2024 new"
 						},
 						{
 							"__type" : "textSnippet",
@@ -513,6 +513,78 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#Loading"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-12-04T17:59:20.648452+11:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-12-04T17:59:21.420986+11:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "fZnXDs7kDQCnQ3z9DCurwA=="
+							},
+							"code" : "GtLudoRecordingGameExamples allMethods do: #clearExampleAndTestCaches."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-04T17:59:10.274514+11:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-04T17:59:25.594939+11:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "NlM5Ds7kDQCmvQK/DCurwA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Clear the green examples"
 			},
 			{
 				"__type" : "textSnippet",
