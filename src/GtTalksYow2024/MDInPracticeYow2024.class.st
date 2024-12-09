@@ -301,6 +301,16 @@ so that you can have a conversation with them.')
 ]
 
 { #category : #slides }
+MDInPracticeYow2024 >> feedback: aSlide [
+	<gtSlide>
+	^ aSlide element
+		setPriority;
+		element: [ GtFilePictureLiveSlide new
+				fileReference: (GtResourcesUtility
+						resourceAtPath: self picturesDirectoryPath / 'BNEFeedback-App-slide.png') ]
+]
+
+{ #category : #slides }
 MDInPracticeYow2024 >> ghReposForView: aSlide [
 	<gtSlide>
 	<time: 2>
@@ -697,6 +707,12 @@ Problem: ') italic
 						asText: 'Make the development tools moldable to the dynamic context of the artifacts they work with, by associating custom behavior to those artifacts.')
 ]
 
+{ #category : #accessing }
+MDInPracticeYow2024 >> picturesDirectoryPath [
+	^ Path *
+		'onierstrasz/gt-talks/data/images'
+]
+
 { #category : #slides }
 MDInPracticeYow2024 >> placeholder: aSlide [
 	"<gtSlide>"
@@ -839,6 +855,7 @@ MDInPracticeYow2024 >> slidePriorities [
 		patternMap:
 		
 		coda:
+			feedback:
 
 
 	)
