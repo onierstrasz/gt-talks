@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:12:38.21961+10:00"
+						"dateAndTimeString" : "2024-12-10T17:49:36.408563+10:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ih0p/UXlDQCvOZZ6CYDUcw=="
 				},
-				"code" : "m := GtMondrian new.\rm nodes\r\tstencil: [ :picFile | \r\t\t(GtFileUtility imageElementFromFileReference: picFile)\r\t\t\tmargin: (BlInsets all: 10) ];\r\twith: pics.\rm layout tree.\rm"
+				"code" : "m := GtMondrian new.\rm nodes\r\tstencil: [ :picFile | \r\t\t| elt |\r\t\telt := (GtFileUtility imageElementFromFileReference: picFile)\r\t\t\t\tmargin: (BlInsets all: 10).\r\t\telt width: 200.\r\t\telt ];\r\twith: pics.\rm layout tree.\rm"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -157,6 +157,145 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:50:17.648634+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:52:42.330641+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+wAaeEflDQCleUt1BoUAfA=="
+				},
+				"code" : "m := GtMondrian new.\rm nodes\r\tstencil: [ :picFile | \r\t\t((GtFileUtility imageElementFromFileReference: picFile)\r\t\t\tmargin: (BlInsets all: 10))\r\t\t\twidth: 1000;\r\t\t\tyourself ];\r\twith: pics.\r\rm layout custom: BlBasicLayout new.\rm root children\r\twithIndexDo: [ :child :n | child relocate: (explicitPositions at: n) ].\rm"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:53:02.332899+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:54:01.087224+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JuDqgUflDQCvzRoKBoUAfA=="
+				},
+				"code" : "MDInPracticeYow2024 new onMondrian"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:53:52.373626+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:54:28.354266+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "PWzmhEflDQCw5GMjBoUAfA=="
+				},
+				"code" : "MDInPracticeYow2024>>#onAboutSlide:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:44:47.752646+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T17:46:00.128305+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+8AYZEflDQCHRjIeBoUAfA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The image sizes are not great. How can we fix them?"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-12-10T16:06:12.482205+10:00"
 					}
 				},
@@ -168,14 +307,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:06:16.041572+10:00"
+						"dateAndTimeString" : "2024-12-10T17:42:49.040296+10:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "eVPcA0blDQCw1zbpCYDUcw=="
 				},
-				"code" : "GtMondrianBasicExamples"
+				"code" : "GtMondrian gtReferences & #size: gtSenders "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -191,7 +330,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:06:23.510991+10:00"
+						"dateAndTimeString" : "2024-12-10T17:43:03.218108+10:00"
 					}
 				},
 				"editEmail" : {
@@ -202,14 +341,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:06:34.806482+10:00"
+						"dateAndTimeString" : "2024-12-10T17:43:20.415224+10:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "A56EBEblDQCw/G42CYDUcw=="
+					"uidString" : "tyA1XkflDQCAYvh0BoUAfA=="
 				},
-				"code" : "PatternScripterExamples"
+				"code" : "#size gtSenders & GtFileUtility gtReferences"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -225,7 +364,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:09:28.400509+10:00"
+						"dateAndTimeString" : "2024-12-10T17:44:33.809528+10:00"
 					}
 				},
 				"editEmail" : {
@@ -236,14 +375,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-12-10T16:09:28.977969+10:00"
+						"dateAndTimeString" : "2024-12-10T17:46:13.467743+10:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "K86JD0blDQCx9MvcCYDUcw=="
+					"uidString" : "DnCbY0flDQCGhc+aBoUAfA=="
 				},
-				"code" : "LePageMondrianMapExamples>>#patternMapWithCategories"
+				"code" : "GtFileUtility imageElementFromFileReference: youtube"
 			}
 		]
 	},
@@ -255,7 +394,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-12-10T15:55:50.980635+10:00"
+			"dateAndTimeString" : "2024-12-10T17:39:56.263786+10:00"
 		}
 	},
 	"editEmail" : {
@@ -266,12 +405,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-12-10T15:55:50.980635+10:00"
+			"dateAndTimeString" : "2024-12-10T17:39:56.263786+10:00"
 		}
 	},
 	"pageType" : {
-		"__type" : "unnamedPage",
-		"defaultTitle" : "Page"
+		"__type" : "namedPage",
+		"title" : "Playing with image file layouts"
 	},
 	"uid" : {
 		"__type" : "uuid",

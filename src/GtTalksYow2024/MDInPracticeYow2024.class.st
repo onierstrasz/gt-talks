@@ -580,10 +580,20 @@ Reading source code does not scale to large systems. Documentation is typically 
 ')
 ]
 
+{ #category : #slides }
+MDInPracticeYow2024 >> onAboutSlide: aSlide [
+	<gtSlide>
+	<text: '# About Oscar'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'About Oscar';
+		element: [ self onMondrian asElement asScalableElement ]
+]
+
 { #category : #mondrian }
 MDInPracticeYow2024 >> onMondrian [
 	<gtExample>
-	| images on pbe oorp qr youtube pics explicitPositions m |
+	| images on pbe oorp qr youtube pics explicitPositions m picsWidths |
 	images := FileLocator gtResource / 'onierstrasz' / 'gt-talks' / 'data'
 			/ 'images'.
 	on := images / 'on-nov-2017-no-painting-small.jpg'.
@@ -596,31 +606,34 @@ MDInPracticeYow2024 >> onMondrian [
 			oorp.
 			qr.
 			youtube}.
+	picsWidths := {{on.
+				500}.
+			{pbe.
+				300}.
+			{oorp.
+				300}.
+			{qr.
+				500}.
+			{youtube.
+				600}}.
 	explicitPositions := {-1110.5 @ -849.8478393554688.
 			-4.5 @ -730.8478393554688.
-			-478.5 @ -762.8478393554688.
+			-338.5 @ -822.8478393554688.
 			-1112.5 @ -203.84783935546875.
-			-222.5 @ -150.84783935546875}.
+			-295.5 @ -264.84783935546875}.
 	m := GtMondrian new.
 	m nodes
-		stencil: [ :picFile | 
-			(GtFileUtility imageElementFromFileReference: picFile)
-				margin: (BlInsets all: 10) ];
-		with: pics.
+		stencil: [ :picWidth | 
+			(GtFileUtility imageElementFromFileReference: picWidth first)
+				margin: (BlInsets all: 10);
+				width: picWidth second;
+				yourself ];
+		with: picsWidths.
 	m layout custom: BlBasicLayout new.
 	m root children
 		withIndexDo: [ :child :n | child relocate: (explicitPositions at: n) ].
-	^ m
-]
 
-{ #category : #slides }
-MDInPracticeYow2024 >> onSplashSlide: aSlide [
-	"<gtSlide>"
-	<text: '# About Oscar'>
-	^ aSlide labelAndElement
-		setPriority;
-		newFadedText: 'About Oscar';
-		element: [ self onMondrian asElement asScalableElement ]
+	^ m
 ]
 
 { #category : #slides }
