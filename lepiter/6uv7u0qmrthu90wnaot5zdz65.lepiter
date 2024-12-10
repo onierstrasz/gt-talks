@@ -1,0 +1,280 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T15:55:51.020518+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T15:55:51.020518+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ApjR3kXlDQCrD+Z8CYDUcw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T15:55:54.852469+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:18:49.761901+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uwkM30XlDQCrEQzDCYDUcw=="
+				},
+				"code" : "images := FileLocator gtResource / 'onierstrasz' / 'gt-talks' / 'data' / 'images'.\ron := images / 'on-nov-2017-no-painting-small.jpg'.\rpbe := images / 'pbe.jpg'.\roorp := images / 'oorp.jpg'.\rqr := images / 'qrcode-www.oscar.nierstrasz.org.png'.\ryoutube := images / 'on-youtube.jpg'.\rpics := { on. pbe . oorp. qr . youtube }.\rexplicitPositions := {(-1110.5@ -849.8478393554688). (-4.5@ -730.8478393554688). (-478.5@ -762.8478393554688). (-1112.5@ -203.84783935546875). (-222.5@ -150.84783935546875)}."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:04:20.075736+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:12:38.21961+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ih0p/UXlDQCvOZZ6CYDUcw=="
+				},
+				"code" : "m := GtMondrian new.\rm nodes\r\tstencil: [ :picFile | \r\t\t(GtFileUtility imageElementFromFileReference: picFile)\r\t\t\tmargin: (BlInsets all: 10) ];\r\twith: pics.\rm layout tree.\rm"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:18:37.403012+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:19:38.353921+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zetCMEblDQCzYpfcCYDUcw=="
+				},
+				"code" : "m := GtMondrian new.\rm nodes\r\tstencil: [ :picFile | \r\t\t(GtFileUtility imageElementFromFileReference: picFile)\r\t\t\tmargin: (BlInsets all: 10) ];\r\twith: pics.\rm layout custom: BlBasicLayout new.\rm root children\r\twithIndexDo: [ :child :n | child relocate: (explicitPositions at: n) ].\rm"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:06:12.482205+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:06:16.041572+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eVPcA0blDQCw1zbpCYDUcw=="
+				},
+				"code" : "GtMondrianBasicExamples"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:06:23.510991+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:06:34.806482+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A56EBEblDQCw/G42CYDUcw=="
+				},
+				"code" : "PatternScripterExamples"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:09:28.400509+10:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-10T16:09:28.977969+10:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "K86JD0blDQCx9MvcCYDUcw=="
+				},
+				"code" : "LePageMondrianMapExamples>>#patternMapWithCategories"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-12-10T15:55:50.980635+10:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-12-10T15:55:50.980635+10:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "unnamedPage",
+		"defaultTitle" : "Page"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "4dfad0de-45e5-0d00-ab0e-38bc0980d473"
+	}
+}

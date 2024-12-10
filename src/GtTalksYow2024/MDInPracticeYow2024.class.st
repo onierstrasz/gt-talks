@@ -580,6 +580,49 @@ Reading source code does not scale to large systems. Documentation is typically 
 ')
 ]
 
+{ #category : #mondrian }
+MDInPracticeYow2024 >> onMondrian [
+	<gtExample>
+	| images on pbe oorp qr youtube pics explicitPositions m |
+	images := FileLocator gtResource / 'onierstrasz' / 'gt-talks' / 'data'
+			/ 'images'.
+	on := images / 'on-nov-2017-no-painting-small.jpg'.
+	pbe := images / 'pbe.jpg'.
+	oorp := images / 'oorp.jpg'.
+	qr := images / 'qrcode-www.oscar.nierstrasz.org.png'.
+	youtube := images / 'on-youtube.jpg'.
+	pics := {on.
+			pbe.
+			oorp.
+			qr.
+			youtube}.
+	explicitPositions := {-1110.5 @ -849.8478393554688.
+			-4.5 @ -730.8478393554688.
+			-478.5 @ -762.8478393554688.
+			-1112.5 @ -203.84783935546875.
+			-222.5 @ -150.84783935546875}.
+	m := GtMondrian new.
+	m nodes
+		stencil: [ :picFile | 
+			(GtFileUtility imageElementFromFileReference: picFile)
+				margin: (BlInsets all: 10) ];
+		with: pics.
+	m layout custom: BlBasicLayout new.
+	m root children
+		withIndexDo: [ :child :n | child relocate: (explicitPositions at: n) ].
+	^ m
+]
+
+{ #category : #slides }
+MDInPracticeYow2024 >> onSplashSlide: aSlide [
+	"<gtSlide>"
+	<text: '# About Oscar'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'About Oscar';
+		element: [ self onMondrian asElement asScalableElement ]
+]
+
 { #category : #slides }
 MDInPracticeYow2024 >> patternComposedNarrative: aSlide [
 	"<gtSlide>"
