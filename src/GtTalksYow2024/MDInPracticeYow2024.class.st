@@ -1,6 +1,6 @@
 Class {
 	#name : #MDInPracticeYow2024,
-	#superclass : #PrioritySlideshow,
+	#superclass : #ONSlideshow,
 	#classInstVars : [
 		'cardDemoModel'
 	],
@@ -583,57 +583,21 @@ Reading source code does not scale to large systems. Documentation is typically 
 { #category : #slides }
 MDInPracticeYow2024 >> onAboutSlide: aSlide [
 	<gtSlide>
-	<text: '# About Oscar'>
+	<time: 1>
+	<text:
+'## About Oscar
+
+Hello. My name is Oscar Nierstrasz.
+
+I was a Professor of Software Engineering at the University of Bern for about 30 years, where my team did reserach into software modeling and analysis. We also produced books such as Object-Oriented Reengineeing Patterns, and Pharo by Example. When I retired three years ago, I started working for feenk, a company founded by former student, Tudor Girba. I''m  resposnible for evangelizing, namely mentoring, teaching, creating YouTube videos, and so on.
+
+As developers, we spend much of our time trying to understand the software systems we are working with, instead of actually writing productive code.
+
+Today I''d like to talk to you about Moldable Development, an approach that opens up our legacy software to expose the internal domain models and makes them explainable. First I''ll  show you a couple of examples to illustrate moldable development, and then I''ll present a few of the patterns we have found that capture best practice in moldable development.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'About Oscar';
+		newFadedText: 'oscar.nierstrasz.org';
 		element: [ self onMondrian asElement asScalableElement ]
-]
-
-{ #category : #mondrian }
-MDInPracticeYow2024 >> onMondrian [
-	<gtExample>
-	| images on pbe oorp qr youtube pics explicitPositions m picsWidths |
-	images := FileLocator gtResource / 'onierstrasz' / 'gt-talks' / 'data'
-			/ 'images'.
-	on := images / 'on-nov-2017-no-painting-small.jpg'.
-	pbe := images / 'pbe.jpg'.
-	oorp := images / 'oorp.jpg'.
-	qr := images / 'qrcode-www.oscar.nierstrasz.org.png'.
-	youtube := images / 'on-youtube.jpg'.
-	pics := {on.
-			pbe.
-			oorp.
-			qr.
-			youtube}.
-	picsWidths := {{on.
-				500}.
-			{pbe.
-				300}.
-			{oorp.
-				300}.
-			{qr.
-				500}.
-			{youtube.
-				600}}.
-	explicitPositions := {-1110.5 @ -849.8478393554688.
-			-4.5 @ -730.8478393554688.
-			-338.5 @ -822.8478393554688.
-			-1112.5 @ -203.84783935546875.
-			-295.5 @ -264.84783935546875}.
-	m := GtMondrian new.
-	m nodes
-		stencil: [ :picWidth | 
-			(GtFileUtility imageElementFromFileReference: picWidth first)
-				margin: (BlInsets all: 10);
-				width: picWidth second;
-				yourself ];
-		with: picsWidths.
-	m layout custom: BlBasicLayout new.
-	m root children
-		withIndexDo: [ :child :n | child relocate: (explicitPositions at: n) ].
-
-	^ m
 ]
 
 { #category : #slides }
@@ -873,6 +837,7 @@ MDInPracticeYow2024 >> slidePriorities [
 	<gtExample>
 	^ #( 
 		title:
+			onAboutSlide:
 
 		explainableSystems:
 			runningSystem:
@@ -960,15 +925,9 @@ MDInPracticeYow2024 >> summarySlide: aSlide [
 { #category : #slides }
 MDInPracticeYow2024 >> title: aSlide [
 	<gtSlide>
-	<time: 1>
+	<time: 0>
 	<text:
-'# Moldable Development in Practice — Patterns for Legacy Modernization
-
-Hello. My name is Oscar Nierstrasz.
-
-As developers, we spend much of our time trying to understand the software systems we are working with, instead of actually writing productive code.
-
-Today I''d like to talk to you about Moldable Development, an approach that opens up our legacy software to expose the internal domain models and makes them explainable. First I''ll  show you a couple of examples to illustrate moldable development, and then I''ll present a few of the patterns we have found that capture best practice in moldable development.'>
+'# Moldable Development in Practice — Patterns for Legacy Modernization'>
 
 	^ aSlide titleWithFooters
 		setPriority;
