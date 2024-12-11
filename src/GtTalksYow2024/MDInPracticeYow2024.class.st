@@ -307,7 +307,7 @@ MDInPracticeYow2024 >> feedback: aSlide [
 		setPriority;
 		element: [ GtFilePictureLiveSlide new
 				fileReference: (GtResourcesUtility
-						resourceAtPath: self picturesDirectoryPath / 'BNEFeedback-App-slide.png') ]
+						resourceAtPath: self picturesDirectoryPath / 'YOW-SYDFeedback-App-slide.png') ]
 ]
 
 { #category : #slides }
@@ -729,6 +729,7 @@ Problem: ') italic
 
 { #category : #accessing }
 MDInPracticeYow2024 >> picturesDirectoryPath [
+	<gtExample>
 	^ Path *
 		'onierstrasz/gt-talks/data/images'
 ]
