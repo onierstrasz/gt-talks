@@ -878,6 +878,18 @@ Gt4Research >> slidePriorities [
 ]
 
 { #category : #slides }
+Gt4Research >> slideShowInception: aSlide [
+	<gtSlide>
+	<text: 'TODO
+# Slideshow inception
+'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Slideshow inception';
+		element: [ (GtPager createWrappedOn: (GtInspector forObject: self class new)) maximized ]
+]
+
+{ #category : #slides }
 Gt4Research >> smaccPage: aSlide [
 	<gtSlide>
 	<time: 1>
