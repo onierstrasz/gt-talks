@@ -28,7 +28,7 @@ GtTalksHomeSection >> cardPriorities [
 		yowSlideshowCard
 		
 		monashCard
-		monashSlideshowCard
+		#gt4researchSlideshowCard
 
 		eddLiveSlideshowCard
 		moldableExceptionsSlideshowCard
@@ -69,6 +69,21 @@ GtTalksHomeSection >> eddLiveSlideshowCard [
 		yourself
 ]
 
+{ #category : #slideshowCard }
+GtTalksHomeSection >> gt4researchSlideshowCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard slideshow
+		title: 'Gt4Research';
+		description: 'GT4Research presentation';
+		setPriority;
+		slideshowClassSymbol: #Gt4Research
+			baseLineName: 'GtTalksMonash'
+			repo: 'github://onierstrasz/gt-talks:main/src'
+			loadLepiterBaseline: #BaselineOfGtTalksMonash;
+		yourself
+]
+
 { #category : #pageCard }
 GtTalksHomeSection >> huaweiCard [
 	"<gtSectionCard>"
@@ -100,7 +115,7 @@ GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 
 { #category : #pageCard }
 GtTalksHomeSection >> monashCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Monash talk';
@@ -109,21 +124,6 @@ GtTalksHomeSection >> monashCard [
 		pageName: 'Monash talk';
 		setPriority;
 		assertInvariant;
-		yourself
-]
-
-{ #category : #slideshowCard }
-GtTalksHomeSection >> monashSlideshowCard [
-	<gtSectionCard>
-	<gtExample>
-	^ GtHomeCard slideshow
-		title: 'Monash Slideshow';
-		description: 'Monash GT4Research presentation';
-		setPriority;
-		slideshowClassSymbol: #Gt4Research
-			baseLineName: 'GtTalksMonash'
-			repo: 'github://onierstrasz/gt-talks:main/src'
-			loadLepiterBaseline: #BaselineOfGtTalksMonash;
 		yourself
 ]
 
@@ -163,7 +163,7 @@ GtTalksHomeSection >> vissoftCard [
 
 { #category : #pageCard }
 GtTalksHomeSection >> yowCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Yow MD in Practice';
@@ -177,7 +177,7 @@ GtTalksHomeSection >> yowCard [
 
 { #category : #slideshowCard }
 GtTalksHomeSection >> yowSlideshowCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Yow! Slideshow';

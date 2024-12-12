@@ -1,6 +1,9 @@
+"
+A general talk about using GT for research projects, originally presented a Monash U in December 2024.
+"
 Class {
 	#name : #Gt4Research,
-	#superclass : #PrioritySlideshow,
+	#superclass : #ONSlideshow,
 	#classInstVars : [
 		'cardDemoModel'
 	],
@@ -691,6 +694,26 @@ Reading source code does not scale to large systems. Documentation is typically 
 ]
 
 { #category : #slides }
+Gt4Research >> onAboutSlide: aSlide [
+	<gtSlide>
+	<time: 1>
+	<text:
+'## About Oscar
+
+Hi. My name is Oscar Nierstrasz.
+
+Today I''d like to show you Glamorous Toolkit (or GT), an open-source environment for “Moldable Development”, and how it can be used as a platform for carrying out research.
+
+First I''ll show you how GT can be used to make software systems explainable by exposing their domain models, and augmenting domain entities with lightweight, custom analysis tools.
+
+Then, through a series of examples, I''ll show you how GT can be used as a platform to pose research questions, explore models, carry out experiments, and capture acquired knowledge through live examples.'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'oscar.nierstrasz.org';
+		element: [ self onMondrian asElement asScalableElement ]
+]
+
+{ #category : #slides }
 Gt4Research >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -836,6 +859,7 @@ Gt4Research >> slidePriorities [
 	<gtExample>
 	^ #( 
 		title:
+			onAboutSlide:
 		
 		explainableSystems:
 			runningSystem:
@@ -851,7 +875,6 @@ Gt4Research >> slidePriorities [
 			githubFeenkOrgJSon:
 			githubOrgDemoPage:
 			githubFeenkOrgWrapped:
-
 			
 		blueSkyExplorer:
 			blueSkyUser:
@@ -874,15 +897,18 @@ Gt4Research >> slidePriorities [
 		
 		mdForResearch:
 		summarySlide:
+		slideShowInception:
 	)
 ]
 
 { #category : #slides }
 Gt4Research >> slideShowInception: aSlide [
 	<gtSlide>
-	<text: 'TODO
-# Slideshow inception
-'>
+	<time: 1>
+	<text: '# Slideshow inception
+
+Moldable development can really be used everywhere. Here we see that this slideshow is just an object, and by molding it to the object inspector, we obtain a custom authoring environment for presentations.'>
+
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Slideshow inception';
@@ -951,17 +977,9 @@ Gt4Research >> summarySlide: aSlide [
 { #category : #slides }
 Gt4Research >> title: aSlide [
 	<gtSlide>
-	<time: 1>
+	<time: 0>
 	<text:
-'# GT: A Moldable Research Platform
-
-Hi. My name is Oscar Nierstrasz.
-
-Today I''d like to show you Glamorous Toolkit (or GT), an open-source environment for “Moldable Development”, and how it can be used as a platform for carrying out research.
-
-First I''ll show you how GT can be used to make software systems explainable by exposing their domain models, and augmenting domain entities with lightweight, custom analysis tools.
-
-Then, through a series of examples, I''ll show you how GT can be used as a platform to pose research questions, explore models, carry out experiments, and capture acquired knowledge through live examples.'>
+'# GT: A Moldable Research Platform'>
 
 	^ aSlide titleWithFooters
 		setPriority;
