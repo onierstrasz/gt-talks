@@ -215,7 +215,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-11-15T11:25:47.300525+01:00"
+						"dateAndTimeString" : "2025-01-09T16:49:00.800839+01:00"
 					}
 				},
 				"uid" : {
@@ -225,7 +225,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Monash talk]]"
+				"string" : "[[GT4Research talk]]"
 			},
 			{
 				"__type" : "textSnippet",
