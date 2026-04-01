@@ -2,18 +2,20 @@
 Slides for BAT Bern 50.
 "
 Class {
-	#name : #MindTheGapSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'MindTheGapSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 MindTheGapSlideshow class >> show [
 	"Implement this here just so we can run it directly from the Coder."
 	super show
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> aplSieve: aSlide [
 	<gtSlide>
 	<text: '## APL — my first programming experience
@@ -27,7 +29,7 @@ APL is facetiously known as a “write-only” language, due to its highly compa
 		element: [ self elementForPicture: 'aplPrimeSieve.jpg' ]
 ]
 
-{ #category : #example }
+{ #category : 'example' }
 MindTheGapSlideshow >> batBern50Slideshow [
 	"Example for demo purposes"
 	<gtExample>
@@ -35,7 +37,7 @@ MindTheGapSlideshow >> batBern50Slideshow [
 	^ self class new
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> codeDisconnected: aSlide [
 	"https://www.pngwing.com/en/free-png-xxpby"
 
@@ -55,7 +57,7 @@ Worse, if you start from the running application, you may struggle to answer que
 		element: [ self elementForPicture: 'splitBrain.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> conclusion: aSlide [
 	<gtSlide>
 	<text: '# Conclusion
@@ -66,7 +68,7 @@ What lessons can we draw from all this?'>
 		subtitleWithFormat: (self asTitle: 'Conclusion')
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> database [
 	"All the pages"
 	<gtExample>
@@ -74,7 +76,7 @@ MindTheGapSlideshow >> database [
 	^ self db
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> deploymentGap: aSlide [
 	<gtSlide>
 	<text: '# The Deployment Gap
@@ -91,7 +93,7 @@ From development to deployment
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> designPatternsFrameworks: aSlide [
 	<gtSlide>
 	<text: '## Design Patterns, Components, Frameworks
@@ -105,7 +107,7 @@ This photo shows Ralph Johnson, Erich Gamma,  Richard Helm and John Vlissides, t
 		element: [ self elementForPicture: 'gangOfFour.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> devOpsMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the deployment gap
@@ -117,7 +119,7 @@ Although DevOps clearly served to automate and close the gap between development
 		element: [ self scaledWardleyMapForJson: self devOpsMapJSON ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> devOpsMapJSON [
 	^ '{
 	"nodes" : [
@@ -337,12 +339,12 @@ MindTheGapSlideshow >> devOpsMapJSON [
 }'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> elementForPicture: aFilename [
 	^ GtFileUtility imageElementFromFileReference: self picturesFolder / aFilename
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> email: aSlide [
 	<gtSlide>
 	^ aSlide title
@@ -350,7 +352,7 @@ MindTheGapSlideshow >> email: aSlide [
 		titleWithFormat: (self asSubtitle: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> eniacManualTesting: aSlide [
 	<gtSlide>
 	<text: '## Manual vs automated testing
@@ -364,7 +366,7 @@ Automated testing only started to become popular with the introduction of Kent B
 		element: [ self elementForPicture: 'eniac.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> executionGap: aSlide [
 	<gtSlide>
 	<text: '# The Execution gap
@@ -384,7 +386,7 @@ From punch cards to live programming
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> exploringGitRepo: aSlide [
 	<gtSlide>
 	<text: '## Exploring a git repository
@@ -397,7 +399,7 @@ It doesn''t matter whether the domain is that of slideshows, git repositories, c
 		startPage: (self db pageNamed: 'Exploring a git repository')
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> exploringGitRepoPage [
 	<gtExample>
 	^ (LePage named: 'Exploring a git repository')
@@ -412,7 +414,7 @@ MindTheGapSlideshow >> exploringGitRepoPage [
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> exploringSlideshow: aSlide [
 	<gtSlide>
 	<text: '## Exploring the slideshow
@@ -425,7 +427,7 @@ To understand the slideshow software, we don''t start from the source code but f
 		startPage: (self db pageNamed: 'Exploring the slideshow')
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> exploringSlideshowPage [
 	<gtExample>
 	^ (LePage named: 'Exploring the slideshow')
@@ -443,7 +445,7 @@ MindTheGapSlideshow >> exploringSlideshowPage [
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> gtExtensions: aSlide [
 	<gtSlide>
 	<text: '## GT tool extensions
@@ -458,7 +460,7 @@ The Metrics view of each extension shows that they are generally small and cheap
 		startPage: (self db pageNamed: 'GT tool extensions')
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> gtExtensionsPage [
 	<gtExample>
 	^ (LePage named: 'GT tool extensions')
@@ -480,7 +482,7 @@ MindTheGapSlideshow >> gtExtensionsPage [
 		yourself
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 MindTheGapSlideshow >> gtSlideWardleyMapsFor: aView [
 	"Eventually push this method up."
 	<gtView>
@@ -493,7 +495,7 @@ MindTheGapSlideshow >> gtSlideWardleyMapsFor: aView [
 				actionUpdateButton ]
 ]
 
-{ #category : #spotter }
+{ #category : 'spotter' }
 MindTheGapSlideshow >> gtSpotterSlideTextsFor: aSearch [
 	<gtSearch>
 	^ aSearch list
@@ -504,7 +506,7 @@ MindTheGapSlideshow >> gtSpotterSlideTextsFor: aSearch [
 		filterBySubstring
 ]
 
-{ #category : #spotter }
+{ #category : 'spotter' }
 MindTheGapSlideshow >> gtSpotterSlidesFor: aSearch [
 	<gtSearch>
 	^ aSearch list
@@ -515,7 +517,7 @@ MindTheGapSlideshow >> gtSpotterSlidesFor: aSearch [
 		filterBySubstring
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> houseDeployment: aSlide [
 	"Original image https://www.coastalasbestosremoval.com.au/2019/06/25/asbestos-and-house-moving-an-ultimate-guide/"
 
@@ -529,7 +531,7 @@ Earlier we saw the “Execution gap” between design and execution of a running
 		element: [ self elementForPicture: 'coastalasbestosremoval-vectorized.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> iWantSmalltalk: aSlide [
 	<gtSlide>
 	<text: '## Wanting Smalltalk, but not getting it
@@ -541,7 +543,7 @@ I read about this and told my supervisor that to build our advanced electronic o
 		element: [ self elementForPicture: 'wantingSmalltalk.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> ibm2741: aSlide [
 	<gtSlide>
 	<text: '## The IBM 2741 terminal
@@ -554,7 +556,7 @@ It is exactly the terminal I first used in 1972, including the APL typeball with
 		element: [ self elementForPicture: 'ibm2741.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> ibmOpticalCard: aSlide [
 	<gtSlide>
 	<text: '## Programming FORTRAN on optical mark cards
@@ -568,7 +570,7 @@ Later in the semester one of my classmates discovered that anyone at all could w
 		element: [ self elementForPicture: 'ibmOpticalMarkCard.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> ideGlorifiedTextEditor: aSlide [
 	<gtSlide>
 	<text: '## Mainstream IDEs are glorified text editors
@@ -582,7 +584,7 @@ First of all, putting a text editor at the center presupposes that you are gener
 		element: [ self elementForPicture: 'intelliJ.jpg' ]
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 MindTheGapSlideshow >> initializeDb [
 	db := nil.
 	self db addPage: self wardleyMapsPage.
@@ -592,7 +594,7 @@ MindTheGapSlideshow >> initializeDb [
 	self db addPage: self gtExtensionsPage
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting2: aSlide [
 	<gtSlide>
 	<text: '## Highlighting slower tasks
@@ -604,7 +606,7 @@ Here we highlight in red tasks that took longer for the same worker than an earl
 		element: [ self elementForPicture: 'lifeware/2-clusters-slow-tasks-highlighted.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting3: aSlide [
 	<gtSlide>
 	<text: '## Grouping workers by machine
@@ -617,7 +619,7 @@ Since the machines in our cluster are not all the same, we ask if the scheduling
 		element: [ self elementForPicture: 'lifeware/3-clusters-by-machine.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting4: aSlide [
 	<gtSlide>
 	<text: '## Diving into a machine
@@ -629,7 +631,7 @@ We dive into a particular machine to see what''s going one. We can see clearly t
 		element: [ self elementForPicture: 'lifeware/4-machine-view.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting5: aSlide [
 	<gtSlide>
 	<text: '## VM consumption per worker
@@ -641,7 +643,7 @@ We inspect the total VM memory consumption and free memory per worker.'>
 		element: [ self elementForPicture: 'lifeware/5-worker-view.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting6: aSlide [
 	"<gtSlide>"
 
@@ -656,7 +658,7 @@ MindTheGapSlideshow >> lifewareTesting6: aSlide [
 		element: [ self elementForPicture: 'lifeware/6-physical-view.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting7: aSlide [
 	<gtSlide>
 	<text: '## Inspecting individual tasks
@@ -670,7 +672,7 @@ We were able to perform this analysis because we could turn every question into 
 		element: [ self elementForPicture: 'lifeware/7-task-view.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lifewareTesting: aSlide [
 	<gtSlide>
 	<text: '## Lifeware test running and exploration
@@ -684,7 +686,7 @@ In this lightweight visualization we see that a few of these are taking twice as
 		element: [  "self placeholder "self elementForPicture: 'lifeware/1-cluster-view.png' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> lightweightTools: aSlide [
 	<gtSlide>
 	<text: '## Lightweight tools are more effective than reading code
@@ -698,7 +700,7 @@ Very lightweight tools and metrics can be enough to gain insight into a complex 
 		element: [ self elementForPicture: 'lightweightTools.jpg' ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> markCards2Terminals [
 	<gtExample>
 	<noTest>
@@ -707,7 +709,7 @@ MindTheGapSlideshow >> markCards2Terminals [
 				importWardleyMapFrom: (STONJSON fromString: self markCards2TerminalsJSON))
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> markCards2TerminalsJSON [
 	^ '{
 	"nodes" : [
@@ -1017,7 +1019,7 @@ MindTheGapSlideshow >> markCards2TerminalsJSON [
 }'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> markCardsMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the execution gap
@@ -1035,7 +1037,7 @@ What''s interesting is that when the technology is sufficiently evolved, new opp
 		element: [ self scaledWardleyMapForJson: self markCards2TerminalsJSON ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> modelingGap: aSlide [
 	<gtSlide>
 	<text: '# The Modeling gap
@@ -1051,7 +1053,7 @@ From data structures to objects
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text: '# Moldable development
@@ -1071,7 +1073,7 @@ From static code to explainable systems
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> moldableDevelopmentMap: aSlide [
 	<gtSlide>
 	<text: '# Mapping moldable development
@@ -1089,7 +1091,7 @@ In the end we can more quickly support decision-making not only for developers, 
 		element: [ self scaledWardleyMapForJson: self moldableDevelopmentMapJSON ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> moldableDevelopmentMapJSON [
 	^ '{
 	"nodes" : [
@@ -1399,7 +1401,7 @@ MindTheGapSlideshow >> moldableDevelopmentMapJSON [
 }'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> moldingIDE: aSlide [
 	<gtSlide>
 	<text: '## Molding the IDE
@@ -1414,7 +1416,7 @@ For each of the custom navigational views we have seen, a few lines of code are 
 		startPage: (self db pageNamed: 'Molding the IDE')
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> moldingIDEPage [
 	<gtExample>
 	^ (LePage named: 'Molding the IDE')
@@ -1432,7 +1434,7 @@ MindTheGapSlideshow >> moldingIDEPage [
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> oopEarlyHistory: aSlide [
 	<gtSlide>
 	<text: '## A brief early history of OOP
@@ -1448,7 +1450,7 @@ He convinced Xerox PARC to fund the development of not just the language, but th
 		element: [ self elementForPicture: 'oopEarlyHistory.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> oopMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the modeling gap
@@ -1462,7 +1464,7 @@ For early adopters of OO technology in the 1980s, this resulted in large, legacy
 		element: [ self scaledWardleyMapForJson: self oopMapJSON ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> oopMapJSON [
 	^ '{
 	"nodes" : [
@@ -1793,7 +1795,7 @@ MindTheGapSlideshow >> oopMapJSON [
 }'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 MindTheGapSlideshow >> picturesFolder [
 	<gtExample>
 	<noTest>
@@ -1801,12 +1803,12 @@ MindTheGapSlideshow >> picturesFolder [
 		resourceAtPath: Path * 'onierstrasz' / 'gt-talks' / 'data' / 'images'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> placeholder [
 	^ self elementForPicture: 'placeholder.png'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> plugins: aSlide [
 	"https://www.flickr.com/photos/30478819@N08/50456554376/in/photostream/"
 
@@ -1824,7 +1826,7 @@ Finally, plugins don''t know anything about your context, so like SO and ChatGPT
 		element: [ self elementForPicture: 'adapters.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> productivityGap: aSlide [
 	<gtSlide>
 	<text: '# The Productivity Gap
@@ -1842,7 +1844,7 @@ From conception to realization
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> productivityMap: aSlide [
 	<gtSlide>
 	<text: '## Closing the productivity gap
@@ -1856,7 +1858,7 @@ Frameworks and components also raise the level of conversation. Instead of deali
 		element: [ self scaledWardleyMapForJson: self productivityMapJSON ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> productivityMapJSON [
 	^ '{
 	"nodes" : [
@@ -2109,7 +2111,7 @@ MindTheGapSlideshow >> productivityMapJSON [
 }'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> programmingIsModeling: aSlide [
 	<gtSlide>
 	<text: '## Programming is Modeling
@@ -2126,7 +2128,7 @@ One lesson we can learn from model-driven approaches is that instead of generati
 		subtitleWithFormat: (self asTitle: 'Programming is Modeling')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> programmingIsUnderstanding: aSlide [
 	<gtSlide>
 	<text: '## Programming is Understanding
@@ -2139,7 +2141,7 @@ I would interpret that today as meaning that software is more than just text. It
 		subtitleWithFormat: (self asTitle: 'Programming is Understanding')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> qaToolsUnreliable: aSlide [
 	<gtSlide>
 	<text: '## Q&A tools lack context, so give unreliable results
@@ -2157,7 +2159,7 @@ The screenshots show answers I obtained from SO and ChatGPT to actual questions 
 		element: [ self elementForPicture: 'so-chatGpt.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> readingDoesNotScale: aSlide [
 	"https://streetlibrary.org.au/the-winner-of-the-2021-public-library-of-the-year-has-been-announced/library-libraries-feature-700x375-1-jpg-optimal/"
 
@@ -2171,7 +2173,7 @@ On the other hand, *reading code for very large systems does not scale.* You sim
 		element: [ self elementForPicture: 'library.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> reengineeringLifecycle: aSlide [
 	<gtSlide>
 	<text: '## The Reengineering lifecycle
@@ -2183,7 +2185,7 @@ Our strategy was to recover lost design knowledge by reverse engineering and ana
 		element: [ self elementForPicture: 'reengineeringLifecycle.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> reengineeringOOlegacy: aSlide [
 	<gtSlide>
 	<text: '## Reengineering OO legacy systems
@@ -2195,7 +2197,7 @@ Object-oriented programming was so successful that by the mid-1990s there were a
 		element: [ self elementForPicture: 'reengineeringOOlegacy.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> reengineeringPatterns: aSlide [
 	<gtSlide>
 	<text: '## Reengineering patterns
@@ -2211,13 +2213,13 @@ One of the outcomes of this work was the open-source book, *Object-Oriented Reen
 		element: [ self elementForPicture: 'reengineeringPatterns.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> scaledWardleyMapForJson: aJSON [
 	^ ((GtWardleyMapSlide new json: aJSON) asElement size: 600 @ 400)
 		asScalableElement
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 MindTheGapSlideshow >> slidePriorities [
 	"This method defines the slide priorities implicitly by their order instead of by fixed numbers.
 	See also: PrioritySlideshow>>#priorityFor:"
@@ -2286,7 +2288,7 @@ MindTheGapSlideshow >> slidePriorities [
 		)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> softwareProductivity: aSlide [
 	"Margaret Hamilton, NASA's lead software engineer for the Apollo Program, stands next to the code she wrote by hand that took Humanity to the moon in 1969.
 	https://en.wikipedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg"
@@ -2303,7 +2305,7 @@ But software productivity clearly isn''t just producing more code in the same am
 		element: [ self elementForPicture: 'margaretHamiltonApolloCode.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> sustainabilityGap: aSlide [
 	<gtSlide>
 	<text: '# The Sustainability Gap
@@ -2321,7 +2323,7 @@ As software systems grow, they become harder to understand and maintain
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> testingBook: aSlide [
 	<gtSlide>
 	<text: '## The testing book
@@ -2333,7 +2335,7 @@ During the FAMOOS project we were concerned with a particular project that we co
 		element: [ self elementForPicture: 'book.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> testingGap: aSlide [
 	<gtSlide>
 	<text: '# The Testing Gap
@@ -2350,7 +2352,7 @@ From manual to automated testing
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> testingMap: aSlide [
 	"TG points out that property-based testing produced generated tests that capture business logic."
 
@@ -2370,7 +2372,7 @@ The open question is where we can go with generated tests. So far these mostly j
 		element: [ self scaledWardleyMapForJson: self testingMapJSON ]
 ]
 
-{ #category : #wardley }
+{ #category : 'wardley' }
 MindTheGapSlideshow >> testingMapJSON [
 	^ '{
 	"nodes" : [
@@ -2590,7 +2592,7 @@ MindTheGapSlideshow >> testingMapJSON [
 }'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> theElectronicOffice: aSlide [
 	<gtSlide>
 	<text: '## Building the Electronic Office (1980)
@@ -2602,7 +2604,7 @@ The task for my MSc project was, together with another Masters student, to build
 		element: [ self elementForPicture: 'theElectronicOffice.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> theTypist: aSlide [
 	<gtSlide>
 	<text: '## The typist at the kitchen table
@@ -2614,7 +2616,7 @@ As an amusing parenthesis, I saw this displayed in the Open Air museum in Reykja
 		element: [ self elementForPicture: 'reykjavikMuseumTheTypist.jpg' ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> titleSlide: aSlide [
 	<gtSlide>
 	<text: '# Mind the gap — 50 years of shortening feedback loops
@@ -2633,13 +2635,13 @@ Today, on the occasion of the 50th Berner Architekten-Treffen I''d like to tell 
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 MindTheGapSlideshow >> wardleyMaps [
 	^ self wardleyMapsPage children
 		select: [ :each | each isKindOf: LeWardleyMapSnippet ]
 ]
 
-{ #category : #pages }
+{ #category : 'pages' }
 MindTheGapSlideshow >> wardleyMapsPage [
 	"Build a page containing all the wardley maps from a list of associations. They key is the method returning the JSON of the map and the value is the preceding text to display."
 
@@ -2667,7 +2669,7 @@ MindTheGapSlideshow >> wardleyMapsPage [
 	^ page
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MindTheGapSlideshow >> whereAreTheObjects: aSlide [
 	"https://www.jackson-pollock.org/convergence.jsp"
 

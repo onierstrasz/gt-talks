@@ -1,37 +1,39 @@
 Class {
-	#name : #Snaffle,
-	#superclass : #Object,
+	#name : 'Snaffle',
+	#superclass : 'Object',
 	#instVars : [
 		'data'
 	],
-	#category : #'GtTalks-Examples'
+	#category : 'GtTalks-Examples',
+	#package : 'GtTalks',
+	#tag : 'Examples'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Snaffle class >> bar [
 	<gtExample>
 	^ GtExampleComparisonExceptionWithDebuggingViews new
 		computedStringForTest
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Snaffle class >> foo [
 	<gtExample>
 	^ GtExampleComparisonExceptionWithDebuggingViews new
 		expectedStringForTest 
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Snaffle >> data [
 	^ data
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Snaffle >> data: anObject [
 	data := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 Snaffle >> gtViewDataFor: aView [
 	<gtView>
 	self hasData ifFalse: [ ^ aView ].
@@ -41,7 +43,7 @@ Snaffle >> gtViewDataFor: aView [
 		items: [ 1 to: 100 ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 Snaffle >> hasData [
 	^ data notNil
 ]

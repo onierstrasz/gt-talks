@@ -1,1 +1,1 @@
-Package { #name : #GtTalks }
+Package { #name : 'GtTalks' }

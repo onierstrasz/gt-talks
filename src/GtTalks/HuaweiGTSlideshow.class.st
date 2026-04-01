@@ -2,12 +2,14 @@
 For meeting at Huawei Bern on 2024-07-23. (See notes in my personal KB.)
 "
 Class {
-	#name : #HuaweiGTSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'HuaweiGTSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> edd: aSlide [
 	<gtSlide>
 	<text:
@@ -24,7 +26,7 @@ resembles TDD, where you drive development by constructing test methods that ret
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> examples: aSlide [
 	<gtSlide>
 	<text:
@@ -51,7 +53,7 @@ Examples also support an exploratory approach to test-driven development, that w
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> examplesExplorer: aSlide [
 	<gtSlide>
 	<text: '## Examples explorer
@@ -70,7 +72,7 @@ Note that the Examples Explorer is not a separate tool, but simply an object wit
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> explainableLudo: aSlide [
 	<gtSlide>
 	<text:
@@ -100,7 +102,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> explainableSystems: aSlide [
 	<gtSlide>
 	<text: '# 1. Explainable Systems
@@ -121,7 +123,7 @@ how they work.
 so that you can have a conversation with them.')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> gt: aSlide [
 	<gtSlide>
 	<text:
@@ -140,7 +142,7 @@ Glamorous Toolkit is an open-source IDE for creating explainable systems through
 				asText: 'moldable development.') italic
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> gtComponents: aSlide [
 	<gtSlide>
 	<text:
@@ -153,7 +155,7 @@ GT contains numerous other moldable tools and components, such as a moldable deb
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> gtTour: aSlide [
 	<gtSlide>
 	<text:
@@ -171,7 +173,7 @@ At the top right we can access numerous other tools that support live coding, so
 				knowledgeBase: LeDatabasesRegistry uniqueInstance currentLoadedDefaultLogicalDatabase ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> lepiter: aSlide [
 	<gtSlide>
 	<text:
@@ -187,7 +189,7 @@ Each notebook page contains not only hyperlinked text, but other kinds of snippe
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> liveDocumentation: aSlide [
 	<gtSlide>
 	<text:
@@ -201,7 +203,7 @@ Here we see an example of a live notebook page that documents the Ludo game with
 		yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> ludoExamples: aSlide [
 	<gtSlide>
 	<text:
@@ -221,7 +223,7 @@ In fact we have a graph of examples in the Examples map view (which is a custom 
 		element: [ (GtCoderElement forMethod: GtLudoRecordingGameExamples>>#gameShowingAllMoves6) createInPager maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text:
@@ -239,7 +241,7 @@ extends a system with ') , (self asText: 'custom analysis tools') italic , (self
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> moldableInspector: aSlide [
 	<gtSlide>
 	<text:
@@ -256,7 +258,7 @@ Here we are inspecting a live object that encapsulates information retrieved fro
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> moreOpaqueness: aSlide [
 	<gtSlide>
 	<text:
@@ -281,7 +283,7 @@ Googling or using online resources typically yields many false positives, as do 
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> pervasiveTools: aSlide [
 	<gtSlide>
 	<text: '## Custom tools are pervasive
@@ -298,7 +300,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -316,7 +318,7 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> runningSystem: aSlide [
 	<gtSlide>
 	<text: '## Running systems are typically opaque
@@ -329,7 +331,7 @@ A running system just shows its UI. You can interact with this, but you can''t g
 		element: [ GtLudoGame new asElement asScalableElement ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 HuaweiGTSlideshow >> slidePriorities [
 	<gtExample>
 	^ #( 
@@ -360,7 +362,7 @@ HuaweiGTSlideshow >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> sourceEditor: aSlide [
 	<gtSlide>
 	<text: '## Source editors are opaque
@@ -375,7 +377,7 @@ We can see the classes of the Ludo implementation, and browse the source code of
 		element: [ (GtCoderElement forClass: GtLudoGame) createInPager maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> summarySlide: aSlide [
 	<gtSlide>
 	<text:
@@ -388,7 +390,7 @@ HuaweiGTSlideshow >> summarySlide: aSlide [
 		element: [ self summaryElementFor: slideSelectors ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> title: aSlide [
 	<gtSlide>
 	<text: '# Explainable systems
@@ -403,7 +405,7 @@ As agreed, I''d like to give you a quick overview of what we mean by “Explaina
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 HuaweiGTSlideshow >> troubleWithTests: aSlide [
 	<gtSlide>
 	<text: '# The Trouble with Tests

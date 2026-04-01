@@ -1,28 +1,30 @@
 Class {
-	#name : #FilmCollection,
-	#superclass : #Object,
+	#name : 'FilmCollection',
+	#superclass : 'Object',
 	#instVars : [
 		'data'
 	],
-	#category : #'GtTalks-FilmDemo'
+	#category : 'GtTalks-FilmDemo',
+	#package : 'GtTalks',
+	#tag : 'FilmDemo'
 }
 
-{ #category : #private }
+{ #category : 'private' }
 FilmCollection >> data [
 	^ data
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 FilmCollection >> data: anObject [
 	data := anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 FilmCollection >> films [
 	^ self data collect: [ :each | Film new data: each ]
 ]
 
-{ #category : #view }
+{ #category : 'view' }
 FilmCollection >> gtFilmsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -40,7 +42,7 @@ FilmCollection >> gtFilmsFor: aView [
 			text: [ :film | film title ]
 ]
 
-{ #category : #view }
+{ #category : 'view' }
 FilmCollection >> gtJsonFor: aView [
 	<gtView>
 	^ aView forward

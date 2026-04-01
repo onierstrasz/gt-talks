@@ -1,10 +1,12 @@
 Class {
-	#name : #EDDLiveSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'EDDLiveSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> buildingOnExamples: aSlide [
 	<gtSlide>
 	<text: '# Building on Examples
@@ -35,7 +37,7 @@ FilmCollection new
 		startPage: (self db pageNamed: 'Building on Examples')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDLiveSlideshow >> buildingOnExamplesPage [
 	<lePage>
 	<gtExample>
@@ -50,7 +52,7 @@ EDDLiveSlideshow >> buildingOnExamplesPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> exampleMetrics: aSlide [
 	<gtSlide>
 	<text: '... Examples within GT
@@ -62,7 +64,7 @@ Examples are heavily used within GT, both as test cases and to create documentat
 		startPage: (self db pageNamed: 'Examples within GT')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDLiveSlideshow >> exampleMetricsPage [
 	<lePage>
 	<gtExample>
@@ -83,7 +85,7 @@ EDDLiveSlideshow >> exampleMetricsPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> examplesExplorer: aSlide [
 	<gtSlide>
 	<text: '... Examples explorer
@@ -100,7 +102,7 @@ We can dive in, for example, to see the examples maps for all the gtoolkit demos
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> ludoCaseStudyPage: aSlide [
 	<gtSlide>
 	<text: '# Examples as Documentation
@@ -137,7 +139,7 @@ Note that the setup is created by another test, and so on. In fact, we have a tr
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> pervasiveTools: aSlide [
 	<gtSlide>
 	<text: '... Custom tools are pervasive
@@ -154,7 +156,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -172,7 +174,7 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 EDDLiveSlideshow >> slidePriorities [
 	<gtExample>
 	^ #( 
@@ -191,7 +193,7 @@ EDDLiveSlideshow >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> squarifiedTreemapPage: aSlide [
 	<gtSlide>
 	<text:
@@ -219,7 +221,7 @@ A better way to understand the algorithm is using live examples. The picture loo
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> title: aSlide [
 	<gtSlide>
 	<text: '# Example-Driven Development -- bridging tests and documentation
@@ -237,7 +239,7 @@ We modernize legacy systems by opening their domain models and making them expla
 		newFooterWithFormat: (self asBigText: 'tudor.girba@feenk.com')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> turningTestsIntoExamples: aSlide [
 	<gtSlide>
 	<text: '... Turning tests  into examples
@@ -256,7 +258,7 @@ We can turn this test into an example easily as follows. We change the method na
 		startPage: (self db pageNamed: 'Turning tests  into examples')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDLiveSlideshow >> turningTestsIntoExamplesPage [
 	<lePage>
 	<gtExample>
@@ -281,7 +283,7 @@ EDDLiveSlideshow >> turningTestsIntoExamplesPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> whatsAnExample: aSlide [
 	<gtSlide>
 	<text: '# What''s an Example?
@@ -299,7 +301,7 @@ An example (method) is a test that '), (self asText: 'returns an example.
 ') italic
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDLiveSlideshow >> whyExamples: aSlide [
 	<gtSlide>
 	<text: 

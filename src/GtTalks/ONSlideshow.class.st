@@ -2,24 +2,26 @@
 Abstract parent with some utilities for my slideshows.
 "
 Class {
-	#name : #ONSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'ONSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #image }
+{ #category : 'image' }
 ONSlideshow >> feenkLogo [
 	<gtExample>
 	^ FileLocator gtResource / 'feenkcom' / 'gtoolkit' / 'doc' / 'feenk.png'
 ]
 
-{ #category : #utility }
+{ #category : 'utility' }
 ONSlideshow >> gtTalksImages [
 	<gtExample>
 	^ FileLocator gtResource / 'onierstrasz' / 'gt-talks' / 'data' / 'images'
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 ONSlideshow >> onMondrian [
 	<gtExample>
 	| pbe oorp youtube pics explicitPositions m picsWidths |
@@ -66,19 +68,19 @@ ONSlideshow >> onMondrian [
 	^ m
 ]
 
-{ #category : #image }
+{ #category : 'image' }
 ONSlideshow >> onPic [
 	<gtExample>
 	^ self gtTalksImages / 'on-nov-2017-no-painting-small.jpg'
 ]
 
-{ #category : #image }
+{ #category : 'image' }
 ONSlideshow >> onWebsiteQRcode [
 	<gtExample>
 	^ self gtTalksImages / 'qrcode-www.oscar.nierstrasz.org.png'
 ]
 
-{ #category : #image }
+{ #category : 'image' }
 ONSlideshow >> unibeLogo [
 	<gtExample>
 	^ self gtTalksImages / 'ub_8pt-rgb.png'

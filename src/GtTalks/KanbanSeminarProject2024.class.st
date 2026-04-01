@@ -3,12 +3,14 @@ Slides for a proposal for a [SEG seminar project](https://seg.inf.unibe.ch/teach
 ).
 "
 Class {
-	#name : #KanbanSeminarProject2024,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'KanbanSeminarProject2024',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> gtBook: aSlide [
 	<gtSlide>
 	<text:
@@ -27,7 +29,7 @@ The GT Book is a built-in knowledge base of live notebook pages that document th
 				maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> kanban: aSlide [
 	<gtSlide>
 	<text: 
@@ -43,12 +45,12 @@ What''s missing is a Kanban view; an initial Kanban could be generated from tags
 						resourceAtPath: self picturesDirectoryPath / 'gtTrelloMockup.png') ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 KanbanSeminarProject2024 >> personalDb [
 	^ LeDatabase databaseNamed: 'Documents/lepiter/default'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> personalNotes: aSlide [
 	<gtSlide>
 	<text: '# Personal Lepiter database
@@ -69,12 +71,12 @@ You can also add a project-specific database to your GitHub projects.'>
 				maximized ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 KanbanSeminarProject2024 >> picturesDirectoryPath [
 	^ Path * 'onierstrasz' / 'ONHome' / 'data' / 'images'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -90,7 +92,7 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> projectTasks: aSlide [
 	<gtSlide>
 	<text:
@@ -112,7 +114,7 @@ Roughly, there are four phases.'>
 ')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 KanbanSeminarProject2024 >> slidePriorities [
 	<gtExample>
 	^ #( 
@@ -128,7 +130,7 @@ KanbanSeminarProject2024 >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> thesis: aSlide [
 	<gtSlide>
 	<text:
@@ -147,7 +149,7 @@ Other possible visualizations include MindMaps, Treemaps and other project manag
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> titleSlide: aSlide [
 	<gtSlide>
 
@@ -168,13 +170,13 @@ The idea is to
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 KanbanSeminarProject2024 >> toDoMap [
 	<gtExample>
 	^ ToDoMap new map
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 KanbanSeminarProject2024 >> todoMap: aSlide [
 	<gtSlide>
 	<text:

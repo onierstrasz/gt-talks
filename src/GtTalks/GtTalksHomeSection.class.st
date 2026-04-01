@@ -1,10 +1,12 @@
 Class {
-	#name : #GtTalksHomeSection,
-	#superclass : #GtHomeMultiCardSection,
-	#category : #'GtTalks-Sections'
+	#name : 'GtTalksHomeSection',
+	#superclass : 'GtHomeMultiCardSection',
+	#category : 'GtTalks-Sections',
+	#package : 'GtTalks',
+	#tag : 'Sections'
 }
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> batBernCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -18,7 +20,7 @@ GtTalksHomeSection >> batBernCard [
 		yourself
 ]
 
-{ #category : #priorities }
+{ #category : 'priorities' }
 GtTalksHomeSection >> cardPriorities [
 	<gtExample>
 	^ #(
@@ -40,7 +42,7 @@ GtTalksHomeSection >> cardPriorities [
 				)
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> eddCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -54,7 +56,7 @@ GtTalksHomeSection >> eddCard [
 		yourself
 ]
 
-{ #category : #slideshowCard }
+{ #category : 'slideshowCard' }
 GtTalksHomeSection >> eddLiveSlideshowCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -69,7 +71,7 @@ GtTalksHomeSection >> eddLiveSlideshowCard [
 		yourself
 ]
 
-{ #category : #slideshowCard }
+{ #category : 'slideshowCard' }
 GtTalksHomeSection >> gt4researchSlideshowCard [
 	<gtSectionCard>
 	<gtExample>
@@ -84,7 +86,7 @@ GtTalksHomeSection >> gt4researchSlideshowCard [
 		yourself
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> huaweiCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -98,7 +100,7 @@ GtTalksHomeSection >> huaweiCard [
 		yourself
 ]
 
-{ #category : #slideshowCard }
+{ #category : 'slideshowCard' }
 GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -113,7 +115,7 @@ GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 		yourself
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> monashCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -127,12 +129,12 @@ GtTalksHomeSection >> monashCard [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 GtTalksHomeSection >> sectionTitle [
 	^ 'Oscar''s GT Talks'
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> tocCard [
 	<gtSectionCard>
 	<gtExample>
@@ -146,7 +148,7 @@ GtTalksHomeSection >> tocCard [
 		yourself
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> vissoftCard [
 	"NB: Moved to a separate repo"
 	"<gtSectionCard>"
@@ -161,7 +163,7 @@ GtTalksHomeSection >> vissoftCard [
 		yourself
 ]
 
-{ #category : #pageCard }
+{ #category : 'pageCard' }
 GtTalksHomeSection >> yowCard [
 	"<gtSectionCard>"
 	<gtExample>
@@ -175,7 +177,7 @@ GtTalksHomeSection >> yowCard [
 		yourself
 ]
 
-{ #category : #slideshowCard }
+{ #category : 'slideshowCard' }
 GtTalksHomeSection >> yowSlideshowCard [
 	"<gtSectionCard>"
 	<gtExample>

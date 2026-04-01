@@ -1,28 +1,30 @@
 Class {
-	#name : #Film,
-	#superclass : #Object,
+	#name : 'Film',
+	#superclass : 'Object',
 	#instVars : [
 		'data'
 	],
-	#category : #'GtTalks-FilmDemo'
+	#category : 'GtTalks-FilmDemo',
+	#package : 'GtTalks',
+	#tag : 'FilmDemo'
 }
 
-{ #category : #private }
+{ #category : 'private' }
 Film >> data [
 	^ data
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 Film >> data: anObject [
 	data := anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Film >> directors [
 	^ self data at: 'Directors'
 ]
 
-{ #category : #view }
+{ #category : 'view' }
 Film >> gtFieldsFor: aView [
 	<gtView>
 	^ aView forward
@@ -32,12 +34,12 @@ Film >> gtFieldsFor: aView [
 		view: #gtItemsFor:
 ]
 
-{ #category : #printing }
+{ #category : 'printing' }
 Film >> printOn: aStream [
 	aStream nextPutAll: self title
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Film >> title [
 	| title |
 	title := self data at: 'Title'.
@@ -46,7 +48,7 @@ Film >> title [
 	^ title
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 Film >> year [
 	| year |
 	year := self data at: 'Year'.

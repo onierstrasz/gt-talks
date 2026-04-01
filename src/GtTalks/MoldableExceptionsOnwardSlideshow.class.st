@@ -1,10 +1,12 @@
 Class {
-	#name : #MoldableExceptionsOnwardSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'MoldableExceptionsOnwardSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> comparison: aSlide [
 	<gtSlide>
 	<text:
@@ -28,7 +30,7 @@ Even if we dive into the code, we do not immediately see what is wrong.'>
 	Snaffle foo = Snaffle bar'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> comparisonMolded: aSlide [
 	<gtSlide>
 	<text:
@@ -51,7 +53,7 @@ We can still access the generic debugger view, if we want.'>
 	equals: Snaffle bar'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> debuggingSpecifications: aSlide [
 	<gtSlide>
 	<text:
@@ -90,7 +92,7 @@ The class `GtMoldableExceptionSpecificDebuggerSpecification` supports a number o
 	get'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> debuggingViews: aSlide [
 	<gtSlide>
 	<text: '# Debugging views
@@ -109,7 +111,7 @@ The moldable exception not only highlights the error with an explanation, but it
 		startPage: (self db pageNamed: 'Debugging Views')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 MoldableExceptionsOnwardSlideshow >> debuggingViewsPage [
 	<lePage>
 	<gtExample>
@@ -130,7 +132,7 @@ MoldableExceptionsOnwardSlideshow >> debuggingViewsPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> fileError: aSlide [
 	<gtSlide>
 	<text:
@@ -145,7 +147,7 @@ In this example we not only obtain a more informative view showing us what is wr
 		addCodeSnippet: '''foo/bar/baz'' asFileReference createDirectory.'
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 MoldableExceptionsOnwardSlideshow >> metricsPage [
 	<lePage>
 	<gtExample>
@@ -196,7 +198,7 @@ MoldableExceptionsOnwardSlideshow >> metricsPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
 	<gtSlide>
 	<text: '... Some metrics for discussion.'>
@@ -205,7 +207,7 @@ MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
 		startPage: (self db pageNamed: 'Some metrics')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> moldableDevelopment: aSlide [
 	<gtSlide>
 	<text:
@@ -232,7 +234,7 @@ A ') , (self asText: 'moldable tool') italic, (self asText: ' is an IDE tool tha
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> moldableInspector: aSlide [
 	<gtSlide>
 	<text:
@@ -266,7 +268,7 @@ Each custom tool consists of a short method that informs the inspector, or anoth
 				maximized ]
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 MoldableExceptionsOnwardSlideshow >> moreExamplesPage [
 	<lePage>
 	<gtExample>
@@ -332,7 +334,7 @@ db addPage: page2.';
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> moreExamplesPage: aSlide [
 	<gtSlide>
 	<text: '... More examples for discussion.'>
@@ -341,7 +343,7 @@ MoldableExceptionsOnwardSlideshow >> moreExamplesPage: aSlide [
 		startPage: (self db pageNamed: 'More examples')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> pervasiveTools: aSlide [
 	<gtSlide>
 	<text: '... Custom tools are pervasive
@@ -358,7 +360,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -373,7 +375,7 @@ Placeholder'>
 3+4.'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 MoldableExceptionsOnwardSlideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
@@ -403,7 +405,7 @@ MoldableExceptionsOnwardSlideshow >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> specifyingActions: aSlide [
 	<gtSlide>
 	<text:
@@ -429,7 +431,7 @@ It''s just a dropdown menu that retries the action with the same debugger.'>
 	get'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> specifyingViews: aSlide [
 	<gtSlide>
 	<text:
@@ -453,7 +455,7 @@ In fact, the view we use is a pre-existing inspector view, so there is essential
 		yourself.'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> summary: aSlide [
 	<gtSlide>
 	<text:
@@ -478,7 +480,7 @@ Download: ') italic,
 ((self asText: 'gtoolkit.com') glamorousCodeFont fontSize: 28)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> summarySlide: aSlide [
 	"<gtSlide>"
 	<text:
@@ -493,7 +495,7 @@ Placeholder'>
 		element: [ self summaryElementFor: slideSelectors ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> title: aSlide [
 	<gtSlide>
 	<text:
@@ -511,7 +513,7 @@ Today I''d like to tell you about *Moldable Exceptions*, which is to say, how yo
 		newFooterWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com') underline
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 MoldableExceptionsOnwardSlideshow >> tooManyRedirects: aSlide [
 	<gtSlide>
 	<text:

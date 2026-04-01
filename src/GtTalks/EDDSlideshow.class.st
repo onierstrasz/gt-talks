@@ -3,12 +3,14 @@ This slideshow has been cloned and adapted from the `ExampleDrivenSlideshow` in 
 Initially prepared for presentation on 2024-04-26 at [Smalltalk Meetup Zurich](https://zurich.smalltalk.world).
 "
 Class {
-	#name : #EDDSlideshow,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'EDDSlideshow',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> addingAssertions: aSlide [
 	<gtSlide>
 	<text: '## Adding assertions
@@ -34,10 +36,10 @@ Rewrite the `hundredEuros` example, adding the assertion.
 Use an *Extract temporary* refactoring to assign the example expression to a variable `price`, and then express the assertion over that.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Adding assertions')
+		startPage: (self database pageNamed: 'Adding assertions')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> addingAssertionsPage [
 	<lePage>
 	<gtExample>
@@ -52,7 +54,7 @@ EDDSlideshow >> addingAssertionsPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> addingViews: aSlide [
 	<gtSlide>
 	<text: '## Adding a view
@@ -75,10 +77,10 @@ Show the new view.
 '>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Adding a view')
+		startPage: (self database pageNamed: 'Adding a view')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> addingViewsPage [
 	<lePage>
 	<gtExample>
@@ -93,7 +95,7 @@ EDDSlideshow >> addingViewsPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> composingExamples: aSlide [
 	<gtSlide>
 	<text: 
@@ -120,7 +122,7 @@ Explore the *Examples map*.'>
 		element: [ (GtCoderElement forClass: GtMemoryGameExamples) createInPager maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> concretePrice: aSlide [
 	<gtSlide>
 	<text: '# Introducing a Concrete Price
@@ -140,7 +142,7 @@ Prices can be added or multiplied.
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> extractingExamples: aSlide [
 	<gtSlide>
 	<text: '## Extracting an example
@@ -158,10 +160,10 @@ Inspect the result.
 Browse the code bubble.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Extracting an example')
+		startPage: (self database pageNamed: 'Extracting an example')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> extractingExamplesPage [
 	<lePage>
 	<gtExample>
@@ -176,7 +178,7 @@ EDDSlideshow >> extractingExamplesPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> factoryMethod: aSlide [
 	<gtSlide>
 	<text: '## Create a factory method
@@ -200,10 +202,10 @@ Change the category to `*EDDPrices`.
 Go back to the page and change the code to `100 euros asPrice` and inspect it.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Create a factory method')
+		startPage: (self database pageNamed: 'Create a factory method')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> factoryMethodPage [
 	<lePage>
 	<gtExample>
@@ -218,11 +220,10 @@ EDDSlideshow >> factoryMethodPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> memoryExample: aSlide [
 	<gtSlide>
-	<text: 
-'## An example of an example ...
+	<text: '## An example of an example ...
 
 Here we see a simple example of an example method.
 It is annotated with a `<gtExample>` pragma to flag it as an example.
@@ -231,17 +232,16 @@ Like any test, it has a setup, which in this case creates a `game` object.
 We check some assertions, in this case perform no further operations, and then we return the object under test.
 
 This allows not only to carry out the tests, but also to inspect the result.'>
-<demo:
-'Explain the method.
+	<demo: 'Explain the method.
 Inspect the result.
 Play the game.
 Explore the views.'>
-		^ aSlide lepiterPage
+	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'An example of an example')
+		startPage: (self database pageNamed: 'An example of an example')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> memoryExamplePage [
 	<lePage>
 	<gtExample>
@@ -259,7 +259,7 @@ EDDSlideshow >> memoryExamplePage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> modelingPrices: aSlide [
 	<gtSlide>
 	<text: '# Modeling prices
@@ -278,7 +278,7 @@ And for audit purposes, we want to '),( self asText: 'track') italic,( self asTe
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> moneyClasses: aSlide [
 	<gtSlide>
 	<text: '## Money classes
@@ -294,16 +294,15 @@ All these classes have a common abstract *Money* superclass for shared behavior.
 Inspect the `42 euros + 10 usd` snippet.
 Click on the GtTZeroMoney class.
 Click on the GtTMoney class.'>
-<demo:
-'Inspect the snippets.
+	<demo: 'Inspect the snippets.
 QUickly browse the classes.
 '>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Money classes')
+		startPage: (self database pageNamed: 'Money classes')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> moneyClassesPage [
 	<lePage>
 	<gtExample>
@@ -327,7 +326,7 @@ EDDSlideshow >> moneyClassesPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> moneyExamples: aSlide [
 	<gtSlide>
 	<text: '## Money examples
@@ -346,7 +345,7 @@ Go to the Examples map to show all the dependencies.'>
 		element: [ (GtCoderElement forClass: GtTMoneyExamples) createInPager maximized ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -364,7 +363,7 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> priceExamples: aSlide [
 	<gtSlide>
 	<text:
@@ -381,7 +380,7 @@ Show the Overview with the price composition.'>
 		element: [ (GtCoderElement forClass: GtDPriceExamples) createInPager maximized ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 EDDSlideshow >> slidePriorities [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
@@ -413,7 +412,7 @@ EDDSlideshow >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> startFromAnObject: aSlide [
 	<gtSlide>
 	<text: '## Start from an object
@@ -431,10 +430,10 @@ Inspect the result.
 Inspect its `money` slot.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Start from an object')
+		startPage: (self database pageNamed: 'Start from an object')
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 EDDSlideshow >> startFromAnObjectPage [
 	<lePage>
 	<gtExample>
@@ -449,7 +448,7 @@ EDDSlideshow >> startFromAnObjectPage [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> summarySlide: aSlide [
 	<gtSlide>
 	<text: '# EDD in a Nutshell
@@ -479,7 +478,7 @@ We iterate until we''re done!'>
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> tddTrouble: aSlide [
 	<gtSlide>
 	<text: '# The Trouble with TDD
@@ -511,7 +510,7 @@ How do we write the simplest code that passes?
 What use is a green test?') italic
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> title: aSlide [
 	<gtSlide>
 	<text: '# Example-Driven Development
@@ -525,7 +524,7 @@ It sounds simple, but it actually changes the development process in several fun
 		subtitleWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> whatsAnExample: aSlide [
 	<gtSlide>
 	<text: '# What''s an Example?
@@ -542,7 +541,7 @@ An example (method) is a test that '), (self asText: 'returns an example.
 ') italic
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 EDDSlideshow >> whyExamples: aSlide [
 	<gtSlide>
 	<text: 

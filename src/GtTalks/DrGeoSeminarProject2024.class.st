@@ -1,10 +1,12 @@
 Class {
-	#name : #DrGeoSeminarProject2024,
-	#superclass : #PrioritySlideshow,
-	#category : #'GtTalks-Slideshows'
+	#name : 'DrGeoSeminarProject2024',
+	#superclass : 'PrioritySlideshow',
+	#category : 'GtTalks-Slideshows',
+	#package : 'GtTalks',
+	#tag : 'Slideshows'
 }
 
-{ #category : #page }
+{ #category : 'page' }
 DrGeoSeminarProject2024 >> aboutDrGeo [
 	"NB: loading the YouTube video snippet is very slow!"
 
@@ -37,7 +39,7 @@ DrGeoSeminarProject2024 >> aboutDrGeo [
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> drGeoPotential: aSlide [
 	<gtSlide>
 	<text:
@@ -57,7 +59,7 @@ There are many interesting opportunities for Dr.Geo as an explainable system.'>
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> explainableSoftware: aSlide [
 	<gtSlide>
 	<text:
@@ -72,7 +74,7 @@ Explainable systems expose their inner workings in such a way that you can have 
 				maximized ]
 ]
 
-{ #category : #page }
+{ #category : 'page' }
 DrGeoSeminarProject2024 >> loadingDrGeo [
 	<lePage>
 	<gtExample>
@@ -112,7 +114,7 @@ missingClasses
 	yourself
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> loadingDrGeoCode: aSlide [
 	<gtSlide>
 	<text:
@@ -135,7 +137,7 @@ But this can serve as a starting point for exploring and migration Dr Geo to GT.
 						resourceAtPath: self picturesDirectoryPath / 'drGeoClasses.png') ]
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> loadingDrGeoPage: aSlide [
 	<gtSlide>
 	<text:
@@ -150,7 +152,7 @@ This can serve as a starting point for migration.'>
 		startPage: (self db pageNamed: 'Loading Dr Geo code')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> opaqueSoftware: aSlide [
 	<gtSlide>
 	<text:
@@ -166,12 +168,12 @@ Neither is a good way to learn about the system.
 		element: [ GtLudoGame new asElement asScalableElement ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 DrGeoSeminarProject2024 >> picturesDirectoryPath [
 	^ Path * 'onierstrasz' / 'ONHome' / 'data' / 'images'
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> placeholder: aSlide [
 	"<gtSlide>"
 	<text:
@@ -187,7 +189,7 @@ Possibly over multiple lines.
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> projectTasks: aSlide [
 	<gtSlide>
 	<text:
@@ -210,7 +212,7 @@ DrGeoSeminarProject2024 >> projectTasks: aSlide [
 ')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 DrGeoSeminarProject2024 >> slidePriorities [
 	<gtExample>
 	^ #( 
@@ -227,7 +229,7 @@ DrGeoSeminarProject2024 >> slidePriorities [
 	)
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> thesis: aSlide [
 	<gtSlide>
 	<text:
@@ -252,7 +254,7 @@ There are various ways this work could be expanded to a thesis.'>
 ')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> titleSlide: aSlide [
 	<gtSlide>
 
@@ -274,7 +276,7 @@ The project will be supported by Hilaire Fernandes, the developer of Dr Geo.'>
 		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
 ]
 
-{ #category : #slides }
+{ #category : 'slides' }
 DrGeoSeminarProject2024 >> whatIsDrGeo: aSlide [
 	<gtSlide>
 	<text:

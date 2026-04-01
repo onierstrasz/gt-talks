@@ -1,10 +1,12 @@
 Class {
-	#name : #FilmCollectionExamples,
-	#superclass : #Object,
-	#category : #'GtTalks-FilmDemo'
+	#name : 'FilmCollectionExamples',
+	#superclass : 'Object',
+	#category : 'GtTalks-FilmDemo',
+	#package : 'GtTalks',
+	#tag : 'FilmDemo'
 }
 
-{ #category : #example }
+{ #category : 'example' }
 FilmCollectionExamples >> collection [
 	<gtExample>
 	| collection |
@@ -18,7 +20,7 @@ FilmCollectionExamples >> collection [
 	^ collection
 ]
 
-{ #category : #example }
+{ #category : 'example' }
 FilmCollectionExamples >> csv [
 	<gtExample>
 	| csv |
@@ -27,7 +29,7 @@ FilmCollectionExamples >> csv [
 	^ csv
 ]
 
-{ #category : #example }
+{ #category : 'example' }
 FilmCollectionExamples >> imdbFile [
 	<gtExample>
 	| file |
@@ -36,7 +38,7 @@ FilmCollectionExamples >> imdbFile [
 	^ file
 ]
 
-{ #category : #example }
+{ #category : 'example' }
 FilmCollectionExamples >> json [
 	<gtExample>
 	| json |
