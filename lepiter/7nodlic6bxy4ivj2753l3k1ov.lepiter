@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-01-09T16:49:13.361572+01:00"
+						"dateAndTimeString" : "2026-04-10T09:25:28.881467+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Originally presented at Manash U, Dec 2025."
+				"string" : "Originally presented at Monash U, Dec 2025."
 			},
 			{
 				"__type" : "textSnippet",

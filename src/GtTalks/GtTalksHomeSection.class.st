@@ -73,7 +73,7 @@ GtTalksHomeSection >> eddLiveSlideshowCard [
 
 { #category : 'slideshowCard' }
 GtTalksHomeSection >> gt4researchSlideshowCard [
-	<gtSectionCard>
+	"<gtSectionCard>"
 	<gtExample>
 	^ GtHomeCard slideshow
 		title: 'Gt4Research';
@@ -112,6 +112,20 @@ GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 			baseLineName: 'GtTalks'
 			repo: 'github://onierstrasz/gt-talks:main/src'
 			loadLepiterBaseline: #BaselineOfGtTalks;
+		yourself
+]
+
+{ #category : 'pageCard' }
+GtTalksHomeSection >> moldingChatsCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'Molding Chats (2026)';
+		description: 'Molding Chats talk at Smalltalks Zurich, April 24, 2026';
+		databaseName: 'GT Talks';
+		pageName: 'Molding Chats';
+		setPriority;
+		assertInvariant;
 		yourself
 ]
 
