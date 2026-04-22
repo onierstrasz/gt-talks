@@ -79,45 +79,7 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-04-22T09:28:45.916327+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-04-22T09:28:49.895424+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "uRHiFbJITrmrQsDtSfLDEg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Record a video backup."
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -127,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-22T09:28:42.262941+02:00"
+						"dateAndTimeString" : "2026-04-22T17:44:50.436594+02:00"
 					}
 				},
 				"editEmail" : {
@@ -138,17 +100,85 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-22T09:28:43.491252+02:00"
+						"dateAndTimeString" : "2026-04-22T17:44:50.436594+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "zGjrdozDQsyvIXD2OzRZvg=="
+					"uidString" : "rGTqAMUsTNafKYGLtuyk/A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# To do"
+				"string" : ""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-22T17:44:40.796313+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-22T17:48:04.936044+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QBuEzKVsSiqvPJrEs9jvoQ=="
+				},
+				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-22T17:45:00.105839+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-22T17:48:01.093083+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+tVob6QGTpmxZhTkkvYWOA=="
+				},
+				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.'"
 			}
 		]
 	},

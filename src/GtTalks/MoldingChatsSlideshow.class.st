@@ -197,7 +197,7 @@ MoldingChatsSlideshow >> summaryChat [
 			yourself);
 	addSnippet: (LePharoSnippet new
 			code: 'c := GtL gt
-	sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slidehow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.''';
+	sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.''';
 			yourself);
 	yourself
 ]
