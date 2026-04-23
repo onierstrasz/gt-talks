@@ -145,8 +145,7 @@ MoldingChatsSlideshow >> generatingCodePage [
 { #category : 'slides' }
 MoldingChatsSlideshow >> generatingCodePage: aSlide [
 	<gtSlide>
-	<text:
-'##Generating code
+	<text: '##Generating code
 
 A typical application of LLMs is to generate code, but the explanations of how the code generation works are generally high-level text summaries without technical details.
 
@@ -159,8 +158,7 @@ We can explicitly ask the chat to put the examples into a separate class called 
 If we break the sort: method and ask the chat to fix it, we can see step-by-step what it is doing. This is much more informative than textual explanations.
 
 By the way, we can also run a new chat on the chat instance to get an explanation.'>
-<demo:
-'- Run the example.
+	<demo: '- Run the example.
 - Inspect the bubble sorter class and the examples, and run them.
 - Go to the Messages view and explore the steps.
 - Look at the Method list to see the changes. (Also in the By class view.)
@@ -171,6 +169,11 @@ By the way, we can also run a new chat on the chat instance to get an explanatio
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self database pageNamed: 'Generating code')
+]
+
+{ #category : 'utility' }
+MoldingChatsSlideshow >> removeBubbleSorterPackage [
+	#BubbleSorter asClassIfPresent: [ :c | c package removeFromSystem ]
 ]
 
 { #category : 'page' }
@@ -256,10 +259,10 @@ Finally, because we are lazy, we can ask an LLM to summarize this demo.'>
 { #category : 'slides' }
 MoldingChatsSlideshow >> title: aSlide [
 	<gtSlide>
-	<text:
-'#Molding Chats
+	<text: '#Molding Chats
 
 Hi. I''d like to show you a quick demo of how moldable development can make the experience of working with an LLM more understandable and controllable. The key idea is simply to turn every aspect of interacting with an LLM into a moldable object with its own dedicated tools and views.'>
+	self removeBubbleSorterPackage.
 	^ aSlide title
 		setPriority;
 		titleBottomPadding: 30;

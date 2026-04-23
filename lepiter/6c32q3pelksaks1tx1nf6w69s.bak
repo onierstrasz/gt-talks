@@ -137,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T16:40:47.621456+02:00"
+						"dateAndTimeString" : "2026-04-23T16:40:50.185559+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "QBuEzKVsSiqvPJrEs9jvoQ=="
 				},
-				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of twelve words per bullet point.'"
+				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point.'"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -287,6 +287,77 @@
 					"uidString" : "B9BjUk6JSdmNFG4tfeYMPQ=="
 				},
 				"code" : "slide := GtProtoLiveSlide new paragraph\r\t\tsubtitleWithFormat: (PrioritySlideshow new asSubtitle: 'A bullet list');\r\t\tparagraphWithFormat: (PrioritySlideshow new\r\t\t\t\tasText: '• Bullet 1\r• Bullet 2\r• Bullet 3').\rBlSpace new\r\taddChild: slide asScalableSlide asElement;\r\tshow"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T17:03:48.268647+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T17:04:01.108659+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gpe0/qnhTI+0Gk2u+KzQsg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "How to delete the BuubleSorter package?"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T17:04:02.524388+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T17:04:48.245302+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "s6ymOeSAT9KyccvzOYltiw=="
+				},
+				"code" : "#BubbleSorter asClassIfPresent: [:c | c]"
 			}
 		]
 	},
