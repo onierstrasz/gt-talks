@@ -10,6 +10,34 @@ Class {
 }
 
 { #category : 'page' }
+MoldingChatsSlideshow >> bulletPointSlideInstructionsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'How to generate and launch a bullet point slide')
+	addSnippet: (LeTextSnippet new
+			string: 'A slide with bullet points can be created using the {{gtMethod:name=GtProtoLiveSlide>>#paragraph}} factory method of a {{gtClass:name=GtProtoLiveSlide}} instance. The text can be formatted using utility methods of {{gtClass:name=PrioritySlideshow}} as follows:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'slide := GtProtoLiveSlide new paragraph
+		subtitleWithFormat: (PrioritySlideshow new asSubtitle: ''A bullet list'');
+		paragraphWithFormat: (PrioritySlideshow new
+				asText: ''• Bullet 1
+• Bullet 2
+• Bullet 3'').';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'The slide can then be launched in a separate window using the following snippet:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'BlSpace new
+	addChild: slide asScalableSlide asElement;
+	show';
+			yourself);
+	yourself
+]
+
+{ #category : 'page' }
 MoldingChatsSlideshow >> chatWithMarkdownResponsePage [
 	<lePage>
 	<gtExample>
@@ -207,7 +235,8 @@ MoldingChatsSlideshow >> summaryChat [
 			yourself);
 	addSnippet: (LePharoSnippet new
 			code: 'c := GtL gt
-	sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point.''';
+		pageObjectExplanation: MoldingChatsSlideshow new bulletPointSlideInstructionsPage;
+		sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point. Create a bullet point slide from these points with a suitable heading and show the slide.''';
 			yourself);
 	yourself
 ]

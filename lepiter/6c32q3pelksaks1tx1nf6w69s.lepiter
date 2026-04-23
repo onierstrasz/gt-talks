@@ -137,14 +137,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-22T17:52:17.506181+02:00"
+						"dateAndTimeString" : "2026-04-23T16:40:50.185559+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "QBuEzKVsSiqvPJrEs9jvoQ=="
 				},
-				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.'"
+				"code" : "c := GtL gt\r\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point.'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T16:37:13.268758+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T16:40:43.248037+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qIPU1H72SLCAovgPy8m7Jg=="
+				},
+				"code" : "c := GtL gt\r\t\tpageObjectExplanation: MoldingChatsSlideshow new bulletPointSlideInstructionsPage;\r\t\tsendMarkdown: 'Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point. Create a bullet point slide from these points with a suitable heading and show the slide.'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -182,6 +216,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "We could generate a slide like this ..."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T16:33:02.239872+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-04-23T16:33:30.926187+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ra+KcaZsT82N5SSdvkBfUA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[How to generate and launch a bullet point slide]]"
 			},
 			{
 				"__type" : "pharoSnippet",
