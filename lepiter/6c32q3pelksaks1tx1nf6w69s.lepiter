@@ -313,7 +313,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T17:04:01.108659+02:00"
+						"dateAndTimeString" : "2026-04-23T17:21:51.016409+02:00"
 					}
 				},
 				"uid" : {
@@ -323,7 +323,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "How to delete the BuubleSorter package?"
+				"string" : "How to delete the BubbleSorter package?"
 			},
 			{
 				"__type" : "pharoSnippet",

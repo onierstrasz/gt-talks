@@ -350,14 +350,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T17:04:48.245302+02:00"
+						"dateAndTimeString" : "2026-04-23T17:05:01.237554+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "s6ymOeSAT9KyccvzOYltiw=="
 				},
-				"code" : "#BubbleSorter asClassIfPresent: [:c | c]"
+				"code" : "#BubbleSorter asClassIfPresent: [ :c | c package removeFromSystem ]"
 			}
 		]
 	},
