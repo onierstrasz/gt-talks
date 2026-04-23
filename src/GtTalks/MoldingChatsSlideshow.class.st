@@ -124,14 +124,21 @@ A typical application of LLMs is to generate code, but the explanations of how t
 
 If we run this example, we not only get the BubbleSorter and BubbleSorterExamples classes, but we can see which tools have been used to generate the code.
 
-How does this work? In this example we have provided the chat not only with instructions, but we have also given it a set of tools to use. There are tools for searching code, searching Lepiter pages, changing code, changing pages, running examples, and evaluating code. 
+How does this work? In this example we have provided the chat not only with instructions, but we have also given it a set of tools to use. There are tools for searching code, searching Lepiter pages, changing code, changing pages, running examples, and evaluating code.
+
+We can explicitly ask the chat to put the examples into a separate class called BubbleSorterExamples.
+
+If we break the sort: method and ask the chat to fix it, we can see step-by-step what it is doing. This is much more informative than textual explanations.
 
 By the way, we can also run a new chat on the chat instance to get an explanation.'>
 <demo:
 '- Run the example.
 - Inspect the bubble sorter class and the examples, and run them.
 - Go to the Messages view and explore the steps.
+- Look at the Method list to see the changes. (Also in the By class view.)
 - Expand GtLTools gt and expand each of the tool sets.
+- Assuming the examples are in the main class, ask the chat to move them to a separate class.
+- Break the sort: method by changing the comparison from < to > and ask it to make the examples green again.
 - From the Inspector hamburger menu, run Chat about this object.'>
 	^ aSlide lepiterPage
 		setPriority;
@@ -150,7 +157,7 @@ MoldingChatsSlideshow >> simpleChatPage [
 	addSnippet: (LePharoSnippet new
 			code: 'chat := GtLChat new.
 chat
-	sendMarkdown: ''Provide the rewrite rule for removing all `self halt` statements from methods.''';
+	sendString: ''Provide the rewrite rule for removing all `self halt` statements from methods.''';
 			yourself);
 	yourself
 ]
@@ -161,12 +168,15 @@ MoldingChatsSlideshow >> simpleChatPage: aSlide [
 	<text:
 '##A simple chat
 
-Consider this typical chat where we ask an LLM to generate code to remove leftover `self halt` statements from code. The chat is an object with views. We have a dedicated tool view, but we can also inspect the object directly.
+Consider this typical chat where we ask an LLM to generate code to remove leftover `self halt` statements from code.
+
+The chat is an object with views. We have a dedicated tool view, but we can also inspect the object directly. We can also inspect the Provider. For the moment the request and response are just plain text.
 
 This result is typical for such chats: it looks ok, but it''s not very useful, and we can''t tell if it''s correct. How can we do better?'>
 <demo:
 '- Run the example.
-- Switch between the Tool and Inspector tools.'>
+- Switch between the Tool and Inspector tools.
+- Inspect the Provider and the Request and Response JSON.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self database pageNamed: 'A simple chat')
@@ -197,7 +207,7 @@ MoldingChatsSlideshow >> summaryChat [
 			yourself);
 	addSnippet: (LePharoSnippet new
 			code: 'c := GtL gt
-	sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than five bullets, and a maximum of twelve words per bullet point.''';
+	sendMarkdown: ''Read the {{gtClass:MoldingChatsSlideshow}} slideshow class and produce a short bullet list summarizing the key takeaway messages. Produce no more than three bullets, and a maximum of ten words per bullet point.''';
 			yourself);
 	yourself
 ]
