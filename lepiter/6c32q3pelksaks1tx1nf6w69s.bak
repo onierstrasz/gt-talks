@@ -160,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T15:51:43.174612+02:00"
+						"dateAndTimeString" : "2026-04-23T16:01:09.839272+02:00"
 					}
 				},
 				"editEmail" : {
@@ -171,7 +171,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T15:51:43.174612+02:00"
+						"dateAndTimeString" : "2026-04-23T16:01:16.481433+02:00"
 					}
 				},
 				"uid" : {
@@ -181,41 +181,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T15:54:40.747026+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T15:54:40.747026+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "x7/5gYveSnOvZ9j7igxwnA=="
-				},
-				"code" : ""
+				"string" : "We could generate a slide like this ..."
 			},
 			{
 				"__type" : "pharoSnippet",

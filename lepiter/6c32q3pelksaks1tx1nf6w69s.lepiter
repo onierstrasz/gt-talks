@@ -208,14 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-04-23T15:59:32.682099+02:00"
+						"dateAndTimeString" : "2026-04-23T16:30:46.774624+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "B9BjUk6JSdmNFG4tfeYMPQ=="
 				},
-				"code" : "GtProtoLiveSlide new paragraph\r\tsubtitleWithFormat: (PrioritySlideshow new asSubtitle: 'A bullet list');\r\tparagraphWithFormat: (PrioritySlideshow new\r\t\t\tasText: '• Bullet 1\r• Bullet 2\r• Bullet 3') openInSpace"
+				"code" : "slide := GtProtoLiveSlide new paragraph\r\t\tsubtitleWithFormat: (PrioritySlideshow new asSubtitle: 'A bullet list');\r\t\tparagraphWithFormat: (PrioritySlideshow new\r\t\t\t\tasText: '• Bullet 1\r• Bullet 2\r• Bullet 3').\rBlSpace new\r\taddChild: slide asScalableSlide asElement;\r\tshow"
 			}
 		]
 	},
