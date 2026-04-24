@@ -173,7 +173,7 @@ By the way, we can also run a new chat on the chat instance to get an explanatio
 
 { #category : 'utility' }
 MoldingChatsSlideshow >> removeBubbleSorterPackage [
-	#BubbleSorter asClassIfPresent: [ :c | c package removeFromSystem ]
+	^ #BubbleSorter asClassIfPresent: [ :c | c package removeFromSystem ]
 ]
 
 { #category : 'page' }
