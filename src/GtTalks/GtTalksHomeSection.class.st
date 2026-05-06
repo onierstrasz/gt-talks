@@ -26,11 +26,14 @@ GtTalksHomeSection >> cardPriorities [
 	^ #(
 		tocCard
 		
+		p2LiveProgrammingCard
+		ccPetitParserCard
+		
 		yowCard
 		yowSlideshowCard
 		
 		monashCard
-		#gt4researchSlideshowCard
+		gt4researchSlideshowCard
 
 		eddLiveSlideshowCard
 		moldableExceptionsSlideshowCard
@@ -40,6 +43,20 @@ GtTalksHomeSection >> cardPriorities [
 		batBernCard
 		vissoftCard
 				)
+]
+
+{ #category : 'pageCard' }
+GtTalksHomeSection >> ccPetitParserCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'CC PetitParser';
+		description: 'New CC lecture on PEGs and PetitParser for 2027';
+		databaseName: 'GT Talks';
+		pageName: 'CC SPL PetitParser lecture';
+		setPriority;
+		assertInvariant;
+		yourself
 ]
 
 { #category : 'pageCard' }
@@ -138,6 +155,20 @@ GtTalksHomeSection >> monashCard [
 		description: 'Notebook for Monash GT 4 Research talk';
 		databaseName: 'GT Talks';
 		pageName: 'Monash talk';
+		setPriority;
+		assertInvariant;
+		yourself
+]
+
+{ #category : 'pageCard' }
+GtTalksHomeSection >> p2LiveProgrammingCard [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'P2 Live Programming';
+		description: 'New P2 lecture on Live Programming for 2027';
+		databaseName: 'GT Talks';
+		pageName: 'P2 Live Programming lecture';
 		setPriority;
 		assertInvariant;
 		yourself
