@@ -50,7 +50,7 @@ GtTalksHomeSection >> ccPetitParserCard [
 	<gtSectionCard>
 	<gtExample>
 	^ GtHomeCard page
-		title: 'CC PetitParser';
+		title: 'New CC lecture';
 		description: 'New CC lecture on PEGs and PetitParser for 2027';
 		databaseName: 'GT Talks';
 		pageName: 'CC SPL PetitParser lecture';
@@ -165,7 +165,7 @@ GtTalksHomeSection >> p2LiveProgrammingCard [
 	<gtSectionCard>
 	<gtExample>
 	^ GtHomeCard page
-		title: 'P2 Live Programming';
+		title: 'New P2 lecture';
 		description: 'New P2 lecture on Live Programming for 2027';
 		databaseName: 'GT Talks';
 		pageName: 'P2 Live Programming lecture';
