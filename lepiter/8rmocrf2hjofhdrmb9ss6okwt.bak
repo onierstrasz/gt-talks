@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-05-06T13:15:58.266939+02:00"
+						"dateAndTimeString" : "2026-05-06T13:15:53.310864+02:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Also have a look at the GT Book tutorial, {{gtPage:Parsing with PetitParser2|db=2j9m7db2i4oz116bexd7wbdxo}}. \nMaybe it would be better to start with this as the online demo."
+				"string" : "Also have a look at the GT Book tutorial, {{gtPage:Parsing with PetitParser2|db=2j9m7db2i4oz116bexd7wbdxo}}. \nMaybe it would be better to start with "
 			}
 		]
 	},
