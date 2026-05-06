@@ -1407,7 +1407,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-05-06T12:01:19.888097+02:00"
+									"dateAndTimeString" : "2026-05-06T12:06:35.924935+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1418,7 +1418,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-05-06T12:01:19.888097+02:00"
+									"dateAndTimeString" : "2026-05-06T12:09:51.724682+02:00"
 								}
 							},
 							"uid" : {
@@ -1428,7 +1428,41 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "We add this to the roll methods.\nNow we need to modify the view to listen to the announcements."
+						},
+						{
+							"__type" : "blockQuoteSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-05-06T12:09:53.823749+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-05-06T12:09:53.823749+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Y4rJ5+3eTh+rODQsyHlzpw=="
+							},
+							"string" : "gtTopFaceFor: aView\r\t<gtView>\r\t^ aView forward\r\t\ttitle: 'TopFace preview';\r\t\tobject: [ topFace ];\r\t\tview: #gtPreviewFor:;\r\t\tactionUpdateButton;\r\t\tupdateWhen: LudoDieRolled in: self announcer"
 						},
 						{
 							"__type" : "textSnippet",
