@@ -140,7 +140,7 @@ MoldingChatsSlideshow >> generatingCodePage [
 		sendMarkdown: ''Create a BubbleSorter class that implements bubblesort. Create examples for it. Ensure that the examples are green.''';
 			yourself);
 	addSnippet: (LeTextSnippet new
-			string: 'Cleanup:';
+			string: 'Cleanup snippet:';
 			yourself);
 	addSnippet: (LePharoSnippet new
 			code: 'BubbleSorter package removeFromSystem';
