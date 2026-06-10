@@ -180,12 +180,21 @@ By the way, we can also run a new chat on the chat instance to get an explanatio
 
 { #category : 'as yet unclassified' }
 MoldingChatsSlideshow >> inspectorOnSlideshow: aSlide [
-	<gtSlide>
-	<text: 'Chatting about objects'>
+	"<gtSlide>"
+	<text:
+'##Chatting about objects
+
+We can also spawn a chat on any given object, such as this slideshow.
+'>
+<demo:
+'- Spawn a chat on the  slideshow object
+- Ask it to summarize the slideshow'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'An inspector on the image directory';
-		element: [ GtInspector newOn: MoldingChatsSlideshow new ]
+		newFadedText: 'Chatting about objects';
+		element: [ (GtPagerSettings usedPager
+				createWrappedOn: (GtInspectorTool forObject: MoldingChatsSlideshow new ))
+				maximized ]
 ]
 
 { #category : 'utility' }
