@@ -143,7 +143,7 @@ MoldingChatsSlideshow >> generatingCodePage [
 			string: 'Cleanup:';
 			yourself);
 	addSnippet: (LePharoSnippet new
-			code: 'BubbleSorter removeFromSystem';
+			code: 'BubbleSorter package removeFromSystem';
 			yourself);
 	yourself
 ]
