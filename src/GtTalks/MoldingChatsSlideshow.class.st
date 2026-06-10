@@ -134,6 +134,7 @@ MoldingChatsSlideshow >> generatingCodePage [
 			yourself);
 	addSnippet: (LePharoSnippet new
 			code: 'chat := GtLChat new
+		withDefaultSummarizers;
 		markdownResponse;
 		tools: GtLTools gt;
 		gtPageExplanation: ''Examples by example'';
@@ -175,6 +176,16 @@ By the way, we can also run a new chat on the chat instance to get an explanatio
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self database pageNamed: 'Generating code')
+]
+
+{ #category : 'as yet unclassified' }
+MoldingChatsSlideshow >> inspectorOnSlideshow: aSlide [
+	<gtSlide>
+	<text: 'Chatting about objects'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'An inspector on the image directory';
+		element: [ GtInspector newOn: MoldingChatsSlideshow new ]
 ]
 
 { #category : 'utility' }
@@ -229,6 +240,7 @@ MoldingChatsSlideshow >> slidePriorities [
 		chatWithMarkdownResponsePage:
 		generatingCodePage:
 		exploitingViewsPage:
+		inspectorOnSlideshow:
 		summaryChat:
 		)	
 ]
