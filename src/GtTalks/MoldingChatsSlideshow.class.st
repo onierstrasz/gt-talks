@@ -139,6 +139,12 @@ MoldingChatsSlideshow >> generatingCodePage [
 		gtPageExplanation: ''Examples by example'';
 		sendMarkdown: ''Create a BubbleSorter class that implements bubblesort. Create examples for it. Ensure that the examples are green.''';
 			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'Cleanup:';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'BubbleSorter removeFromSystem';
+			yourself);
 	yourself
 ]
 
@@ -164,7 +170,7 @@ By the way, we can also run a new chat on the chat instance to get an explanatio
 - Look at the Method list to see the changes. (Also in the By class view.)
 - Expand GtLTools gt and expand each of the tool sets.
 - Assuming the examples are in the main class, ask the chat to move them to a separate class.
-- Break the sort: method by changing the comparison from < to > and ask it to make the examples green again.
+- Break the sort: method by changing the comparison from `<` to `>` and ask it to make the examples green again.
 - From the Inspector hamburger menu, run Chat about this object.'>
 	^ aSlide lepiterPage
 		setPriority;
@@ -262,7 +268,6 @@ MoldingChatsSlideshow >> title: aSlide [
 	<text: '#Molding Chats
 
 Hi. I''d like to show you a quick demo of how moldable development can make the experience of working with an LLM more understandable and controllable. The key idea is simply to turn every aspect of interacting with an LLM into a moldable object with its own dedicated tools and views.'>
-	self removeBubbleSorterPackage.
 	^ aSlide title
 		setPriority;
 		titleBottomPadding: 30;
