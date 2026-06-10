@@ -134,7 +134,7 @@ GtTalksHomeSection >> moldableExceptionsSlideshowCard [
 
 { #category : 'pageCard' }
 GtTalksHomeSection >> moldingChatsCard [
-	"<gtSectionCard>"
+	<gtSectionCard>
 	<gtExample>
 	^ GtHomeCard page
 		title: 'Molding Chats (2026)';
