@@ -26,6 +26,7 @@ GtTalksHomeSection >> cardPriorities [
 	^ #(
 		tocCard
 		
+		vissoft2026Card
 		p2LiveProgrammingCard
 		ccPetitParserCard
 		
@@ -188,6 +189,20 @@ GtTalksHomeSection >> tocCard [
 		description: 'Presentations as Gt slideshows';
 		databaseName: 'GT Talks';
 		pageName: 'Gt Talks TOC';
+		setPriority;
+		assertInvariant;
+		yourself
+]
+
+{ #category : 'pageCard' }
+GtTalksHomeSection >> vissoft2026Card [
+	<gtSectionCard>
+	<gtExample>
+	^ GtHomeCard page
+		title: 'VISSOFT 2026';
+		description: 'VISSOFT 2026 Vision paper and 2016 MIP presentation';
+		databaseName: 'GT Talks';
+		pageName: 'VISSOFT 2026';
 		setPriority;
 		assertInvariant;
 		yourself

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-06-13T07:46:15.090063+02:00"
+						"dateAndTimeString" : "2026-08-21T09:20:39.589305+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "These are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks)."
+				"string" : "These are pages for the [gt-talks repo](https://github.com/onierstrasz/gt-talks).\n[["
 			},
 			{
 				"__type" : "textSnippet",
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-05-06T09:21:39.301983+02:00"
+						"dateAndTimeString" : "2026-05-06T09:22:00.509775+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[["
+				"string" : "[[CC SPL PetitParser lecture]]"
 			},
 			{
 				"__type" : "textSnippet",
