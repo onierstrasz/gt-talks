@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-08-21T09:23:00.43244+02:00"
+						"dateAndTimeString" : "2026-08-21T09:52:21.412948+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,78 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "See notes in private Lepiter db."
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T09:52:28.490043+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T09:53:05.44149+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QoJbiR3CT0Gbzj8uVtfQ3Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[VISSOFT 2026]]\n[[Towards Actionable Visualization — notes]]\n"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T09:26:25.715844+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T09:26:28.574833+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "07Jy8eY0SHKxUdzkk/4xYg=="
+				},
+				"code" : "VISSOFT2026Slideshow new"
 			}
 		]
 	},
@@ -62,12 +133,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-08-21T09:20:53.537041+02:00"
+			"dateAndTimeString" : "2026-08-21T09:53:01.301869+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "VISSOFT 2026"
+		"title" : "VISSOFT 2026 old"
 	},
 	"uid" : {
 		"__type" : "uuid",

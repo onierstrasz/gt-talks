@@ -1,0 +1,747 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-20T16:22:24.29936+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-20T16:31:26.062188+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QEvXRnoqQ7OEKlvW3b1vHQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[Overleaf link](https://www.overleaf.com/project/6a5b89c52b1182598e488132)\n[SCG bib Meri26a link with preprint](https://scg.unibe.ch/assets/scgbib/?query=Meri26a&filter=Author)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:55.185316+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:57.061562+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qmm5o/YcQc2VLWRWkEiHyA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "“Towards Actionable Visualization: Ten Years Later, What Generative AI Changes and What It Cannot.”"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:48:24.898658+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T16:32:16.755026+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "RLJKvBU4RsSMjjV9UgJquA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "• GenAI has driven down the cost of producing a visualization toward zero.\n• The cost for humans of interpreting visualizations remains high.\n• Visualization tool sustainability will worsen before it gets better.\n• Studies delivered through immersive environments have grown 15x (but are still a minority).\n• Future research should  focus on helping humans interpret and trust AI-generated visualizations."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:48:28.128924+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:48:40.56207+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "ssTmARv+QLuCLDbn4u7wgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "• Surveyed 65 software visualization design studies (journal: 86) focusing on matching visualizations to needs.\n• MetaVis used a catalog to help users find suitable visualizations.\n• Now GenAI makes matching easy. Disposable, bespoke visualizations can be easily generated.\n• The cost of generating a visualization has gone down while the cost of assessing it has risen (do we understand it? do we trust it?).\n• Domains that were neglected (needed but not provided) in 2016 (rationale, contracts, policies) are now tractable through AI.\n• “AI facilitates visualization, but *seeing remains a human act*.”\n• “What it *cannot do* is the rest of the pipeline: using human perceptual and cognitive skills to *recognize the patterns that matter*, and to *judge whether they are genuine* or artifacts of how the data was transformed.”\n• “*Call to Action.* We should treat previously under-served domains (i.e., rationale, contracts, and policies) as priority targets for new design studies now that AI removes their main barrier: the cost of preparing the data. The scarcity that once limited attention to these domains no longer holds.”"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:48:40.559854+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:48:40.559854+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "pvmGXbHxQsOV4DPObBCYBQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##*The old paper, neglected domains:*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:48:59.278886+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T16:20:08.360619+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "5DeThk1UTSSXDh7ffWARiA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "• Average lifespan was 3.7 years; only 26% made source code public\n• “Reproducibility is treated as an ethical obligation rather than a rewarded outcome, and prototypes are abandoned accordingly.”\n• “What was a sustainability problem measured in dozens of short-lived research prototypes could scale to millions of ungoverned generated artifacts”\n• “*Call to Action.* Incentives for documentation and maintenance, not just novelty, must be built into how we evaluate and reward research contributions. A tool that is smaller in scope but well-documented and maintained should count as a stronger contribution than a more ambitious one that will not survive its authors’ graduation.”"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:48:47.504074+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:48:47.504074+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Njd6EPraR4SM8+rmk53dFQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##*Old paper, tool-lifespan:*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:10.686981+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:12.387518+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "1ENvNTnLT7+ycJFeX1QzVw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "• Scanned VISSOFT paper titles from 2017-2025. Immersive 3D/VR/AR titles grew from 1:100 to 1:7 (15x).\n• Building such prototypes has become much cheaper (due to AI?).\n• Smart glasses won't be used as AR but as ambient, glanceable, not immersive. *What should visualizations look like to support developers having a running conversation with a system?* “We cannot yet answer what that visualization should look like, only flag it as the medium shift this survey’s next decade should be watching for.”\n• “*Call to Action.* Medium should become a first-class, explicitly reported dimension of every design study, not an afterthought; the field cannot track a shift it does not consistently measure.”"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:03.711782+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:03.711782+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hbJKjW4KS/iGJsUmvPUemg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##*Old paper, medium:*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:19.517172+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:41.188577+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jF80qykQROy8KJQdyFPNAA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "***A. From technique catalogs to perceptual capacity:***\n• *“We propose that VISSOFT research redirect part of its effort from designing more techniques toward strengthening the human side of the loop, focused on what makes software specifically hard to see.”*\n• *“it is a call to ground perceptual research in the artifacts and questions software uniquely produces”*\n\n***B. From monolithic tools to disposable, continuous seeing:***\n• *“Instead of a small number of task-specific tools, each built to answer one predefined question about one kind of artifact, we expect systems organized around a general capability: continuously examining a system from whatever angle the current question demands. Each view answers the question in front of it, then is abandoned the moment a new one arises, the same shift from artifact to channel, now pushed to its architectural conclusion and already practiced, not merely proposed, in AI-assisted moldable development environments such as Glamorous Toolkit.”*\n• *“it is what a general-purpose model lacks on its own: not the ability to produce code for a chart, but the grounding to know which chart the question calls for”*\n\n***C. A new object of study: visualizing the reasoning of AI itself:***\n• *“We propose that AI-generated code, and the process that generates it, become a first-class object of study for software visualization specifically, one that reveals not only what the code does, but how consistently it can be trusted to mean what it appears to mean.”*\n• *“The distinction that matters here is between AI-assisted coding, where a developer remains the author, reading, editing, and integrating each suggestion, and vibe coding, where the developer specifies intent and accepts output with little line-by-line review.”*\n• *“an agent’s reasoning, its discarded alternatives, its intermediate hypotheses, and the tool calls it made along the way are themselves a data source with no obvious analog in our original 2016 taxonomy.”*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:16.333355+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:46.037603+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZyveB7pVT5e2RUSt+h6r5Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##*Vision (3 research shifts):*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:27.448611+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-20T10:49:38.240673+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "XmOuctcHSNyd4H/j/Gjw3w=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "• *“A generated view should be built from simple, directly checkable mappings to measurable values and remain ****navigable down to the source data****, not merely become more numerous.”*\n• *“This shift also calls for benchmarks that assess not whether a system can produce a visualization, but whether the resulting view remains actionable: faithful to its underlying data, traceable to its sources, and supportive of reliable reasoning.”*\n• *“generation can be delegated; checking what is shown against what is true cannot.”*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:23.0949+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:23.0949+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Nbp+4TxTQlSQGDKML0LwQg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##*Closing*"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:28:29.679527+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-20T10:49:34.820757+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "r/0fskHYSVaPxyQjKwhz8A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "*Meta-questions*\n— What is the evidence that rationale, contracts and policies are now addressed by AI?\n"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-12T09:41:01.34771+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-12T09:44:55.805034+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aqctheoqQc2SBDie+2BwIg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Main points"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-19T10:01:44.872484+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-19T10:32:15.72736+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "GBAvYTE5QJ2WUxMB+oBhEQ=="
+							},
+							"code" : "chat := GtL gt.\rlatex := (FileLocator imageDirectory / 'vision.tex')\r\t\tasFileReference.\rid := chat objectStorage addNewObject: latex.\rchat\r\tsendMarkdown: 'The object storage contains a file reference to a LaTeX source file with the id ' , id\r\t\t\t, '. Read this file and summarize the main points.'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-19T10:32:24.466159+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-08-19T10:32:33.709808+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "aqm2U4vORRG153F+nL/qtA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Main points of the LaTeX file:\n\n- It is a paper titled **“Towards Actionable Visualization: Ten Years Later, What Generative AI Changes and What It Cannot.”**\n- It revisits the authors’ 2016/2018 work on software visualization and argues that **generative AI changes the economics of visualization**: producing a visualization is becoming cheap, but **human interpretation, judgment, and trust remain expensive and essential**.\n- Core thesis: AI reduces the cost of generating custom, on-demand visualizations, so the research bottleneck shifts from inventing more visualization techniques to **helping humans perceive, inspect, and verify complex software and AI behavior**.\n\nKey arguments:\n\n- **Neglected domains now become tractable**: areas like rationale, contracts, and policies were previously underserved because preparing the data was too costly; AI can now help extract and structure that data.\n- **Tool sustainability may get worse before it gets better**: if AI makes prototype creation nearly free, academia may produce even more short-lived, undocumented, unreproducible tools unless incentives change.\n- **Immersive media increased**: compared with the earlier survey, papers using VR/AR-like delivery media appear to have grown substantially, though still remain a minority.\n\nProposed research agenda:\n\n- Shift **from technique catalogs to perceptual capacity**: study what makes generated views trustworthy and quickly interpretable for software tasks.\n- Shift **from monolithic tools to disposable, continuous seeing**: generate visualizations on demand for the question at hand, then discard them.\n- Treat **AI-generated code and AI reasoning traces** as a new object of software-visualization research.\n\nRisks emphasized:\n\n- AI-generated visualizations can be misleading, so they must remain **traceable to source data** and support drill-down inspection.\n- The field should not compete with machines on raw generation, but instead focus on **human strengths: perception, judgment, accountability, and trust**.\n\nConclusion:\n\n- The paper argues that actionable visualization is no longer mainly blocked by production cost.\n- Because AI makes visualization generation cheap, the field should focus on making visualizations **trustworthy, inspectable, and useful for human decision-making**.\n- Its closing claim is that the field may be close to dropping “Towards” and aiming directly for **visualization that is already actionable**."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-19T10:32:33.706634+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-08-19T10:32:33.706634+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ADRaw3DLRxWdh3hXjkyiXg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Chat response:"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-19T10:33:39.902125+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-19T10:33:45.668312+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eTqIq8DtREKJueDrjNlOSw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Chat paper review"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-20T16:20:52.665989+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-08-20T16:20:52.665989+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Towards Actionable Visualization — notes"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "b6cdd37a-d9c5-4fdd-86c2-f09e71c444e7"
+	}
+}
