@@ -216,6 +216,80 @@
 					"uidString" : "v/SJY8KSTeiqfr5nWD87Og=="
 				},
 				"code" : "chat sendMarkdown: 'Create a Mondrian graph showing all the papers and their authors, colored red for SOFTVIS and blue for VISSOFT. Inspect the graph to make sure it works.'"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T16:29:46.784945+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-21T16:30:04.77525+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aXbImh5KS2eY8AvRB4ofcg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "It builds a Mondrian graph, but it is too crammed to be useful or readable."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-24T17:17:11.870612+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-24T17:35:48.540147+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "J4qrvblCTSSqw8jKtL7jyA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "TG: Doing too much at once. Give it a Mondrian instruction. Don't ask for too much at once. Ask it to build a model first.\nNeed a prompt that is difficult to get wrong.\nIf you give it examples it will know what to do.\nIf it does things wrong, show it suitable examples. That will improve the demo.\n\nWhat kind of questions would we ask to get different visualizations?\nWe have the abstracts.\nGiven the abstract we can ask, “Is the goal correct?”\nOpen an object and ask “Is the goal correct?”\nObjects are papers and authors.\n\nCan ask “are there selected papers”?\n\n1: Cheap visualizations — manual\n2: AI generation — model, visualization from paper\n3=2a/4a: Verification and trust — explore the chat, navigate the visualizations\n(not  separate demo but part of the second and last parts)\n\n4: AI interpretation — pick a paper from the model and we ask the chat if the goal is correct"
 			}
 		]
 	},
