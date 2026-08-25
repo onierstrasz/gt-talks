@@ -18,6 +18,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:20:51.789016+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-08-25T18:21:03.265269+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lMrsjf+7TWijycW2m4fCPw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "***Caveat:*** There is now a dedic"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2026-08-12T09:44:55.798024+02:00"
 					}
 				},
@@ -329,14 +366,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-08-24T17:12:30.022321+02:00"
+									"dateAndTimeString" : "2026-08-24T17:13:01.712973+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "L+fxQm4CTjaQCMNUorOqnA=="
 							},
-							"code" : "FileLocator"
+							"code" : "FileLocator imageDirectory"
 						}
 					]
 				},
