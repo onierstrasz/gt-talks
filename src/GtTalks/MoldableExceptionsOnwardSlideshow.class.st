@@ -105,10 +105,11 @@ The moldable exception not only highlights the error with an explanation, but it
 	<demo: '- Inspect the first snippet.
 - Show the view code.
 - Inspect the second snippet.
+- Click on the *Open debugger* button.
 - Show the proposed refactoring and apply it.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Debugging Views')
+		startPage: (self database pageNamed: 'Debugging Views')
 ]
 
 { #category : 'page' }
@@ -204,7 +205,7 @@ MoldableExceptionsOnwardSlideshow >> metricsPage: aSlide [
 	<text: '... Some metrics for discussion.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'Some metrics')
+		startPage: (self database pageNamed: 'Some metrics')
 ]
 
 { #category : 'slides' }
@@ -340,7 +341,7 @@ MoldableExceptionsOnwardSlideshow >> moreExamplesPage: aSlide [
 	<text: '... More examples for discussion.'>
 	^ aSlide lepiterPage
 		setPriority;
-		startPage: (self db pageNamed: 'More examples')
+		startPage: (self database pageNamed: 'More examples')
 ]
 
 { #category : 'slides' }
@@ -419,6 +420,7 @@ It''s just a dropdown menu that retries the action with the same debugger.'>
 
 <demo:
 '- Trigger the exception
+- Show the retry action
 - Show the action code with two pragmas
 - Show the action appears in both debugger views'>
 
@@ -427,7 +429,7 @@ It''s just a dropdown menu that retries the action with the same debugger.'>
 		heading: 'Specifying actions';
 		addCodeSnippet: 'ZnClient new 
 	url: ''https://www.gmail.com'';
-	maxNumberOfRedirects: 3;
+	maxNumberOfRedirects: 2;
 	get'
 ]
 
@@ -533,6 +535,6 @@ In both cases, however, there is a custom *Retry* action that lets us proceed an
 		heading: 'Too many URL redirects';
 		addCodeSnippet: 'ZnClient new 
 	url: ''https://www.gmail.com'';
-	maxNumberOfRedirects: 3;
+	maxNumberOfRedirects: 2;
 	get'
 ]
